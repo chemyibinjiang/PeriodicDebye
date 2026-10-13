@@ -1,5 +1,8 @@
 # MOF–nanoparticle scattering handoff
 
+For a beginner's introduction to the mathematics, read the
+[Debye tutorial in the repository README](../README.md).
+
 Start with [START_HERE.md](START_HERE.md). Give the local coding agent [LOCAL_AGENT_PROMPT.md](LOCAL_AGENT_PROMPT.md); keep this entire folder available to it.
 
 The implemented v0.4.1 code is in `mof_debye_lab/`. Read

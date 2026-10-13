@@ -1,5 +1,8 @@
 # MOF scattering, version 0.4.1
 
+New to scattering? Start with the [step-by-step Debye tutorial](../../README.md):
+waves, two atoms, all three modes, and nanoparticles in pores, with explicit equations.
+
 Finite single-crystal, periodic single-crystal Bragg/diffuse, and finite/bulk
 PXRD are implemented. Start with [MODE_GUIDE.md](MODE_GUIDE.md) for current
 commands, configuration, output conventions and supported combinations.

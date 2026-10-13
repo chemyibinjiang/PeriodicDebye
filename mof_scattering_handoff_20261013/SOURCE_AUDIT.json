@@ -6,7 +6,7 @@
     {
       "path": "README.md",
       "original_sha256": "aa41d79f4e34d607fdafc53dce2419aac42510c8abab5403f1cf6a9dd41da9b3",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     },
     {
       "path": "TASKS.json",
@@ -16,7 +16,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "original_sha256": "71efb4aa5718c6e5f18d00ff27d47ccf29a6fab72314a5385350716ea8ced4e8",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/pyproject.toml",
@@ -117,7 +117,7 @@
     {
       "path": "README.md",
       "v02_sha256": "e02ded15d4009f3cb4367050812f6411f219512e9c1d857736ff185ceed77a0e",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     },
     {
       "path": "TASKS.json",
@@ -132,7 +132,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "v02_sha256": "dd77f6a24ae023322e3c37bd2aaa752dc36b247a8054b5ff90a52a08716edcbb",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/pyproject.toml",
@@ -235,7 +235,7 @@
     {
       "path": "README.md",
       "v03_sha256": "a600df14853039808bc8000ee432f38ff2d3654da1ec90454be85bf53078965e",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     },
     {
       "path": "mof_debye_lab/MODE_GUIDE.md",
@@ -250,7 +250,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "v03_sha256": "a15b0b18894f25811138365f6816973222a7bb4f5489ae6e3969607ace0e56b5",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/pyproject.toml",
@@ -314,7 +314,7 @@
     {
       "path": "README.md",
       "v031_sha256": "306f39c4e914abe4bebee488e446aa1e61be5cc3c71dd1db8c016d4f4a6efc7a",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     },
     {
       "path": "mof_debye_lab/MODE_GUIDE.md",
@@ -324,7 +324,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "v031_sha256": "6b1d8acfda58336fc3ce699c191c117ad584925db33f096f2a55085ee0db9573",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/pyproject.toml",
@@ -397,7 +397,7 @@
     {
       "path": "README.md",
       "v032_sha256": "292116372619b220d3302c9e2c593201068c5fe2cd58949d223d9555633dd84f",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     },
     {
       "path": "mof_debye_lab/MODE_GUIDE.md",
@@ -412,7 +412,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "v032_sha256": "4338ed79f8efdf6f4f69614f9424d69188416e6878de000ab2c0c07a5f5250cc",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/pyproject.toml",
@@ -505,7 +505,7 @@
     {
       "path": "mof_debye_lab/README.md",
       "v040_sha256": "84bf2b9d7ca118eeab8d6124d5b7173f072ed2d972f6a8f48639ca08e7ad8224",
-      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+      "current_sha256": "9eefb51a4eba114c05096f810bf1671a2841c8ef8fc03d68c46e83c5f096264a"
     },
     {
       "path": "mof_debye_lab/src/mofdebye/__init__.py",
@@ -520,7 +520,7 @@
     {
       "path": "README.md",
       "v040_sha256": "eb0c8077f57be365adea9aec19ecfd2ec8a554baae78ec644a8617bd96d8d55b",
-      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+      "current_sha256": "53dea631de0dc572765df284c7973782d763e3d076447db77262ca2d8f98800a"
     }
   ],
   "new_project_files_since_v040": [
@@ -548,5 +548,25 @@
   "v040_source_snapshot": "local_runs/pore_distribution_v041/baseline/v040_source_snapshot.zip",
   "v040_source_snapshot_sha256": "76d99374cf6b83b24001887206ea32b1e121e47991f26d4acd8496bc64f5cdf0",
   "v040_development_manifest": "local_runs/pore_distribution_v041/baseline/DEVELOPMENT_MANIFEST_v040.sha256",
-  "v040_verified_manifest_files": 916
+  "v040_verified_manifest_files": 916,
+  "documentation_updates": [
+    {
+      "date": "2026-10-13",
+      "description": "Add a beginner Debye mathematics tutorial at the repository root and link it from both existing READMEs. Preserve the historical prototype text.",
+      "repository_paths": [
+        "README.md",
+        "mof_scattering_handoff_20261013/README.md",
+        "mof_scattering_handoff_20261013/mof_debye_lab/README.md"
+      ],
+      "runtime_code_changed": false,
+      "validation": {
+        "physical_examples": 8,
+        "physical_checks_passed": 32,
+        "worst_exact_scaled_error": 1.020924168256243e-15,
+        "sampled_max_exact_SEM": 0.7914049336597737,
+        "independent_math_review": "passed",
+        "tutorial_cli_examples_passed": 4
+      }
+    }
+  ]
 }
