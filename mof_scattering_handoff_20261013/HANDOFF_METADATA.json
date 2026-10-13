@@ -1,0 +1,76 @@
+{
+  "title": "MOF–nanoparticle scattering local-agent handoff",
+  "handoff_date": "2026-10-13",
+  "purpose": "Complete the tested finite-powder prototype into explicitly separated periodic single-crystal, PXRD and finite-single-crystal forward models.",
+  "original_archive": {
+    "filename": "mof_debye_lab_v0.1.zip",
+    "bytes": 634427,
+    "sha256": "5155407dec35f82a54688b817477c24d847a0364945ce99d1aed39c5d14f3839",
+    "file_count": 62,
+    "all_members_preserved_byte_for_byte": true,
+    "inner_manifest_entries_checked": 61
+  },
+  "new_content_scope": "Handoff documentation, task specification, provenance and fresh baseline verification only; no v0.1 source code changed.",
+  "user_required_cases": [
+    "single_crystal_periodic",
+    "pxrd",
+    "single_crystal_finite"
+  ],
+  "currently_implemented_case": "finite random-powder Debye scattering",
+  "currently_implemented_estimators": [
+    "restricted analytical finite independent-pore average",
+    "explicit Monte Carlo"
+  ],
+  "not_implemented": [
+    "directional finite-single-crystal engine",
+    "infinite periodic Bragg/diffuse solver",
+    "bulk PXRD projector",
+    "CIF/pore preprocessing",
+    "atom-level surface termination/relaxation"
+  ],
+  "fresh_checks": {
+    "pytest": {
+      "passed": 30,
+      "failed": 0,
+      "reported_seconds": 3.46,
+      "log": "qa/baseline_pytest.txt"
+    },
+    "analytic_cli": "passed",
+    "bounded_mc_forced_grid_cli": {
+      "passed": true,
+      "samples": 64,
+      "grid_evaluations": 64
+    },
+    "historical_8192_sample_validation_rerun": false,
+    "historical_speed_benchmark_rerun": false,
+    "full_installed_package_tested": false,
+    "GPU_tested": false
+  },
+  "fresh_environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "gemmi": "0.7.4",
+      "torch": "2.10.0+cpu",
+      "pytest": "9.0.2"
+    },
+    "device": "cpu",
+    "cuda_available": false
+  },
+  "upstream_source": {
+    "project": "DebyeCalculator",
+    "source_kind": "adapted forward-kernel extract",
+    "file_blob_sha1": "89cd257ac681d3859457db7e8220cbc325c6953d",
+    "not_a_repository_commit": true
+  },
+  "external_references_reverified_during_packaging": false,
+  "missing_real_material_data": [
+    "MOF CIF or intended finite atom set",
+    "validated pore geometry",
+    "particle material/templates beyond synthetic examples",
+    "measured/selected joint distributions",
+    "instrument settings"
+  ]
+}

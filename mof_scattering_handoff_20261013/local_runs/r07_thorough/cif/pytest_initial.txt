@@ -1,0 +1,31 @@
+........................................................................ [ 21%]
+........................................................................ [ 42%]
+........................................................................ [ 63%]
+........................................................................ [ 84%]
+............................F........................                    [100%]
+================================== FAILURES ===================================
+_______ test_skew_periodic_tolerance_against_exhaustive_image_search[9] _______
+
+trial = 9
+
+    @pytest.mark.parametrize('trial', range(25))
+    def test_skew_periodic_tolerance_against_exhaustive_image_search(trial):
+        rng = np.random.default_rng(SEED + 1000 + trial)
+        shear = rng.integers(2, 6)
+        cell = np.array([[1, 0, 0], [shear + .23, .12, 0], [.4, .3, 2.]])
+        delta = rng.uniform(-.5, .5, 3)
+        images = np.array(list(product(range(-8, 9), range(-3, 4), range(-2, 3))))
+        distances = np.linalg.norm((delta - images) @ cell, axis=1)
+        distance = float(np.min(distances))
+        assert distance > 1e-6
+        for tolerance, count in [(distance * .9999, 2), (distance * 1.0001, 1)]:
+            expanded = expand_fractional_sites([[0, 0, 0], delta], cell, ['x,y,z'], tolerance_A=tolerance)
+>           assert len(expanded) == count
+E           assert 1 == 2
+E            +  where 1 = len(array([[0., 0., 0.]]))
+
+tests\test_crystal_stress.py:188: AssertionError
+- generated xml file: C:\Users\yibinjiang\Documents\GitHub\PeriodicDebye\mof_scattering_handoff_20261013\local_runs\r07_thorough\cif\pytest_initial.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_crystal_stress.py::test_skew_periodic_tolerance_against_exhaustive_image_search[9]
+1 failed, 340 passed in 5.89s

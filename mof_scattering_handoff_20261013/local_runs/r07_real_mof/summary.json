@@ -1,0 +1,84 @@
+{
+  "material": "IRMOF-1 (MOF-5)",
+  "record_type": "RASPA reference simulation structure of a real published MOF; not claimed to be an experimental CIF deposition",
+  "source_sha256": "e5d0b3d72445c15cd2ed02a36fa2fdf3d5d13f6c21441984475449d48d3f0ad2",
+  "source_url": "https://raw.githubusercontent.com/iRASPA/RASPA2/6498ab1eec9c8e0f063dcd0d71dd7add372c529b/structures/mofs/cif/IRMOF-1.cif",
+  "expanded_unit_cell_atoms": 424,
+  "composition": {
+    "Zn": 32,
+    "O": 104,
+    "C": 192,
+    "H": 96
+  },
+  "pore_sites": "Not supplied or inferred; all runs are empty-framework host-only models.",
+  "runs": {
+    "periodic_single_crystal": {
+      "config_sha256": "c69ca086f4a4814b530049d403eb9f103d9e268380babeb8607e3191c96fdc9c",
+      "scattering_case": "single_crystal_periodic",
+      "boundary": "bulk",
+      "host_atoms": 424,
+      "seconds": 0.2933380000758916,
+      "tables": {
+        "reflections": 7880,
+        "diffuse": 5
+      },
+      "actual_method": [
+        "directional_cell_moments_and_reciprocal_enumeration"
+      ]
+    },
+    "finite_single_crystal": {
+      "config_sha256": "0d4b42c0205408a5476b35afab253f9149e4028d46865afd88b6ecbddde9a79a",
+      "scattering_case": "single_crystal_finite",
+      "boundary": "finite",
+      "host_atoms": 848,
+      "seconds": 0.14159790007397532,
+      "tables": {
+        "intensity": 81
+      },
+      "actual_method": [
+        "full_cell_amplitude_factorization"
+      ]
+    },
+    "pxrd_finite": {
+      "config_sha256": "571343ef3973a05818c4184ce5258993db4183b7870799434d5d6c6c67424359",
+      "scattering_case": "pxrd",
+      "boundary": "finite",
+      "host_atoms": 424,
+      "seconds": 0.2821183002088219,
+      "tables": {
+        "intensity": 64
+      },
+      "actual_method": [
+        "numpy_scipy_direct_debye"
+      ]
+    },
+    "pxrd_bulk": {
+      "config_sha256": "23ae873658b675b2cd8482c826975e7cb8cd8b6526d5a11c2c604a240d6c38f5",
+      "scattering_case": "pxrd",
+      "boundary": "bulk",
+      "host_atoms": 424,
+      "seconds": 0.4735928999725729,
+      "tables": {
+        "reflections": 7880,
+        "powder_shells": 128,
+        "diffuse": 64
+      },
+      "actual_method": [
+        "directional_cell_moments_and_reciprocal_enumeration"
+      ]
+    },
+    "pxrd_atom_cut": {
+      "config_sha256": "9b7def72d4453ed13708af4fd8176bb18a0350073d6c9a0456a9a8441177ef25",
+      "scattering_case": "pxrd",
+      "boundary": "finite",
+      "host_atoms": 232,
+      "seconds": 0.1929276001174003,
+      "tables": {
+        "intensity": 64
+      },
+      "actual_method": [
+        "numpy_scipy_direct_debye"
+      ]
+    }
+  }
+}

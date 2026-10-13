@@ -1,0 +1,34 @@
+{
+  "moment_metadata": {
+    "method": "sampled",
+    "amplitude_units": "electron",
+    "variance_units": "electron^2",
+    "q_units": "angstrom^-1",
+    "normalization": "unnormalized total guest amplitude in supplied frame",
+    "mean_variance_description": "numerical variance of the complex mean amplitude estimate",
+    "physical_variance_description": "ensemble disorder variance, including whole-particle occupancy",
+    "device": "cpu",
+    "precision": "float64",
+    "independent_pores": true,
+    "seed": 20261013,
+    "n_samples": 2048,
+    "samples_per_pore": 2048,
+    "occupancy_counts": [
+      1412,
+      1450,
+      1449,
+      1442
+    ],
+    "template_counts": [
+      5753
+    ],
+    "mean_placement_attempts": 1.0,
+    "physical_variance_estimator": "unbiased complex sample variance",
+    "mean_variance_estimator": "sum of pore sample variances / samples_per_pore",
+    "number_weighted_sizes": true,
+    "negative_bias_corrected_intensities": "retained; increase sampling to resolve"
+  },
+  "actual_method": [
+    "sampled_local_guest_moments"
+  ]
+}

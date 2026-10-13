@@ -1,0 +1,8 @@
+{
+  "name": "finite_n20",
+  "kind": "finite",
+  "cells_per_edge": 20,
+  "points": 2049,
+  "qmax": 6,
+  "repeats": 3
+}

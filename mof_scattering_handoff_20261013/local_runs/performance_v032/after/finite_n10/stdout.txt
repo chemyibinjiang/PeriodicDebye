@@ -1,0 +1,1 @@
+{"case": "finite_n10", "median_seconds": 0.17989430017769337, "rss_MiB": 264.296875}

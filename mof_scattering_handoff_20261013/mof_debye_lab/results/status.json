@@ -1,0 +1,20 @@
+{
+  "executed": [
+    "numpy_reference",
+    "adapted_debyecalculator_forward_kernels_cpu",
+    "analytic_independent_pores",
+    "reference_monte_carlo",
+    "accelerated_kernel_monte_carlo",
+    "finite_full_cell_fft_grouping"
+  ],
+  "not_executed": [
+    "full_installed_debyecalculator_public_api",
+    "DEBUSSY",
+    "AES-Debye",
+    "CUDA"
+  ],
+  "tests_passed": 30,
+  "synthetic_host": true,
+  "infinite_lattice_implemented": false,
+  "upstream_file_blob_sha1": "89cd257ac681d3859457db7e8220cbc325c6953d"
+}

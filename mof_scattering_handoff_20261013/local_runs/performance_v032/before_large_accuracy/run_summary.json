@@ -1,0 +1,23 @@
+[
+  {
+    "case": "powder_n8",
+    "status": "completed",
+    "returncode": 0,
+    "worker_wall_seconds": 107.00146529986523,
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_modes.py",
+      "--worker",
+      "--project",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\baseline\\source\\mof_debye_lab",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\before_large_accuracy\\powder_n8",
+      "--threads",
+      "1",
+      "--case-file",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\before_large_accuracy\\powder_n8\\case.json"
+    ],
+    "median_seconds": 103.25874249986373,
+    "completed_timing_repeats": 1
+  }
+]

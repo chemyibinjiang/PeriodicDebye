@@ -1,0 +1,172 @@
+{
+  "output": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\pxrd_100nm\\runner_n40",
+  "tables": [
+    "numerical_error",
+    "intensity"
+  ],
+  "seconds": 5.413865799782798,
+  "actual_method": [
+    {
+      "method": "finite_full_cell_radial_moments",
+      "radial_transform": "nearest_center_moments_real_fft",
+      "moment_order": 8,
+      "radial_bin_width_A": 0.03990236058514699,
+      "radial_bins": 44499,
+      "fft_points": 157464,
+      "q_step_invA": 0.001,
+      "max_radius_A": 1775.5590850033066,
+      "radial_moment_bytes": 3203928,
+      "truncation_bound": "pointwise_absolute_Taylor_remainder_excludes_floating_point",
+      "zero_q": "exact_total_weight",
+      "numerical_backend": "numba_private_histograms_scipy_real_fft",
+      "n_cells": 64000,
+      "n_basis_atoms": 424,
+      "represented_atoms": 27136000,
+      "n_translations": 493039,
+      "original_basis_displacements": 11339,
+      "grouped_basis_displacements": 1526,
+      "displacement_symmetry": "cubic_signed_permutations",
+      "original_distance_entries": 5590569221,
+      "distance_entries": 752377514,
+      "merge_decimals": 12,
+      "displacement_merge": "rounded_keys_actual_input_representatives",
+      "max_merged_displacement_A": 9.565974336450906e-15,
+      "threads": 6,
+      "histogram_partitions": 6,
+      "histogram_private_workspace_bytes": 19223568,
+      "histogram_bytes": 32039280,
+      "memory_scope": "private histogram payload capped at 256 MiB; retained histograms, shape FFT, basis offsets, transform workspace and Python are additional",
+      "species_pairs": [
+        {
+          "elements": [
+            "C",
+            "C"
+          ],
+          "basis_offsets": 314,
+          "pair_count": 150994944000000,
+          "zero_distance_count": 12288000,
+          "distance_entries": 154814246,
+          "max_merged_displacement_A": 7.53644380168212e-15,
+          "weighted_displacement_error_A": 0.2872319717753022
+        },
+        {
+          "elements": [
+            "C",
+            "H"
+          ],
+          "basis_offsets": 297,
+          "pair_count": 75497472000000,
+          "zero_distance_count": 0,
+          "distance_entries": 146432583,
+          "max_merged_displacement_A": 8.702335715267317e-15,
+          "weighted_displacement_error_A": 0.1992899433032742
+        },
+        {
+          "elements": [
+            "C",
+            "O"
+          ],
+          "basis_offsets": 330,
+          "pair_count": 81788928000000,
+          "zero_distance_count": 0,
+          "distance_entries": 162702870,
+          "max_merged_displacement_A": 9.565974336450906e-15,
+          "weighted_displacement_error_A": 0.2696240357293434
+        },
+        {
+          "elements": [
+            "C",
+            "Zn"
+          ],
+          "basis_offsets": 113,
+          "pair_count": 25165824000000,
+          "zero_distance_count": 0,
+          "distance_entries": 55713407,
+          "max_merged_displacement_A": 6.153480596427404e-15,
+          "weighted_displacement_error_A": 0.05799068067442655
+        },
+        {
+          "elements": [
+            "H",
+            "H"
+          ],
+          "basis_offsets": 82,
+          "pair_count": 37748736000000,
+          "zero_distance_count": 6144000,
+          "distance_entries": 40429198,
+          "max_merged_displacement_A": 6.153480596427404e-15,
+          "weighted_displacement_error_A": 0.0842644034095388
+        },
+        {
+          "elements": [
+            "H",
+            "O"
+          ],
+          "basis_offsets": 160,
+          "pair_count": 40894464000000,
+          "zero_distance_count": 0,
+          "distance_entries": 78886240,
+          "max_merged_displacement_A": 8.881784197001252e-15,
+          "weighted_displacement_error_A": 0.12048338690121771
+        },
+        {
+          "elements": [
+            "H",
+            "Zn"
+          ],
+          "basis_offsets": 53,
+          "pair_count": 12582912000000,
+          "zero_distance_count": 0,
+          "distance_entries": 26131067,
+          "max_merged_displacement_A": 4.351167857633658e-15,
+          "weighted_displacement_error_A": 0.02323486470319589
+        },
+        {
+          "elements": [
+            "O",
+            "O"
+          ],
+          "basis_offsets": 99,
+          "pair_count": 44302336000000,
+          "zero_distance_count": 6656000,
+          "distance_entries": 48810861,
+          "max_merged_displacement_A": 9.057678187205881e-15,
+          "weighted_displacement_error_A": 0.13579322854497095
+        },
+        {
+          "elements": [
+            "O",
+            "Zn"
+          ],
+          "basis_offsets": 61,
+          "pair_count": 13631488000000,
+          "zero_distance_count": 0,
+          "distance_entries": 30075379,
+          "max_merged_displacement_A": 5.329070518200751e-15,
+          "weighted_displacement_error_A": 0.027736666088952717
+        },
+        {
+          "elements": [
+            "Zn",
+            "Zn"
+          ],
+          "basis_offsets": 17,
+          "pair_count": 4194304000000,
+          "zero_distance_count": 2048000,
+          "distance_entries": 8381663,
+          "max_merged_displacement_A": 0.0,
+          "weighted_displacement_error_A": 0.0
+        }
+      ],
+      "preprocessing_seconds": 5.076399199897423,
+      "last_evaluation_seconds": 0.18330680020153522,
+      "evaluation_count": 1,
+      "last_exact_selected_seconds": null,
+      "max_absolute_approximation_bound_electron2": 49.27384461802363,
+      "max_absolute_taylor_bound_electron2": 0.002034872615950577,
+      "max_absolute_grouping_bound_electron2": 49.27384224943422,
+      "approximation_bound": "pointwise absolute Taylor plus displacement-merge bound; excludes floating-point accumulation and FFT roundoff",
+      "fastmath": false
+    }
+  ]
+}

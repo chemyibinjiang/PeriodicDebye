@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "software_version": "0.2.0",
+  "config": {
+    "schema_version": "1.0",
+    "description": "Synthetic shared triclinic C/O/Zn cell and illustrative Au guest; no material fit.",
+    "scattering_case": "pxrd",
+    "boundary": "bulk",
+    "guest_estimator": "analytic",
+    "backend": "reference",
+    "device": "cpu",
+    "host": {
+      "xyz": "host_cell.xyz",
+      "cell_vectors_A": [
+        [
+          12.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          11.0,
+          0.0
+        ],
+        [
+          0.5,
+          1.5,
+          13.0
+        ]
+      ]
+    },
+    "pores": {
+      "centres_fractional": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    "particles": [
+      {
+        "xyz": "../Au_13.xyz",
+        "weight": 0.65
+      },
+      {
+        "xyz": "../Au_19.xyz",
+        "weight": 0.35
+      }
+    ],
+    "population": {
+      "occupancy": 0.6,
+      "displacement_sigma_A": 0.25,
+      "orientation": "uniform"
+    },
+    "statistics": {
+      "seed": 20261013,
+      "n_samples": 512
+    },
+    "sampling": {
+      "q": {
+        "min": 0.0,
+        "max": 2.0,
+        "points": 81
+      }
+    },
+    "angular": {
+      "n_mu": 12,
+      "n_phi": 24
+    }
+  },
+  "scattering_case": "pxrd",
+  "boundary": "bulk",
+  "guest_estimator": "analytic",
+  "backend_requested": "reference",
+  "device_actual": "cpu",
+  "seed": 20261013,
+  "input_sha256": {
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\modes\\host_cell.xyz": "325e15fb11319f2a1322586d6eb4a5143179cfcac5c74c60f866ecf4f5c2d824",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\Au_13.xyz": "633a3f506c3f43c2576bd3b60977ac2244ae7cef252906a0e0a7cc88f9d2d6a7",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\Au_19.xyz": "03de81a14c6de9c4fdb9637e453ea81fa60211fe46d5a835d888df71c1f3c1ca"
+  },
+  "units": {
+    "positions": "angstrom",
+    "q": "inverse angstrom",
+    "finite_intensity": "electron^2",
+    "diffuse_per_cell": "electron^2",
+    "bragg_weight": "electron^2 angstrom^-3",
+    "powder_radial_weight": "electron^2 angstrom^-1"
+  },
+  "form_factors": "neutral Gemmi IT92",
+  "output_statistic": "ensemble_mean",
+  "physical_assumptions": [
+    "kinematic elastic scattering",
+    "fixed host",
+    "independent pores",
+    "independent identically distributed cells for bulk",
+    "rigid guests",
+    "number-weighted template probabilities"
+  ],
+  "instrument_corrections": false,
+  "surface_policy": "explicit supplied atoms",
+  "uncertainty": "Numerical mean-amplitude variance is reported separately from physical disorder variance. No intensity SEM is claimed; refine angular grid and sample count.",
+  "sampled_moment_policy": "Unbiased variance and mean-square correction; finite-sample negative estimates are retained.",
+  "forward_weight": 84669.29846111535,
+  "bragg_measure_prefactor": 0.14455140643496428,
+  "bragg_convention": "Per-cell weight multiplying delta^3(q-G), includes (2*pi)^3/V. Never a peak height.",
+  "moment_metadata": {
+    "method": "analytic",
+    "amplitude_units": "electron",
+    "variance_units": "electron^2",
+    "q_units": "angstrom^-1",
+    "normalization": "unnormalized total guest amplitude in supplied frame",
+    "mean_variance_description": "numerical variance of the complex mean amplitude estimate",
+    "physical_variance_description": "ensemble disorder variance, including whole-particle occupancy",
+    "device": "cpu",
+    "precision": "float64",
+    "independent_pores": true,
+    "seed": null,
+    "n_samples": 0,
+    "orientation": "Haar-uniform SO(3)",
+    "displacement": "unbounded isotropic Gaussian",
+    "number_weighted_sizes": true
+  },
+  "powder_convention": "Radial density weight multiplying delta(q-|G|); sum over all G once / (4*pi*|G|^2). Forward weight separate.",
+  "actual_method": [
+    "directional_cell_moments_and_reciprocal_enumeration"
+  ],
+  "seconds": 0.0286767000798136,
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.2.0"
+    },
+    "cuda_available": false,
+    "torch_threads": 1,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    }
+  }
+}

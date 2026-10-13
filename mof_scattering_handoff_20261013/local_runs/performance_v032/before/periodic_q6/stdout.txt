@@ -1,0 +1,1 @@
+{"case": "periodic_q6", "median_seconds": 1.5060056999791414, "rss_MiB": 281.69921875}

@@ -1,0 +1,90 @@
+[
+  {
+    "case": "powder_n1",
+    "status": "completed",
+    "returncode": 0,
+    "worker_wall_seconds": 7.056288200197741,
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_modes.py",
+      "--worker",
+      "--project",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n1",
+      "--threads",
+      "1",
+      "--case-file",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n1\\case.json",
+      "--profile"
+    ],
+    "median_seconds": 0.28720810008235276,
+    "completed_timing_repeats": 3
+  },
+  {
+    "case": "powder_n2",
+    "status": "completed",
+    "returncode": 0,
+    "worker_wall_seconds": 7.392583099892363,
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_modes.py",
+      "--worker",
+      "--project",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n2",
+      "--threads",
+      "1",
+      "--case-file",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n2\\case.json",
+      "--profile"
+    ],
+    "median_seconds": 0.43844880000688136,
+    "completed_timing_repeats": 3
+  },
+  {
+    "case": "powder_n4",
+    "status": "completed",
+    "returncode": 0,
+    "worker_wall_seconds": 11.589745899895206,
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_modes.py",
+      "--worker",
+      "--project",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n4",
+      "--threads",
+      "1",
+      "--case-file",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n4\\case.json",
+      "--profile"
+    ],
+    "median_seconds": 1.4301278002094477,
+    "completed_timing_repeats": 3
+  },
+  {
+    "case": "powder_n8",
+    "status": "completed",
+    "returncode": 0,
+    "worker_wall_seconds": 243.02423109998927,
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_modes.py",
+      "--worker",
+      "--project",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n8",
+      "--threads",
+      "1",
+      "--case-file",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\after_radial\\powder_n8\\case.json",
+      "--profile"
+    ],
+    "median_seconds": 60.12423969991505,
+    "completed_timing_repeats": 3
+  }
+]

@@ -1,0 +1,1427 @@
+{
+  "schema_version": "0.2",
+  "status": "passed",
+  "seed": 20261013,
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.8",
+    "gemmi": "0.7.5",
+    "scipy": "1.17.1",
+    "cuda_available": false,
+    "torch_threads": 1,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "cpu_model": "12th Gen Intel(R) Core(TM) i5-12400"
+  },
+  "hardware_scope": "CPU only; GPU not exercised",
+  "precision": "float64",
+  "fixture": {
+    "description": "synthetic triclinic four-atom basis, full binary cell masks; not a chemical MOF",
+    "cell_rows_A": [
+      [
+        4.8,
+        0.0,
+        0.0
+      ],
+      [
+        1.1,
+        4.2,
+        0.0
+      ],
+      [
+        0.4,
+        0.7,
+        5.1
+      ]
+    ],
+    "basis_elements": [
+      "C",
+      "O",
+      "Zn",
+      "C"
+    ],
+    "basis_xyz_A": [
+      [
+        0.63,
+        0.7490000000000001,
+        1.173
+      ],
+      [
+        1.938,
+        1.379,
+        2.0909999999999997
+      ],
+      [
+        4.103,
+        3.465,
+        2.9069999999999996
+      ],
+      [
+        4.611,
+        2.107,
+        4.029
+      ]
+    ]
+  },
+  "timing_protocol": "one untimed warmup + 3 timed repetitions, one CPU thread; separate memory probe",
+  "initial_process_memory": {
+    "available": true,
+    "working_set_bytes": 295739392,
+    "process_lifetime_peak_working_set_bytes": 295739392,
+    "pagefile_bytes": 1041563648,
+    "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+  },
+  "benchmarks": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "n_cells": 8,
+      "n_atoms": 32,
+      "input_sha256": "c1447e624185398dabd177eb0a2631f454aafe751794a2e6317c927fb84014f5",
+      "cached_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0004205999430269003,
+          0.00031160004436969757,
+          0.0002747999969869852
+        ],
+        "median_seconds": 0.00031160004436969757,
+        "tracemalloc_probe_current_bytes": 6843,
+        "tracemalloc_probe_peak_bytes": 10835,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 295841792,
+          "process_lifetime_peak_working_set_bytes": 295841792,
+          "pagefile_bytes": 1041563648,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 296169472,
+          "process_lifetime_peak_working_set_bytes": 296169472,
+          "pagefile_bytes": 1041563648,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "streaming_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0003291000612080097,
+          0.0002210000529885292,
+          0.00018649990670382977
+        ],
+        "median_seconds": 0.0002210000529885292,
+        "tracemalloc_probe_current_bytes": 3331,
+        "tracemalloc_probe_peak_bytes": 7499,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 296169472,
+          "process_lifetime_peak_working_set_bytes": 296169472,
+          "pagefile_bytes": 1041563648,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 296177664,
+          "process_lifetime_peak_working_set_bytes": 296177664,
+          "pagefile_bytes": 1041563648,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "reference": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0011078000534325838,
+          0.0010859998874366283,
+          0.0014440000522881746
+        ],
+        "median_seconds": 0.0011078000534325838,
+        "tracemalloc_probe_current_bytes": 2282,
+        "tracemalloc_probe_peak_bytes": 837038,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 296177664,
+          "process_lifetime_peak_working_set_bytes": 296177664,
+          "pagefile_bytes": 1041563648,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 296546304,
+          "process_lifetime_peak_working_set_bytes": 296546304,
+          "pagefile_bytes": 1041874944,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "methods": {
+        "adapted_direct": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.002765499986708164,
+              0.003266100073233247,
+              0.0029553999193012714
+            ],
+            "median_seconds": 0.0029553999193012714,
+            "tracemalloc_probe_current_bytes": 2372,
+            "tracemalloc_probe_peak_bytes": 22024,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 296546304,
+              "process_lifetime_peak_working_set_bytes": 296546304,
+              "pagefile_bytes": 1041874944,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 300711936,
+              "process_lifetime_peak_working_set_bytes": 300711936,
+              "pagefile_bytes": 1075507200,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.0101765927007295e-16,
+            "scaled_max": 1.820212380771038e-16,
+            "max_absolute": 2.9103830456733704e-11,
+            "weakest_20_percent_max_absolute": 2.2737367544323206e-13,
+            "scaled_max_by_q_band": {
+              "all": 1.820212380771038e-16,
+              "q_ge_1": 2.360455717196477e-16,
+              "q_ge_5": 1.9040998232007614e-16
+            }
+          },
+          "metadata": {
+            "n_atoms": 32,
+            "n_pairs": 496,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 7743,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "direct",
+            "num_threads_jobs": 1,
+            "direct_q_chunk": 161,
+            "direct_pair_batch_size": 3105
+          }
+        },
+        "adapted_grid": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.006697800010442734,
+              0.005620000185444951,
+              0.005532999988645315
+            ],
+            "median_seconds": 0.005620000185444951,
+            "tracemalloc_probe_current_bytes": 2665,
+            "tracemalloc_probe_peak_bytes": 21976,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 300740608,
+              "process_lifetime_peak_working_set_bytes": 300740608,
+              "pagefile_bytes": 1075507200,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 311136256,
+              "process_lifetime_peak_working_set_bytes": 311136256,
+              "pagefile_bytes": 1080102912,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 6.385779841919377e-13,
+            "scaled_max": 4.082651047614089e-13,
+            "max_absolute": 6.527852747240104e-08,
+            "weakest_20_percent_max_absolute": 6.527852747240104e-08,
+            "scaled_max_by_q_band": {
+              "all": 4.082651047614089e-13,
+              "q_ge_1": 8.471026443695928e-12,
+              "q_ge_5": 2.7333162552064607e-11
+            }
+          },
+          "metadata": {
+            "n_atoms": 32,
+            "n_pairs": 496,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 7743,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "grid",
+            "num_threads_jobs": 1
+          }
+        },
+        "lattice_cached": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.0016950001008808613,
+              0.0013812000397592783,
+              0.00183450011536479
+            ],
+            "median_seconds": 0.0016950001008808613,
+            "tracemalloc_probe_current_bytes": 1544,
+            "tracemalloc_probe_peak_bytes": 183616,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 311136256,
+              "process_lifetime_peak_working_set_bytes": 311136256,
+              "pagefile_bytes": 1080102912,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 311136256,
+              "process_lifetime_peak_working_set_bytes": 311136256,
+              "pagefile_bytes": 1080102912,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.9697508048089656e-16,
+            "scaled_max": 2.7303185711565566e-16,
+            "max_absolute": 4.3655745685100555e-11,
+            "weakest_20_percent_max_absolute": 1.1368683772161603e-12,
+            "scaled_max_by_q_band": {
+              "all": 2.7303185711565566e-16,
+              "q_ge_1": 5.901139292991194e-16,
+              "q_ge_5": 5.712299469602284e-16
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 8,
+            "n_basis_atoms": 4,
+            "n_translations": 27,
+            "distance_entries": 297,
+            "estimated_distance_cache_bytes": 2376,
+            "distance_cache_bytes": 2376,
+            "cache_max_bytes": 67108864,
+            "distance_storage": "cached",
+            "translation_chunk": 8192,
+            "preprocessing_seconds": 0.00027139997109770775,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.00381799996830523,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        },
+        "lattice_streamed": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.0014307999517768621,
+              0.0012430001515895128,
+              0.0011513999197632074
+            ],
+            "median_seconds": 0.0012430001515895128,
+            "tracemalloc_probe_current_bytes": 1544,
+            "tracemalloc_probe_peak_bytes": 184248,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 311136256,
+              "process_lifetime_peak_working_set_bytes": 311136256,
+              "pagefile_bytes": 1080102912,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 311144448,
+              "process_lifetime_peak_working_set_bytes": 311144448,
+              "pagefile_bytes": 1080102912,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.9697508048089656e-16,
+            "scaled_max": 2.7303185711565566e-16,
+            "max_absolute": 4.3655745685100555e-11,
+            "weakest_20_percent_max_absolute": 1.1368683772161603e-12,
+            "scaled_max_by_q_band": {
+              "all": 2.7303185711565566e-16,
+              "q_ge_1": 5.901139292991194e-16,
+              "q_ge_5": 5.712299469602284e-16
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 8,
+            "n_basis_atoms": 4,
+            "n_translations": 27,
+            "distance_entries": 297,
+            "estimated_distance_cache_bytes": 2376,
+            "distance_cache_bytes": 0,
+            "cache_max_bytes": 0,
+            "distance_storage": "streamed",
+            "translation_chunk": 32,
+            "preprocessing_seconds": 0.00018339999951422215,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.0022654999047517776,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        }
+      },
+      "directional_explicit": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0006879998836666346,
+          0.000300500076264143,
+          0.00024979980662465096
+        ],
+        "median_seconds": 0.000300500076264143,
+        "tracemalloc_probe_current_bytes": 2744,
+        "tracemalloc_probe_peak_bytes": 217688,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 311144448,
+          "process_lifetime_peak_working_set_bytes": 311144448,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 311181312,
+          "process_lifetime_peak_working_set_bytes": 311181312,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_factorized": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0002996001858264208,
+          0.00022799987345933914,
+          0.00021570012904703617
+        ],
+        "median_seconds": 0.00022799987345933914,
+        "tracemalloc_probe_current_bytes": 2815,
+        "tracemalloc_probe_peak_bytes": 61919,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 311189504,
+          "process_lifetime_peak_working_set_bytes": 311189504,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 311201792,
+          "process_lifetime_peak_working_set_bytes": 311201792,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_amplitude_errors": {
+        "relative_l2": 1.226635591793132e-15,
+        "scaled_max": 8.104156654599712e-16,
+        "max_absolute": 3.2405734631855066e-13,
+        "weakest_20_percent_max_absolute": 2.9858271230825695e-13,
+        "scaled_max_by_q_band": {
+          "all": 8.104156654599712e-16,
+          "q_ge_1": 2.180654904584515e-15,
+          "q_ge_5": 3.3607604519562316e-15
+        }
+      }
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "n_cells": 27,
+      "n_atoms": 108,
+      "input_sha256": "2b659a2d9dcebedbcccc739befba56dfd8cc859ba5ba40abd952bf1fa313e4b5",
+      "cached_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.000780999893322587,
+          0.0007118999492377043,
+          0.0003932998515665531
+        ],
+        "median_seconds": 0.0007118999492377043,
+        "tracemalloc_probe_current_bytes": 20651,
+        "tracemalloc_probe_peak_bytes": 31699,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 311238656,
+          "process_lifetime_peak_working_set_bytes": 311238656,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 311275520,
+          "process_lifetime_peak_working_set_bytes": 311275520,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "streaming_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.00023740017786622047,
+          0.00017859996296465397,
+          0.00022580008953809738
+        ],
+        "median_seconds": 0.00022580008953809738,
+        "tracemalloc_probe_current_bytes": 8683,
+        "tracemalloc_probe_peak_bytes": 14419,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 311275520,
+          "process_lifetime_peak_working_set_bytes": 311275520,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 311275520,
+          "process_lifetime_peak_working_set_bytes": 311275520,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "reference": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.02325380011461675,
+          0.020825000014156103,
+          0.02196929999627173
+        ],
+        "median_seconds": 0.02196929999627173,
+        "tracemalloc_probe_current_bytes": 2338,
+        "tracemalloc_probe_peak_bytes": 9414882,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 311275520,
+          "process_lifetime_peak_working_set_bytes": 311275520,
+          "pagefile_bytes": 1080102912,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 316026880,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "methods": {
+        "adapted_direct": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.011441199807450175,
+              0.012743599945679307,
+              0.009284299798309803
+            ],
+            "median_seconds": 0.011441199807450175,
+            "tracemalloc_probe_current_bytes": 2299,
+            "tracemalloc_probe_peak_bytes": 21936,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 316026880,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 316354560,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.6746058890201708e-16,
+            "scaled_max": 2.5567866637990985e-16,
+            "max_absolute": 4.656612873077393e-10,
+            "weakest_20_percent_max_absolute": 3.637978807091713e-12,
+            "scaled_max_by_q_band": {
+              "all": 2.5567866637990985e-16,
+              "q_ge_1": 1.1816052996755391e-16,
+              "q_ge_5": 2.2163461050009967e-16
+            }
+          },
+          "metadata": {
+            "n_atoms": 108,
+            "n_pairs": 5778,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 12587,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "direct",
+            "num_threads_jobs": 1,
+            "direct_q_chunk": 161,
+            "direct_pair_batch_size": 3105
+          }
+        },
+        "adapted_grid": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.006497700000181794,
+              0.006538899848237634,
+              0.010082100052386522
+            ],
+            "median_seconds": 0.006538899848237634,
+            "tracemalloc_probe_current_bytes": 2665,
+            "tracemalloc_probe_peak_bytes": 21888,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 316354560,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 321925120,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 3.593867817637032e-13,
+            "scaled_max": 1.9719766454185348e-13,
+            "max_absolute": 3.591512722778134e-07,
+            "weakest_20_percent_max_absolute": 3.591512722778134e-07,
+            "scaled_max_by_q_band": {
+              "all": 1.9719766454185348e-13,
+              "q_ge_1": 1.1665132459854333e-11,
+              "q_ge_5": 4.376075648749743e-11
+            }
+          },
+          "metadata": {
+            "n_atoms": 108,
+            "n_pairs": 5778,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 12587,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "grid",
+            "num_threads_jobs": 1
+          }
+        },
+        "lattice_cached": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.0027161999605596066,
+              0.002470599953085184,
+              0.00277039990760386
+            ],
+            "median_seconds": 0.0027161999605596066,
+            "tracemalloc_probe_current_bytes": 1544,
+            "tracemalloc_probe_peak_bytes": 815520,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 321925120,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 321953792,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 5.554911557349366e-16,
+            "scaled_max": 8.948753323296844e-16,
+            "max_absolute": 1.6298145055770874e-09,
+            "weakest_20_percent_max_absolute": 9.094947017729282e-12,
+            "scaled_max_by_q_band": {
+              "all": 8.948753323296844e-16,
+              "q_ge_1": 1.0634447697079853e-15,
+              "q_ge_5": 1.6622595787507476e-15
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 27,
+            "n_basis_atoms": 4,
+            "n_translations": 125,
+            "distance_entries": 1375,
+            "estimated_distance_cache_bytes": 11000,
+            "distance_cache_bytes": 11000,
+            "cache_max_bytes": 67108864,
+            "distance_storage": "cached",
+            "translation_chunk": 8192,
+            "preprocessing_seconds": 0.0003891999367624521,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.0037177999038249254,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        },
+        "lattice_streamed": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.004301700042560697,
+              0.003958199871703982,
+              0.004143500002101064
+            ],
+            "median_seconds": 0.004143500002101064,
+            "tracemalloc_probe_current_bytes": 1544,
+            "tracemalloc_probe_peak_bytes": 216528,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 321957888,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 321974272,
+              "process_lifetime_peak_working_set_bytes": 325427200,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 4.834882946138283e-16,
+            "scaled_max": 7.670359991397296e-16,
+            "max_absolute": 1.3969838619232178e-09,
+            "weakest_20_percent_max_absolute": 1.0913936421275139e-11,
+            "scaled_max_by_q_band": {
+              "all": 7.670359991397296e-16,
+              "q_ge_1": 5.908026498377696e-16,
+              "q_ge_5": 6.64903831500299e-16
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 27,
+            "n_basis_atoms": 4,
+            "n_translations": 125,
+            "distance_entries": 1375,
+            "estimated_distance_cache_bytes": 11000,
+            "distance_cache_bytes": 0,
+            "cache_max_bytes": 0,
+            "distance_storage": "streamed",
+            "translation_chunk": 32,
+            "preprocessing_seconds": 0.00022249994799494743,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.00951940007507801,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        }
+      },
+      "directional_explicit": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0005630999803543091,
+          0.0007124000694602728,
+          0.0006006001494824886
+        ],
+        "median_seconds": 0.0006006001494824886,
+        "tracemalloc_probe_current_bytes": 2744,
+        "tracemalloc_probe_peak_bytes": 567416,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 321978368,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 321990656,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_factorized": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.00035009998828172684,
+          0.00048379995860159397,
+          0.0004171000327914953
+        ],
+        "median_seconds": 0.0004171000327914953,
+        "tracemalloc_probe_current_bytes": 2815,
+        "tracemalloc_probe_peak_bytes": 185191,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 321990656,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 321990656,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_amplitude_errors": {
+        "relative_l2": 1.3614931015493492e-15,
+        "scaled_max": 7.989396786324607e-16,
+        "max_absolute": 1.0782061671155942e-12,
+        "weakest_20_percent_max_absolute": 8.792927682878405e-13,
+        "scaled_max_by_q_band": {
+          "all": 7.989396786324607e-16,
+          "q_ge_1": 3.191988999344762e-15,
+          "q_ge_5": 5.7274961145108266e-15
+        }
+      }
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "n_cells": 64,
+      "n_atoms": 256,
+      "input_sha256": "a14287ac48841df9922f7a486e358b6d3d94a7c4e33b116da40de5da4780f612",
+      "cached_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0004819000605493784,
+          0.0004797999281436205,
+          0.0005636999849230051
+        ],
+        "median_seconds": 0.0004819000605493784,
+        "tracemalloc_probe_current_bytes": 52043,
+        "tracemalloc_probe_peak_bytes": 78815,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 322002944,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 322015232,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "streaming_preprocessing": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.00031659984961152077,
+          0.0002855001948773861,
+          0.0003285000566393137
+        ],
+        "median_seconds": 0.00031659984961152077,
+        "tracemalloc_probe_current_bytes": 20837,
+        "tracemalloc_probe_peak_bytes": 33005,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 322015232,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 322015232,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "reference": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.1415196000598371,
+          0.14009100012481213,
+          0.15605230000801384
+        ],
+        "median_seconds": 0.1415196000598371,
+        "tracemalloc_probe_current_bytes": 2294,
+        "tracemalloc_probe_peak_bytes": 24078686,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 322015232,
+          "process_lifetime_peak_working_set_bytes": 325427200,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 322064384,
+          "process_lifetime_peak_working_set_bytes": 346075136,
+          "pagefile_bytes": 1084821504,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "methods": {
+        "adapted_direct": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.058939999900758266,
+              0.052418299950659275,
+              0.05058080004528165
+            ],
+            "median_seconds": 0.052418299950659275,
+            "tracemalloc_probe_current_bytes": 2372,
+            "tracemalloc_probe_peak_bytes": 21848,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 322068480,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 324108288,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.7874056728099808e-16,
+            "scaled_max": 2.7303185711565566e-16,
+            "max_absolute": 2.7939677238464355e-09,
+            "weakest_20_percent_max_absolute": 2.1827872842550278e-11,
+            "scaled_max_by_q_band": {
+              "all": 2.7303185711565566e-16,
+              "q_ge_1": 5.184115312793494e-16,
+              "q_ge_5": 3.5269648146815695e-16
+            }
+          },
+          "metadata": {
+            "n_atoms": 256,
+            "n_pairs": 32640,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 17434,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "direct",
+            "num_threads_jobs": 1,
+            "direct_q_chunk": 161,
+            "direct_pair_batch_size": 3105
+          }
+        },
+        "adapted_grid": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.008910899981856346,
+              0.008949500042945147,
+              0.011024600127711892
+            ],
+            "median_seconds": 0.008949500042945147,
+            "tracemalloc_probe_current_bytes": 2665,
+            "tracemalloc_probe_peak_bytes": 21848,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 324108288,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1084821504,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 330850304,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1089425408,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 2.253678585455241e-13,
+            "scaled_max": 9.678143885708038e-14,
+            "max_absolute": 9.903760656015947e-07,
+            "weakest_20_percent_max_absolute": 9.903760656015947e-07,
+            "scaled_max_by_q_band": {
+              "all": 9.678143885708038e-14,
+              "q_ge_1": 1.176070559908379e-11,
+              "q_ge_5": 4.800772244564002e-11
+            }
+          },
+          "metadata": {
+            "n_atoms": 256,
+            "n_pairs": 32640,
+            "distance_grid_A": 0.001953125,
+            "n_nodes": 17434,
+            "precision": "float64",
+            "num_threads_requested": 1,
+            "device": "cpu",
+            "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+            "direct_pair_q_entries_limit": 500000,
+            "grid_memory_is_capped": false,
+            "actual_method": "grid",
+            "num_threads_jobs": 1
+          }
+        },
+        "lattice_cached": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.006152600049972534,
+              0.0064651998691260815,
+              0.007038099924102426
+            ],
+            "median_seconds": 0.0064651998691260815,
+            "tracemalloc_probe_current_bytes": 1544,
+            "tracemalloc_probe_peak_bytes": 2221212,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 330850304,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1089425408,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 330850304,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1089425408,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.1197654408052821e-15,
+            "scaled_max": 1.1831380475011745e-15,
+            "max_absolute": 1.210719347000122e-08,
+            "weakest_20_percent_max_absolute": 2.128217602148652e-10,
+            "scaled_max_by_q_band": {
+              "all": 1.1831380475011745e-15,
+              "q_ge_1": 2.5272562149868283e-15,
+              "q_ge_5": 1.5871341666067064e-15
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 64,
+            "n_basis_atoms": 4,
+            "n_translations": 343,
+            "distance_entries": 3773,
+            "estimated_distance_cache_bytes": 30184,
+            "distance_cache_bytes": 30184,
+            "cache_max_bytes": 67108864,
+            "distance_storage": "cached",
+            "translation_chunk": 8192,
+            "preprocessing_seconds": 0.0005578999407589436,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.008285799995064735,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        },
+        "lattice_streamed": {
+          "timing": {
+            "warmups": 1,
+            "repeats_seconds": [
+              0.012019500136375427,
+              0.009871899848803878,
+              0.009797400096431375
+            ],
+            "median_seconds": 0.009871899848803878,
+            "tracemalloc_probe_current_bytes": 1560,
+            "tracemalloc_probe_peak_bytes": 216592,
+            "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+            "process_before": {
+              "available": true,
+              "working_set_bytes": 330850304,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1089425408,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            },
+            "process_after": {
+              "available": true,
+              "working_set_bytes": 330854400,
+              "process_lifetime_peak_working_set_bytes": 346075136,
+              "pagefile_bytes": 1089425408,
+              "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+            }
+          },
+          "errors": {
+            "relative_l2": 1.49794397229128e-15,
+            "scaled_max": 2.0022336188481415e-15,
+            "max_absolute": 2.0489096641540527e-08,
+            "weakest_20_percent_max_absolute": 2.1464074961841106e-10,
+            "scaled_max_by_q_band": {
+              "all": 2.0022336188481415e-15,
+              "q_ge_1": 2.548856695456801e-15,
+              "q_ge_5": 8.817412036703925e-16
+            }
+          },
+          "metadata": {
+            "method": "full_cell_lattice_grouped",
+            "n_cells": 64,
+            "n_basis_atoms": 4,
+            "n_translations": 343,
+            "distance_entries": 3773,
+            "estimated_distance_cache_bytes": 30184,
+            "distance_cache_bytes": 0,
+            "cache_max_bytes": 0,
+            "distance_storage": "streamed",
+            "translation_chunk": 32,
+            "preprocessing_seconds": 0.00032529979944229126,
+            "evaluation_count": 5,
+            "last_evaluation_seconds": 0.025379400001838803,
+            "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+          }
+        }
+      },
+      "directional_explicit": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.001235700212419033,
+          0.0015352999325841665,
+          0.001570400083437562
+        ],
+        "median_seconds": 0.0015352999325841665,
+        "tracemalloc_probe_current_bytes": 2744,
+        "tracemalloc_probe_peak_bytes": 1331096,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 330858496,
+          "process_lifetime_peak_working_set_bytes": 346075136,
+          "pagefile_bytes": 1089425408,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 330870784,
+          "process_lifetime_peak_working_set_bytes": 346075136,
+          "pagefile_bytes": 1089425408,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_factorized": {
+        "warmups": 1,
+        "repeats_seconds": [
+          0.0006814999505877495,
+          0.000650899950414896,
+          0.0006430000066757202
+        ],
+        "median_seconds": 0.000650899950414896,
+        "tracemalloc_probe_current_bytes": 2815,
+        "tracemalloc_probe_peak_bytes": 391455,
+        "tracemalloc_scope": "separate evaluation; Python and registered NumPy allocations, not all native/Torch memory",
+        "process_before": {
+          "available": true,
+          "working_set_bytes": 330878976,
+          "process_lifetime_peak_working_set_bytes": 346075136,
+          "pagefile_bytes": 1089425408,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        },
+        "process_after": {
+          "available": true,
+          "working_set_bytes": 330883072,
+          "process_lifetime_peak_working_set_bytes": 346075136,
+          "pagefile_bytes": 1089425408,
+          "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+        }
+      },
+      "directional_amplitude_errors": {
+        "relative_l2": 1.652186558254657e-15,
+        "scaled_max": 9.491329394651704e-16,
+        "max_absolute": 3.0362048985520324e-12,
+        "weakest_20_percent_max_absolute": 1.6633737382275469e-12,
+        "scaled_max_by_q_band": {
+          "all": 9.491329394651704e-16,
+          "q_ge_1": 5.1398336824843406e-15,
+          "q_ge_5": 7.297714160369855e-15
+        }
+      }
+    }
+  ],
+  "angular_convergence": [
+    {
+      "n_mu": 24,
+      "n_phi": 48,
+      "seconds": 0.03282369999215007,
+      "errors_vs_debye": {
+        "relative_l2": 0.0002664173817813017,
+        "scaled_max": 0.000176981979731008,
+        "max_absolute": 28.298090851389816,
+        "weakest_20_percent_max_absolute": 28.298090851389816,
+        "scaled_max_by_q_band": {
+          "all": 0.000176981979731008,
+          "q_ge_1": 0.003672170393389787,
+          "q_ge_5": 0.011848862820644146
+        }
+      },
+      "errors_vs_previous": null
+    },
+    {
+      "n_mu": 48,
+      "n_phi": 96,
+      "seconds": 0.11471239989623427,
+      "errors_vs_debye": {
+        "relative_l2": 2.986821068226237e-09,
+        "scaled_max": 3.6293052049814238e-09,
+        "max_absolute": 0.0005802986754588346,
+        "weakest_20_percent_max_absolute": 0.0005802986754588346,
+        "scaled_max_by_q_band": {
+          "all": 3.6293052049814238e-09,
+          "q_ge_1": 7.530386507464982e-08,
+          "q_ge_5": 2.4298032812964596e-07
+        }
+      },
+      "errors_vs_previous": {
+        "relative_l2": 0.00026641594536352595,
+        "scaled_max": 0.00017698065044705714,
+        "max_absolute": 28.297878308858344,
+        "weakest_20_percent_max_absolute": 28.297878308858344,
+        "scaled_max_by_q_band": {
+          "all": 0.00017698065044705714,
+          "q_ge_1": 0.0036721428122949602,
+          "q_ge_5": 0.011742858521730818
+        }
+      }
+    },
+    {
+      "n_mu": 96,
+      "n_phi": 192,
+      "seconds": 0.448138999985531,
+      "errors_vs_debye": {
+        "relative_l2": 1.7838530414398477e-15,
+        "scaled_max": 1.4561699046168303e-15,
+        "max_absolute": 2.3283064365386963e-10,
+        "weakest_20_percent_max_absolute": 5.911715561524034e-11,
+        "scaled_max_by_q_band": {
+          "all": 1.4561699046168303e-15,
+          "q_ge_1": 2.3014443242665655e-14,
+          "q_ge_5": 1.27574688154451e-14
+        }
+      },
+      "errors_vs_previous": {
+        "relative_l2": 2.9868209695276416e-09,
+        "scaled_max": 3.629305078419777e-09,
+        "max_absolute": 0.0005802986552225775,
+        "weakest_20_percent_max_absolute": 0.0005802986552225775,
+        "scaled_max_by_q_band": {
+          "all": 3.629305078419777e-09,
+          "q_ge_1": 7.530386244864308e-08,
+          "q_ge_5": 2.4298031966692586e-07
+        }
+      }
+    }
+  ],
+  "ensemble_checks": {
+    "occupancy_probability": 0.37,
+    "n_cells": 3,
+    "enumerated_states": 8,
+    "iid_errors": {
+      "relative_l2": 4.278463345140639e-16,
+      "scaled_max": 3.5895435515128153e-16,
+      "max_absolute": 2.1827872842550278e-11,
+      "weakest_20_percent_max_absolute": 8.185452315956354e-12
+    },
+    "bernoulli_variance_errors": {
+      "relative_l2": 1.1407941263456074e-16,
+      "scaled_max": 1.5646400074140476e-16,
+      "max_absolute": 2.2737367544323206e-13,
+      "weakest_20_percent_max_absolute": 5.684341886080802e-14
+    },
+    "repeated_random_cell_error": {
+      "relative_l2": 0.20146517502474795,
+      "scaled_max": 0.14338536079001216,
+      "max_absolute": 8719.207269371407,
+      "weakest_20_percent_max_absolute": 2175.291153741835
+    },
+    "whole_particle_occupancy_errors": {
+      "relative_l2": 3.188477280953687e-16,
+      "scaled_max": 4.142100559824699e-16,
+      "max_absolute": 7.275957614183426e-12,
+      "weakest_20_percent_max_absolute": 2.2737367544323206e-13
+    }
+  },
+  "bulk_checks": {
+    "n_nonzero_reflections": 368,
+    "n_shells": 180,
+    "reciprocal_identity_error": 1.0746235788310674e-16,
+    "diffuse_errors": {
+      "relative_l2": 5.936619405596827e-16,
+      "scaled_max": 1.408176006672643e-15,
+      "max_absolute": 2.0463630789890885e-12,
+      "weakest_20_percent_max_absolute": 1.0231815394945443e-12,
+      "scaled_max_by_q_band": {
+        "all": 1.408176006672643e-15,
+        "q_ge_1": 1.5010690198965564e-15,
+        "q_ge_5": 1.4028909065828731e-15
+      }
+    },
+    "forward_weight_separate": 15132.14014442753,
+    "normalization": "per cell: Bragg W_G=(2pi)^3/V |mean F(G)|^2 multiplying delta^3(q-G); radial W_G/(4pi G^2) multiplying delta(q-G)",
+    "fejer_convergence": [
+      {
+        "linear_cells": 2,
+        "cells_in_3d": 8,
+        "geometric_integrated_mass": 2.4125643230858866,
+        "bulk_measure_prefactor": 2.4125643230858866,
+        "mass_relative_error": 0.0,
+        "smooth_cosine_product_integral": 0.125,
+        "exact_smooth_integral": 0.125,
+        "bulk_smooth_limit": 1.0,
+        "smooth_limit_error": 0.875
+      },
+      {
+        "linear_cells": 4,
+        "cells_in_3d": 64,
+        "geometric_integrated_mass": 2.4125643230858866,
+        "bulk_measure_prefactor": 2.4125643230858866,
+        "mass_relative_error": 0.0,
+        "smooth_cosine_product_integral": 0.421875,
+        "exact_smooth_integral": 0.421875,
+        "bulk_smooth_limit": 1.0,
+        "smooth_limit_error": 0.578125
+      },
+      {
+        "linear_cells": 8,
+        "cells_in_3d": 512,
+        "geometric_integrated_mass": 2.4125643230858866,
+        "bulk_measure_prefactor": 2.4125643230858866,
+        "mass_relative_error": 0.0,
+        "smooth_cosine_product_integral": 0.669921875,
+        "exact_smooth_integral": 0.669921875,
+        "bulk_smooth_limit": 1.0,
+        "smooth_limit_error": 0.330078125
+      },
+      {
+        "linear_cells": 16,
+        "cells_in_3d": 4096,
+        "geometric_integrated_mass": 2.4125643230858866,
+        "bulk_measure_prefactor": 2.4125643230858866,
+        "mass_relative_error": 0.0,
+        "smooth_cosine_product_integral": 0.823974609375,
+        "exact_smooth_integral": 0.823974609375,
+        "bulk_smooth_limit": 1.0,
+        "smooth_limit_error": 0.176025390625
+      },
+      {
+        "linear_cells": 32,
+        "cells_in_3d": 32768,
+        "geometric_integrated_mass": 2.4125643230858884,
+        "bulk_measure_prefactor": 2.4125643230858866,
+        "mass_relative_error": 6.661338147750939e-16,
+        "smooth_cosine_product_integral": 0.9091491699218753,
+        "exact_smooth_integral": 0.909149169921875,
+        "bulk_smooth_limit": 1.0,
+        "smooth_limit_error": 0.09085083007812467
+      }
+    ],
+    "fejer_scope": "production shape amplitude compared to exact kernel; integrated geometric mass and smooth observable over reciprocal primitive cell"
+  },
+  "final_process_memory": {
+    "available": true,
+    "working_set_bytes": 380358656,
+    "process_lifetime_peak_working_set_bytes": 384790528,
+    "pagefile_bytes": 1136357376,
+    "scope": "whole process including Python, loaded libraries, native arrays and prior phases; not per-method peak"
+  },
+  "artifacts": [
+    "angular_refinement.csv",
+    "bulk_diffuse.csv",
+    "bulk_powder_shells.csv",
+    "bulk_reflections.csv",
+    "finite_powder_n2.csv",
+    "finite_powder_n3.csv",
+    "finite_powder_n4.csv",
+    "finite_shape_line.csv",
+    "raw_arrays.npz",
+    "three_modes.pdf",
+    "three_modes.png"
+  ]
+}

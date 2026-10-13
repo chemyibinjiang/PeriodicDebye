@@ -1,0 +1,109 @@
+{
+  "material": "IRMOF-1 (MOF-5)",
+  "record_type": "RASPA reference simulation structure of a real published MOF; not claimed to be an experimental CIF deposition",
+  "accessed_on": "2026-10-13",
+  "upstream_repository": "https://github.com/iRASPA/RASPA2",
+  "upstream_commit": "6498ab1eec9c8e0f063dcd0d71dd7add372c529b",
+  "cif": {
+    "file": "IRMOF-1.cif",
+    "source_url": "https://raw.githubusercontent.com/iRASPA/RASPA2/6498ab1eec9c8e0f063dcd0d71dd7add372c529b/structures/mofs/cif/IRMOF-1.cif",
+    "sha256": "e5d0b3d72445c15cd2ed02a36fa2fdf3d5d13f6c21441984475449d48d3f0ad2",
+    "modified": false,
+    "audit_creation_method": "RASPA-1.0",
+    "audit_creation_date": "2011-3-3",
+    "audit_author_name": "David Dubbeldam"
+  },
+  "license": {
+    "identifier": "MIT",
+    "scope_evidence": "RASPA2 repository COPYING; no per-structure license exception identified",
+    "file": "RASPA2-COPYING.txt",
+    "source_url": "https://raw.githubusercontent.com/iRASPA/RASPA2/6498ab1eec9c8e0f063dcd0d71dd7add372c529b/COPYING",
+    "sha256": "aebcbd8e5a88df1a63cccab064a3a134aebaa839181ee657426b94ea8c10441b"
+  },
+  "publication_cited_in_cif": {
+    "authors": "M. Eddaoudi, J. Kim, N. Rosi, D. Vodak, J. Wachter, M. O'Keeffe, O. M. Yaghi",
+    "title": "Systematic design of pore size and functionality in isoreticular MOFs and their application in methane storage",
+    "journal": "Science",
+    "year": 2002,
+    "volume": 295,
+    "issue": 5554,
+    "pages": "469-472",
+    "doi": "10.1126/science.1067208",
+    "doi_metadata_verified_at": "https://pubmed.ncbi.nlm.nih.gov/11799235/",
+    "full_text_used": false
+  },
+  "structural_expectations": {
+    "space_group_HM": "F m -3 m",
+    "space_group_number": 225,
+    "cell_parameters_A_degrees": [
+      25.832,
+      25.832,
+      25.832,
+      90.0,
+      90.0,
+      90.0
+    ],
+    "calculated_cell_volume_A3": 17237.492730368,
+    "asymmetric_unit_sites": 7,
+    "explicit_symmetry_operations": 192,
+    "expanded_unit_cell_atoms": 424,
+    "expanded_composition": {
+      "C": 192,
+      "H": 96,
+      "O": 104,
+      "Zn": 32
+    },
+    "expanded_label_multiplicities": {
+      "Zn1": 32,
+      "O1": 8,
+      "O2": 96,
+      "C1": 48,
+      "C2": 48,
+      "C3": 96,
+      "H1": 96
+    },
+    "formula_units_per_conventional_cell": 8,
+    "framework_formula": "Zn4 O13 C24 H12"
+  },
+  "independent_pre_import_crosscheck": {
+    "gemmi_version": "0.7.5",
+    "ase_version": "3.22.1",
+    "methods": [
+      "gemmi.make_small_structure_from_block(...).get_all_unit_cell_sites()",
+      "ase.io.read(...)"
+    ],
+    "expanded_coordinate_sets_match_at_fractional_decimal_places": 8,
+    "ase_warning": "ASE warns it does not interpret the cubic crystal-system label; the explicit operators expand to the same 424 coordinates as Gemmi."
+  },
+  "preprocessing_policy": {
+    "solvent": "Source contains only framework Zn/O/C/H; no solvent deletion is applied.",
+    "hydrogen": "All source hydrogen atoms are retained; none are added or relaxed.",
+    "occupancy": "Source has no occupancy column; use crystallographic default occupancy 1, rejecting partial sites if later substituted.",
+    "disorder": "No source disorder groups or alternative positions are declared; no disorder reconstruction is inferred.",
+    "charges": "Source atom charges are zero; scattering uses neutral IT92 form factors, not force-field charges.",
+    "thermal_motion": "Source has no ADPs; current examples use fixed atoms and no thermal attenuation.",
+    "optimization": "No optimization method or experimental specimen identity is established by this source.",
+    "surfaces": "Default finite examples keep complete conventionally wrapped cells; pxrd_atom_cut.json additionally intersects one cell with the declared sphere. No surface passivation, bond completion, or relaxation is performed.",
+    "pores_and_guests": "Omitted. This source does not supply validated nanoparticle pore sites, template populations, or experimental guest statistics."
+  },
+  "upstream_caveat_url": "https://github.com/iRASPA/RASPA2/blob/6498ab1eec9c8e0f063dcd0d71dd7add372c529b/README.md",
+  "upstream_caveat": "RASPA marks structure, molecule and force-field inputs as software examples requiring validation for new systems.",
+  "atom_cut_expectations": {
+    "config": "pxrd_atom_cut.json",
+    "centre_A": [
+      12.916,
+      12.916,
+      12.916
+    ],
+    "radius_A": 12.0,
+    "candidate_cells": 1,
+    "retained_atoms": 232,
+    "retained_composition": {
+      "C": 96,
+      "H": 48,
+      "O": 56,
+      "Zn": 32
+    },
+    "check_method": "Euclidean radius selection on independently symmetry-expanded and modulo-one-wrapped conventional-cell coordinates."
+  }
+}

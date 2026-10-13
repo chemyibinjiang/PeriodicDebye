@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.1",
+  "guest_estimator": "analytic",
+  "backend": "reference",
+  "device": "cpu",
+  "host": {
+    "cif": "IRMOF-1.cif",
+    "cif_options": {
+      "occupancy_policy": "require_full"
+    }
+  },
+  "boundary": "bulk",
+  "scattering_case": "single_crystal_periodic",
+  "sampling": {
+    "reflection_q_max": 10
+  },
+  "angular": {
+    "n_mu": 24,
+    "n_phi": 48
+  }
+}

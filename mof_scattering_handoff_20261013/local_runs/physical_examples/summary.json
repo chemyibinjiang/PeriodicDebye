@@ -1,0 +1,366 @@
+{
+  "status": "passed",
+  "purpose": "Known-solution correctness tests, not performance benchmarks",
+  "physical_examples": 8,
+  "checks": [
+    {
+      "name": "single_atom_directional",
+      "equation": "I(q) = f_C(q)^2, independent of position and direction",
+      "points": 241,
+      "max_absolute_error": 1.0658141036401503e-14,
+      "max_error_divided_by_reference_scale": 2.961384382188834e-16,
+      "reference_scale": 35.990400640000004,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "single_atom_powder",
+      "equation": "I_powder(q) = f_C(q)^2",
+      "points": 241,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 35.990400640000004,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "dimer_directional",
+      "equation": "I_parallel = 2 f^2 [1 + cos(q d)]",
+      "points": 241,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_error_divided_by_reference_scale": 1.974256254792556e-16,
+      "reference_scale": 143.96160256000002,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "dimer_powder",
+      "equation": "I_powder = 2 f^2 [1 + sin(q d)/(q d)]",
+      "points": 241,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_error_divided_by_reference_scale": 1.974256254792556e-16,
+      "reference_scale": 143.96160256000002,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "dimer_transverse",
+      "equation": "I_perpendicular = 4 f^2",
+      "points": 241,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 143.96160256000002,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "dimer_exact_interference_zeros",
+      "equation": "I(q d = odd pi) = 0",
+      "points": 3,
+      "max_absolute_error": 1.0655023615936443e-30,
+      "max_error_divided_by_reference_scale": 1.0655023615936443e-30,
+      "reference_scale": 1.0,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "finite_chain_explicit",
+      "equation": "I = f^2 [sin(N q d/2)/sin(q d/2)]^2; reciprocal-node limit N^2 f^2",
+      "points": 243,
+      "max_absolute_error": 2.5011104298755527e-12,
+      "max_error_divided_by_reference_scale": 8.579483971444194e-16,
+      "reference_scale": 2915.2224518400003,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "finite_chain_factorized",
+      "equation": "Same finite-chain grating law through complete-cell factorization",
+      "points": 243,
+      "max_absolute_error": 2.5011104298755527e-12,
+      "max_error_divided_by_reference_scale": 8.579483971444194e-16,
+      "reference_scale": 2915.2224518400003,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "finite_chain_powder",
+      "equation": "I/f^2 = N + 2 sum_{m=1}^{N-1} (N-m) sinc(q m d)",
+      "points": 243,
+      "max_absolute_error": 9.094947017729282e-13,
+      "max_error_divided_by_reference_scale": 3.119812353252434e-16,
+      "reference_scale": 2915.2224518400003,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_complete_reflection_set",
+      "equation": "Independent integer sphere enumeration: 0 < h^2+k^2+l^2 <= (q_max a/2pi)^2",
+      "points": 750,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 3.0,
+      "allowed_scaled_error": 0,
+      "passed": true
+    },
+    {
+      "name": "bcc_reciprocal_vectors",
+      "equation": "Cubic G = (2pi/a)(h,k,l)",
+      "points": 750,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 4.71238898038469,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_reciprocal_radii",
+      "equation": "|G| = (2pi/a) sqrt(h^2+k^2+l^2)",
+      "points": 250,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_error_divided_by_reference_scale": 7.555902170118355e-17,
+      "reference_scale": 5.877381679269498,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_structure_factor",
+      "equation": "BCC: F/f=1+(-1)^(h+k+l)",
+      "points": 250,
+      "max_absolute_error": 1.5736619924955444e-30,
+      "max_error_divided_by_reference_scale": 2.5943893441551386e-32,
+      "reference_scale": 60.656354299358505,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_bragg_measure",
+      "equation": "W_G = (2 pi)^3/V |F_G|^2",
+      "points": 250,
+      "max_absolute_error": 8.526512829121202e-14,
+      "max_error_divided_by_reference_scale": 3.626899443990197e-16,
+      "reference_scale": 235.09096297802537,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_powder_shell_radii",
+      "equation": "Independent integer-shell radii",
+      "points": 13,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_error_divided_by_reference_scale": 7.555902170118355e-17,
+      "reference_scale": 5.877381679269498,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bcc_powder_multiplicity",
+      "equation": "Independent count of all signed/permuted reciprocal vectors in each shell",
+      "points": 13,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 48.0,
+      "allowed_scaled_error": 0,
+      "passed": true
+    },
+    {
+      "name": "bcc_powder_radial_weights",
+      "equation": "Each cubic h^2+k^2+l^2 shell: sum W_G/(4 pi |G|^2), counting every reciprocal vector once",
+      "points": 13,
+      "max_absolute_error": 2.1316282072803006e-14,
+      "max_error_divided_by_reference_scale": 4.685693652166067e-16,
+      "reference_scale": 45.49226572451888,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_complete_reflection_set",
+      "equation": "Independent integer sphere enumeration: 0 < h^2+k^2+l^2 <= (q_max a/2pi)^2",
+      "points": 750,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 3.0,
+      "allowed_scaled_error": 0,
+      "passed": true
+    },
+    {
+      "name": "fcc_reciprocal_vectors",
+      "equation": "Cubic G = (2pi/a)(h,k,l)",
+      "points": 750,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 4.71238898038469,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_reciprocal_radii",
+      "equation": "|G| = (2pi/a) sqrt(h^2+k^2+l^2)",
+      "points": 250,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_error_divided_by_reference_scale": 7.555902170118355e-17,
+      "reference_scale": 5.877381679269498,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_structure_factor",
+      "equation": "FCC: F/f=4 for all h,k,l same parity; otherwise 0",
+      "points": 250,
+      "max_absolute_error": 2.2660732691935835e-30,
+      "max_error_divided_by_reference_scale": 1.2689108956498266e-32,
+      "reference_scale": 178.58411311324556,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_bragg_measure",
+      "equation": "W_G = (2 pi)^3/V |F_G|^2",
+      "points": 250,
+      "max_absolute_error": 2.2737367544323206e-13,
+      "max_error_divided_by_reference_scale": 3.2850178192996836e-16,
+      "reference_scale": 692.1535527369064,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_powder_shell_radii",
+      "equation": "Independent integer-shell radii",
+      "points": 13,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_error_divided_by_reference_scale": 7.555902170118355e-17,
+      "reference_scale": 5.877381679269498,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "fcc_powder_multiplicity",
+      "equation": "Independent count of all signed/permuted reciprocal vectors in each shell",
+      "points": 13,
+      "max_absolute_error": 0.0,
+      "max_error_divided_by_reference_scale": 0.0,
+      "reference_scale": 48.0,
+      "allowed_scaled_error": 0,
+      "passed": true
+    },
+    {
+      "name": "fcc_powder_radial_weights",
+      "equation": "Each cubic h^2+k^2+l^2 shell: sum W_G/(4 pi |G|^2), counting every reciprocal vector once",
+      "points": 13,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_error_divided_by_reference_scale": 2.387254017302839e-16,
+      "reference_scale": 59.5280377044152,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "bernoulli_occupancy_q0",
+      "equation": "E I = (1-p) f_C^2 + p (f_C+f_Au)^2, including p(1-p) f_Au^2 variance",
+      "points": 51,
+      "max_absolute_error": 1.8189894035458565e-12,
+      "max_error_divided_by_reference_scale": 2.5202171756861876e-16,
+      "reference_scale": 7217.589900960001,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "gaussian_finite_total",
+      "equation": "E I = |f_C + p f_Au exp(-sigma^2 q^2/2) exp(i q.r)|^2 + diffuse",
+      "points": 241,
+      "max_absolute_error": 9.094947017729282e-13,
+      "max_error_divided_by_reference_scale": 3.377026242232238e-16,
+      "reference_scale": 2693.1822157584,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "gaussian_physical_diffuse",
+      "equation": "diffuse = f_Au^2 [p - p^2 exp(-sigma^2 q^2)]",
+      "points": 241,
+      "max_absolute_error": 4.547473508864641e-13,
+      "max_error_divided_by_reference_scale": 2.9391962060731825e-16,
+      "reference_scale": 1547.182695550681,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "gaussian_bulk_diffuse",
+      "equation": "Per-cell diffuse equals the same independent-disorder variance",
+      "points": 241,
+      "max_absolute_error": 4.547473508864641e-13,
+      "max_error_divided_by_reference_scale": 2.9391962060731825e-16,
+      "reference_scale": 1547.182695550681,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "gaussian_bulk_bragg_weight",
+      "equation": "W_G=(2pi)^3/V |f_C+p f_Au exp(-sigma^2 G^2/2) exp(i G.r)|^2",
+      "points": 250,
+      "max_absolute_error": 5.115907697472721e-13,
+      "max_error_divided_by_reference_scale": 1.020924168256243e-15,
+      "reference_scale": 501.1055528453974,
+      "allowed_scaled_error": 2e-11,
+      "passed": true
+    },
+    {
+      "name": "uniform_ball_sampled_intensity",
+      "equation": "phi(q)=3[sin(qR)-qR cos(qR)]/(qR)^3; E I=f_C^2+p f_Au^2+2p f_C f_Au phi cos(q.r)",
+      "points": 241,
+      "samples": 8192,
+      "seed": 20261014,
+      "max_error_in_exact_intensity_SEM": 0.1351930633381126,
+      "allowed_exact_SEM": 6.0,
+      "passed": true,
+      "SEM_source": "Independent exact second moment of absent/present single-guest configuration intensity; not production amplitude SEM"
+    },
+    {
+      "name": "uniform_ball_sampled_interference",
+      "equation": "E cross/(2 p f_C f_Au) = phi(qR) cos(q.r)",
+      "points": 241,
+      "samples": 8192,
+      "seed": 20261014,
+      "max_error_in_exact_intensity_SEM": 0.7914049336597737,
+      "allowed_exact_SEM": 6.0,
+      "passed": true,
+      "SEM_source": "Exact variance of occupancy times cos(q.(r+u)), divided by sample count"
+    }
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.3.1"
+    },
+    "cuda_available": false,
+    "torch_threads": 6,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    }
+  },
+  "oracle_independence": "Scattering references are explicit equations; neutral IT92 table is the shared physical input and evaluated independently.",
+  "geometry_scope": "Synthetic point-atom geometries and probability laws; no real material or instrument claim.",
+  "source_hashes": {
+    "crystal.py": "e0a85b1f71c2f5b68c4d737fdff4088c107bb1c910d303e90676c19e49f86567",
+    "core.py": "8006062d0bc493b707e069a5f9a3aeb8a9797b09bbb0285c3e99110d3b214c7f",
+    "directional.py": "81bf60789672daa1d9c132d334e4acff0459a331958815b8ab2d6dc710cc4146",
+    "moments.py": "815e85bdb9b22d62da466d0be58616cfaf7a41916529c00a49e5fdfd4c8658f4",
+    "periodic.py": "8bdd86d19e830fcf2de98ec8636c8ddb01427e1e24831084407cb7a234855d0f",
+    "runner.py": "9397096e2461d5261823a454cd915a68c52feb6b9d83ac1529097087e702b585",
+    "distributions.py": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7"
+  }
+}

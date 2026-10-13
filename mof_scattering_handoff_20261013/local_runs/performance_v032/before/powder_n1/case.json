@@ -1,0 +1,8 @@
+{
+  "name": "powder_n1",
+  "kind": "powder",
+  "cells_per_edge": 1,
+  "points": 121,
+  "qmax": 6,
+  "repeats": 3
+}

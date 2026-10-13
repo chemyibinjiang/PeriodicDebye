@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mof-debye-lab"
+version = "0.4.1"
+description = "Finite and periodic single-crystal and powder scattering with rigid nanoparticle guests"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "gemmi>=0.7.5", "torch>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "matplotlib>=3.7", "threadpoolctl>=3"]
+external = ["debyecalculator==1.0.14", "ase>=3.22"]
+fast = ["numba>=0.65"]
+
+[project.scripts]
+mofdebye = "mofdebye.runner:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"mofdebye.vendor" = ["*.txt"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

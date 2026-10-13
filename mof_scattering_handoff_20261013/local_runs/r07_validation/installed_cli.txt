@@ -1,0 +1,10 @@
+{
+  "output": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_validation\\cli_atom_cut",
+  "tables": [
+    "intensity"
+  ],
+  "seconds": 0.18427140009589493,
+  "actual_method": [
+    "numpy_scipy_direct_debye"
+  ]
+}

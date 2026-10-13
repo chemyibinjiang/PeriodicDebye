@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.1",
+  "software_version": "0.3.2",
+  "config": {
+    "schema_version": "1.1",
+    "scattering_case": "single_crystal_finite",
+    "boundary": "finite",
+    "guest_estimator": "explicit",
+    "backend": "reference",
+    "host": {
+      "xyz": "dimer.xyz"
+    },
+    "sampling": {
+      "q_vectors": [
+        [
+          1.2566370614359172,
+          0.0,
+          0.0
+        ],
+        [
+          3.7699111843077517,
+          0.0,
+          0.0
+        ],
+        [
+          6.283185307179586,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  },
+  "scattering_case": "single_crystal_finite",
+  "boundary": "finite",
+  "guest_estimator": "explicit",
+  "backend_requested": "reference",
+  "device_actual": "cpu",
+  "seed": 20261013,
+  "input_sha256": {
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\physical_examples\\inputs\\dimer.xyz": "5e769367cdb4e314dbf64d086138a56c2cf4d16f04928ae9de7c4f9cea6e48ba"
+  },
+  "units": {
+    "positions": "angstrom",
+    "q": "inverse angstrom",
+    "finite_intensity": "electron^2",
+    "diffuse_per_cell": "electron^2",
+    "bragg_weight": "electron^2 angstrom^-3",
+    "powder_radial_weight": "electron^2 angstrom^-1"
+  },
+  "form_factors": "neutral Gemmi IT92",
+  "output_statistic": "realization",
+  "physical_assumptions": [
+    "kinematic elastic scattering",
+    "fixed host",
+    "independent pores",
+    "independent identically distributed cells for bulk",
+    "rigid guests",
+    "number-weighted template probabilities"
+  ],
+  "instrument_corrections": false,
+  "surface_policy": "explicit supplied atoms",
+  "input_processing": {
+    "cell_vectors_A": null,
+    "basis_atoms": 2,
+    "retained_cells": null,
+    "host_atoms": 2,
+    "host_atoms_materialized": true,
+    "guest_retention": "site",
+    "surface_policy": "explicit supplied atoms"
+  },
+  "uncertainty": "Numerical mean-amplitude variance is reported separately from physical disorder variance. No intensity SEM is claimed; refine angular grid and sample count.",
+  "sampled_moment_policy": "Unbiased variance and mean-square correction; finite-sample negative estimates are retained.",
+  "actual_method": [
+    "tiled_directional_amplitude"
+  ],
+  "seconds": 0.0006869998760521412,
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.3.2"
+    },
+    "cuda_available": false,
+    "torch_threads": 6,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    }
+  }
+}

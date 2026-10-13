@@ -1,0 +1,13 @@
+{
+  "reference_kind": "exact integer-shell monatomic finite cube",
+  "cells_per_edge": 40,
+  "atoms": 64000,
+  "spacing_A": 25.832,
+  "edge_nm": 103.328,
+  "q_points": 6001,
+  "factor": 1.0,
+  "expected_forward": 4096000000,
+  "actual_forward": 4096000000.0,
+  "first_order_peak_width_scale_A_inv": 0.006080815758729083,
+  "scope": "One unit scatterer per cell; tests the full geometric extent, not MOF chemistry."
+}

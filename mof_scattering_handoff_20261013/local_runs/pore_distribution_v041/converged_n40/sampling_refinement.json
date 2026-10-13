@@ -1,0 +1,5 @@
+{
+  "max_difference_over_nonforward_peak": 0.0005369194871942751,
+  "max_difference_fraction_at_significant_points": 0.0025437909498968016,
+  "caveat": "Sampling refinement, not an exact reference. Runs share seed prefixes."
+}

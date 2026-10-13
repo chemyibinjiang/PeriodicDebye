@@ -1,0 +1,28 @@
+[
+  {
+    "name": "pytest_final",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--junitxml=C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\pytest_final.xml"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0
+  },
+  {
+    "name": "physical_examples",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\validate_physical_examples.py",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\physical_examples",
+      "--no-plot"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0
+  }
+]

@@ -1,0 +1,1 @@
+{"case": "bulk_powder_q3", "median_seconds": 0.44432939984835684, "rss_MiB": 266.33984375}

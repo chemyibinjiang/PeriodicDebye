@@ -1,0 +1,39 @@
+{
+  "statistics_seconds": 0.13249769993126392,
+  "assembly_seconds": [
+    0.001119100023061037,
+    0.000650899950414896,
+    0.0006494999397546053
+  ],
+  "first_pattern_seconds_excluding_warmup": 0.7143673999235034,
+  "local_statistics": {
+    "method": "analytic",
+    "statistic": "conditional_on_occupied_pore",
+    "orientation": "Haar_uniform",
+    "position_mode": "uniform_ball",
+    "spherical_wall": "certified_nonbinding_by_triangle_support_bound",
+    "batches": 1,
+    "replicas_per_batch": 2,
+    "n_samples_per_template_pore_replica": 0,
+    "accepted_samples_per_template_pore_replica_batch": 0,
+    "accepted_placements": 0,
+    "proposal_attempts": 0,
+    "n_positive_weight_templates": 3,
+    "seed": 20261013,
+    "template_weights": "exact_number_weights_not_sampled",
+    "occupancy": "excluded_from_conditional_statistics",
+    "replica_streams": "independent_SeedSequence_children_per_batch_replica_pore_template",
+    "internal_scattering": "exact_number_weighted_template_Debye_rigid_invariant",
+    "radial_maximum_observed_A": null,
+    "radial_bin_width_requested_A": 0.04,
+    "radial_moment_order": 8,
+    "numerical_bound": "mean_bounds cover radial Taylor truncation only, excluding floating-point error",
+    "uncertainty": "Monte Carlo integration uncertainty must be computed from independent batch intensity estimates; it is separate from physical disorder variance and interpolation error",
+    "sample_memory_scope": "one accepted radial array of samples_per_batch times template_atoms; no full-crystal guest draws"
+  },
+  "max_radial_bound_over_nonforward_peak": 2.607258130665956e-15,
+  "max_radial_bound_fraction_at_significant_points": 1.7951453665856746e-13,
+  "max_mc_sem_over_nonforward_peak": 0.0,
+  "max_mc_sem_fraction_at_significant_points": 0.0,
+  "uncertainty_note": "MC SEM estimates local integration uncertainty; not physical disorder or a strict error bound. Radial bound excludes floating-point and MC error. Both omit q-grid undersampling."
+}

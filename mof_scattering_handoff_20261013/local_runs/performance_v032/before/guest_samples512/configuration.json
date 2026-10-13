@@ -1,0 +1,30 @@
+{
+  "description": "Synthetic four-site Au13 sampling workload on MOF-5 cell; no physical pore claim.",
+  "sites_A": [
+    [
+      5.1664,
+      5.1664,
+      5.1664
+    ],
+    [
+      5.1664,
+      18.0824,
+      18.0824
+    ],
+    [
+      18.0824,
+      5.1664,
+      18.0824
+    ],
+    [
+      18.0824,
+      18.0824,
+      5.1664
+    ]
+  ],
+  "template_atoms": 13,
+  "occupancy": 0.7,
+  "displacement_sigma_A": 0.4,
+  "n_samples": 512,
+  "seed": 20261013
+}

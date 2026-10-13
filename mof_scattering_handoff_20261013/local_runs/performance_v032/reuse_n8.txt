@@ -1,0 +1,93 @@
+{
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.3.2"
+    },
+    "cuda_available": false,
+    "torch_threads": 1,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    }
+  },
+  "threads": 1,
+  "cells_per_edge": 8,
+  "conceptual_atoms": 217088,
+  "edge_nm": 20.6656,
+  "cif_seconds": 0.28252560016699135,
+  "cache_preparation_seconds": 7.0970708997920156,
+  "powder_evaluations": [
+    {
+      "points": 121,
+      "seconds": [
+        8.171326900133863
+      ],
+      "median_seconds": 8.171326900133863
+    },
+    {
+      "points": 601,
+      "seconds": [
+        29.946870099985972
+      ],
+      "median_seconds": 29.946870099985972
+    }
+  ],
+  "cache_metadata": {
+    "method": "full_cell_lattice_grouped",
+    "n_cells": 512,
+    "n_basis_atoms": 424,
+    "n_translations": 3375,
+    "raw_basis_pairs": 118848,
+    "grouped_basis_displacements": 11339,
+    "displacement_symmetry": "cubic_signed_permutations",
+    "displacement_grouping": "exact_float_equality_no_distance_binning",
+    "basis_displacement_bytes": 362848,
+    "distance_entries": 38269125,
+    "ungrouped_distance_entries": 401112000,
+    "estimated_distance_cache_bytes": 306153000,
+    "estimated_uncompressed_radius_weight_bytes": 612306000,
+    "distance_cache_bytes": 37261984,
+    "radial_cache_entries": 2328874,
+    "radial_aggregation": "exact_float64_radius_equality_integer_weights",
+    "cache_build_distance_entries": 38269125,
+    "cache_candidate_payload_peak_bytes": 131067472,
+    "cache_max_bytes": 268435456,
+    "distance_storage": "cached",
+    "translation_chunk": 8192,
+    "preprocessing_seconds": 7.0970280999317765,
+    "evaluation_count": 2,
+    "last_evaluation_seconds": 29.946852000197396,
+    "memory_scope": "cache budget includes retained radii and integer weights; temporary sorting arrays, basis displacements, FFT shape and total process memory are not capped"
+  },
+  "grid_comparisons": [
+    {
+      "coarse_points": 121,
+      "fine_points": 601,
+      "scaled_error": 2.914346814437499e-17,
+      "nonforward_scaled_error": 4.997927844453193e-15
+    }
+  ],
+  "directional_cells_per_edge": 40,
+  "directional_points": 2049,
+  "directional_seconds": [
+    0.035953500075265765
+  ],
+  "directional_median_seconds": 0.035953500075265765,
+  "scope": "Warm kernels with cell/cache retained; excludes input import, cache construction and output I/O from evaluation timings. Exact Debye, no angular approximation."
+}
+

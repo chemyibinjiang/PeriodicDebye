@@ -1,0 +1,8 @@
+{
+  "name": "guest_samples512",
+  "kind": "guest",
+  "points": 257,
+  "qmax": 6,
+  "samples": 512,
+  "repeats": 3
+}

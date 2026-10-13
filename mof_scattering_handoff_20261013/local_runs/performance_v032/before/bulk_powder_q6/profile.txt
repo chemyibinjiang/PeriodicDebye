@@ -1,0 +1,53 @@
+         3997930 function calls (3997189 primitive calls) in 3.585 seconds
+
+   Ordered by: cumulative time
+   List reduced from 387 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    3.585    3.585 benchmark_mof_modes.py:111(evaluate)
+        1    0.000    0.000    3.585    3.585 runner.py:280(run_configuration)
+        1    0.001    0.001    1.705    1.705 periodic.py:107(bragg_reflections)
+        1    0.109    0.109    1.670    1.670 periodic.py:128(powder_shells)
+    62931    0.655    0.000    1.536    0.000 numeric.py:2384(isclose)
+        1    0.834    0.834    0.911    0.911 directional.py:30(amplitude)
+        1    0.342    0.342    0.791    0.791 periodic.py:25(enumerate_reflections)
+   128734    0.069    0.000    0.565    0.000 fromnumeric.py:2548(all)
+   129470    0.157    0.000    0.499    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+   134739    0.194    0.000    0.372    0.000 _linalg.py:2599(norm)
+   125862    0.083    0.000    0.260    0.000 {method 'all' of 'numpy.generic' objects}
+        1    0.000    0.000    0.187    0.187 runner.py:130(_inputs)
+        1    0.007    0.007    0.186    0.186 crystal.py:223(read_cif)
+   126324    0.042    0.000    0.178    0.000 _methods.py:64(_all)
+   135256    0.168    0.000    0.168    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     2688    0.045    0.000    0.131    0.000 crystal.py:175(_periodic_matches)
+   273954    0.123    0.000    0.123    0.000 {built-in method numpy.asarray}
+   314655    0.082    0.000    0.111    0.000 numeric.py:2476(<genexpr>)
+   134490    0.086    0.000    0.086    0.000 {method 'dot' of 'numpy.ndarray' objects}
+    62935    0.046    0.000    0.072    0.000 _ufunc_config.py:472(__enter__)
+   129470    0.049    0.000    0.049    0.000 fromnumeric.py:88(<dictcomp>)
+   126252    0.039    0.000    0.039    0.000 {built-in method builtins.abs}
+        1    0.000    0.000    0.038    0.038 crystal.py:100(_resolve_symmetry)
+        2    0.035    0.018    0.037    0.019 crystal.py:75(_operations)
+   134508    0.026    0.000    0.036    0.000 _linalg.py:168(isComplexType)
+      246    0.019    0.000    0.034    0.000 core.py:78(form_factors)
+    62935    0.021    0.000    0.033    0.000 _ufunc_config.py:488(__exit__)
+   256299    0.030    0.000    0.030    0.000 {built-in method builtins.isinstance}
+   137170    0.029    0.000    0.029    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+   192141    0.026    0.000    0.026    0.000 {built-in method builtins.getattr}
+   269279    0.022    0.000    0.022    0.000 {built-in method builtins.issubclass}
+    66984    0.021    0.000    0.021    0.000 {built-in method numpy.asanyarray}
+    62935    0.020    0.000    0.020    0.000 _ufunc_config.py:462(__init__)
+     1739    0.001    0.000    0.018    0.000 {method 'sum' of 'numpy.ndarray' objects}
+     1739    0.001    0.000    0.017    0.000 _methods.py:47(_sum)
+   128734    0.017    0.000    0.017    0.000 fromnumeric.py:2543(_all_dispatcher)
+      492    0.002    0.000    0.016    0.000 _arraysetops_impl.py:145(unique)
+        1    0.000    0.000    0.016    0.016 runner.py:261(environment_record)
+        7    0.000    0.000    0.016    0.002 __init__.py:1002(version)
+   132686    0.015    0.000    0.015    0.000 {method 'append' of 'list' objects}
+    62935    0.014    0.000    0.014    0.000 {built-in method numpy._core._multiarray_umath._make_extobj}
+   134739    0.013    0.000    0.013    0.000 _linalg.py:2595(_norm_dispatcher)
+      492    0.004    0.000    0.013    0.000 _arraysetops_impl.py:350(_unique1d)
+   132803    0.012    0.000    0.012    0.000 {method 'items' of 'dict' objects}
+    62935    0.012    0.000    0.012    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+
+

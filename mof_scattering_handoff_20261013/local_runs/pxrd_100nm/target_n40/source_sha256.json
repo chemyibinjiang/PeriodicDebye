@@ -1,0 +1,18 @@
+{
+  "src\\mofdebye\\__init__.py": "5af4a97988d12998e65161aacb711ca307cb9b8cdc4cc3d98fae1b13f5afed52",
+  "src\\mofdebye\\core.py": "8006062d0bc493b707e069a5f9a3aeb8a9797b09bbb0285c3e99110d3b214c7f",
+  "src\\mofdebye\\crystal.py": "e0a85b1f71c2f5b68c4d737fdff4088c107bb1c910d303e90676c19e49f86567",
+  "src\\mofdebye\\directional.py": "da9b9199c24b61e0d102f091129e606a15a3a1468b5c595875dae894f959e8af",
+  "src\\mofdebye\\distributions.py": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7",
+  "src\\mofdebye\\ensemble.py": "3a39d98274760fd7af275738bfb5b0263807664d2da33fe6abce1a7766b4076b",
+  "src\\mofdebye\\fixtures.py": "b6bb20400918ea1d884f4937bff0e44a88f6178db03a766d0e371144d289feaf",
+  "src\\mofdebye\\geometry.py": "2fd7df89e084281f1f9190fc711d912a4f16c8d2bad8bf91e1cb9316511ded5f",
+  "src\\mofdebye\\installed.py": "d482dbd2911cf05f77820d0555a6c79fce9e09df3dd60e515af9148429f2b771",
+  "src\\mofdebye\\large_powder.py": "fcf923c51a998eafaea20c2aff4f11364444ee34081d27549e3a3d95dcfffc71",
+  "src\\mofdebye\\lattice.py": "13f883e2588ceec60f4d1e35291dc6677da981d253c4c9e013613fdbf30be8d9",
+  "src\\mofdebye\\moments.py": "6995bba7a56075a670fe66a2f53489600fc2c298ceaf1e69d83e6c6d157ce39a",
+  "src\\mofdebye\\periodic.py": "98e533417f67c952f1e9da7496187be4b011b8e255ac477eb3b0690dde91e568",
+  "src\\mofdebye\\radial.py": "7912e7ed11fc0d70a9f02ab5127ca10314763365f046b8147b7fffb965cea421",
+  "src\\mofdebye\\runner.py": "3ae2aa9af66d1a1c356149a5f225d0ee957dd1a6f436fa4cc23612d283593612",
+  "scripts/benchmark_large_powder.py": "776361ec2da4307b95541bde1c8e65094ff23b5ab70056c62224681b7f9f70c2"
+}

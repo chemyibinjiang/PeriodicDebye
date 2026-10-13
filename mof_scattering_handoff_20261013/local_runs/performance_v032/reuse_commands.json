@@ -1,0 +1,38 @@
+[
+  {
+    "name": "reuse_n4",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_reuse.py",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\reuse_n4",
+      "--cells",
+      "4",
+      "--points",
+      "121",
+      "1201",
+      "--repeats",
+      "3"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "reuse_n8",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\scripts\\benchmark_mof_reuse.py",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\reuse_n8",
+      "--cells",
+      "8",
+      "--cache-mib",
+      "256",
+      "--points",
+      "121",
+      "601",
+      "--repeats",
+      "1"
+    ],
+    "returncode": 0
+  }
+]

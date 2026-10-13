@@ -1,0 +1,2104 @@
+{
+  "seed": 20261013,
+  "tests_passed": 344,
+  "standard_spacegroups_compared": 230,
+  "reference": "ASE independent space-group database; Gemmi only used to identify matching origin/setting, never to compute reference coordinates",
+  "versions": {
+    "ase": "3.22.1",
+    "gemmi": "0.7.5",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "maximum_errors": {
+    "max_fractional_error": 2.220446049250313e-16,
+    "max_cartesian_error_A": 2.499871717298517e-15,
+    "max_structure_factor_error": 2.7660611213428656e-13
+  },
+  "structure_factors_per_group": 31,
+  "closed_form_checks": "BCC, FCC, and diamond: all 729 hkl in [-4,4]^3, including exact extinctions and q=0 limit",
+  "other_checks": [
+    "24 ambiguous origin choices x 2 declarations",
+    "monoclinic alternative axes",
+    "rhombohedral H and R settings",
+    "nine special positions against ASE",
+    "16 metric incompatibilities",
+    "25 skew cells with certified exhaustive periodic-image reference",
+    "Cartesian duplicate tolerance at three length scales",
+    "integer translation invariance",
+    "impossible cell angles"
+  ],
+  "production_defects_found": 0,
+  "oracle_correction": "Initial sweep of skew-cell trial 9 bounded reference images too narrowly at +/-8 along a. The nearest image is [-10,2,0]. Expanded to +/-80,+/-18,+/-2 and added a rigorous inverse-metric bound certifying every potentially closer image is inside the reference box. Production implementation was correct.",
+  "spacegroups": [
+    {
+      "number": 1,
+      "symbol": "P 1",
+      "ase_setting": 1,
+      "atoms": 1,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 0.0
+    },
+    {
+      "number": 2,
+      "symbol": "P -1",
+      "ase_setting": 1,
+      "atoms": 2,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 0.0
+    },
+    {
+      "number": 3,
+      "symbol": "P 1 2 1",
+      "ase_setting": 1,
+      "atoms": 2,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 0.0
+    },
+    {
+      "number": 4,
+      "symbol": "P 1 21 1",
+      "ase_setting": 1,
+      "atoms": 2,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 9.2148511043888e-16,
+      "max_structure_factor_error": 1.4295603459064552e-14
+    },
+    {
+      "number": 5,
+      "symbol": "C 1 2 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 1.8640261059943193e-14
+    },
+    {
+      "number": 6,
+      "symbol": "P 1 m 1",
+      "ase_setting": 1,
+      "atoms": 2,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 0.0
+    },
+    {
+      "number": 7,
+      "symbol": "P 1 c 1",
+      "ase_setting": 1,
+      "atoms": 2,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.4162199163704847e-14
+    },
+    {
+      "number": 8,
+      "symbol": "C 1 m 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.05051911106139e-14
+    },
+    {
+      "number": 9,
+      "symbol": "C 1 c 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.499871717298517e-15,
+      "max_structure_factor_error": 2.621631293057448e-14
+    },
+    {
+      "number": 10,
+      "symbol": "P 1 2/m 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 0.0
+    },
+    {
+      "number": 11,
+      "symbol": "P 1 21/m 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 9.2148511043888e-16,
+      "max_structure_factor_error": 8.012857300239653e-15
+    },
+    {
+      "number": 12,
+      "symbol": "C 1 2/m 1",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.2275401441590595e-14
+    },
+    {
+      "number": 13,
+      "symbol": "P 1 2/c 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.0641937967578625e-14
+    },
+    {
+      "number": 14,
+      "symbol": "P 1 21/c 1",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.166117745255979e-15,
+      "max_structure_factor_error": 1.506971846380714e-14
+    },
+    {
+      "number": 15,
+      "symbol": "C 1 2/c 1",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.499871717298517e-15,
+      "max_structure_factor_error": 2.898532715033628e-14
+    },
+    {
+      "number": 16,
+      "symbol": "P 2 2 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 4.577566798522237e-16
+    },
+    {
+      "number": 17,
+      "symbol": "P 2 2 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.4438449368138408e-14
+    },
+    {
+      "number": 18,
+      "symbol": "P 21 21 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 9.2148511043888e-16,
+      "max_structure_factor_error": 1.0598414849989862e-14
+    },
+    {
+      "number": 19,
+      "symbol": "P 21 21 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.0394588454524465e-14
+    },
+    {
+      "number": 20,
+      "symbol": "C 2 2 21",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1661177452559792e-15,
+      "max_structure_factor_error": 3.728943055233488e-14
+    },
+    {
+      "number": 21,
+      "symbol": "C 2 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.000936387771642e-14
+    },
+    {
+      "number": 22,
+      "symbol": "F 2 2 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 3.7284489434224465e-14
+    },
+    {
+      "number": 23,
+      "symbol": "I 2 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 2.3649574664287247e-14
+    },
+    {
+      "number": 24,
+      "symbol": "I 21 21 21",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 3.476421024902112e-14
+    },
+    {
+      "number": 25,
+      "symbol": "P m m 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 4.577566798522237e-16
+    },
+    {
+      "number": 26,
+      "symbol": "P m c 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.2650998591337194e-14
+    },
+    {
+      "number": 27,
+      "symbol": "P c c 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.7712494098706858e-14
+    },
+    {
+      "number": 28,
+      "symbol": "P m a 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 7.160723346098895e-15
+    },
+    {
+      "number": 29,
+      "symbol": "P c a 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 3.495704286683763e-14
+    },
+    {
+      "number": 30,
+      "symbol": "P n c 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.2343496961404268e-14
+    },
+    {
+      "number": 31,
+      "symbol": "P m n 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.0136397524969554e-14
+    },
+    {
+      "number": 32,
+      "symbol": "P b a 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 9.2148511043888e-16,
+      "max_structure_factor_error": 1.019532982372382e-14
+    },
+    {
+      "number": 33,
+      "symbol": "P n a 21",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.712218269458772e-14
+    },
+    {
+      "number": 34,
+      "symbol": "P n n 2",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.0146495022406617e-14
+    },
+    {
+      "number": 35,
+      "symbol": "C m m 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 1.836876072784926e-14
+    },
+    {
+      "number": 36,
+      "symbol": "C m c 21",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3050850979282377e-15,
+      "max_structure_factor_error": 3.6863584237130135e-14
+    },
+    {
+      "number": 37,
+      "symbol": "C c c 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.7418687836503485e-14
+    },
+    {
+      "number": 38,
+      "symbol": "A m m 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 3.461177036396038e-14
+    },
+    {
+      "number": 39,
+      "symbol": "A b m 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 3.567282589078259e-14
+    },
+    {
+      "number": 40,
+      "symbol": "A m a 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.6955345125769875e-14
+    },
+    {
+      "number": 41,
+      "symbol": "A b a 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 4.097730762958323e-14
+    },
+    {
+      "number": 42,
+      "symbol": "F m m 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 3.776995414086002e-14
+    },
+    {
+      "number": 43,
+      "symbol": "F d d 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 6.43668973480993e-14
+    },
+    {
+      "number": 44,
+      "symbol": "I m m 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 2.7012892057857037e-14
+    },
+    {
+      "number": 45,
+      "symbol": "I b a 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 4.217097799074062e-14
+    },
+    {
+      "number": 46,
+      "symbol": "I m a 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 3.0943197385789956e-14
+    },
+    {
+      "number": 47,
+      "symbol": "P m m m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 4.47545209131181e-16
+    },
+    {
+      "number": 48,
+      "symbol": "P n n n:2",
+      "ase_setting": 2,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.5701842861185828e-14
+    },
+    {
+      "number": 49,
+      "symbol": "P c c m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.8223749439755802e-14
+    },
+    {
+      "number": 50,
+      "symbol": "P b a n:2",
+      "ase_setting": 2,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.4732382775966844e-14
+    },
+    {
+      "number": 51,
+      "symbol": "P m m a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.8690036639696008e-14
+    },
+    {
+      "number": 52,
+      "symbol": "P n n a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.932628756946427e-14
+    },
+    {
+      "number": 53,
+      "symbol": "P m n a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.3997259443764378e-14
+    },
+    {
+      "number": 54,
+      "symbol": "P c c a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.9173458420030426e-14
+    },
+    {
+      "number": 55,
+      "symbol": "P b a m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 9.2148511043888e-16,
+      "max_structure_factor_error": 1.765885106725562e-14
+    },
+    {
+      "number": 56,
+      "symbol": "P c c n",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1661177452559792e-15,
+      "max_structure_factor_error": 2.6619434782030476e-14
+    },
+    {
+      "number": 57,
+      "symbol": "P b c m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1661177452559792e-15,
+      "max_structure_factor_error": 2.5772483042890763e-14
+    },
+    {
+      "number": 58,
+      "symbol": "P n n m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 2.8960067045058565e-14
+    },
+    {
+      "number": 59,
+      "symbol": "P m m n:2",
+      "ase_setting": 2,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 1.7680105590573434e-14
+    },
+    {
+      "number": 60,
+      "symbol": "P b c n",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1661177452559792e-15,
+      "max_structure_factor_error": 3.2512858055664684e-14
+    },
+    {
+      "number": 61,
+      "symbol": "P b c a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1661177452559792e-15,
+      "max_structure_factor_error": 2.7761792168390866e-14
+    },
+    {
+      "number": 62,
+      "symbol": "P n m a",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 4.024661828530768e-14
+    },
+    {
+      "number": 63,
+      "symbol": "C m c m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3050850979282377e-15,
+      "max_structure_factor_error": 4.303916164782202e-14
+    },
+    {
+      "number": 64,
+      "symbol": "C m c a",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.261637031757954e-14
+    },
+    {
+      "number": 65,
+      "symbol": "C m m m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.3210034825575823e-14
+    },
+    {
+      "number": 66,
+      "symbol": "C c c m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 4.544455748889493e-14
+    },
+    {
+      "number": 67,
+      "symbol": "C m m a",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.2126359845965906e-15,
+      "max_structure_factor_error": 2.157492150361093e-14
+    },
+    {
+      "number": 68,
+      "symbol": "C c c a:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 4.0967229608668276e-14
+    },
+    {
+      "number": 69,
+      "symbol": "F m m m",
+      "ase_setting": 1,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 9.659482649341331e-14
+    },
+    {
+      "number": 70,
+      "symbol": "F d d d:2",
+      "ase_setting": 2,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3426758140054006e-15,
+      "max_structure_factor_error": 6.018433537314678e-14
+    },
+    {
+      "number": 71,
+      "symbol": "I m m m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 7.456613262415746e-14
+    },
+    {
+      "number": 72,
+      "symbol": "I b a m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 4.1214705077375845e-14
+    },
+    {
+      "number": 73,
+      "symbol": "I b c a",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 4.1354131122025103e-14
+    },
+    {
+      "number": 74,
+      "symbol": "I m m a",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.47173647298895e-15,
+      "max_structure_factor_error": 4.006129637399439e-14
+    },
+    {
+      "number": 75,
+      "symbol": "P 4",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 4.440892098500626e-16
+    },
+    {
+      "number": 76,
+      "symbol": "P 41",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.730381510933211e-14
+    },
+    {
+      "number": 77,
+      "symbol": "P 42",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.1186360118499727e-14
+    },
+    {
+      "number": 78,
+      "symbol": "P 43",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.6910413304902302e-14
+    },
+    {
+      "number": 79,
+      "symbol": "I 4",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.9232523314243184e-14
+    },
+    {
+      "number": 80,
+      "symbol": "I 41",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.2728588596775843e-14
+    },
+    {
+      "number": 81,
+      "symbol": "P -4",
+      "ase_setting": 1,
+      "atoms": 4,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 2.482534153247273e-16
+    },
+    {
+      "number": 82,
+      "symbol": "I -4",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 2.4710881094118018e-14
+    },
+    {
+      "number": 83,
+      "symbol": "P 4/m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 8.95090418262362e-16
+    },
+    {
+      "number": 84,
+      "symbol": "P 42/m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.9991722838695998e-14
+    },
+    {
+      "number": 85,
+      "symbol": "P 4/n:2",
+      "ase_setting": 2,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 1.8843480848794227e-14
+    },
+    {
+      "number": 86,
+      "symbol": "P 42/n:2",
+      "ase_setting": 2,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.148417112164107e-14
+    },
+    {
+      "number": 87,
+      "symbol": "I 4/m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.6040970248572325e-14
+    },
+    {
+      "number": 88,
+      "symbol": "I 41/a:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.833871943094467e-14
+    },
+    {
+      "number": 89,
+      "symbol": "P 4 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 8.881784197001252e-16
+    },
+    {
+      "number": 90,
+      "symbol": "P 4 21 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 8.125181067376971e-16,
+      "max_structure_factor_error": 1.9509622927395043e-14
+    },
+    {
+      "number": 91,
+      "symbol": "P 41 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.1541760083527537e-14
+    },
+    {
+      "number": 92,
+      "symbol": "P 41 21 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.0663275755573525e-14
+    },
+    {
+      "number": 93,
+      "symbol": "P 42 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.038582315315583e-14
+    },
+    {
+      "number": 94,
+      "symbol": "P 42 21 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3019949684006532e-15,
+      "max_structure_factor_error": 2.851609513701226e-14
+    },
+    {
+      "number": 95,
+      "symbol": "P 43 2 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.3399119043886214e-14
+    },
+    {
+      "number": 96,
+      "symbol": "P 43 21 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3019949684006532e-15,
+      "max_structure_factor_error": 3.0315391380987954e-14
+    },
+    {
+      "number": 97,
+      "symbol": "I 4 2 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.9571314065414964e-14
+    },
+    {
+      "number": 98,
+      "symbol": "I 41 2 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.8778423131653425e-14
+    },
+    {
+      "number": 99,
+      "symbol": "P 4 m m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 4.47545209131181e-16
+    },
+    {
+      "number": 100,
+      "symbol": "P 4 b m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 1.4217791915866692e-14
+    },
+    {
+      "number": 101,
+      "symbol": "P 42 c m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 3.9660920879509306e-14
+    },
+    {
+      "number": 102,
+      "symbol": "P 42 n m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3019949684006532e-15,
+      "max_structure_factor_error": 3.202372833989377e-14
+    },
+    {
+      "number": 103,
+      "symbol": "P 4 c c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.920287558358748e-14
+    },
+    {
+      "number": 104,
+      "symbol": "P 4 n c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.557706174527505e-14
+    },
+    {
+      "number": 105,
+      "symbol": "P 42 m c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 4.039991600117843e-14
+    },
+    {
+      "number": 106,
+      "symbol": "P 42 b c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.020235175313365e-14
+    },
+    {
+      "number": 107,
+      "symbol": "I 4 m m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 5.859979669188583e-14
+    },
+    {
+      "number": 108,
+      "symbol": "I 4 c m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 5.51815466814143e-14
+    },
+    {
+      "number": 109,
+      "symbol": "I 41 m d",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.308352016705507e-14
+    },
+    {
+      "number": 110,
+      "symbol": "I 41 c d",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 7.853729368529961e-14
+    },
+    {
+      "number": 111,
+      "symbol": "P -4 2 m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 8.95090418262362e-16
+    },
+    {
+      "number": 112,
+      "symbol": "P -4 2 c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.4574831164288003e-14
+    },
+    {
+      "number": 113,
+      "symbol": "P -4 21 m",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 1.4114358361594219e-14
+    },
+    {
+      "number": 114,
+      "symbol": "P -4 21 c",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.1580332478073507e-14
+    },
+    {
+      "number": 115,
+      "symbol": "P -4 m 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 8.881784197001252e-16
+    },
+    {
+      "number": 116,
+      "symbol": "P -4 c 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.8142552541014374e-14
+    },
+    {
+      "number": 117,
+      "symbol": "P -4 b 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 2.1495434511026535e-14
+    },
+    {
+      "number": 118,
+      "symbol": "P -4 n 2",
+      "ase_setting": 1,
+      "atoms": 8,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3019949684006532e-15,
+      "max_structure_factor_error": 2.808666774861361e-14
+    },
+    {
+      "number": 119,
+      "symbol": "I -4 m 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.024941281585071e-14
+    },
+    {
+      "number": 120,
+      "symbol": "I -4 c 2",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 2.8220637619075648e-14
+    },
+    {
+      "number": 121,
+      "symbol": "I -4 2 m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.4250515263596617e-14
+    },
+    {
+      "number": 122,
+      "symbol": "I -4 2 d",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.625048408472683e-14
+    },
+    {
+      "number": 123,
+      "symbol": "P 4/m m m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 1.7835117169221426e-15
+    },
+    {
+      "number": 124,
+      "symbol": "P 4/m c c",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 3.415986505106148e-14
+    },
+    {
+      "number": 125,
+      "symbol": "P 4/n b m:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 3.2547717493709296e-14
+    },
+    {
+      "number": 126,
+      "symbol": "P 4/n n c:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 5.220704988118765e-14
+    },
+    {
+      "number": 127,
+      "symbol": "P 4/m b m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 2.368089055519023e-14
+    },
+    {
+      "number": 128,
+      "symbol": "P 4/m n c",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 2.6961966733026102e-14
+    },
+    {
+      "number": 129,
+      "symbol": "P 4/n m m:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 1.1147656456654803e-15,
+      "max_structure_factor_error": 2.8126136892878584e-14
+    },
+    {
+      "number": 130,
+      "symbol": "P 4/n c c:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.162829076039976e-15,
+      "max_structure_factor_error": 3.5140137210081014e-14
+    },
+    {
+      "number": 131,
+      "symbol": "P 42/m m c",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.063762833955151e-14
+    },
+    {
+      "number": 132,
+      "symbol": "P 42/m c m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.4451386146720154e-14
+    },
+    {
+      "number": 133,
+      "symbol": "P 42/n b c:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.422326443861517e-14
+    },
+    {
+      "number": 134,
+      "symbol": "P 42/n n m:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.286323655838108e-14
+    },
+    {
+      "number": 135,
+      "symbol": "P 42/m b c",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 3.754868811034412e-14
+    },
+    {
+      "number": 136,
+      "symbol": "P 42/m n m",
+      "ase_setting": 1,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.3019949684006532e-15,
+      "max_structure_factor_error": 3.654230244078766e-14
+    },
+    {
+      "number": 137,
+      "symbol": "P 42/n m c:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.162829076039976e-15,
+      "max_structure_factor_error": 4.732259712339047e-14
+    },
+    {
+      "number": 138,
+      "symbol": "P 42/n c m:2",
+      "ase_setting": 2,
+      "atoms": 16,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.162829076039976e-15,
+      "max_structure_factor_error": 4.165230692001289e-14
+    },
+    {
+      "number": 139,
+      "symbol": "I 4/m m m",
+      "ase_setting": 1,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 5.0696392738040164e-14
+    },
+    {
+      "number": 140,
+      "symbol": "I 4/m c m",
+      "ase_setting": 1,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 1.4873624339538775e-13
+    },
+    {
+      "number": 141,
+      "symbol": "I 41/a m d:2",
+      "ase_setting": 2,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 6.897233734241964e-14
+    },
+    {
+      "number": 142,
+      "symbol": "I 41/a c d:2",
+      "ase_setting": 2,
+      "atoms": 32,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.4252211456939935e-15,
+      "max_structure_factor_error": 4.952780071967238e-14
+    },
+    {
+      "number": 143,
+      "symbol": "P 3",
+      "ase_setting": 1,
+      "atoms": 3,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4221692604176236e-14
+    },
+    {
+      "number": 144,
+      "symbol": "P 31",
+      "ase_setting": 1,
+      "atoms": 3,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.044849049918703e-14
+    },
+    {
+      "number": 145,
+      "symbol": "P 32",
+      "ase_setting": 1,
+      "atoms": 3,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4210854715202004e-14
+    },
+    {
+      "number": 146,
+      "symbol": "R 3:H",
+      "ase_setting": 1,
+      "atoms": 9,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.5765166949677222e-15,
+      "max_structure_factor_error": 2.429537347586207e-14
+    },
+    {
+      "number": 147,
+      "symbol": "P -3",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4127778840729354e-14
+    },
+    {
+      "number": 148,
+      "symbol": "R -3:H",
+      "ase_setting": 1,
+      "atoms": 18,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.8061267722627984e-15,
+      "max_structure_factor_error": 3.609902584772617e-14
+    },
+    {
+      "number": 149,
+      "symbol": "P 3 1 2",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.1322097734007352e-14
+    },
+    {
+      "number": 150,
+      "symbol": "P 3 2 1",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.7114728010397272e-14
+    },
+    {
+      "number": 151,
+      "symbol": "P 31 1 2",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.3359632472723712e-14
+    },
+    {
+      "number": 152,
+      "symbol": "P 31 2 1",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.414303868622662e-14
+    },
+    {
+      "number": 153,
+      "symbol": "P 32 1 2",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.2412670766236365e-14
+    },
+    {
+      "number": 154,
+      "symbol": "P 32 2 1",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.8316997672976092e-14
+    },
+    {
+      "number": 155,
+      "symbol": "R 3 2:H",
+      "ase_setting": 1,
+      "atoms": 18,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.5765166949677222e-15,
+      "max_structure_factor_error": 3.613891058612041e-14
+    },
+    {
+      "number": 156,
+      "symbol": "P 3 m 1",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.422645865968639e-14
+    },
+    {
+      "number": 157,
+      "symbol": "P 3 1 m",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4935285297003374e-14
+    },
+    {
+      "number": 158,
+      "symbol": "P 3 c 1",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.1836117096613264e-14
+    },
+    {
+      "number": 159,
+      "symbol": "P 3 1 c",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.6768119488928624e-14
+    },
+    {
+      "number": 160,
+      "symbol": "R 3 m:H",
+      "ase_setting": 1,
+      "atoms": 18,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.8061267722627984e-15,
+      "max_structure_factor_error": 3.1767177826884225e-14
+    },
+    {
+      "number": 161,
+      "symbol": "R 3 c:H",
+      "ase_setting": 1,
+      "atoms": 18,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.504605935545025e-14
+    },
+    {
+      "number": 162,
+      "symbol": "P -3 1 m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.4614923908399828e-14
+    },
+    {
+      "number": 163,
+      "symbol": "P -3 1 c",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.433821282804589e-14
+    },
+    {
+      "number": 164,
+      "symbol": "P -3 m 1",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4210854715202004e-14
+    },
+    {
+      "number": 165,
+      "symbol": "P -3 c 1",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.519521437774227e-14
+    },
+    {
+      "number": 166,
+      "symbol": "R -3 m:H",
+      "ase_setting": 1,
+      "atoms": 36,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.8061267722627984e-15,
+      "max_structure_factor_error": 4.2025277885122437e-14
+    },
+    {
+      "number": 167,
+      "symbol": "R -3 c:H",
+      "ase_setting": 1,
+      "atoms": 36,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 7.662407115270646e-14
+    },
+    {
+      "number": 168,
+      "symbol": "P 6",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4169160186078338e-14
+    },
+    {
+      "number": 169,
+      "symbol": "P 61",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 1.923283153461263e-14
+    },
+    {
+      "number": 170,
+      "symbol": "P 65",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.110154030260182e-14
+    },
+    {
+      "number": 171,
+      "symbol": "P 62",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.3789012808186047e-14
+    },
+    {
+      "number": 172,
+      "symbol": "P 64",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.2008898127460163e-14
+    },
+    {
+      "number": 173,
+      "symbol": "P 63",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.9310728916085626e-14
+    },
+    {
+      "number": 174,
+      "symbol": "P -6",
+      "ase_setting": 1,
+      "atoms": 6,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.99123381973768e-14
+    },
+    {
+      "number": 175,
+      "symbol": "P 6/m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 4.046583038383646e-14
+    },
+    {
+      "number": 176,
+      "symbol": "P 63/m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.4788246229513436e-14
+    },
+    {
+      "number": 177,
+      "symbol": "P 6 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.935107174036276e-14
+    },
+    {
+      "number": 178,
+      "symbol": "P 61 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.6737711109153336e-14
+    },
+    {
+      "number": 179,
+      "symbol": "P 65 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.1538326677728035e-15,
+      "max_structure_factor_error": 2.6976820364336334e-14
+    },
+    {
+      "number": 180,
+      "symbol": "P 62 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4498084473007716e-14
+    },
+    {
+      "number": 181,
+      "symbol": "P 64 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.4924845019492833e-14
+    },
+    {
+      "number": 182,
+      "symbol": "P 63 2 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.914203267236168e-14
+    },
+    {
+      "number": 183,
+      "symbol": "P 6 m m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 1.4458497151625688e-14
+    },
+    {
+      "number": 184,
+      "symbol": "P 6 c c",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 5.343852989089485e-14
+    },
+    {
+      "number": 185,
+      "symbol": "P 63 c m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 5.336109569451197e-14
+    },
+    {
+      "number": 186,
+      "symbol": "P 63 m c",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.188795551348321e-14
+    },
+    {
+      "number": 187,
+      "symbol": "P -6 m 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.737392150018796e-14
+    },
+    {
+      "number": 188,
+      "symbol": "P -6 c 2",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.431766759459194e-14
+    },
+    {
+      "number": 189,
+      "symbol": "P -6 2 m",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.098996940364457e-14
+    },
+    {
+      "number": 190,
+      "symbol": "P -6 2 c",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 4.160774639792555e-14
+    },
+    {
+      "number": 191,
+      "symbol": "P 6/m m m",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 1.1102230246251565e-16,
+      "max_cartesian_error_A": 7.882583474838611e-16,
+      "max_structure_factor_error": 2.424255296765697e-14
+    },
+    {
+      "number": 192,
+      "symbol": "P 6/m c c",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 2.877020387058094e-14
+    },
+    {
+      "number": 193,
+      "symbol": "P 63/m c m",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.7734519129358555e-14
+    },
+    {
+      "number": 194,
+      "symbol": "P 63/m m c",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 2.2935445021065755e-15,
+      "max_structure_factor_error": 3.795355502301743e-14
+    },
+    {
+      "number": 195,
+      "symbol": "P 2 3",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 1.1102230246251565e-15
+    },
+    {
+      "number": 196,
+      "symbol": "F 2 3",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 5.84378204479065e-14
+    },
+    {
+      "number": 197,
+      "symbol": "I 2 3",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 4.973501760262718e-14
+    },
+    {
+      "number": 198,
+      "symbol": "P 21 3",
+      "ase_setting": 1,
+      "atoms": 12,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.5765166949677222e-15,
+      "max_structure_factor_error": 3.4641804977042754e-14
+    },
+    {
+      "number": 199,
+      "symbol": "I 21 3",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 4.093129708248106e-14
+    },
+    {
+      "number": 200,
+      "symbol": "P m -3",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 1.7763568394002505e-15
+    },
+    {
+      "number": 201,
+      "symbol": "P n -3:2",
+      "ase_setting": 2,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 5.973660191686353e-14
+    },
+    {
+      "number": 202,
+      "symbol": "F m -3",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 1.5369593295478965e-13
+    },
+    {
+      "number": 203,
+      "symbol": "F d -3:2",
+      "ase_setting": 2,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 9.948645275071487e-14
+    },
+    {
+      "number": 204,
+      "symbol": "I m -3",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 6.545920521886799e-14
+    },
+    {
+      "number": 205,
+      "symbol": "P a -3",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.5887854924156924e-15,
+      "max_structure_factor_error": 4.6371850793029275e-14
+    },
+    {
+      "number": 206,
+      "symbol": "I a -3",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 8.345833471329174e-14
+    },
+    {
+      "number": 207,
+      "symbol": "P 4 3 2",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 2.6737711109153337e-15
+    },
+    {
+      "number": 208,
+      "symbol": "P 42 3 2",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7735812818386875e-15,
+      "max_structure_factor_error": 6.036705776216318e-14
+    },
+    {
+      "number": 209,
+      "symbol": "F 4 3 2",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 1.3700152123874432e-13
+    },
+    {
+      "number": 210,
+      "symbol": "F 41 3 2",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 2.7660611213428656e-13
+    },
+    {
+      "number": 211,
+      "symbol": "I 4 3 2",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 4.9387831689024055e-14
+    },
+    {
+      "number": 212,
+      "symbol": "P 43 3 2",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.5765166949677222e-15,
+      "max_structure_factor_error": 3.899459832617944e-14
+    },
+    {
+      "number": 213,
+      "symbol": "P 41 3 2",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 5.6257203751091006e-14
+    },
+    {
+      "number": 214,
+      "symbol": "I 41 3 2",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 4.970443186845071e-14
+    },
+    {
+      "number": 215,
+      "symbol": "P -4 3 m",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 1.897149936107019e-15
+    },
+    {
+      "number": 216,
+      "symbol": "F -4 3 m",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 1.8463860073135096e-13
+    },
+    {
+      "number": 217,
+      "symbol": "I -4 3 m",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 9.536449038991582e-14
+    },
+    {
+      "number": 218,
+      "symbol": "P -4 3 n",
+      "ase_setting": 1,
+      "atoms": 24,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 4.526555727245978e-14
+    },
+    {
+      "number": 219,
+      "symbol": "F -4 3 c",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 1.1170681317778201e-13
+    },
+    {
+      "number": 220,
+      "symbol": "I -4 3 d",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 6.40720855815553e-14
+    },
+    {
+      "number": 221,
+      "symbol": "P m -3 m",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 0.0,
+      "max_cartesian_error_A": 0.0,
+      "max_structure_factor_error": 3.552713678800501e-15
+    },
+    {
+      "number": 222,
+      "symbol": "P n -3 n:2",
+      "ase_setting": 2,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 5.688051357657954e-14
+    },
+    {
+      "number": 223,
+      "symbol": "P m -3 n",
+      "ase_setting": 1,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 7.390379536994873e-14
+    },
+    {
+      "number": 224,
+      "symbol": "P n -3 m:2",
+      "ase_setting": 2,
+      "atoms": 48,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 5.94666170959063e-14
+    },
+    {
+      "number": 225,
+      "symbol": "F m -3 m",
+      "ase_setting": 1,
+      "atoms": 192,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 2.444476137103432e-13
+    },
+    {
+      "number": 226,
+      "symbol": "F m -3 c",
+      "ase_setting": 1,
+      "atoms": 192,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 2.309308993590252e-13
+    },
+    {
+      "number": 227,
+      "symbol": "F d -3 m:2",
+      "ase_setting": 2,
+      "atoms": 192,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.7625992488055638e-15,
+      "max_structure_factor_error": 1.1310667804700319e-13
+    },
+    {
+      "number": 228,
+      "symbol": "F d -3 c:2",
+      "ase_setting": 2,
+      "atoms": 192,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 1.0842895279752508e-13
+    },
+    {
+      "number": 229,
+      "symbol": "I m -3 m",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 9.65607821956655e-14
+    },
+    {
+      "number": 230,
+      "symbol": "I a -3 d",
+      "ase_setting": 1,
+      "atoms": 96,
+      "max_fractional_error": 2.220446049250313e-16,
+      "max_cartesian_error_A": 1.930830736824936e-15,
+      "max_structure_factor_error": 1.191418291554168e-13
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "bulk_powder_q10",
+  "kind": "bulk_powder",
+  "qmax": 10,
+  "points": 401,
+  "repeats": 3
+}

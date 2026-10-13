@@ -1,0 +1,1 @@
+{"case": "powder_n4", "median_seconds": 57.441061299992725, "rss_MiB": 261.19140625}

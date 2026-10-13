@@ -1,0 +1,53 @@
+         6082387 function calls (6078970 primitive calls) in 8.230 seconds
+
+   Ordered by: cumulative time
+   List reduced from 333 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    8.230    8.230 benchmark_mof_modes.py:111(evaluate)
+        1    0.001    0.001    8.230    8.230 runner.py:280(run_configuration)
+        1    0.009    0.009    8.025    8.025 periodic.py:107(bragg_reflections)
+        1    3.901    3.901    4.263    4.263 directional.py:30(amplitude)
+        1    1.644    1.644    3.742    3.742 periodic.py:25(enumerate_reflections)
+   617105    0.884    0.000    1.698    0.000 _linalg.py:2599(norm)
+  1244753    0.423    0.000    0.423    0.000 {built-in method numpy.asarray}
+   615964    0.399    0.000    0.399    0.000 {method 'dot' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.188    0.188 runner.py:130(_inputs)
+        1    0.007    0.007    0.187    0.187 crystal.py:223(read_cif)
+     1138    0.091    0.000    0.168    0.000 core.py:78(form_factors)
+   615980    0.117    0.000    0.162    0.000 _linalg.py:168(isComplexType)
+   618644    0.134    0.000    0.134    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     2688    0.045    0.000    0.132    0.000 crystal.py:175(_periodic_matches)
+    19159    0.110    0.000    0.110    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+  1233114    0.098    0.000    0.098    0.000 {built-in method builtins.issubclass}
+     5690    0.005    0.000    0.080    0.000 {method 'sum' of 'numpy.ndarray' objects}
+     5690    0.003    0.000    0.074    0.000 _methods.py:47(_sum)
+     2276    0.010    0.000    0.074    0.000 _arraysetops_impl.py:145(unique)
+   617105    0.063    0.000    0.063    0.000 _linalg.py:2595(_norm_dispatcher)
+     2276    0.020    0.000    0.061    0.000 _arraysetops_impl.py:350(_unique1d)
+     1138    0.016    0.000    0.040    0.000 core.py:72(validate_q)
+        1    0.000    0.000    0.039    0.039 crystal.py:100(_resolve_symmetry)
+        2    0.037    0.018    0.039    0.019 crystal.py:75(_operations)
+   298312    0.032    0.000    0.032    0.000 {method 'append' of 'list' objects}
+     4552    0.006    0.000    0.026    0.000 fromnumeric.py:2304(sum)
+     4782    0.010    0.000    0.024    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+     6393    0.009    0.000    0.024    0.000 fromnumeric.py:66(_wrapreduction)
+     2681    0.001    0.000    0.024    0.000 fromnumeric.py:48(_wrapfunc)
+        1    0.000    0.000    0.021    0.021 fromnumeric.py:1100(argsort)
+        1    0.021    0.021    0.021    0.021 {method 'argsort' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.016    0.016 runner.py:261(environment_record)
+     2276    0.016    0.000    0.016    0.000 {built-in method numpy._core._multiarray_umath._unique_hash}
+     1526    0.004    0.000    0.016    0.000 fromnumeric.py:2436(any)
+        7    0.000    0.000    0.016    0.002 __init__.py:1002(version)
+     3256    0.002    0.000    0.014    0.000 fromnumeric.py:2548(all)
+     2680    0.003    0.000    0.011    0.000 numeric.py:679(flatnonzero)
+     2276    0.010    0.000    0.010    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+        7    0.000    0.000    0.009    0.001 __init__.py:629(version)
+        7    0.000    0.000    0.009    0.001 __init__.py:602(metadata)
+        2    0.001    0.000    0.009    0.004 periodic.py:83(cell_guest_moments)
+     1153    0.002    0.000    0.008    0.000 {method 'all' of 'numpy.ndarray' objects}
+14875/11458    0.006    0.000    0.008    0.000 {built-in method builtins.len}
+        1    0.001    0.001    0.007    0.007 crystal.py:164(_validate_metric)
+     1841    0.001    0.000    0.007    0.000 fromnumeric.py:3287(prod)
+
+

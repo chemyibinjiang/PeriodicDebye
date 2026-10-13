@@ -1,0 +1,19 @@
+{
+  "local_statistics_speedup_same_accepted_budget": 21.763363007220264,
+  "first_pattern_speedup_same_accepted_budget": 20.444443382210345,
+  "final_first_pattern_seconds": 31.678382999962196,
+  "final_max_three_sem_fraction_at_significant_points": 0.0007634625454593059,
+  "final_max_radial_bound_fraction_at_significant_points": 1.9486755523801016e-13,
+  "final_peak_working_set_MiB": 841.88671875,
+  "refinement": {
+    "independent_seeds": true,
+    "q_min": 0.1,
+    "significant_peak_fraction": 0.01,
+    "significant_q_points": 2146,
+    "maximum_difference_fraction_at_significant_points": 0.00013506042939651674,
+    "maximum_difference_over_nonforward_peak": 4.134867046956124e-05,
+    "maximum_combined_sem_with_roundoff_floor": 1.80464747864674,
+    "sem_comparison_roundoff_floor_electron2": 0.32484889133007944
+  },
+  "caveat": "Three SEM is an estimated integration uncertainty, not a strict or simultaneous error certificate. Independent-seed refinement is not an exact reference. Radial bounds exclude floating-point error. All accuracy metrics are at the sampled q points and exclude q-grid undersampling."
+}

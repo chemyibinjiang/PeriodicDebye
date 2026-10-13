@@ -1,0 +1,14 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/mof_debye_lab
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: mof-debye-lab
+  Building editable for mof-debye-lab (pyproject.toml): started
+  Building editable for mof-debye-lab (pyproject.toml): finished with status 'done'
+  Created wheel for mof-debye-lab: filename=mof_debye_lab-0.1.0-0.editable-py3-none-any.whl size=5623 sha256=125176e632ea97af20e962fa6e014f469b5269989b6fd4c4f05a1467a0bbb100
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ygb3a47s/wheels/2d/3e/5c/581944609bf118a14af96adf905da3bc584c8d6d23fde72d81
+Successfully built mof-debye-lab
+Installing collected packages: mof-debye-lab
+Successfully installed mof-debye-lab-0.1.0

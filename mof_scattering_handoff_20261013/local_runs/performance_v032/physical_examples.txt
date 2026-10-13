@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "physical_examples": 8,
+  "checks": 32,
+  "worst_exact_scaled_error": 1.020924168256243e-15,
+  "sampled_max_exact_SEM": 0.7914049336597737,
+  "output": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\performance_v032\\physical_examples"
+}
+

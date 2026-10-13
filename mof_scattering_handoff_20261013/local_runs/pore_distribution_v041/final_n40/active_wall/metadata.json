@@ -1,0 +1,56 @@
+{
+  "statistics_seconds": 31.10189300007187,
+  "assembly_seconds": [
+    0.003323799930512905,
+    0.00310120009817183,
+    0.0022054000291973352
+  ],
+  "first_pattern_seconds_excluding_warmup": 31.678382999962196,
+  "local_statistics": {
+    "method": "sampled",
+    "statistic": "conditional_on_occupied_pore",
+    "pore_geometry": {
+      "centres_A": [
+        [
+          12.5,
+          12.5,
+          12.5
+        ]
+      ],
+      "pore_radius_A": [
+        8.0
+      ],
+      "wall_clearance_A": 0.5
+    },
+    "orientation": "Haar_uniform",
+    "position_mode": "uniform_ball",
+    "spherical_wall": "conditioned_by_rejection",
+    "batches": 8,
+    "replicas_per_batch": 2,
+    "n_samples_per_template_pore_replica": 1048576,
+    "accepted_samples_per_template_pore_replica_batch": 131072,
+    "accepted_placements": 6291456,
+    "proposal_attempts": 12365115,
+    "n_positive_weight_templates": 3,
+    "seed": 20261014,
+    "conditional_mean_atom_count": 20.799999999999997,
+    "template_weights": "exact_number_weights_not_sampled",
+    "occupancy": "excluded_from_conditional_statistics",
+    "replica_streams": "independent_SeedSequence_children_per_batch_replica_pore_template",
+    "radial_placement_sampler": "exact_isotropic_body_frame_translation",
+    "radial_sampling_identity": "v=R.T@u; isotropic u and Haar R give the same conditional atom-radius law",
+    "proposal_workspace_atom_placement_pairs": 65536,
+    "internal_scattering": "exact_number_weighted_template_Debye_rigid_invariant",
+    "radial_maximum_observed_A": 7.499999694521726,
+    "radial_bin_width_requested_A": 0.04,
+    "radial_moment_order": 8,
+    "numerical_bound": "mean_bounds cover radial Taylor truncation only, excluding floating-point error",
+    "uncertainty": "Monte Carlo integration uncertainty must be computed from independent batch intensity estimates; it is separate from physical disorder variance and interpolation error",
+    "sample_memory_scope": "one accepted radial array of samples_per_batch times template_atoms; no full-crystal guest draws"
+  },
+  "max_radial_bound_over_nonforward_peak": 2.9574382133125738e-15,
+  "max_radial_bound_fraction_at_significant_points": 1.9486755523801016e-13,
+  "max_mc_sem_over_nonforward_peak": 5.957300448201903e-05,
+  "max_mc_sem_fraction_at_significant_points": 0.00025448751515310194,
+  "uncertainty_note": "MC SEM estimates local integration uncertainty; not physical disorder or a strict error bound. Radial bound excludes floating-point and MC error. Both omit q-grid undersampling."
+}

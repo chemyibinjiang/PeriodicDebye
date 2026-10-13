@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "status_note": "v0.3 adds validated R07 CIF, pore and finite-boundary inputs with a sourced real-MOF example. See R07_REPORT.md and local_runs; COMPLETION_REPORT.md preserves the v0.2 core record. Deferred extensions remain explicit.",
+  "minimum_core_delivery": [
+    "R00",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R11"
+  ],
+  "tasks": [
+    {
+      "id": "R00",
+      "title": "Reproduce and preserve baseline",
+      "priority": "P0",
+      "depends_on": [],
+      "status": "complete",
+      "deliverables": [
+        "Local test log",
+        "Saved example outputs",
+        "Environment/device record"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R00",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R01",
+      "title": "Verify installed accelerated package and normalization",
+      "priority": "P0",
+      "depends_on": [
+        "R00"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Verified package provenance and adapter",
+        "Native-scale and full-scale tests",
+        "Actual grid/fallback report"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R01",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R02",
+      "title": "Separate physics case, boundary, estimator and backend",
+      "priority": "P0",
+      "depends_on": [
+        "R00"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Versioned schema",
+        "Compatibility mapping",
+        "Capability validation"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R02",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R03",
+      "title": "Implement finite directional amplitudes",
+      "priority": "P1",
+      "depends_on": [
+        "R02"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Tiled amplitude reference",
+        "Full-cell factorization",
+        "Angular-average Debye equivalence"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R03",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R04",
+      "title": "Implement independent-pore amplitude moments",
+      "priority": "P1",
+      "depends_on": [
+        "R03"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Exact discrete-state checks",
+        "Distribution-aware moments",
+        "Sampling-bias and uncertainty handling"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R04",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R05",
+      "title": "Implement periodic single-crystal Bragg/diffuse",
+      "priority": "P1",
+      "depends_on": [
+        "R04"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Triclinic reciprocal lattice",
+        "Reflection weights and continuous diffuse output",
+        "Finite-to-bulk checks"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R05",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R06",
+      "title": "Complete finite and bulk PXRD projection",
+      "priority": "P1",
+      "depends_on": [
+        "R05"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Three runnable case examples",
+        "Powder shell conventions",
+        "Diffuse angular averaging"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R06",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R07",
+      "title": "Add CIF, explicit pore and finite boundary input",
+      "priority": "P2",
+      "depends_on": [
+        "R02"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "CIF expansion tests",
+        "Coordinate/occupancy policy",
+        "Surface and pore validation"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R07",
+      "evidence": "R07_REPORT.md"
+    },
+    {
+      "id": "R08",
+      "title": "Integrate lattice reduction and ensemble caching",
+      "priority": "P2",
+      "depends_on": [
+        "R02",
+        "R04"
+      ],
+      "status": "partially_complete",
+      "deliverables": [
+        "Reusable pair/moment libraries",
+        "Memory/performance records",
+        "Identical-reference results"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R08",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R09",
+      "title": "Extend per-pore distributions and confinement",
+      "priority": "P3",
+      "depends_on": [
+        "R04",
+        "R07"
+      ],
+      "status": "deferred",
+      "deliverables": [
+        "Explicit conditional models",
+        "Distribution tests",
+        "Unsupported-correlation guards"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R09",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R10",
+      "title": "Add optional experimental profile layer",
+      "priority": "P3",
+      "depends_on": [
+        "R06"
+      ],
+      "status": "deferred",
+      "deliverables": [
+        "Raw/convolved outputs separated",
+        "Unit-area and coordinate tests",
+        "No duplicate size broadening"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R10",
+      "evidence": "COMPLETION_REPORT.md"
+    },
+    {
+      "id": "R11",
+      "title": "Deliver reproducible completion report",
+      "priority": "P1",
+      "depends_on": [
+        "R01",
+        "R06"
+      ],
+      "status": "complete",
+      "deliverables": [
+        "Source/tests/examples",
+        "Actual benchmark records",
+        "Support/untested matrix"
+      ],
+      "details": "docs/04_IMPLEMENTATION_ROADMAP.md, section R11",
+      "evidence": "COMPLETION_REPORT.md"
+    }
+  ]
+}

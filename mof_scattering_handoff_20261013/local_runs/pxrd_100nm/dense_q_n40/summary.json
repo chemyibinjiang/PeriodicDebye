@@ -1,0 +1,227 @@
+{
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "numba": "0.65.0",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.4.0"
+    },
+    "cuda_available": false,
+    "torch_threads": 6,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    },
+    "logical_cpus": 12
+  },
+  "cif_sha256": "e5d0b3d72445c15cd2ed02a36fa2fdf3d5d13f6c21441984475449d48d3f0ad2",
+  "cells_per_edge": 40,
+  "represented_atoms": 27136000,
+  "edge_nm": 103.328,
+  "q_points": 60001,
+  "q_step": 0.0001,
+  "q_max": 6.0,
+  "warmup_seconds": 0.644082099897787,
+  "preparation_seconds": 4.968806700082496,
+  "reuse_seconds": [
+    3.820667800027877,
+    3.701856100000441,
+    3.686473799869418
+  ],
+  "first_pattern_seconds": 8.789474500110373,
+  "metadata": {
+    "radial_transform": "nearest_center_moments_real_fft",
+    "moment_order": 8,
+    "radial_bin_width_A": 0.03997639093873725,
+    "radial_bins": 44416,
+    "fft_points": 1571724,
+    "q_step_invA": 0.0001,
+    "max_radius_A": 1775.5590850033066,
+    "radial_moment_bytes": 3197952,
+    "truncation_bound": "pointwise_absolute_Taylor_remainder_excludes_floating_point",
+    "zero_q": "exact_total_weight",
+    "method": "finite_full_cell_radial_moments",
+    "numerical_backend": "numba_private_histograms_scipy_real_fft",
+    "n_cells": 64000,
+    "n_basis_atoms": 424,
+    "represented_atoms": 27136000,
+    "n_translations": 493039,
+    "original_basis_displacements": 11339,
+    "grouped_basis_displacements": 1526,
+    "displacement_symmetry": "cubic_signed_permutations",
+    "original_distance_entries": 5590569221,
+    "distance_entries": 752377514,
+    "merge_decimals": 12,
+    "displacement_merge": "rounded_keys_actual_input_representatives",
+    "max_merged_displacement_A": 9.565974336450906e-15,
+    "threads": 6,
+    "histogram_partitions": 6,
+    "histogram_private_workspace_bytes": 19187712,
+    "histogram_bytes": 31979520,
+    "memory_scope": "private histogram payload capped at 256 MiB; retained histograms, shape FFT, basis offsets, transform workspace and Python are additional",
+    "species_pairs": [
+      {
+        "elements": [
+          "C",
+          "C"
+        ],
+        "basis_offsets": 314,
+        "pair_count": 150994944000000,
+        "zero_distance_count": 12288000,
+        "distance_entries": 154814246,
+        "max_merged_displacement_A": 7.53644380168212e-15,
+        "weighted_displacement_error_A": 0.2872319717753022
+      },
+      {
+        "elements": [
+          "C",
+          "H"
+        ],
+        "basis_offsets": 297,
+        "pair_count": 75497472000000,
+        "zero_distance_count": 0,
+        "distance_entries": 146432583,
+        "max_merged_displacement_A": 8.702335715267317e-15,
+        "weighted_displacement_error_A": 0.1992899433032742
+      },
+      {
+        "elements": [
+          "C",
+          "O"
+        ],
+        "basis_offsets": 330,
+        "pair_count": 81788928000000,
+        "zero_distance_count": 0,
+        "distance_entries": 162702870,
+        "max_merged_displacement_A": 9.565974336450906e-15,
+        "weighted_displacement_error_A": 0.2696240357293434
+      },
+      {
+        "elements": [
+          "C",
+          "Zn"
+        ],
+        "basis_offsets": 113,
+        "pair_count": 25165824000000,
+        "zero_distance_count": 0,
+        "distance_entries": 55713407,
+        "max_merged_displacement_A": 6.153480596427404e-15,
+        "weighted_displacement_error_A": 0.05799068067442655
+      },
+      {
+        "elements": [
+          "H",
+          "H"
+        ],
+        "basis_offsets": 82,
+        "pair_count": 37748736000000,
+        "zero_distance_count": 6144000,
+        "distance_entries": 40429198,
+        "max_merged_displacement_A": 6.153480596427404e-15,
+        "weighted_displacement_error_A": 0.0842644034095388
+      },
+      {
+        "elements": [
+          "H",
+          "O"
+        ],
+        "basis_offsets": 160,
+        "pair_count": 40894464000000,
+        "zero_distance_count": 0,
+        "distance_entries": 78886240,
+        "max_merged_displacement_A": 8.881784197001252e-15,
+        "weighted_displacement_error_A": 0.12048338690121771
+      },
+      {
+        "elements": [
+          "H",
+          "Zn"
+        ],
+        "basis_offsets": 53,
+        "pair_count": 12582912000000,
+        "zero_distance_count": 0,
+        "distance_entries": 26131067,
+        "max_merged_displacement_A": 4.351167857633658e-15,
+        "weighted_displacement_error_A": 0.02323486470319589
+      },
+      {
+        "elements": [
+          "O",
+          "O"
+        ],
+        "basis_offsets": 99,
+        "pair_count": 44302336000000,
+        "zero_distance_count": 6656000,
+        "distance_entries": 48810861,
+        "max_merged_displacement_A": 9.057678187205881e-15,
+        "weighted_displacement_error_A": 0.13579322854497095
+      },
+      {
+        "elements": [
+          "O",
+          "Zn"
+        ],
+        "basis_offsets": 61,
+        "pair_count": 13631488000000,
+        "zero_distance_count": 0,
+        "distance_entries": 30075379,
+        "max_merged_displacement_A": 5.329070518200751e-15,
+        "weighted_displacement_error_A": 0.027736666088952717
+      },
+      {
+        "elements": [
+          "Zn",
+          "Zn"
+        ],
+        "basis_offsets": 17,
+        "pair_count": 4194304000000,
+        "zero_distance_count": 2048000,
+        "distance_entries": 8381663,
+        "max_merged_displacement_A": 0.0,
+        "weighted_displacement_error_A": 0.0
+      }
+    ],
+    "preprocessing_seconds": 4.9687836999073625,
+    "last_evaluation_seconds": 3.6860044000204653,
+    "evaluation_count": 3,
+    "last_exact_selected_seconds": null,
+    "max_absolute_approximation_bound_electron2": 49.2738446647138,
+    "max_absolute_taylor_bound_electron2": 0.0020660173540844613,
+    "max_absolute_grouping_bound_electron2": 49.27384225970082,
+    "approximation_bound": "pointwise absolute Taylor plus displacement-merge bound; excludes floating-point accumulation and FFT roundoff",
+    "fastmath": false
+  },
+  "approximation_bound_peak_fraction": 4.8931660641904816e-11,
+  "approximation_bound_significant_point_fraction": 4.8742283824088135e-09,
+  "bound_caveat": "Truncation and offset grouping only; floating-point error is validated empirically.",
+  "target_fraction": 0.001,
+  "nonforward_q_min": 0.1,
+  "significant_point_floor_fraction": 0.01,
+  "memory_after_main_pattern": {
+    "rss": 421187584,
+    "vms": 1142853632,
+    "num_page_faults": 2904502,
+    "peak_wset": 675983360,
+    "wset": 421187584,
+    "peak_paged_pool": 1230064,
+    "paged_pool": 1229360,
+    "peak_nonpaged_pool": 68560,
+    "nonpaged_pool": 64728,
+    "pagefile": 1142853632,
+    "peak_pagefile": 1423200256,
+    "private": 1142853632
+  }
+}

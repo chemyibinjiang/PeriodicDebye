@@ -1,0 +1,39 @@
+{
+  "statistics_seconds": 4.473427399992943,
+  "assembly_seconds": [
+    0.003050500061362982,
+    0.0026618000119924545,
+    0.002750399988144636
+  ],
+  "first_pattern_seconds_excluding_warmup": 5.057228500023484,
+  "local_statistics": {
+    "method": "sampled",
+    "statistic": "conditional_on_occupied_pore",
+    "orientation": "Haar_uniform",
+    "position_mode": "uniform_ball",
+    "spherical_wall": "conditioned_by_rejection",
+    "batches": 8,
+    "replicas_per_batch": 2,
+    "n_samples_per_template_pore_replica": 4096,
+    "accepted_samples_per_template_pore_replica_batch": 512,
+    "accepted_placements": 24576,
+    "proposal_attempts": 48374,
+    "n_positive_weight_templates": 3,
+    "seed": 20261013,
+    "template_weights": "exact_number_weights_not_sampled",
+    "occupancy": "excluded_from_conditional_statistics",
+    "replica_streams": "independent_SeedSequence_children_per_batch_replica_pore_template",
+    "internal_scattering": "exact_number_weighted_template_Debye_rigid_invariant",
+    "radial_maximum_observed_A": 7.499996934007446,
+    "radial_bin_width_requested_A": 0.04,
+    "radial_moment_order": 8,
+    "numerical_bound": "mean_bounds cover radial Taylor truncation only, excluding floating-point error",
+    "uncertainty": "Monte Carlo integration uncertainty must be computed from independent batch intensity estimates; it is separate from physical disorder variance and interpolation error",
+    "sample_memory_scope": "one accepted radial array of samples_per_batch times template_atoms; no full-crystal guest draws"
+  },
+  "max_radial_bound_over_nonforward_peak": 2.9584113445358895e-15,
+  "max_radial_bound_fraction_at_significant_points": 1.9488727145270572e-13,
+  "max_mc_sem_over_nonforward_peak": 0.0006127952671109592,
+  "max_mc_sem_fraction_at_significant_points": 0.0022597466404684283,
+  "uncertainty_note": "MC SEM estimates local integration uncertainty; not physical disorder or a strict error bound. Radial bound excludes floating-point and MC error. Both omit q-grid undersampling."
+}

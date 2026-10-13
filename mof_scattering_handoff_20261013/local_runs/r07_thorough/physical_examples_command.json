@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "scripts/validate_physical_examples.py",
+    "--out",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\physical_examples"
+  ],
+  "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+  "returncode": 0
+}

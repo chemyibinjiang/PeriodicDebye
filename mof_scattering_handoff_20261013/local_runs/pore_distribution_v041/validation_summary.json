@@ -1,0 +1,12 @@
+{
+  "report": "PORE_DISTRIBUTION_REPORT.md",
+  "source_version": "0.4.1",
+  "tests_passed": 980,
+  "tests_skipped": 0,
+  "new_cases_since_v040": 123,
+  "logs": "local_runs/pore_distribution_v041/",
+  "archived_original_evidence_unchanged": 43,
+  "benchmark_device": "cpu",
+  "benchmark_geometry_threads": 6,
+  "scope": "Independent finite powder pore distributions, exact analytic and sampled spherical confinement; body-frame sampling equivalence; local integration SEM separate from radial approximation bounds."
+}

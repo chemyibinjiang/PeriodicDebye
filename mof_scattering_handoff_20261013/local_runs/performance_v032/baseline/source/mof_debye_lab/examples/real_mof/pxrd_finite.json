@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "description": "IRMOF-1 (MOF-5), unmodified RASPA2 reference structure; ordered empty host with H retained. See provenance.json. No experimental nanoparticle population is assumed.",
+  "guest_estimator": "analytic",
+  "backend": "reference",
+  "device": "cpu",
+  "host": {
+    "cif": "IRMOF-1.cif",
+    "cif_options": {
+      "occupancy_policy": "require_full"
+    },
+    "cell_mask": [
+      [
+        [
+          1
+        ]
+      ]
+    ]
+  },
+  "scattering_case": "pxrd",
+  "boundary": "finite",
+  "sampling": {
+    "q": {
+      "min": 0.0,
+      "max": 3.0,
+      "points": 64
+    }
+  }
+}

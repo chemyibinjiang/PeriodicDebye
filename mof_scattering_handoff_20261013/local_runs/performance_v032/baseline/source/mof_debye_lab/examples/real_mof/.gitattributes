@@ -1,0 +1,3 @@
+# Preserve the exact upstream bytes covered by provenance.json SHA-256 values.
+IRMOF-1.cif -text
+RASPA2-COPYING.txt -text

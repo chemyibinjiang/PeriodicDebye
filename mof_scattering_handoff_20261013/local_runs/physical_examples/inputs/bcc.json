@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.1",
+  "scattering_case": "single_crystal_periodic",
+  "boundary": "bulk",
+  "guest_estimator": "analytic",
+  "backend": "reference",
+  "host": {
+    "cif": "bcc.cif"
+  },
+  "sampling": {
+    "reflection_q_max": 6.0
+  }
+}

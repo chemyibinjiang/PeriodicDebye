@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.1",
+  "description": "IRMOF-1 RASPA2 reference model, sphere intersected with one conventional cell, unpassivated and unrelaxed. Geometric atom-cut demonstration only; not experimental surface chemistry.",
+  "guest_estimator": "analytic",
+  "backend": "reference",
+  "device": "cpu",
+  "host": {
+    "cif": "IRMOF-1.cif",
+    "cif_options": {
+      "occupancy_policy": "require_full"
+    },
+    "cell_mask": [
+      [
+        [
+          1
+        ]
+      ]
+    ],
+    "atom_cut": {
+      "kind": "sphere",
+      "centre_A": [
+        12.916,
+        12.916,
+        12.916
+      ],
+      "radius_A": 12.0,
+      "surface_policy": "unpassivated_atom_cut"
+    }
+  },
+  "scattering_case": "pxrd",
+  "boundary": "finite",
+  "sampling": {
+    "q": {
+      "min": 0.0,
+      "max": 3.0,
+      "points": 64
+    }
+  }
+}

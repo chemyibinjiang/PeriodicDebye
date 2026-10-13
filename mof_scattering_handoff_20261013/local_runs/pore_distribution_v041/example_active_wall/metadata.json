@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.1",
+  "software_version": "0.4.1",
+  "config": {
+    "schema_version": "1.1",
+    "description": "SYNTHETIC hollow 424-C grid with Au13/19/43 pores; not a real MOF or measured loading.",
+    "scattering_case": "pxrd",
+    "boundary": "finite",
+    "guest_estimator": "moments",
+    "backend": "radial_moments",
+    "device": "cpu",
+    "host": {
+      "xyz": "host_cell.xyz",
+      "cell_vectors_A": [
+        [
+          25.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          25.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.0
+        ]
+      ],
+      "cell_mask": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    "pores": {
+      "centres_fractional": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    "particles": [
+      {
+        "xyz": "Au_13.xyz",
+        "weight": 0.5
+      },
+      {
+        "xyz": "Au_19.xyz",
+        "weight": 0.3
+      },
+      {
+        "xyz": "Au_43.xyz",
+        "weight": 0.2
+      }
+    ],
+    "population": {
+      "occupancy": 0.6,
+      "position_mode": "uniform_ball",
+      "uniform_ball_radius_A": 4.0,
+      "orientation": "uniform",
+      "pore_radius_A": 8.0,
+      "wall_clearance_A": 0.5
+    },
+    "statistics": {
+      "seed": 20261013,
+      "n_samples": 4096,
+      "n_batches": 8,
+      "moment_method": "sampled"
+    },
+    "radial": {
+      "bin_width_A": 0.04,
+      "order": 8,
+      "threads": 1
+    },
+    "sampling": {
+      "q": {
+        "min": 0.0,
+        "max": 6.0,
+        "points": 601
+      }
+    }
+  },
+  "scattering_case": "pxrd",
+  "boundary": "finite",
+  "guest_estimator": "moments",
+  "backend_requested": "radial_moments",
+  "device_actual": "cpu",
+  "seed": 20261013,
+  "input_sha256": {
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\pore_distribution\\host_cell.xyz": "7da1aa365877580b6ca94a334ae216c33c5558792624be7c170d75a6bcef499c",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\pore_distribution\\Au_13.xyz": "df22f38f4c9429a9a69e02194d69e123dbec929114d95e37efc31d513bb6e43a",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\pore_distribution\\Au_19.xyz": "338b0c08c82586673f6006f00bac56467c09371d8440461c997352169579d85e",
+    "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab\\examples\\pore_distribution\\Au_43.xyz": "2c0b19fe689fbeafbe0955416afe0d3ef8f2e3c61e62d207a59313645275b190"
+  },
+  "units": {
+    "positions": "angstrom",
+    "q": "inverse angstrom",
+    "finite_intensity": "electron^2",
+    "diffuse_per_cell": "electron^2",
+    "bragg_weight": "electron^2 angstrom^-3",
+    "powder_radial_weight": "electron^2 angstrom^-1"
+  },
+  "form_factors": "neutral Gemmi IT92",
+  "output_statistic": "ensemble_mean",
+  "physical_assumptions": [
+    "kinematic elastic scattering",
+    "fixed host",
+    "independent pores",
+    "independent identically distributed cells for bulk",
+    "rigid guests",
+    "number-weighted template probabilities"
+  ],
+  "instrument_corrections": false,
+  "surface_policy": "complete cells",
+  "input_processing": {
+    "cell_vectors_A": [
+      [
+        25.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        25.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        25.0
+      ]
+    ],
+    "basis_atoms": 424,
+    "retained_cells": 8,
+    "host_atoms": 3392,
+    "host_atoms_materialized": false,
+    "guest_retention": "site",
+    "surface_policy": "complete cells",
+    "input_pore_sites": 1,
+    "pore_sites_per_cell": 1,
+    "pore_symmetry_expanded": false,
+    "pore_sites_before_surface_filter": 8,
+    "retained_pore_sites": 8,
+    "pore_centres_A": [
+      [
+        12.5,
+        12.5,
+        12.5
+      ]
+    ],
+    "external_containment": "retain whole guests belonging to retained cell sites; no external-boundary clipping",
+    "pore_sites_materialized": false,
+    "pore_centres_scope": "unit-cell basis; independent states in every retained cell",
+    "population_representation": "one-cell independent-pore statistics",
+    "expected_guest_atoms": 99.83999999999999,
+    "pore_wall_validation": "disjoint under lattice repetition, including neighboring cell images"
+  },
+  "uncertainty": "Local placement integration SEM from independent batches; distinct from physical pore disorder. Radial approximation bound excludes floating-point roundoff and Monte Carlo integration error.",
+  "sampled_moment_policy": "Independent mean replicas form unbiased cross products; no periodically repeated random realization.",
+  "moment_metadata": {
+    "method": "sampled",
+    "statistic": "conditional_on_occupied_pore",
+    "pore_geometry": {
+      "centres_A": [
+        [
+          12.5,
+          12.5,
+          12.5
+        ]
+      ],
+      "pore_radius_A": [
+        8.0
+      ],
+      "wall_clearance_A": 0.5
+    },
+    "orientation": "Haar_uniform",
+    "position_mode": "uniform_ball",
+    "spherical_wall": "conditioned_by_rejection",
+    "batches": 8,
+    "replicas_per_batch": 2,
+    "n_samples_per_template_pore_replica": 4096,
+    "accepted_samples_per_template_pore_replica_batch": 512,
+    "accepted_placements": 24576,
+    "proposal_attempts": 48327,
+    "n_positive_weight_templates": 3,
+    "seed": 20261013,
+    "conditional_mean_atom_count": 20.799999999999997,
+    "template_weights": "exact_number_weights_not_sampled",
+    "occupancy": "excluded_from_conditional_statistics",
+    "replica_streams": "independent_SeedSequence_children_per_batch_replica_pore_template",
+    "radial_placement_sampler": "exact_isotropic_body_frame_translation",
+    "radial_sampling_identity": "v=R.T@u; isotropic u and Haar R give the same conditional atom-radius law",
+    "proposal_workspace_atom_placement_pairs": 65536,
+    "internal_scattering": "exact_number_weighted_template_Debye_rigid_invariant",
+    "radial_maximum_observed_A": 7.499927509462494,
+    "radial_bin_width_requested_A": 0.04,
+    "radial_moment_order": 8,
+    "numerical_bound": "mean_bounds cover radial Taylor truncation only, excluding floating-point error",
+    "uncertainty": "Monte Carlo integration uncertainty must be computed from independent batch intensity estimates; it is separate from physical disorder variance and interpolation error",
+    "sample_memory_scope": "one accepted radial array of samples_per_batch times template_atoms; no full-crystal guest draws"
+  },
+  "numerical_approximation": {
+    "description": "Finite host/pore radial geometry plus local isotropic pore statistics.",
+    "bound": "Geometry and local radial interpolation; excludes floating-point roundoff and stochastic integration error."
+  },
+  "actual_method": [
+    {
+      "radial_transform": "nearest_center_moments_real_fft",
+      "moment_order": 8,
+      "radial_bin_width_A": 0.03989324004558467,
+      "radial_bins": 2036,
+      "fft_points": 15750,
+      "q_step_invA": 0.01,
+      "max_radius_A": 81.18988160479172,
+      "radial_moment_bytes": 146592,
+      "truncation_bound": "pointwise_absolute_Taylor_remainder_excludes_floating_point",
+      "zero_q": "exact_total_weight",
+      "method": "finite_full_cell_independent_pore_radial_moments",
+      "numerical_backend": "numba_private_histograms_scipy_real_fft",
+      "n_cells": 8,
+      "n_translations": 27,
+      "original_basis_displacements": 136,
+      "grouped_basis_displacements": 136,
+      "displacement_symmetry": "cubic_signed_permutations",
+      "original_distance_entries": 3672,
+      "distance_entries": 3672,
+      "merge_decimals": 12,
+      "displacement_merge": "rounded_keys_actual_input_representatives",
+      "max_merged_displacement_A": 0.0,
+      "threads": 1,
+      "histogram_partitions": 1,
+      "histogram_private_workspace_bytes": 146592,
+      "histogram_bytes": 439776,
+      "memory_scope": "private histogram payload capped at 256 MiB; retained histograms, shape FFT, basis offsets, transform workspace and Python are additional",
+      "species_pairs": [
+        {
+          "channels": [
+            "host:C",
+            "host:C"
+          ],
+          "basis_offsets": 120,
+          "pair_count": 11505664,
+          "zero_distance_count": 3392,
+          "distance_entries": 3240,
+          "max_merged_displacement_A": 0.0,
+          "weighted_displacement_error_A": 0.0
+        },
+        {
+          "channels": [
+            "host:C",
+            "pore:0"
+          ],
+          "basis_offsets": 15,
+          "pair_count": 27136,
+          "zero_distance_count": 0,
+          "distance_entries": 405,
+          "max_merged_displacement_A": 0.0,
+          "weighted_displacement_error_A": 0.0
+        },
+        {
+          "channels": [
+            "pore:0",
+            "pore:0"
+          ],
+          "basis_offsets": 1,
+          "pair_count": 64,
+          "zero_distance_count": 8,
+          "distance_entries": 27,
+          "max_merged_displacement_A": 0.0,
+          "weighted_displacement_error_A": 0.0
+        }
+      ],
+      "preprocessing_seconds": 0.6074486998841166,
+      "last_evaluation_seconds": 0.00106819998472929,
+      "evaluation_count": 1,
+      "last_exact_selected_seconds": null,
+      "max_absolute_approximation_bound_electron2": 2.827018356551362e-10,
+      "max_absolute_taylor_bound_electron2": null,
+      "max_absolute_grouping_bound_electron2": null,
+      "approximation_bound": "radial Taylor and displacement merging plus propagated local-mean bounds; excludes Monte Carlo error and floating-point roundoff",
+      "fastmath": false,
+      "geometry_scattering_sites_per_cell": 425,
+      "host_atoms_per_cell": 424,
+      "physical_host_atoms": 3392,
+      "pores_per_cell": 1,
+      "physical_pores": 8,
+      "expected_guest_particles": 4.8,
+      "expected_guest_atoms": 99.83999999999999,
+      "guest_atom_count_source": "current_guest_statistics",
+      "pore_channels": "geometry-only labels; not atoms or artificial elements",
+      "physical_disorder": "independent pore states in every retained cell",
+      "sampling_products": "two independent conditional-mean replicas per batch",
+      "uncertainty": "batch SEM is numerical integration error, not physical population uncertainty",
+      "geometry_curve_bytes": 28848,
+      "geometry_transform_seconds": 0.006309599848464131,
+      "guest_statistics": {
+        "method": "sampled",
+        "statistic": "conditional_on_occupied_pore",
+        "pore_geometry": {
+          "centres_A": [
+            [
+              12.5,
+              12.5,
+              12.5
+            ]
+          ],
+          "pore_radius_A": [
+            8.0
+          ],
+          "wall_clearance_A": 0.5
+        },
+        "orientation": "Haar_uniform",
+        "position_mode": "uniform_ball",
+        "spherical_wall": "conditioned_by_rejection",
+        "batches": 8,
+        "replicas_per_batch": 2,
+        "n_samples_per_template_pore_replica": 4096,
+        "accepted_samples_per_template_pore_replica_batch": 512,
+        "accepted_placements": 24576,
+        "proposal_attempts": 48327,
+        "n_positive_weight_templates": 3,
+        "seed": 20261013,
+        "conditional_mean_atom_count": 20.799999999999997,
+        "template_weights": "exact_number_weights_not_sampled",
+        "occupancy": "excluded_from_conditional_statistics",
+        "replica_streams": "independent_SeedSequence_children_per_batch_replica_pore_template",
+        "radial_placement_sampler": "exact_isotropic_body_frame_translation",
+        "radial_sampling_identity": "v=R.T@u; isotropic u and Haar R give the same conditional atom-radius law",
+        "proposal_workspace_atom_placement_pairs": 65536,
+        "internal_scattering": "exact_number_weighted_template_Debye_rigid_invariant",
+        "radial_maximum_observed_A": 7.499927509462494,
+        "radial_bin_width_requested_A": 0.04,
+        "radial_moment_order": 8,
+        "numerical_bound": "mean_bounds cover radial Taylor truncation only, excluding floating-point error",
+        "uncertainty": "Monte Carlo integration uncertainty must be computed from independent batch intensity estimates; it is separate from physical disorder variance and interpolation error",
+        "sample_memory_scope": "one accepted radial array of samples_per_batch times template_atoms; no full-crystal guest draws"
+      }
+    }
+  ],
+  "seconds": 0.7910309000872076,
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "numba": "0.65.0",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.4.1"
+    },
+    "cuda_available": false,
+    "torch_threads": 6,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    }
+  }
+}

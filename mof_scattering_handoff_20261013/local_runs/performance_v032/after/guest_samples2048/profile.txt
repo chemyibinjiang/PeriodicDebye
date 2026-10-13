@@ -1,0 +1,53 @@
+         639468 function calls (633713 primitive calls) in 1.494 seconds
+
+   Ordered by: cumulative time
+   List reduced from 109 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.499    1.499 benchmark_mof_modes.py:111(evaluate)
+        1    0.000    0.000    1.499    1.499 moments.py:62(guest_moments)
+        1    0.080    0.080    1.499    1.499 moments.py:172(_sampled_moments)
+     5753    0.701    0.000    0.761    0.000 moments.py:143(evaluate)
+     8192    0.200    0.000    0.651    0.000 distributions.py:174(sample)
+     5753    0.011    0.000    0.315    0.000 distributions.py:165(_rotation)
+11506/5753    0.045    0.000    0.287    0.000 _util.py:291(wrapper)
+     5753    0.012    0.000    0.264    0.000 _rotation.py:2295(random)
+     5753    0.043    0.000    0.208    0.000 _rotation.py:348(__init__)
+     5753    0.013    0.000    0.132    0.000 _rotation.py:40(_promote)
+     5753    0.016    0.000    0.116    0.000 _array_api.py:524(xp_promote)
+     5753    0.007    0.000    0.074    0.000 <string>:2(__init__)
+     5753    0.033    0.000    0.067    0.000 core.py:23(__post_init__)
+     5753    0.018    0.000    0.049    0.000 _array_api.py:471(xp_result_type)
+    17269    0.043    0.000    0.043    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    11506    0.007    0.000    0.043    0.000 {method 'sum' of 'numpy.ndarray' objects}
+     5753    0.014    0.000    0.037    0.000 _array_api.py:548(<listcomp>)
+    11506    0.005    0.000    0.036    0.000 _methods.py:47(_sum)
+     5753    0.030    0.000    0.030    0.000 distributions.py:155(_position)
+     5753    0.012    0.000    0.028    0.000 _delegation.py:34(atleast_nd)
+     5753    0.010    0.000    0.027    0.000 _array_api.py:494(<listcomp>)
+    34518    0.016    0.000    0.023    0.000 _array_api.py:75(_asarray)
+     5753    0.008    0.000    0.019    0.000 numerictypes.py:475(issubdtype)
+     5758    0.004    0.000    0.019    0.000 {method 'all' of 'numpy.ndarray' objects}
+     5753    0.009    0.000    0.019    0.000 _util.py:393(check_random_state)
+     5753    0.017    0.000    0.017    0.000 _rotation.py:1053(as_matrix)
+    23012    0.013    0.000    0.015    0.000 _helpers.py:149(is_torch_array)
+     5758    0.003    0.000    0.015    0.000 _methods.py:64(_all)
+     5753    0.011    0.000    0.014    0.000 shape_base.py:78(atleast_2d)
+     5753    0.005    0.000    0.013    0.000 _array_api.py:553(<listcomp>)
+    19709    0.012    0.000    0.012    0.000 {built-in method numpy.zeros}
+    11506    0.007    0.000    0.011    0.000 numerictypes.py:293(issubclass_)
+    23012    0.007    0.000    0.010    0.000 _function_base_impl.py:363(iterable)
+    17271    0.005    0.000    0.010    0.000 {built-in method builtins.isinstance}
+83001/82999    0.010    0.000    0.010    0.000 {built-in method builtins.len}
+    11506    0.005    0.000    0.007    0.000 getlimits.py:178(__new__)
+    40273    0.007    0.000    0.007    0.000 {built-in method numpy.asanyarray}
+     5756    0.006    0.000    0.006    0.000 {built-in method numpy.array}
+     5754    0.002    0.000    0.005    0.000 <frozen abc>:117(__instancecheck__)
+     5753    0.003    0.000    0.004    0.000 _rotation.py:27(select_backend)
+     5753    0.004    0.000    0.004    0.000 {method 'reshape' of 'numpy.ndarray' objects}
+    17264    0.004    0.000    0.004    0.000 {built-in method builtins.issubclass}
+     5756    0.004    0.000    0.004    0.000 {method 'setflags' of 'numpy.ndarray' objects}
+    11507    0.003    0.000    0.003    0.000 {built-in method builtins.min}
+    17267    0.003    0.000    0.003    0.000 {method 'get' of 'dict' objects}
+
+

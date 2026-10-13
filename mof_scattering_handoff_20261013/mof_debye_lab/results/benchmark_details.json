@@ -1,0 +1,272 @@
+[
+  {
+    "n_atoms": 192,
+    "q_points": 301,
+    "method": "upstream_direct_float64",
+    "seconds_median": 0.09137457500003165,
+    "seconds_min": 0.09052590900000723,
+    "seconds_max": 0.09325891799994679,
+    "numpy_reference_seconds": 0.08807583399993746,
+    "rel_max_error_all": 1.1046616021047659e-15,
+    "rel_max_error_q_ge_1": 2.75301203309852e-16,
+    "rel_max_error_q_ge_3": 3.34970895808107e-16,
+    "relative_l2_error": 6.249533221373804e-16,
+    "times": [
+      0.09325891799994679,
+      0.09137457500003165,
+      0.09052590900000723
+    ],
+    "kernel_info": {
+      "n_atoms": 192,
+      "n_pairs": 18336,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 27693,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "direct",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 192,
+    "q_points": 301,
+    "method": "upstream_grid_float64",
+    "seconds_median": 0.013336656999968,
+    "seconds_min": 0.011863062000088576,
+    "seconds_max": 0.01499111600003289,
+    "numpy_reference_seconds": 0.08807583399993746,
+    "rel_max_error_all": 9.489330834372154e-13,
+    "rel_max_error_q_ge_1": 2.8378908353439887e-12,
+    "rel_max_error_q_ge_3": 6.905969344789813e-12,
+    "relative_l2_error": 1.5645737448463578e-12,
+    "times": [
+      0.01499111600003289,
+      0.013336656999968,
+      0.011863062000088576
+    ],
+    "kernel_info": {
+      "n_atoms": 192,
+      "n_pairs": 18336,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 27693,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 192,
+    "q_points": 301,
+    "method": "upstream_grid_float32",
+    "seconds_median": 0.004953419999992548,
+    "seconds_min": 0.0047664979999808565,
+    "seconds_max": 0.005449786000099266,
+    "numpy_reference_seconds": 0.08807583399993746,
+    "rel_max_error_all": 1.4386846187789936e-07,
+    "rel_max_error_q_ge_1": 2.656805435641063e-07,
+    "rel_max_error_q_ge_3": 3.0124946859778567e-07,
+    "relative_l2_error": 1.294431729806675e-07,
+    "times": [
+      0.0047664979999808565,
+      0.005449786000099266,
+      0.004953419999992548
+    ],
+    "kernel_info": {
+      "n_atoms": 192,
+      "n_pairs": 18336,
+      "distance_grid_A": 0.0078125,
+      "n_nodes": 6927,
+      "precision": "float32",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 648,
+    "q_points": 301,
+    "method": "upstream_direct_float64",
+    "seconds_median": 0.8073507819999577,
+    "seconds_min": 0.8032333969999854,
+    "seconds_max": 0.891963971999985,
+    "numpy_reference_seconds": 0.8395493629999464,
+    "rel_max_error_all": 8.238378491681745e-16,
+    "rel_max_error_q_ge_1": 9.434730884374055e-16,
+    "rel_max_error_q_ge_3": 3.910803882147388e-16,
+    "relative_l2_error": 7.292907744585565e-16,
+    "times": [
+      0.891963971999985,
+      0.8073507819999577,
+      0.8032333969999854
+    ],
+    "kernel_info": {
+      "n_atoms": 648,
+      "n_pairs": 209628,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 47201,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "direct",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 648,
+    "q_points": 301,
+    "method": "upstream_grid_float64",
+    "seconds_median": 0.021516948999988017,
+    "seconds_min": 0.021396818999960487,
+    "seconds_max": 0.023520411000049535,
+    "numpy_reference_seconds": 0.8395493629999464,
+    "rel_max_error_all": 9.525110232351287e-13,
+    "rel_max_error_q_ge_1": 3.636105971459076e-12,
+    "rel_max_error_q_ge_3": 9.043245126980566e-12,
+    "relative_l2_error": 2.2328448224371573e-12,
+    "times": [
+      0.021396818999960487,
+      0.023520411000049535,
+      0.021516948999988017
+    ],
+    "kernel_info": {
+      "n_atoms": 648,
+      "n_pairs": 209628,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 47201,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 648,
+    "q_points": 301,
+    "method": "upstream_grid_float32",
+    "seconds_median": 0.00867688799996813,
+    "seconds_min": 0.008667654999953811,
+    "seconds_max": 0.008886735000032786,
+    "numpy_reference_seconds": 0.8395493629999464,
+    "rel_max_error_all": 1.7884055465478225e-07,
+    "rel_max_error_q_ge_1": 4.356703481484414e-07,
+    "rel_max_error_q_ge_3": 4.0673200336790643e-07,
+    "relative_l2_error": 2.172588191120287e-07,
+    "times": [
+      0.008886735000032786,
+      0.00867688799996813,
+      0.008667654999953811
+    ],
+    "kernel_info": {
+      "n_atoms": 648,
+      "n_pairs": 209628,
+      "distance_grid_A": 0.0078125,
+      "n_nodes": 11804,
+      "precision": "float32",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 1536,
+    "q_points": 301,
+    "method": "upstream_direct_float64",
+    "seconds_median": 4.355069812000011,
+    "seconds_min": 4.297810449000053,
+    "seconds_max": 4.40474592999999,
+    "numpy_reference_seconds": 4.500975609999955,
+    "rel_max_error_all": 2.4175960114323624e-15,
+    "rel_max_error_q_ge_1": 2.2921120611030458e-15,
+    "rel_max_error_q_ge_3": 1.9215384955925737e-15,
+    "relative_l2_error": 1.996650840276507e-15,
+    "times": [
+      4.355069812000011,
+      4.297810449000053,
+      4.40474592999999
+    ],
+    "kernel_info": {
+      "n_atoms": 1536,
+      "n_pairs": 1178880,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 66711,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "direct",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 1536,
+    "q_points": 301,
+    "method": "upstream_grid_float64",
+    "seconds_median": 0.05247696100002486,
+    "seconds_min": 0.047246766000057505,
+    "seconds_max": 0.05391133599994191,
+    "numpy_reference_seconds": 4.500975609999955,
+    "rel_max_error_all": 1.6367679491895128e-12,
+    "rel_max_error_q_ge_1": 4.698543211253606e-12,
+    "rel_max_error_q_ge_3": 1.1816741170958482e-11,
+    "relative_l2_error": 3.1803479536095544e-12,
+    "times": [
+      0.05391133599994191,
+      0.05247696100002486,
+      0.047246766000057505
+    ],
+    "kernel_info": {
+      "n_atoms": 1536,
+      "n_pairs": 1178880,
+      "distance_grid_A": 0.001953125,
+      "n_nodes": 66711,
+      "precision": "float64",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  },
+  {
+    "n_atoms": 1536,
+    "q_points": 301,
+    "method": "upstream_grid_float32",
+    "seconds_median": 0.02632954700004575,
+    "seconds_min": 0.025313371000038387,
+    "seconds_max": 0.0263365480000175,
+    "numpy_reference_seconds": 4.500975609999955,
+    "rel_max_error_all": 2.0940599946682364e-07,
+    "rel_max_error_q_ge_1": 5.724699007602717e-07,
+    "rel_max_error_q_ge_3": 7.934827324726081e-07,
+    "relative_l2_error": 3.552786567765631e-07,
+    "times": [
+      0.02632954700004575,
+      0.025313371000038387,
+      0.0263365480000175
+    ],
+    "kernel_info": {
+      "n_atoms": 1536,
+      "n_pairs": 1178880,
+      "distance_grid_A": 0.0078125,
+      "n_nodes": 16682,
+      "precision": "float32",
+      "num_threads_requested": 1,
+      "device": "cpu",
+      "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+      "actual_method": "grid",
+      "num_threads_jobs": 1
+    }
+  }
+]

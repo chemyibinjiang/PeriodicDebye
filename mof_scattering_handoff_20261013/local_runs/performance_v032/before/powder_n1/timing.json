@@ -1,0 +1,170 @@
+{
+  "status": "completed",
+  "case": {
+    "name": "powder_n1",
+    "kind": "powder",
+    "cells_per_edge": 1,
+    "points": 121,
+    "qmax": 6,
+    "repeats": 3
+  },
+  "version": "0.3.1",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "gemmi": "0.7.5",
+      "torch": "2.11.0+cpu",
+      "pytest": "8.4.2",
+      "debyecalculator": "1.0.14",
+      "mof-debye-lab": "0.3.1"
+    },
+    "cuda_available": false,
+    "torch_threads": 1,
+    "executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv",
+    "base_prefix": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv_settings": {
+      "home": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311",
+      "include-system-site-packages": "true",
+      "version": "3.11.9",
+      "executable": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "command": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv --system-site-packages C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv"
+    },
+    "logical_cpus": 12,
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "source_sha256": {
+    "__init__.py": "95fe2228385aa0a3e6149580cc6f79a064db201712ca1e3c00e45ac36d1d31d8",
+    "core.py": "8006062d0bc493b707e069a5f9a3aeb8a9797b09bbb0285c3e99110d3b214c7f",
+    "crystal.py": "e0a85b1f71c2f5b68c4d737fdff4088c107bb1c910d303e90676c19e49f86567",
+    "directional.py": "81bf60789672daa1d9c132d334e4acff0459a331958815b8ab2d6dc710cc4146",
+    "distributions.py": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7",
+    "ensemble.py": "3a39d98274760fd7af275738bfb5b0263807664d2da33fe6abce1a7766b4076b",
+    "fixtures.py": "b6bb20400918ea1d884f4937bff0e44a88f6178db03a766d0e371144d289feaf",
+    "geometry.py": "2fd7df89e084281f1f9190fc711d912a4f16c8d2bad8bf91e1cb9316511ded5f",
+    "installed.py": "d482dbd2911cf05f77820d0555a6c79fce9e09df3dd60e515af9148429f2b771",
+    "lattice.py": "6d088a64b9a997c8629dd73049209492e795fcf6567eb7e94265d2cc9585b27e",
+    "moments.py": "815e85bdb9b22d62da466d0be58616cfaf7a41916529c00a49e5fdfd4c8658f4",
+    "periodic.py": "8bdd86d19e830fcf2de98ec8636c8ddb01427e1e24831084407cb7a234855d0f",
+    "runner.py": "9397096e2461d5261823a454cd915a68c52feb6b9d83ac1529097087e702b585"
+  },
+  "source_cif_sha256": "e5d0b3d72445c15cd2ed02a36fa2fdf3d5d13f6c21441984475449d48d3f0ad2",
+  "cif_load_seconds": 0.1443067998625338,
+  "timings_seconds": [
+    2.9271409998182207,
+    2.8988924000877887,
+    2.8686991001013666
+  ],
+  "median_seconds": 2.8988924000877887,
+  "min_seconds": 2.8686991001013666,
+  "max_seconds": 2.9271409998182207,
+  "timing_scope": "Warm interpreter, complete run_configuration including CIF and metadata; excludes output files and profile. Guest case is guest_moments only after setup.",
+  "actual_methods": [
+    [
+      {
+        "method": "full_cell_lattice_grouped",
+        "n_cells": 1,
+        "n_basis_atoms": 424,
+        "n_translations": 1,
+        "distance_entries": 118848,
+        "estimated_distance_cache_bytes": 950784,
+        "distance_cache_bytes": 950784,
+        "cache_max_bytes": 67108864,
+        "distance_storage": "cached",
+        "translation_chunk": 8192,
+        "preprocessing_seconds": 0.6097927999217063,
+        "evaluation_count": 1,
+        "last_evaluation_seconds": 2.1535312000196427,
+        "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+      }
+    ],
+    [
+      {
+        "method": "full_cell_lattice_grouped",
+        "n_cells": 1,
+        "n_basis_atoms": 424,
+        "n_translations": 1,
+        "distance_entries": 118848,
+        "estimated_distance_cache_bytes": 950784,
+        "distance_cache_bytes": 950784,
+        "cache_max_bytes": 67108864,
+        "distance_storage": "cached",
+        "translation_chunk": 8192,
+        "preprocessing_seconds": 0.5863501999992877,
+        "evaluation_count": 1,
+        "last_evaluation_seconds": 2.1470298999920487,
+        "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+      }
+    ],
+    [
+      {
+        "method": "full_cell_lattice_grouped",
+        "n_cells": 1,
+        "n_basis_atoms": 424,
+        "n_translations": 1,
+        "distance_entries": 118848,
+        "estimated_distance_cache_bytes": 950784,
+        "distance_cache_bytes": 950784,
+        "cache_max_bytes": 67108864,
+        "distance_storage": "cached",
+        "translation_chunk": 8192,
+        "preprocessing_seconds": 0.5883466000668705,
+        "evaluation_count": 1,
+        "last_evaluation_seconds": 2.1256944998167455,
+        "memory_scope": "distance cache budget; FFT shape and total process memory not capped"
+      }
+    ]
+  ],
+  "table_rows": {
+    "intensity": 121
+  },
+  "peak_sampled_rss_bytes": 272830464,
+  "initial_rss_bytes": 271196160,
+  "incremental_sampled_rss_bytes": 1634304,
+  "windows_process_peak_wset_bytes": 272912384,
+  "memory_scope": "5 ms sampled RSS over three runs; Windows process peak includes setup/imports. Not a hard memory bound.",
+  "retained_cells": 1,
+  "conceptual_host_atoms": 424,
+  "edge_nm": 2.5832
+}

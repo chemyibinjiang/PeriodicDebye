@@ -1,0 +1,7 @@
+{
+  "name": "periodic_q6",
+  "kind": "periodic",
+  "qmax": 6,
+  "points": 401,
+  "repeats": 3
+}

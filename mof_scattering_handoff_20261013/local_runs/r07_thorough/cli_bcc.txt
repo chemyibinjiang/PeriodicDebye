@@ -1,0 +1,11 @@
+{
+  "output": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_thorough\\cli_bcc",
+  "tables": [
+    "reflections",
+    "diffuse"
+  ],
+  "seconds": 0.015138000017032027,
+  "actual_method": [
+    "directional_cell_moments_and_reciprocal_enumeration"
+  ]
+}

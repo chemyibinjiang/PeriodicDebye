@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.1",
+  "description": "SYNTHETIC hollow 424-C grid with Au13/19/43 pores; not a real MOF or measured loading.",
+  "scattering_case": "pxrd",
+  "boundary": "finite",
+  "guest_estimator": "analytic",
+  "backend": "radial_moments",
+  "device": "cpu",
+  "host": {
+    "xyz": "host_cell.xyz",
+    "cell_vectors_A": [
+      [
+        25.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        25.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        25.0
+      ]
+    ],
+    "cell_mask": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ]
+  },
+  "pores": {
+    "centres_fractional": [
+      [
+        0.5,
+        0.5,
+        0.5
+      ]
+    ]
+  },
+  "particles": [
+    {
+      "xyz": "Au_13.xyz",
+      "weight": 0.5
+    },
+    {
+      "xyz": "Au_19.xyz",
+      "weight": 0.3
+    },
+    {
+      "xyz": "Au_43.xyz",
+      "weight": 0.2
+    }
+  ],
+  "population": {
+    "occupancy": 0.6,
+    "position_mode": "uniform_ball",
+    "uniform_ball_radius_A": 2.0,
+    "orientation": "uniform",
+    "pore_radius_A": 8.0,
+    "wall_clearance_A": 0.5
+  },
+  "statistics": {
+    "seed": 20261013,
+    "n_samples": 4096,
+    "n_batches": 8
+  },
+  "radial": {
+    "bin_width_A": 0.04,
+    "order": 8,
+    "threads": 1
+  },
+  "sampling": {
+    "q": {
+      "min": 0.0,
+      "max": 6.0,
+      "points": 601
+    }
+  }
+}

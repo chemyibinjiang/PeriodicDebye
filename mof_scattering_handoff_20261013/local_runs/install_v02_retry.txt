@@ -1,0 +1,20 @@
+Obtaining file:///C:/Users/yibinjiang/Documents/GitHub/PeriodicDebye/mof_scattering_handoff_20261013/mof_debye_lab
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: mof-debye-lab
+  Building editable for mof-debye-lab (pyproject.toml): started
+  Building editable for mof-debye-lab (pyproject.toml): finished with status 'done'
+  Created wheel for mof-debye-lab: filename=mof_debye_lab-0.2.0-0.editable-py3-none-any.whl size=5993 sha256=bd9e9d9c5d3139496faa7acd2a572bfb87a733e5cd58bb520e71a9927ce50432
+  Stored in directory: C:\Users\yibinjiang\AppData\Local\Temp\pip-ephem-wheel-cache-ytrz5spu\wheels\3d\e6\80\eb5808e0332cd5abce0ad48ecd49d9f6b2ff65bc945231946a
+Successfully built mof-debye-lab
+Installing collected packages: mof-debye-lab
+Successfully installed mof-debye-lab-0.2.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: C:\Users\yibinjiang\Documents\GitHub\PeriodicDebye\mof_scattering_handoff_20261013\.venv\Scripts\python.exe -m pip install --upgrade pip

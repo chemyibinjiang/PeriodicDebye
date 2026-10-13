@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "20.67nm original v0.3.1 vs optimized at 13 common q points",
+      "points": 13,
+      "scaled_error": 6.073435748379969e-13,
+      "nonforward_scaled_error": 1.9541476910811222e-14,
+      "significant_relative_error": 9.793116866501624e-14,
+      "passed": true
+    },
+    {
+      "check": "4 cubed cells retained cache vs standard runner",
+      "points": 121,
+      "scaled_error": 0.0,
+      "nonforward_scaled_error": 0.0,
+      "significant_relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "check": "reuse experiment n4 finite directional intensity",
+      "points": 2049,
+      "scaled_error": 0.0,
+      "nonforward_scaled_error": 0.0,
+      "significant_relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "check": "8 cubed cells retained cache vs standard runner",
+      "points": 121,
+      "scaled_error": 8.065651724281085e-16,
+      "nonforward_scaled_error": 4.322532189797375e-15,
+      "significant_relative_error": 1.3482162022171497e-12,
+      "passed": true
+    },
+    {
+      "check": "reuse experiment n8 finite directional intensity",
+      "points": 2049,
+      "scaled_error": 0.0,
+      "nonforward_scaled_error": 0.0,
+      "significant_relative_error": 0.0,
+      "passed": true
+    }
+  ],
+  "large_case_reference": "before_large_accuracy/powder_n8/outputs.npz",
+  "scope": "Accuracy checks only. The 13-q reference timing is not compared to 121-q run times; cache reuse times remain separate from fresh-runner timings."
+}

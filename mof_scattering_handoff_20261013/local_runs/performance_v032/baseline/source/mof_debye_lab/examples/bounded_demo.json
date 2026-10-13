@@ -1,0 +1,65 @@
+{
+  "description": "Synthetic bounded, biased-position and wobbling-particle example",
+  "host_xyz": "synthetic_host.xyz",
+  "particles": [
+    {
+      "xyz": "Au_13.xyz",
+      "weight": 0.5
+    },
+    {
+      "xyz": "Au_19.xyz",
+      "weight": 0.3
+    },
+    {
+      "xyz": "Au_43.xyz",
+      "weight": 0.2
+    }
+  ],
+  "pore_centres_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      22.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "population": {
+    "occupancy": 0.7,
+    "displacement_covariance_A2": [
+      [
+        0.81,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.2025,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2025
+      ]
+    ],
+    "mean_displacement_A": [
+      1.4,
+      0,
+      0
+    ],
+    "orientation": "wobble",
+    "wobble_std_deg": 18.0,
+    "pore_radius_A": 6.2,
+    "wall_clearance_A": 0.2,
+    "min_host_distance_A": 1.6
+  },
+  "q": {
+    "min": 0.15,
+    "max": 8.0,
+    "points": 201
+  }
+}

@@ -1,0 +1,12 @@
+N=192 NumPy reference: 0.0881 s
+  upstream_direct_float64: 0.0914 s; high-q max error 3.35e-16
+  upstream_grid_float64: 0.0133 s; high-q max error 6.91e-12
+  upstream_grid_float32: 0.0050 s; high-q max error 3.01e-07
+N=648 NumPy reference: 0.8395 s
+  upstream_direct_float64: 0.8074 s; high-q max error 3.91e-16
+  upstream_grid_float64: 0.0215 s; high-q max error 9.04e-12
+  upstream_grid_float32: 0.0087 s; high-q max error 4.07e-07
+N=1536 NumPy reference: 4.5010 s
+  upstream_direct_float64: 4.3551 s; high-q max error 1.92e-15
+  upstream_grid_float64: 0.0525 s; high-q max error 1.18e-11
+  upstream_grid_float32: 0.0263 s; high-q max error 7.93e-07

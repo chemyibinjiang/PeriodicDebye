@@ -1,0 +1,90 @@
+{
+  "model": "synthetic mixed C/O/Zn point cage lattice; NOT a chemically validated MOF",
+  "host_atoms": 24,
+  "n_pores": 2,
+  "particle_atom_counts": [
+    13,
+    19
+  ],
+  "number_weights": [
+    0.65,
+    0.35
+  ],
+  "occupancy_probabilities": [
+    0.6,
+    0.8
+  ],
+  "gaussian_sigma_per_coordinate_A": 0.45,
+  "q_points": 201,
+  "q_range_Ainv": [
+    0.15,
+    8.0
+  ],
+  "n_mc_samples": 8192,
+  "analytic_seconds": 0.003917139000009229,
+  "mc_seconds": 17.58381169200004,
+  "mc_relative_l2_error": 0.00564529688485218,
+  "max_abs_standardized_residual": 1.4785431871643204,
+  "fraction_q_within_3_mc_standard_errors": 1.0,
+  "naive_component_addition_relative_l2_error": 0.06972139209649753,
+  "full_sum_vs_decomposition_relative_max_error": 4.007432094761065e-15,
+  "upstream_grid_vs_reference_composite_relative_max_error": 2.8705995482076907e-12,
+  "composite_kernel_info": {
+    "n_atoms": 56,
+    "n_pairs": 1540,
+    "distance_grid_A": 0.001953125,
+    "n_nodes": 20667,
+    "precision": "float64",
+    "num_threads_requested": 1,
+    "device": "cpu",
+    "upstream_blob": "89cd257ac681d3859457db7e8220cbc325c6953d",
+    "actual_method": "grid",
+    "num_threads_jobs": 1
+  },
+  "rigid_particle_checks": {
+    "translated": {
+      "internal_relative_max_error": 2.7866988821163465e-16,
+      "host_guest_relative_l2_change": 0.07128169819813189
+    },
+    "rotated": {
+      "internal_relative_max_error": 1.7416868013227165e-16,
+      "host_guest_relative_l2_change": 0.015770131223638878
+    }
+  },
+  "irregular_lattice_grouping": {
+    "n_atoms": 138,
+    "relative_max_error": 7.919028933277886e-16,
+    "direct_seconds": 0.025370337000026666,
+    "grouped_seconds": 0.009891682999978002
+  },
+  "bounded_sampling": {
+    "n_configurations": 2000,
+    "n_particles": 2832,
+    "requested_size_weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "sampled_size_weights": [
+      0.5024717514124294,
+      0.2934322033898305,
+      0.2040960451977401
+    ],
+    "sampled_occupancy_probabilities": [
+      0.708,
+      0.708
+    ],
+    "max_atom_radius_A": 5.999744577430268,
+    "allowed_radius_A": 6.0,
+    "mean_attempts": 1.7221045197740112,
+    "scattering_configurations": 512,
+    "scattering_seconds": 1.521454790000007,
+    "full_sum_relative_max_error": 2.7453697439758798e-15
+  },
+  "limitations": [
+    "Finite-system validation, not an infinite-lattice implementation.",
+    "Analytical formula uses independent pores, uniform SO(3) rotations, unbounded isotropic Gaussian shifts.",
+    "Bounded example uses explicit Monte Carlo instead; no claim of identical distributions.",
+    "No framework relaxation, anomalous terms, thermal/instrumental effects, pore finding, or inferred material parameters."
+  ]
+}

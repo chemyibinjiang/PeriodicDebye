@@ -1,0 +1,40 @@
+[
+  {
+    "check": "pytest",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_validation\\pytest.xml"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0,
+    "log": "pytest.txt"
+  },
+  {
+    "check": "real_mof",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "scripts/run_real_mof_example.py",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_real_mof"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0,
+    "log": "real_mof.txt"
+  },
+  {
+    "check": "installed_cli",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\mofdebye.exe",
+      "--config",
+      "examples/real_mof/pxrd_atom_cut.json",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_validation\\cli_atom_cut"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0,
+    "log": "installed_cli.txt"
+  }
+]

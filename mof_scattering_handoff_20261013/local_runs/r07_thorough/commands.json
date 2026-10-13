@@ -1,0 +1,30 @@
+[
+  {
+    "check": "pytest",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--junitxml=C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_thorough\\pytest.xml"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\mof_debye_lab",
+    "returncode": 0,
+    "log": "pytest.txt"
+  },
+  {
+    "check": "cli_bcc",
+    "command": [
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\mofdebye.exe",
+      "--config",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\physical_examples\\inputs\\bcc.json",
+      "--out",
+      "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\local_runs\\r07_thorough\\cli_bcc"
+    ],
+    "cwd": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013",
+    "returncode": 0,
+    "log": "cli_bcc.txt"
+  }
+]

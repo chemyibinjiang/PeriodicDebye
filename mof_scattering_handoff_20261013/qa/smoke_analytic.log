@@ -1,0 +1,55 @@
+{
+  "config": {
+    "description": "Synthetic validation model, not a real MOF",
+    "host_xyz": "synthetic_host.xyz",
+    "particles": [
+      {
+        "xyz": "Au_13.xyz",
+        "weight": 0.65
+      },
+      {
+        "xyz": "Au_19.xyz",
+        "weight": 0.35
+      }
+    ],
+    "pore_centres_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        22.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "population": {
+      "occupancy": [
+        0.6,
+        0.8
+      ],
+      "displacement_sigma_A": 0.45,
+      "orientation": "uniform"
+    },
+    "q": {
+      "min": 0.15,
+      "max": 8.0,
+      "points": 201
+    }
+  },
+  "mode": "analytic",
+  "backend": "upstream-kernel",
+  "device": "cpu",
+  "seconds": 0.009163365000006252,
+  "host_atoms": 24,
+  "particle_atom_counts": [
+    13,
+    19
+  ],
+  "n_samples": null,
+  "seed": 20261013,
+  "intensity_convention": "full finite-system Debye intensity; neutral IT92 factors; no instrument corrections",
+  "actual_kernel_counts": null,
+  "analytical_zero_SEM_means": "no Monte Carlo sampling, NOT zero uncertainty in physical parameters"
+}

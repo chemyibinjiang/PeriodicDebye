@@ -1,0 +1,312 @@
+[
+  {
+    "path": "mof_debye_lab/LICENSE",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "mof_debye_lab/README.md",
+    "bytes": 11436,
+    "sha256": "71efb4aa5718c6e5f18d00ff27d47ccf29a6fab72314a5385350716ea8ced4e8"
+  },
+  {
+    "path": "mof_debye_lab/REPORT.md",
+    "bytes": 5720,
+    "sha256": "409ea25347ee9d83749fad20691403f5314abac9bc8ac5805db8b8fc56e3eb97"
+  },
+  {
+    "path": "mof_debye_lab/examples/Au_13.xyz",
+    "bytes": 258,
+    "sha256": "633a3f506c3f43c2576bd3b60977ac2244ae7cef252906a0e0a7cc88f9d2d6a7"
+  },
+  {
+    "path": "mof_debye_lab/examples/Au_19.xyz",
+    "bytes": 333,
+    "sha256": "03de81a14c6de9c4fdb9637e453ea81fa60211fe46d5a835d888df71c1f3c1ca"
+  },
+  {
+    "path": "mof_debye_lab/examples/Au_43.xyz",
+    "bytes": 799,
+    "sha256": "e93032d12e09439a0e6b297973b2831f94dce03666e3eb4aa5e4390e6bcf192b"
+  },
+  {
+    "path": "mof_debye_lab/examples/analytic_snapshot.xyz",
+    "bytes": 2535,
+    "sha256": "cca390fe9a86d7dc9003931275adcdc9bacd3eab9982454ab92977236c2d0133"
+  },
+  {
+    "path": "mof_debye_lab/examples/analytic_validation.json",
+    "bytes": 557,
+    "sha256": "5e3da5b55877626fdec3b06b63924f00f2ea3c8f0e2b2072862d1441426ce4bd"
+  },
+  {
+    "path": "mof_debye_lab/examples/bounded_demo.json",
+    "bytes": 969,
+    "sha256": "b3e50f1489869b787ad0d3047c1c9195c2088136d51694b5d96cacf7b420aca8"
+  },
+  {
+    "path": "mof_debye_lab/examples/bounded_snapshot.xyz",
+    "bytes": 1897,
+    "sha256": "2056f109aec4d0fcc93628814225f961eb3b12473b5394680fb14bd061c1cb99"
+  },
+  {
+    "path": "mof_debye_lab/examples/synthetic_host.xyz",
+    "bytes": 1028,
+    "sha256": "90cae98a42c2d67d9d733ba397d8783e26aa6b5363fd77fe82340f49d683877b"
+  },
+  {
+    "path": "mof_debye_lab/logs/benchmark.txt",
+    "bytes": 652,
+    "sha256": "b5c5456e19e647db32bfb60a8e4825eec8bcb947c75f8a33e2def883718c2d99"
+  },
+  {
+    "path": "mof_debye_lab/logs/cli_analytic.txt",
+    "bytes": 1116,
+    "sha256": "9327d51bd4ed4802c88faa8cc64604099a6494cd5de394bbd1f0ad60857d8930"
+  },
+  {
+    "path": "mof_debye_lab/logs/cli_bounded.txt",
+    "bytes": 1596,
+    "sha256": "2a31f5b48701c72ac6f2aa05d91d175ad4247820540cc744c542cb3412834702"
+  },
+  {
+    "path": "mof_debye_lab/logs/install.txt",
+    "bytes": 2051,
+    "sha256": "b32cf8b784340351c51f2550abfc8c98207783e02bfcc832229cdf7c17caed20"
+  },
+  {
+    "path": "mof_debye_lab/logs/local_project_install.txt",
+    "bytes": 1200,
+    "sha256": "35f942134749245489af628ffe3887f1827dcdaf47b043d23437ba24c5d2ea0e"
+  },
+  {
+    "path": "mof_debye_lab/logs/pytest.txt",
+    "bytes": 99,
+    "sha256": "7622e0766a6f3c7ef14bf642a1f41a9e07f9f03fddbac0cea4587581edb2eb91"
+  },
+  {
+    "path": "mof_debye_lab/logs/pytest_initial.txt",
+    "bytes": 99,
+    "sha256": "d83b00bbef9da729f409f187c9b45f63c2ae4c61366f9a7efa54f9b1b9d362d2"
+  },
+  {
+    "path": "mof_debye_lab/logs/validation.txt",
+    "bytes": 2740,
+    "sha256": "29cbad12343699417cf18f0df7836f5eac7b460eb260f1fbfd4a97d9264dccba"
+  },
+  {
+    "path": "mof_debye_lab/pyproject.toml",
+    "bytes": 630,
+    "sha256": "890fea99b2b9acf06fd264d4a48ca27c0e4f2fb5cbb8c1953a3497ae6d65a5dd"
+  },
+  {
+    "path": "mof_debye_lab/requirements-tested.txt",
+    "bytes": 166,
+    "sha256": "be2d1e5faeb951121f624fc73812d5646490f01fcb8b418d5b358de2c7eda48e"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark.csv",
+    "bytes": 1968,
+    "sha256": "a022824f87523796eed110b021644018a01db6a69232c4e06f9e5a1005b32aac"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_N1536.npz",
+    "bytes": 4526,
+    "sha256": "2929179f691894ddccbc81c7afadbdc5aff50777266b25bc8c3c3495b4f83538"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_N192.npz",
+    "bytes": 4500,
+    "sha256": "e295997bbe4589ca81fef07bc4534f702d332be6d6d2f25c2ff205e941b3a47a"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_N648.npz",
+    "bytes": 4505,
+    "sha256": "4f2875c6484a084fc61d17cf1753487993c88990f0895ec302d65536f3f81d94"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_details.json",
+    "bytes": 8230,
+    "sha256": "aebc205006b04c05ca034fe8408805ddb7a5906ab84332f4d429a85534baf051"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_runtime.png",
+    "bytes": 104413,
+    "sha256": "0ade4aabf0b4dd457a380b921389a1a8a561c630d2599c80fb9b37f166438264"
+  },
+  {
+    "path": "mof_debye_lab/results/benchmark_runtime.svg",
+    "bytes": 57705,
+    "sha256": "302cf0dc6ae76b6f10167b39e3e64bde5c1ba01f97fd4c85f2c6077888bb20a4"
+  },
+  {
+    "path": "mof_debye_lab/results/bounded_displacement.png",
+    "bytes": 83925,
+    "sha256": "f6418b643c3d63bdeecbd5ec64322a8018546211d9fd39e5fd4b2b29f59d7ac4"
+  },
+  {
+    "path": "mof_debye_lab/results/bounded_displacement.svg",
+    "bytes": 61188,
+    "sha256": "616752e8cbe0107a492a9ab322b702570dc39ba2a1b41a7965516fdad3d1d8e9"
+  },
+  {
+    "path": "mof_debye_lab/results/bounded_ensemble.csv",
+    "bytes": 35441,
+    "sha256": "ef9dea1bdcfd797d61f0932dd9bfe99f63e58233fe8b8d290005b4aca9f43115"
+  },
+  {
+    "path": "mof_debye_lab/results/bounded_placements.csv",
+    "bytes": 640399,
+    "sha256": "a4e58f32edbd4d42f1a6d6881f0ec8f4f88b8d278b46f2ac46b579e520065631"
+  },
+  {
+    "path": "mof_debye_lab/results/cli_analytic/intensity.csv",
+    "bytes": 35441,
+    "sha256": "98076dfbeb9b9026725184261f1af29265f45063eb117fce13345bbb87408e86"
+  },
+  {
+    "path": "mof_debye_lab/results/cli_analytic/metadata.json",
+    "bytes": 1115,
+    "sha256": "12fa6b5b0c4a5620e5d505f67f455ba0b392cbd0779ebfe24ad81d6fb2542773"
+  },
+  {
+    "path": "mof_debye_lab/results/cli_bounded_accelerated/intensity.csv",
+    "bytes": 15101,
+    "sha256": "6bfdeb547395e20148b78725c07afba1202bc0c3a868e1aaf863a1e0683adb53"
+  },
+  {
+    "path": "mof_debye_lab/results/cli_bounded_accelerated/metadata.json",
+    "bytes": 1595,
+    "sha256": "f987e3cfe6acbe142e128881f40d7d676a82645c788ee01d5494edc0a5cde7ae"
+  },
+  {
+    "path": "mof_debye_lab/results/ensemble_validation.csv",
+    "bytes": 81070,
+    "sha256": "fcc39fddab55e51453a21df3a5889920595224dc9eb7c7c840a5d2aee6b21bad"
+  },
+  {
+    "path": "mof_debye_lab/results/ensemble_validation.png",
+    "bytes": 130040,
+    "sha256": "5cf78e90d37413d91cc800857fe72c3c001b4123c47c1bb6b3418402688c7621"
+  },
+  {
+    "path": "mof_debye_lab/results/ensemble_validation.svg",
+    "bytes": 88278,
+    "sha256": "6d751638c660bd9bb835d533a09cb78fa9143a705443c494abbc6fd355e858cd"
+  },
+  {
+    "path": "mof_debye_lab/results/environment.json",
+    "bytes": 758,
+    "sha256": "72b60b748105d621a06a9dce3a48f3743537ae72359b72e0f40d805273b3ea58"
+  },
+  {
+    "path": "mof_debye_lab/results/mc_convergence.csv",
+    "bytes": 239,
+    "sha256": "9b67dbc8235463300c0b82dfdc2b38aeb37f940b9f83aa46d7f8f2b25ee54117"
+  },
+  {
+    "path": "mof_debye_lab/results/status.json",
+    "bytes": 513,
+    "sha256": "6d8a85b306cefee7594bb66b4920d1ab27c01851a1aea430f8ac3c34f4c0aced"
+  },
+  {
+    "path": "mof_debye_lab/results/validation_summary.json",
+    "bytes": 2739,
+    "sha256": "aa45de6ff1689334a37641d69d118b8c59e0efd27932e6d4d35487e7c79b723e"
+  },
+  {
+    "path": "mof_debye_lab/scripts/make_plots.py",
+    "bytes": 3670,
+    "sha256": "95748541a5e58798bf0a8cb6b58422504363be5c7750bba91f909712ae9bb6cb"
+  },
+  {
+    "path": "mof_debye_lab/scripts/run_benchmarks.py",
+    "bytes": 4050,
+    "sha256": "86722e8662e194165c4785671dd70481ab7ea020704b974892d3c60e17929dec"
+  },
+  {
+    "path": "mof_debye_lab/scripts/run_population.py",
+    "bytes": 3646,
+    "sha256": "9f2db7d9708e5ba8554c033c2010c3dbc5b937a347f5c2e20e2ba24f544b1e8a"
+  },
+  {
+    "path": "mof_debye_lab/scripts/run_validation.py",
+    "bytes": 10525,
+    "sha256": "3dd1f9a010ad13873ed035692749413533e5e8e8f847dcae57d5c1dd7ceb2ab4"
+  },
+  {
+    "path": "mof_debye_lab/scripts/test_installed_debyecalculator.py",
+    "bytes": 3518,
+    "sha256": "299a6198357b9ceb247dfd29349ec70e1b6420d00a17199e40b41165ee4ecfec"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/__init__.py",
+    "bytes": 175,
+    "sha256": "6293f64d093f80495e8b0ec593f828e80c2bb753d64a58594ef21d5ca56991b2"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/core.py",
+    "bytes": 10631,
+    "sha256": "062df2af812e473f05e07ffff0e7ea3b040e46ca9384a00edd6e2a1cfaf9804d"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/distributions.py",
+    "bytes": 11273,
+    "sha256": "f235e23f0cbc615f832e30a968e3b7fdd0a9137c8d342fc7955edcfff05c97cf"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/ensemble.py",
+    "bytes": 6389,
+    "sha256": "5896522d50d254daee75e255324d93b0720dc17f89a602e3d1b648ab01c802c0"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/fixtures.py",
+    "bytes": 1928,
+    "sha256": "b6bb20400918ea1d884f4937bff0e44a88f6178db03a766d0e371144d289feaf"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/lattice.py",
+    "bytes": 2730,
+    "sha256": "f357cc6ee736060a630756bd033388df7e24049cd7f6602fb24ce8e668248fa4"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/vendor/LICENSE-Apache-2.0.txt",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/vendor/NOTICE.txt",
+    "bytes": 1241,
+    "sha256": "4e16809468ce56cfb7a648546b84109c5cc22f64863de9869db763e977aa06d3"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/vendor/__init__.py",
+    "bytes": 65,
+    "sha256": "cb0fe5e582b3d7a596eb22a58a63a5e911df24e1a7eb298fafed1203e013131b"
+  },
+  {
+    "path": "mof_debye_lab/src/mofdebye/vendor/debyecalculator_kernel.py",
+    "bytes": 8276,
+    "sha256": "5eccd7f01cec415b4a0600559488253a08640a0acbc4b1d968fb8d1568415ecd"
+  },
+  {
+    "path": "mof_debye_lab/tests/test_accelerated_ensemble.py",
+    "bytes": 936,
+    "sha256": "fc4f97cc3b7ba20213fd452ae20d308cd1240989c5ef7d438431c82d99738411"
+  },
+  {
+    "path": "mof_debye_lab/tests/test_core.py",
+    "bytes": 4046,
+    "sha256": "6c6a66b63b576a6a76cc127fa829e78a2c0de05355e27cb255f11d01409dbdad"
+  },
+  {
+    "path": "mof_debye_lab/tests/test_distributions.py",
+    "bytes": 5146,
+    "sha256": "6c6555a9892d27bf131e5fe499db1bb4e95b88ba897567fd848ae9cd4f65974a"
+  },
+  {
+    "path": "mof_debye_lab/MANIFEST.sha256",
+    "bytes": 5679,
+    "sha256": "9ebf7d31058c4bdaafac534003ba0e7908ef689414639ae1565acbaa3ca8ae93"
+  }
+]

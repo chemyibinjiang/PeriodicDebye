@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.1",
+  "scattering_case": "single_crystal_finite",
+  "boundary": "finite",
+  "guest_estimator": "explicit",
+  "backend": "reference",
+  "host": {
+    "xyz": "dimer.xyz"
+  },
+  "sampling": {
+    "q_vectors": [
+      [
+        1.2566370614359172,
+        0.0,
+        0.0
+      ],
+      [
+        3.7699111843077517,
+        0.0,
+        0.0
+      ],
+      [
+        6.283185307179586,
+        0.0,
+        0.0
+      ]
+    ]
+  }
+}

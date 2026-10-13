@@ -1,0 +1,12 @@
+{
+  "analytic": {
+    "max_absolute_difference": 0.0,
+    "rows": 201,
+    "status": "identical numerical arrays"
+  },
+  "bounded": {
+    "max_absolute_difference": 0.0,
+    "rows": 201,
+    "status": "identical numerical arrays"
+  }
+}

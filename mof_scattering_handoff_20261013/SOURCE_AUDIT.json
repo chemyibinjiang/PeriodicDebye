@@ -1,0 +1,552 @@
+{
+  "date": "2026-10-13",
+  "scope": "v0.4.1 independent pore distributions for finite radial PXRD, synthetic physical references and 100 nm runs",
+  "baseline_archive_sha256": "81946c51051c4abb1ce86b9df3ffc0e8ba6f9aa9518d8f238d661f69da0b8dcb",
+  "changed_original_files": [
+    {
+      "path": "README.md",
+      "original_sha256": "aa41d79f4e34d607fdafc53dce2419aac42510c8abab5403f1cf6a9dd41da9b3",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    },
+    {
+      "path": "TASKS.json",
+      "original_sha256": "0d59bd902dcf8815b71b52aceb1feb962b227e0f877290399d9b5d6e9e5fddde",
+      "current_sha256": "ef54c7d011dc3b98ed0c692df16db1b929ef41d882baa07f5d52602f0bab6fd0"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "original_sha256": "71efb4aa5718c6e5f18d00ff27d47ccf29a6fab72314a5385350716ea8ced4e8",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "original_sha256": "890fea99b2b9acf06fd264d4a48ca27c0e4f2fb5cbb8c1953a3497ae6d65a5dd",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/scripts/run_population.py",
+      "original_sha256": "9f2db7d9708e5ba8554c033c2010c3dbc5b937a347f5c2e20e2ba24f544b1e8a",
+      "current_sha256": "e9167f0e14da2cfac68e3194cf0f33deff0eedb99c73d035261e3b517f5a1a40"
+    },
+    {
+      "path": "mof_debye_lab/scripts/test_installed_debyecalculator.py",
+      "original_sha256": "299a6198357b9ceb247dfd29349ec70e1b6420d00a17199e40b41165ee4ecfec",
+      "current_sha256": "2058015cdff04b1686ec6c464d18eba0b69a76a98e712430543c553f1f33ccba"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "original_sha256": "6293f64d093f80495e8b0ec593f828e80c2bb753d64a58594ef21d5ca56991b2",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/core.py",
+      "original_sha256": "062df2af812e473f05e07ffff0e7ea3b040e46ca9384a00edd6e2a1cfaf9804d",
+      "current_sha256": "8006062d0bc493b707e069a5f9a3aeb8a9797b09bbb0285c3e99110d3b214c7f"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/distributions.py",
+      "original_sha256": "f235e23f0cbc615f832e30a968e3b7fdd0a9137c8d342fc7955edcfff05c97cf",
+      "current_sha256": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/ensemble.py",
+      "original_sha256": "5896522d50d254daee75e255324d93b0720dc17f89a602e3d1b648ab01c802c0",
+      "current_sha256": "3a39d98274760fd7af275738bfb5b0263807664d2da33fe6abce1a7766b4076b"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/lattice.py",
+      "original_sha256": "f357cc6ee736060a630756bd033388df7e24049cd7f6602fb24ce8e668248fa4",
+      "current_sha256": "13f883e2588ceec60f4d1e35291dc6677da981d253c4c9e013613fdbf30be8d9"
+    },
+    {
+      "path": "tools/verify_manifest.py",
+      "original_sha256": "f36e40dca9484c0e2b4c81ae784fbc46a99a341fa6ad6ad53a142e80637ae2e8",
+      "current_sha256": "e833603e45094c6585efe0b9fd0570393617a75b244b883cb69a5f9fb43f0403"
+    }
+  ],
+  "preserved_evidence_files": [
+    "mof_debye_lab/logs/benchmark.txt",
+    "mof_debye_lab/logs/cli_analytic.txt",
+    "mof_debye_lab/logs/cli_bounded.txt",
+    "mof_debye_lab/logs/install.txt",
+    "mof_debye_lab/logs/local_project_install.txt",
+    "mof_debye_lab/logs/pytest.txt",
+    "mof_debye_lab/logs/pytest_initial.txt",
+    "mof_debye_lab/logs/validation.txt",
+    "mof_debye_lab/results/benchmark.csv",
+    "mof_debye_lab/results/benchmark_N1536.npz",
+    "mof_debye_lab/results/benchmark_N192.npz",
+    "mof_debye_lab/results/benchmark_N648.npz",
+    "mof_debye_lab/results/benchmark_details.json",
+    "mof_debye_lab/results/benchmark_runtime.png",
+    "mof_debye_lab/results/benchmark_runtime.svg",
+    "mof_debye_lab/results/bounded_displacement.png",
+    "mof_debye_lab/results/bounded_displacement.svg",
+    "mof_debye_lab/results/bounded_ensemble.csv",
+    "mof_debye_lab/results/bounded_placements.csv",
+    "mof_debye_lab/results/cli_analytic/intensity.csv",
+    "mof_debye_lab/results/cli_analytic/metadata.json",
+    "mof_debye_lab/results/cli_bounded_accelerated/intensity.csv",
+    "mof_debye_lab/results/cli_bounded_accelerated/metadata.json",
+    "mof_debye_lab/results/ensemble_validation.csv",
+    "mof_debye_lab/results/ensemble_validation.png",
+    "mof_debye_lab/results/ensemble_validation.svg",
+    "mof_debye_lab/results/environment.json",
+    "mof_debye_lab/results/mc_convergence.csv",
+    "mof_debye_lab/results/status.json",
+    "mof_debye_lab/results/validation_summary.json",
+    "mof_debye_lab/src/mofdebye/vendor/LICENSE-Apache-2.0.txt",
+    "mof_debye_lab/src/mofdebye/vendor/NOTICE.txt",
+    "mof_debye_lab/src/mofdebye/vendor/__init__.py",
+    "mof_debye_lab/src/mofdebye/vendor/debyecalculator_kernel.py",
+    "qa/baseline_pytest.txt",
+    "qa/baseline_pytest.xml",
+    "qa/original_archive_inventory.json",
+    "qa/smoke_analytic/intensity.csv",
+    "qa/smoke_analytic/metadata.json",
+    "qa/smoke_analytic.log",
+    "qa/smoke_bounded/intensity.csv",
+    "qa/smoke_bounded/metadata.json",
+    "qa/smoke_bounded.log"
+  ],
+  "preserved_evidence_count": 43,
+  "v02_snapshot": "local_runs/r07_baseline/v02_snapshot.zip",
+  "v02_snapshot_sha256": "f8218d6fd87c4c9ab18c4f6f03afc70e987fa63f322228dd5f10ea79c55be9c0",
+  "v02_development_manifest": "local_runs/r07_baseline/DEVELOPMENT_MANIFEST_v02.sha256",
+  "changed_since_v02_excluding_this_audit": [
+    {
+      "path": "README.md",
+      "v02_sha256": "e02ded15d4009f3cb4367050812f6411f219512e9c1d857736ff185ceed77a0e",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    },
+    {
+      "path": "TASKS.json",
+      "v02_sha256": "0baa9d0c3cbfb6a5c58a21a7a24eef9353361077f24b2e655deb0ca996c39181",
+      "current_sha256": "ef54c7d011dc3b98ed0c692df16db1b929ef41d882baa07f5d52602f0bab6fd0"
+    },
+    {
+      "path": "mof_debye_lab/MODE_GUIDE.md",
+      "v02_sha256": "e19371bde5d7247c60da6cc11ba216dc0bfc79feeb1850bace4b3a02a0ffdbd6",
+      "current_sha256": "86c630e5dc740a8564476ce1bf430ff1d75e0d78514fd99f3523536fcd5febc5"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "v02_sha256": "dd77f6a24ae023322e3c37bd2aaa752dc36b247a8054b5ff90a52a08716edcbb",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "v02_sha256": "e112ed1f8ccab855103ce1bd4ed8bc87241be0dce7324ef23119d4e710601981",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/scripts/run_population.py",
+      "v02_sha256": "970c0bb32af0347ff3d8fd21d0ae5b813683045d25374da931b3c0de3da30b88",
+      "current_sha256": "e9167f0e14da2cfac68e3194cf0f33deff0eedb99c73d035261e3b517f5a1a40"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "v02_sha256": "24a262f66b1c7961f8d2d8e1fbb17cbf6b3e72e5d8441b9ca9f833f84b6b6714",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/directional.py",
+      "v02_sha256": "81bf60789672daa1d9c132d334e4acff0459a331958815b8ab2d6dc710cc4146",
+      "current_sha256": "da9b9199c24b61e0d102f091129e606a15a3a1468b5c595875dae894f959e8af"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/distributions.py",
+      "v02_sha256": "f235e23f0cbc615f832e30a968e3b7fdd0a9137c8d342fc7955edcfff05c97cf",
+      "current_sha256": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/lattice.py",
+      "v02_sha256": "6d088a64b9a997c8629dd73049209492e795fcf6567eb7e94265d2cc9585b27e",
+      "current_sha256": "13f883e2588ceec60f4d1e35291dc6677da981d253c4c9e013613fdbf30be8d9"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/moments.py",
+      "v02_sha256": "815e85bdb9b22d62da466d0be58616cfaf7a41916529c00a49e5fdfd4c8658f4",
+      "current_sha256": "6995bba7a56075a670fe66a2f53489600fc2c298ceaf1e69d83e6c6d157ce39a"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/periodic.py",
+      "v02_sha256": "7f21840354eaec105627f56dfc29c400b2280711975fcec4a9f29a0258686d6d",
+      "current_sha256": "98e533417f67c952f1e9da7496187be4b011b8e255ac477eb3b0690dde91e568"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/runner.py",
+      "v02_sha256": "d45fc5e62362348d91020c0751afb3c80ae5a86c614db88b0496e89af26037cc",
+      "current_sha256": "56d42ad66925ab384e8e797059e29847cd73a992bb950afe9e35ce5f96cc02ff"
+    }
+  ],
+  "new_project_files_since_v02": [
+    "mof_debye_lab/PERFORMANCE_GUIDE.md",
+    "mof_debye_lab/R07_GUIDE.md",
+    "mof_debye_lab/examples/physical/README.md",
+    "mof_debye_lab/examples/real_mof/.gitattributes",
+    "mof_debye_lab/examples/real_mof/IRMOF-1.cif",
+    "mof_debye_lab/examples/real_mof/RASPA2-COPYING.txt",
+    "mof_debye_lab/examples/real_mof/README.md",
+    "mof_debye_lab/examples/real_mof/finite_single_crystal.json",
+    "mof_debye_lab/examples/real_mof/periodic_single_crystal.json",
+    "mof_debye_lab/examples/real_mof/provenance.json",
+    "mof_debye_lab/examples/real_mof/pxrd_atom_cut.json",
+    "mof_debye_lab/examples/real_mof/pxrd_bulk.json",
+    "mof_debye_lab/examples/real_mof/pxrd_finite.json",
+    "mof_debye_lab/scripts/benchmark_mof_modes.py",
+    "mof_debye_lab/scripts/benchmark_mof_reuse.py",
+    "mof_debye_lab/scripts/run_real_mof_example.py",
+    "mof_debye_lab/scripts/summarize_mof_benchmarks.py",
+    "mof_debye_lab/scripts/validate_physical_examples.py",
+    "mof_debye_lab/scripts/validate_r07_physics.py",
+    "mof_debye_lab/src/mofdebye/crystal.py",
+    "mof_debye_lab/src/mofdebye/geometry.py",
+    "mof_debye_lab/tests/test_crystal.py",
+    "mof_debye_lab/tests/test_crystal_stress.py",
+    "mof_debye_lab/tests/test_directional_performance_regression.py",
+    "mof_debye_lab/tests/test_geometry.py",
+    "mof_debye_lab/tests/test_geometry_stress.py",
+    "mof_debye_lab/tests/test_input_hardening.py",
+    "mof_debye_lab/tests/test_lattice_performance_regression.py",
+    "mof_debye_lab/tests/test_moment_performance_regression.py",
+    "mof_debye_lab/tests/test_physics_stress.py",
+    "mof_debye_lab/tests/test_r07_inputs.py",
+    "mof_debye_lab/tests/test_real_mof.py",
+    "mof_debye_lab/tests/test_runner_performance_regression.py"
+  ],
+  "validation": {
+    "report": "PORE_DISTRIBUTION_REPORT.md",
+    "source_version": "0.4.1",
+    "tests_passed": 980,
+    "tests_skipped": 0,
+    "new_cases_since_v040": 123,
+    "logs": "local_runs/pore_distribution_v041/",
+    "archived_original_evidence_unchanged": 43,
+    "benchmark_device": "cpu",
+    "benchmark_geometry_threads": 6,
+    "scope": "Independent finite powder pore distributions, exact analytic and sampled spherical confinement; body-frame sampling equivalence; local integration SEM separate from radial approximation bounds."
+  },
+  "v03_snapshot": "local_runs/r07_thorough/baseline/v03_snapshot.zip",
+  "v03_snapshot_sha256": "b7f3a47777d66bb205b012e8ab4a4407c34f78f581ee131dbf69c56ae10abe04",
+  "v03_development_manifest": "local_runs/r07_thorough/baseline/DEVELOPMENT_MANIFEST_v03.sha256",
+  "v03_snapshot_verified_files": 206,
+  "changed_since_v03_excluding_this_audit": [
+    {
+      "path": "README.md",
+      "v03_sha256": "a600df14853039808bc8000ee432f38ff2d3654da1ec90454be85bf53078965e",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    },
+    {
+      "path": "mof_debye_lab/MODE_GUIDE.md",
+      "v03_sha256": "0766df73733d2291dd4c2cf287617ad7234178b4a90054d712e98593313d2fea",
+      "current_sha256": "86c630e5dc740a8564476ce1bf430ff1d75e0d78514fd99f3523536fcd5febc5"
+    },
+    {
+      "path": "mof_debye_lab/R07_GUIDE.md",
+      "v03_sha256": "31f129e8f3d6ca8b7dc232af06465a03114382df4770c830f2fcd38ff5704ef8",
+      "current_sha256": "0e3584ec4c062d12111b86f7aa0f60728a1940c3a9b7293deebb7ea2b6bb273f"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "v03_sha256": "a15b0b18894f25811138365f6816973222a7bb4f5489ae6e3969607ace0e56b5",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "v03_sha256": "bc7a973db9cea970df38cdbe9c691043cc00df59846518a390a6b29f92eab7db",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "v03_sha256": "2ef3c41361ae65e6478ea5b2c58c4bbb20a9a2b80e7d4b0fe82217bc6a98be37",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/directional.py",
+      "v03_sha256": "81bf60789672daa1d9c132d334e4acff0459a331958815b8ab2d6dc710cc4146",
+      "current_sha256": "da9b9199c24b61e0d102f091129e606a15a3a1468b5c595875dae894f959e8af"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/distributions.py",
+      "v03_sha256": "96d56f9683e316c2cdd399c05431a5cf168686799a6225ada2e1866093383f9e",
+      "current_sha256": "d6e8299195ef88e30f95fe5dfac2010e8fa653aaf47a9914f9ee42199246aac7"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/lattice.py",
+      "v03_sha256": "6d088a64b9a997c8629dd73049209492e795fcf6567eb7e94265d2cc9585b27e",
+      "current_sha256": "13f883e2588ceec60f4d1e35291dc6677da981d253c4c9e013613fdbf30be8d9"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/moments.py",
+      "v03_sha256": "815e85bdb9b22d62da466d0be58616cfaf7a41916529c00a49e5fdfd4c8658f4",
+      "current_sha256": "6995bba7a56075a670fe66a2f53489600fc2c298ceaf1e69d83e6c6d157ce39a"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/periodic.py",
+      "v03_sha256": "8bdd86d19e830fcf2de98ec8636c8ddb01427e1e24831084407cb7a234855d0f",
+      "current_sha256": "98e533417f67c952f1e9da7496187be4b011b8e255ac477eb3b0690dde91e568"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/runner.py",
+      "v03_sha256": "9397096e2461d5261823a454cd915a68c52feb6b9d83ac1529097087e702b585",
+      "current_sha256": "56d42ad66925ab384e8e797059e29847cd73a992bb950afe9e35ce5f96cc02ff"
+    }
+  ],
+  "new_project_files_since_v03": [
+    "mof_debye_lab/PERFORMANCE_GUIDE.md",
+    "mof_debye_lab/examples/physical/README.md",
+    "mof_debye_lab/scripts/benchmark_mof_modes.py",
+    "mof_debye_lab/scripts/benchmark_mof_reuse.py",
+    "mof_debye_lab/scripts/summarize_mof_benchmarks.py",
+    "mof_debye_lab/scripts/validate_physical_examples.py",
+    "mof_debye_lab/scripts/validate_r07_physics.py",
+    "mof_debye_lab/tests/test_crystal_stress.py",
+    "mof_debye_lab/tests/test_directional_performance_regression.py",
+    "mof_debye_lab/tests/test_geometry_stress.py",
+    "mof_debye_lab/tests/test_input_hardening.py",
+    "mof_debye_lab/tests/test_lattice_performance_regression.py",
+    "mof_debye_lab/tests/test_moment_performance_regression.py",
+    "mof_debye_lab/tests/test_physics_stress.py",
+    "mof_debye_lab/tests/test_runner_performance_regression.py"
+  ],
+  "changed_since_v031_excluding_this_audit": [
+    {
+      "path": "README.md",
+      "v031_sha256": "306f39c4e914abe4bebee488e446aa1e61be5cc3c71dd1db8c016d4f4a6efc7a",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    },
+    {
+      "path": "mof_debye_lab/MODE_GUIDE.md",
+      "v031_sha256": "0766df73733d2291dd4c2cf287617ad7234178b4a90054d712e98593313d2fea",
+      "current_sha256": "86c630e5dc740a8564476ce1bf430ff1d75e0d78514fd99f3523536fcd5febc5"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "v031_sha256": "6b1d8acfda58336fc3ce699c191c117ad584925db33f096f2a55085ee0db9573",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "v031_sha256": "dc46691f72fb52bf39545bf12d81dd65bd8aa8b17bf353bf1523f9410f2e64ad",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "v031_sha256": "95fe2228385aa0a3e6149580cc6f79a064db201712ca1e3c00e45ac36d1d31d8",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/directional.py",
+      "v031_sha256": "81bf60789672daa1d9c132d334e4acff0459a331958815b8ab2d6dc710cc4146",
+      "current_sha256": "da9b9199c24b61e0d102f091129e606a15a3a1468b5c595875dae894f959e8af"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/lattice.py",
+      "v031_sha256": "6d088a64b9a997c8629dd73049209492e795fcf6567eb7e94265d2cc9585b27e",
+      "current_sha256": "13f883e2588ceec60f4d1e35291dc6677da981d253c4c9e013613fdbf30be8d9"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/moments.py",
+      "v031_sha256": "815e85bdb9b22d62da466d0be58616cfaf7a41916529c00a49e5fdfd4c8658f4",
+      "current_sha256": "6995bba7a56075a670fe66a2f53489600fc2c298ceaf1e69d83e6c6d157ce39a"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/periodic.py",
+      "v031_sha256": "8bdd86d19e830fcf2de98ec8636c8ddb01427e1e24831084407cb7a234855d0f",
+      "current_sha256": "98e533417f67c952f1e9da7496187be4b011b8e255ac477eb3b0690dde91e568"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/runner.py",
+      "v031_sha256": "9397096e2461d5261823a454cd915a68c52feb6b9d83ac1529097087e702b585",
+      "current_sha256": "56d42ad66925ab384e8e797059e29847cd73a992bb950afe9e35ce5f96cc02ff"
+    }
+  ],
+  "new_project_files_since_v031": [
+    "mof_debye_lab/PERFORMANCE_GUIDE.md",
+    "mof_debye_lab/scripts/benchmark_mof_modes.py",
+    "mof_debye_lab/scripts/benchmark_mof_reuse.py",
+    "mof_debye_lab/scripts/summarize_mof_benchmarks.py",
+    "mof_debye_lab/tests/test_directional_performance_regression.py",
+    "mof_debye_lab/tests/test_lattice_performance_regression.py",
+    "mof_debye_lab/tests/test_moment_performance_regression.py",
+    "mof_debye_lab/tests/test_runner_performance_regression.py"
+  ],
+  "v031_snapshot": "local_runs/performance_v032/baseline/v031_snapshot.zip",
+  "v031_snapshot_sha256": "6038106826950ef98e8cd7b2bee25d73c24af16976908eb9d64fb0ce9a0bf2ea",
+  "v031_development_manifest": "local_runs/performance_v032/baseline/DEVELOPMENT_MANIFEST_v031.sha256",
+  "v031_snapshot_verified_files": 315,
+  "validation_v032": {
+    "report": "PERFORMANCE_REPORT.md",
+    "tests_passed": 735,
+    "new_regression_cases": 62,
+    "tests_skipped": 0,
+    "existing_dependency_warnings": 6,
+    "physical_examples": 8,
+    "physical_comparisons": 32,
+    "benchmark_cases": 16,
+    "paired_full_workload_comparisons": 15,
+    "additional_accuracy_checks": 5,
+    "logs": "local_runs/performance_v032/",
+    "source_version": "0.3.2",
+    "benchmark_device": "cpu",
+    "benchmark_threads": 1,
+    "archived_original_evidence_unchanged": 43
+  },
+  "changed_since_v032_excluding_this_audit": [
+    {
+      "path": "README.md",
+      "v032_sha256": "292116372619b220d3302c9e2c593201068c5fe2cd58949d223d9555633dd84f",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    },
+    {
+      "path": "mof_debye_lab/MODE_GUIDE.md",
+      "v032_sha256": "5a46ae19811d4b3bf52d71e43c152ef5a357bdb2922d1762e322a0019022e043",
+      "current_sha256": "86c630e5dc740a8564476ce1bf430ff1d75e0d78514fd99f3523536fcd5febc5"
+    },
+    {
+      "path": "mof_debye_lab/PERFORMANCE_GUIDE.md",
+      "v032_sha256": "b45a8892eb95a0ea18dd29e93a5711dad7d13c7346d55df0dc46128bde4181dd",
+      "current_sha256": "c9a6d04dd249d4f5728b6d1465faa61972bbcdffd14c2534ebe754b6af0af8fa"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "v032_sha256": "4338ed79f8efdf6f4f69614f9424d69188416e6878de000ab2c0c07a5f5250cc",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "v032_sha256": "de232eab6dbbdb6a3acf3cc109da11022cf6748a7337503d132545a9a3daf13e",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "v032_sha256": "8924c71fcaf3730818309f6657666f16112ba8695154ede90180ff8b1af09cd6",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/runner.py",
+      "v032_sha256": "9fe5e65026851609ee5844e629eb817bcbe90f34796cdac2ff9d80f5f8013797",
+      "current_sha256": "56d42ad66925ab384e8e797059e29847cd73a992bb950afe9e35ce5f96cc02ff"
+    }
+  ],
+  "new_project_files_since_v032": [
+    "mof_debye_lab/LARGE_PXRD_GUIDE.md",
+    "mof_debye_lab/scripts/benchmark_large_powder.py",
+    "mof_debye_lab/scripts/plot_large_powder.py",
+    "mof_debye_lab/scripts/validate_large_mof.py",
+    "mof_debye_lab/scripts/validate_large_powder.py",
+    "mof_debye_lab/src/mofdebye/large_powder.py",
+    "mof_debye_lab/src/mofdebye/radial.py",
+    "mof_debye_lab/tests/test_large_powder.py",
+    "mof_debye_lab/tests/test_large_powder_physics.py",
+    "mof_debye_lab/tests/test_large_powder_runner.py",
+    "mof_debye_lab/tests/test_large_powder_validation.py",
+    "mof_debye_lab/tests/test_radial.py"
+  ],
+  "v032_source_snapshot": "local_runs/pxrd_100nm/baseline/v032_source_snapshot.zip",
+  "v032_source_snapshot_sha256": "45d58f57affdd29517a33c44d492721d081c84a1c9f39b788b8da99e61a80a48",
+  "v032_development_manifest": "local_runs/pxrd_100nm/baseline/DEVELOPMENT_MANIFEST_v032.sha256",
+  "v032_verified_manifest_files": 861,
+  "validation_v040": {
+    "report": "LARGE_PXRD_REPORT.md",
+    "tests_passed": 857,
+    "new_cases": 122,
+    "tests_skipped": 0,
+    "warnings": {
+      "junit_record_property_compatibility": 230,
+      "existing_dependency_deprecation": 6
+    },
+    "tests_seconds": 33.82,
+    "evidence": "local_runs/pxrd_100nm",
+    "target_relative_accuracy": 0.001,
+    "target_atoms": 27136000,
+    "target_edge_nm": 103.328,
+    "q_points": [
+      6001,
+      60001
+    ],
+    "independent_exact_dense_mof_cells": [
+      1,
+      2,
+      4
+    ],
+    "independent_large_integer_shell_oracle": true,
+    "full_size_exact_q": [
+      0.344,
+      0.486,
+      0.912,
+      1,
+      3,
+      6
+    ],
+    "max_full_size_exact_relative_error": 5.010585997653137e-11,
+    "fine_q_grid_first_curve_seconds": 8.789474500110373,
+    "fine_q_grid_step_A_inv": 0.0001,
+    "cli_and_api_bitwise_equal": true,
+    "bound_excludes_roundoff": true
+  },
+  "changed_since_v040_excluding_this_audit": [
+    {
+      "path": "mof_debye_lab/LARGE_PXRD_GUIDE.md",
+      "v040_sha256": "b01be139fcbbc86334493eb40b13c06bf8d2a9afadab4b11d34f8b276d0daa8f",
+      "current_sha256": "bc1937457955dfc544cc79fc50c30c7e7ac1f4bbfa831e083fa3c10957e7e68c"
+    },
+    {
+      "path": "mof_debye_lab/MODE_GUIDE.md",
+      "v040_sha256": "c8ef7f64303252104a1f25f2a86ba890c621481c8f3bc715d46a5446513c8c09",
+      "current_sha256": "86c630e5dc740a8564476ce1bf430ff1d75e0d78514fd99f3523536fcd5febc5"
+    },
+    {
+      "path": "mof_debye_lab/pyproject.toml",
+      "v040_sha256": "890f9aa4f3afeca0b2dffa0ecededc6b6db08af1ff26e55995a6f86dcd05da1f",
+      "current_sha256": "836da70f5e6d705408b9d382731c15452fae639b5b06c455b74d7f7cd8dc278e"
+    },
+    {
+      "path": "mof_debye_lab/README.md",
+      "v040_sha256": "84bf2b9d7ca118eeab8d6124d5b7173f072ed2d972f6a8f48639ca08e7ad8224",
+      "current_sha256": "59d00a6adf818bd89d7c929401cae4327b7a985d278d2087442dea0581c90016"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/__init__.py",
+      "v040_sha256": "5af4a97988d12998e65161aacb711ca307cb9b8cdc4cc3d98fae1b13f5afed52",
+      "current_sha256": "974f69563d483957c431d854d26d88e35e5371544aa0eb01b5b601abbc02bdca"
+    },
+    {
+      "path": "mof_debye_lab/src/mofdebye/runner.py",
+      "v040_sha256": "3ae2aa9af66d1a1c356149a5f225d0ee957dd1a6f436fa4cc23612d283593612",
+      "current_sha256": "56d42ad66925ab384e8e797059e29847cd73a992bb950afe9e35ce5f96cc02ff"
+    },
+    {
+      "path": "README.md",
+      "v040_sha256": "eb0c8077f57be365adea9aec19ecfd2ec8a554baae78ec644a8617bd96d8d55b",
+      "current_sha256": "f9c2bfb245ad132946b7f6ce61b35888a0748adfcee3f087a72b91ac3944919e"
+    }
+  ],
+  "new_project_files_since_v040": [
+    "mof_debye_lab/PORE_DISTRIBUTION_GUIDE.md",
+    "mof_debye_lab/examples/pore_distribution/Au_13.xyz",
+    "mof_debye_lab/examples/pore_distribution/Au_19.xyz",
+    "mof_debye_lab/examples/pore_distribution/Au_43.xyz",
+    "mof_debye_lab/examples/pore_distribution/README.md",
+    "mof_debye_lab/examples/pore_distribution/active_wall.json",
+    "mof_debye_lab/examples/pore_distribution/analytic.json",
+    "mof_debye_lab/examples/pore_distribution/host_cell.xyz",
+    "mof_debye_lab/scripts/benchmark_pore_powder.py",
+    "mof_debye_lab/scripts/plot_pore_powder.py",
+    "mof_debye_lab/scripts/validate_pore_powder.py",
+    "mof_debye_lab/src/mofdebye/pore_powder.py",
+    "mof_debye_lab/src/mofdebye/radial_guests.py",
+    "mof_debye_lab/tests/test_pore_bodyframe_reference.py",
+    "mof_debye_lab/tests/test_pore_cache_walls.py",
+    "mof_debye_lab/tests/test_pore_powder.py",
+    "mof_debye_lab/tests/test_pore_powder_physics.py",
+    "mof_debye_lab/tests/test_pore_powder_runner.py",
+    "mof_debye_lab/tests/test_radial_guest_bodyframe.py",
+    "mof_debye_lab/tests/test_radial_guests.py"
+  ],
+  "v040_source_snapshot": "local_runs/pore_distribution_v041/baseline/v040_source_snapshot.zip",
+  "v040_source_snapshot_sha256": "76d99374cf6b83b24001887206ea32b1e121e47991f26d4acd8496bc64f5cdf0",
+  "v040_development_manifest": "local_runs/pore_distribution_v041/baseline/DEVELOPMENT_MANIFEST_v040.sha256",
+  "v040_verified_manifest_files": 916
+}

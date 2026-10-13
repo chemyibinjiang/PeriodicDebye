@@ -1,0 +1,13 @@
+{
+  "max_absolute_component_errors": {
+    "q": 0.0,
+    "host": 0.0,
+    "guest_internal": 0.0,
+    "host_guest": 0.0,
+    "guest_guest": 0.0,
+    "total": 0.0
+  },
+  "bitwise_equal": true,
+  "host_atoms": 27136000,
+  "pores": 64000
+}

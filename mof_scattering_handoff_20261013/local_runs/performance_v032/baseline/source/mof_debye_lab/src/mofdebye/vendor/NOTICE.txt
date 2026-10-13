@@ -1,0 +1,20 @@
+This directory contains an adapted computational-kernel extract from DebyeCalculator.
+Upstream authors: Frederik L. Johansen, Andy S. Anker and contributors.
+Upstream repository: https://github.com/FrederikLizakJohansen/DebyeCalculator
+Source file: debyecalculator/debye_calculator.py
+Git blob SHA-1: 89cd257ac681d3859457db7e8220cbc325c6953d
+Retrieved through the GitHub connector on 2026-10-13.
+Upstream license: Apache-2.0 (included).
+
+MODIFICATIONS: extracted the forward grid/direct kernels into a small standalone
+class; omitted GUI, file readers, atomic-factor tables, autograd/backward routines,
+and progress callbacks. Shortened comments/docstrings. Added a separate wrapper
+that builds element indices and returns the conventional full Debye sum
+self + 2*unordered_pairs. The mathematical arithmetic of the selected forward
+kernels follows the inspected upstream source. This is NOT a byte-identical
+installation of DebyeCalculator and NOT an end-to-end test of its public API.
+All supplied scattering factors, fixtures, statistics, tests and wrapper setup
+are from the surrounding mof-debye-lab project.
+
+Reference: Johansen et al., Journal of Open Source Software 9 (2024), 6024.
+https://joss.theoj.org/papers/10.21105/joss.06024

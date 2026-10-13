@@ -1,0 +1,53 @@
+         132005 function calls (131975 primitive calls) in 0.226 seconds
+
+   Ordered by: cumulative time
+   List reduced from 346 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.226    0.226 benchmark_mof_modes.py:111(evaluate)
+        1    0.000    0.000    0.226    0.226 runner.py:280(run_configuration)
+        1    0.000    0.000    0.182    0.182 runner.py:130(_inputs)
+        1    0.007    0.007    0.181    0.181 crystal.py:223(read_cif)
+     2688    0.043    0.000    0.126    0.000 crystal.py:175(_periodic_matches)
+     5217    0.042    0.000    0.042    0.000 {built-in method numpy.asarray}
+        1    0.000    0.000    0.038    0.038 crystal.py:100(_resolve_symmetry)
+        2    0.035    0.017    0.037    0.019 crystal.py:75(_operations)
+        1    0.000    0.000    0.029    0.029 directional.py:182(cell_shape_amplitude)
+        1    0.026    0.026    0.028    0.028 directional.py:30(amplitude)
+     3259    0.002    0.000    0.015    0.000 fromnumeric.py:2548(all)
+        1    0.000    0.000    0.015    0.015 runner.py:261(environment_record)
+        7    0.000    0.000    0.014    0.002 __init__.py:1002(version)
+     3653    0.004    0.000    0.014    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+     2680    0.003    0.000    0.011    0.000 numeric.py:679(flatnonzero)
+     5616    0.010    0.000    0.010    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        1    0.002    0.002    0.009    0.009 crystal.py:164(_validate_metric)
+        7    0.000    0.000    0.008    0.001 __init__.py:629(version)
+        7    0.000    0.000    0.008    0.001 __init__.py:602(metadata)
+     1849    0.001    0.000    0.007    0.000 fromnumeric.py:3287(prod)
+      192    0.000    0.000    0.007    0.000 numeric.py:2290(allclose)
+     1850    0.003    0.000    0.006    0.000 _linalg.py:2599(norm)
+        7    0.000    0.000    0.006    0.001 __init__.py:976(distribution)
+        7    0.000    0.000    0.006    0.001 __init__.py:549(from_name)
+        7    0.000    0.000    0.006    0.001 {built-in method builtins.next}
+     1889    0.002    0.000    0.006    0.000 fromnumeric.py:66(_wrapreduction)
+       73    0.000    0.000    0.006    0.000 __init__.py:914(<genexpr>)
+      192    0.002    0.000    0.006    0.000 numeric.py:2384(isclose)
+       66    0.000    0.000    0.006    0.000 __init__.py:812(search)
+        7    0.000    0.000    0.005    0.001 __init__.py:31(message_from_string)
+        7    0.000    0.000    0.005    0.001 parser.py:59(parsestr)
+        7    0.000    0.000    0.005    0.001 parser.py:41(parse)
+       18    0.000    0.000    0.005    0.000 feedparser.py:171(feed)
+       25    0.000    0.000    0.004    0.000 feedparser.py:176(_call_parse)
+       25    0.001    0.000    0.004    0.000 feedparser.py:216(_parsegen)
+       66    0.000    0.000    0.004    0.000 __init__.py:815(mtime)
+       69    0.004    0.000    0.004    0.000 {built-in method nt.stat}
+     2681    0.001    0.000    0.004    0.000 fromnumeric.py:1993(nonzero)
+     7360    0.003    0.000    0.003    0.000 crystal.py:193(<genexpr>)
+     2680    0.002    0.000    0.003    0.000 fromnumeric.py:1879(ravel)
+     2682    0.001    0.000    0.003    0.000 fromnumeric.py:48(_wrapfunc)
+     3653    0.002    0.000    0.002    0.000 fromnumeric.py:88(<dictcomp>)
+     2378    0.001    0.000    0.002    0.000 feedparser.py:127(__next__)
+        7    0.000    0.000    0.001    0.000 _adapters.py:35(__init__)
+        7    0.000    0.000    0.001    0.000 _adapters.py:42(_repair_headers)
+
+

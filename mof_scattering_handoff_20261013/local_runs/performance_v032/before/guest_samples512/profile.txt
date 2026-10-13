@@ -1,0 +1,53 @@
+         325250 function calls (316778 primitive calls) in 1.422 seconds
+
+   Ordered by: cumulative time
+   List reduced from 104 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.429    1.429 benchmark_mof_modes.py:111(evaluate)
+        1    0.000    0.000    1.429    1.429 moments.py:62(guest_moments)
+        1    0.060    0.060    1.429    1.429 moments.py:125(_sampled_moments)
+     1412    0.419    0.000    0.869    0.001 directional.py:30(amplitude)
+     2048    0.137    0.000    0.495    0.000 distributions.py:174(sample)
+     1412    0.014    0.000    0.276    0.000 distributions.py:165(_rotation)
+2824/1412    0.082    0.000    0.251    0.000 _util.py:291(wrapper)
+     2824    0.101    0.000    0.236    0.000 core.py:78(form_factors)
+     1412    0.008    0.000    0.196    0.000 _rotation.py:2295(random)
+     1412    0.037    0.000    0.140    0.000 _rotation.py:348(__init__)
+     2824    0.031    0.000    0.086    0.000 core.py:72(validate_q)
+    16950    0.081    0.000    0.081    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     2824    0.014    0.000    0.079    0.000 _arraysetops_impl.py:145(unique)
+     1412    0.008    0.000    0.078    0.000 _rotation.py:40(_promote)
+     1412    0.009    0.000    0.066    0.000 _array_api.py:524(xp_promote)
+     2824    0.035    0.000    0.062    0.000 _arraysetops_impl.py:350(_unique1d)
+     2824    0.032    0.000    0.053    0.000 _linalg.py:2599(norm)
+     1412    0.018    0.000    0.038    0.000 core.py:23(__post_init__)
+     2824    0.007    0.000    0.036    0.000 fromnumeric.py:2304(sum)
+     5652    0.006    0.000    0.035    0.000 {method 'all' of 'numpy.ndarray' objects}
+     2826    0.006    0.000    0.033    0.000 fromnumeric.py:2436(any)
+     5652    0.005    0.000    0.029    0.000 _methods.py:64(_all)
+     1412    0.013    0.000    0.027    0.000 _array_api.py:471(xp_result_type)
+     2826    0.012    0.000    0.026    0.000 fromnumeric.py:86(_wrapreduction_any_all)
+     2824    0.003    0.000    0.026    0.000 {method 'sum' of 'numpy.ndarray' objects}
+     2824    0.009    0.000    0.025    0.000 fromnumeric.py:66(_wrapreduction)
+     2824    0.002    0.000    0.022    0.000 _methods.py:47(_sum)
+     1412    0.007    0.000    0.021    0.000 _delegation.py:34(atleast_nd)
+    14121    0.020    0.000    0.020    0.000 {built-in method numpy.asarray}
+     1412    0.007    0.000    0.020    0.000 _array_api.py:548(<listcomp>)
+     1412    0.013    0.000    0.019    0.000 _util.py:393(check_random_state)
+     1412    0.019    0.000    0.019    0.000 distributions.py:155(_position)
+     1413    0.008    0.000    0.016    0.000 directional.py:15(validate_q_vectors)
+44421/37361    0.012    0.000    0.015    0.000 {built-in method builtins.len}
+     8472    0.007    0.000    0.014    0.000 _array_api.py:75(_asarray)
+    15542    0.010    0.000    0.013    0.000 {built-in method builtins.isinstance}
+     1412    0.006    0.000    0.013    0.000 numerictypes.py:475(issubdtype)
+     1412    0.011    0.000    0.012    0.000 shape_base.py:78(atleast_2d)
+     1412    0.004    0.000    0.012    0.000 _array_api.py:494(<listcomp>)
+     1412    0.011    0.000    0.011    0.000 _rotation.py:1053(as_matrix)
+     2824    0.011    0.000    0.011    0.000 {built-in method numpy._core._multiarray_umath._unique_hash}
+     4883    0.010    0.000    0.010    0.000 {built-in method numpy.zeros}
+     1412    0.002    0.000    0.010    0.000 _array_api.py:553(<listcomp>)
+     5648    0.008    0.000    0.009    0.000 _helpers.py:149(is_torch_array)
+    15532    0.009    0.000    0.009    0.000 {built-in method numpy.asanyarray}
+
+
