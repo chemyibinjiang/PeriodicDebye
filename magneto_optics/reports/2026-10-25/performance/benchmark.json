@@ -1,0 +1,3430 @@
+{
+  "benchmark": "finite_gyrotropic_electric_dipole_arrays",
+  "quick": false,
+  "material_kind": "synthetic passive tensor; not measured material data",
+  "parameters": {
+    "epsilon_diagonal": [
+      -2.5,
+      0.5
+    ],
+    "g": [
+      0.06,
+      0.01
+    ],
+    "radius_nm": 6.0,
+    "spacing_nm": 36.0,
+    "vacuum_wavelength_nm": 500.0,
+    "host_index": 1.0
+  },
+  "four_rhs_order": [
+    "+M,+helicity",
+    "+M,-helicity",
+    "-M,+helicity",
+    "-M,-helicity"
+  ],
+  "accuracy_target_fraction": 0.001,
+  "threads_requested": 1,
+  "memory_limit_bytes": 1073741824,
+  "timing_scope": "warm import; includes Green setup, two material systems, four solves, scalar observables; excludes input generation, JSON I/O and tighter-tolerance refinement",
+  "memory_scope": "owned-array conservative estimates and process RSS sampled every 2 ms; allocator caching can carry across cases and short peaks can be missed",
+  "large_accuracy_scope": "tighter iterative tolerance comparison, not independent dense validation at large size",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+    "physical_cpu_count": 6,
+    "logical_cpu_count": 12,
+    "total_ram_bytes": 34088325120,
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null
+    },
+    "native_threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Roaming\\Python\\Python311\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+        "version": "0.3.31.188.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "C:\\Users\\yibinjiang\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ]
+  },
+  "source_sha256": {
+    "pyproject.toml": "f8d78fb5eec30d14388efbbd1611cc1a65fdc60b0bc41e98a6a1adc9583fc9fe",
+    "scripts/benchmark_magneto.py": "d82cd4c662b89204e3991ee4d5d0490e765c0f317867c68e88ef82d5ff44e5da",
+    "src/magnetooptics/__init__.py": "f5edd1dbcdeb23f0679b721199eb1cef6734ced1a2c0af7f1cabda8da079c27c",
+    "src/magnetooptics/geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "src/magnetooptics/interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "src/magnetooptics/solver.py": "8e1df621ad625c2327f4d3710931f7cf491859ff6b26e30858544c1756513f08"
+  },
+  "same_size_comparisons": [
+    {
+      "shape": [
+        8,
+        8,
+        1
+      ],
+      "n_particles": 64,
+      "backends": {
+        "dense_lu": {
+          "backend": "dense_lu",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.001641899987589568,
+            "system_assembly_seconds": 4.179996903985739e-05,
+            "four_rhs_solve_seconds": 0.003523399995174259,
+            "observable_seconds": 7.98000255599618e-05,
+            "total_seconds": 0.005298699950799346
+          },
+          "runs": [
+            {
+              "backend": "dense_lu",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.001641899987589568,
+              "system_assembly_seconds": 4.179996903985739e-05,
+              "four_rhs_solve_seconds": 0.003360799979418516,
+              "observable_seconds": 7.750006625428796e-05,
+              "total_seconds": 0.005128099990542978,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.793824076393281e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.7228054349626455e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0016550000291317701
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.793824076393281e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.00012790004257112741
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.632152070527374e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0014430999872274697
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.7850825555918623e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.00011749996338039637
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421882315,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012646
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 6883.685421882313,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012628
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2693120,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.001636000000871718
+              },
+              "rss_baseline_bytes": 66060288,
+              "sampled_peak_rss_bytes": 69308416,
+              "sampled_peak_rss_increase_bytes": 3248128
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0017553000361658633,
+              "system_assembly_seconds": 6.210000719875097e-05,
+              "four_rhs_solve_seconds": 0.003523399995174259,
+              "observable_seconds": 7.98000255599618e-05,
+              "total_seconds": 0.005426899995654821,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.793824076393281e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.7228054349626455e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0017529000178910792
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.793824076393281e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.00013649999164044857
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.632152070527374e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0014925000141374767
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.7850825555918623e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.00012250000145286322
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421882315,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012646
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 6883.685421882313,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012628
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2693120,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0016195999924093485
+              },
+              "rss_baseline_bytes": 67809280,
+              "sampled_peak_rss_bytes": 69308416,
+              "sampled_peak_rss_increase_bytes": 1499136
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0014448000001721084,
+              "system_assembly_seconds": 3.890000516548753e-05,
+              "four_rhs_solve_seconds": 0.0037242999533191323,
+              "observable_seconds": 8.420005906373262e-05,
+              "total_seconds": 0.005298699950799346,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.793824076393281e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.7228054349626455e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0015182000352069736
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.793824076393281e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0001341000315733254
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 1.632152070527374e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0019248999888077378
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 1.7850825555918623e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.00012689997674897313
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421882315,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012646
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 8483.254228206546,
+                  "absorption_nm2": 7871.116477447988,
+                  "scattering_nm2": 612.1377507585585
+                },
+                {
+                  "extinction_nm2": 6883.685421882313,
+                  "absorption_nm2": 6335.71857478105,
+                  "scattering_nm2": 547.9668471012628
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2693120,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0014394000172615051
+              },
+              "rss_baseline_bytes": 67809280,
+              "sampled_peak_rss_bytes": 69312512,
+              "sampled_peak_rss_increase_bytes": 1503232
+            }
+          ]
+        },
+        "dense_gmres": {
+          "backend": "dense_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.0015027000335976481,
+            "system_assembly_seconds": 3.890000516548753e-05,
+            "four_rhs_solve_seconds": 0.0025441000470891595,
+            "observable_seconds": 7.700000423938036e-05,
+            "total_seconds": 0.004203100048471242
+          },
+          "runs": [
+            {
+              "backend": "dense_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0015368000022135675,
+              "system_assembly_seconds": 3.890000516548753e-05,
+              "four_rhs_solve_seconds": 0.0025441000470891595,
+              "observable_seconds": 7.700000423938036e-05,
+              "total_seconds": 0.004203100048471242,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199979151974e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.291214130983923e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0007882000063546002
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199979151974e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0006104999920353293
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199234852628e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0005893000052310526
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291211928271289e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0005359000060707331
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.6854218833505,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034211
+                },
+                {
+                  "extinction_nm2": 8483.254228207501,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617353
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617335
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2867472,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0015311000170186162
+              },
+              "rss_baseline_bytes": 67809280,
+              "sampled_peak_rss_bytes": 68644864,
+              "sampled_peak_rss_increase_bytes": 835584
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0015027000335976481,
+              "system_assembly_seconds": 4.0000013541430235e-05,
+              "four_rhs_solve_seconds": 0.002310900075826794,
+              "observable_seconds": 7.349991938099265e-05,
+              "total_seconds": 0.003932900028303266,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199979151974e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.291214130983923e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0007149000302888453
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199979151974e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0005317999748513103
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199234852628e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.000520800007507205
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291211928271289e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0005263000493869185
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.6854218833505,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034211
+                },
+                {
+                  "extinction_nm2": 8483.254228207501,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617353
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617335
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2867472,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0014052999904379249
+              },
+              "rss_baseline_bytes": 67178496,
+              "sampled_peak_rss_bytes": 67940352,
+              "sampled_peak_rss_increase_bytes": 761856
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0014488999731838703,
+              "system_assembly_seconds": 3.819999983534217e-05,
+              "four_rhs_solve_seconds": 0.0029411999857984483,
+              "observable_seconds": 8.450011955574155e-05,
+              "total_seconds": 0.004519500012975186,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199979151974e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.291214130983923e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0006507000070996583
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199979151974e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011598000419326127
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199234852628e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.000591500021982938
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291211928271289e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0005150999641045928
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.6854218833505,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034211
+                },
+                {
+                  "extinction_nm2": 8483.254228207501,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617353
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445766,
+                  "scattering_nm2": 612.1377507617335
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2867472,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 64,
+                "matrix_bytes": 589824,
+                "estimated_peak_array_bytes": 2693120,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0013598999939858913
+              },
+              "rss_baseline_bytes": 67919872,
+              "sampled_peak_rss_bytes": 68038656,
+              "sampled_peak_rss_increase_bytes": 118784
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 1.0465156105997857e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 1.5048835061903498e-13,
+              "absorption_nm2": 2.82284674962866e-13,
+              "scattering_nm2": 5.189787738717439e-12
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 1.0653327861424927e-14,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20818313115649967,
+            "reference_mean_extinction_nm2": 7683.469825044431,
+            "within_0p1_percent_numerical_target": true
+          }
+        },
+        "fft_gmres": {
+          "backend": "fft_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.00046720000682398677,
+            "system_assembly_seconds": 3.130000550299883e-05,
+            "four_rhs_solve_seconds": 0.004816899949219078,
+            "observable_seconds": 7.710006320849061e-05,
+            "total_seconds": 0.005378700036089867
+          },
+          "runs": [
+            {
+              "backend": "fft_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0006850000354461372,
+              "system_assembly_seconds": 5.339999916031957e-05,
+              "four_rhs_solve_seconds": 0.006221100047696382,
+              "observable_seconds": 8.939992403611541e-05,
+              "total_seconds": 0.007054699992295355,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199137693529e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.29121323853908e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0020046000136062503
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599198133941506e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.001221100043039769
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199137693529e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011545000015757978
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291213777093443e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0018199000041931868
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                },
+                {
+                  "extinction_nm2": 8483.254228207497,
+                  "absorption_nm2": 7871.116477445759,
+                  "scattering_nm2": 612.1377507617381
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445763,
+                  "scattering_nm2": 612.1377507617362
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034192
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 268944,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 64,
+                "shape": [
+                  8,
+                  8,
+                  1
+                ],
+                "padded_shape": [
+                  15,
+                  15,
+                  1
+                ],
+                "kernel_bytes": 21600,
+                "estimated_peak_array_bytes": 94592,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0006730999448336661
+              },
+              "rss_baseline_bytes": 68026368,
+              "sampled_peak_rss_bytes": 68075520,
+              "sampled_peak_rss_increase_bytes": 49152
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.0004463000223040581,
+              "system_assembly_seconds": 3.130000550299883e-05,
+              "four_rhs_solve_seconds": 0.004816899949219078,
+              "observable_seconds": 7.710006320849061e-05,
+              "total_seconds": 0.005376600020099431,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199137693529e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.29121323853908e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0013064000522717834
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599198133941506e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0012236000038683414
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199137693529e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011591000366024673
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291213777093443e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011099999537691474
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                },
+                {
+                  "extinction_nm2": 8483.254228207497,
+                  "absorption_nm2": 7871.116477445759,
+                  "scattering_nm2": 612.1377507617381
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445763,
+                  "scattering_nm2": 612.1377507617362
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034192
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 268944,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 64,
+                "shape": [
+                  8,
+                  8,
+                  1
+                ],
+                "padded_shape": [
+                  15,
+                  15,
+                  1
+                ],
+                "kernel_bytes": 21600,
+                "estimated_peak_array_bytes": 94592,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0004400999750941992
+              },
+              "rss_baseline_bytes": 68055040,
+              "sampled_peak_rss_bytes": 68079616,
+              "sampled_peak_rss_increase_bytes": 24576
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 64,
+              "shape": [
+                8,
+                8,
+                1
+              ],
+              "centres_extent_nm": [
+                252.0,
+                252.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                264.0,
+                264.0,
+                12.0
+              ],
+              "operator_seconds": 0.00046720000682398677,
+              "system_assembly_seconds": 3.090000245720148e-05,
+              "four_rhs_solve_seconds": 0.00479889998678118,
+              "observable_seconds": 7.680000271648169e-05,
+              "total_seconds": 0.005378700036089867,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.0599199137693529e-10,
+              "iterations_total": 32,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 9.29121323853908e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0012590999831445515
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599198133941506e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011965999729000032
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 1.0599199137693529e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0011922999983653426
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 9.291213777093443e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.001131500001065433
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.7185747799285,
+                  "scattering_nm2": 547.9668471034202
+                },
+                {
+                  "extinction_nm2": 8483.254228207497,
+                  "absorption_nm2": 7871.116477445759,
+                  "scattering_nm2": 612.1377507617381
+                },
+                {
+                  "extinction_nm2": 8483.2542282075,
+                  "absorption_nm2": 7871.116477445763,
+                  "scattering_nm2": 612.1377507617362
+                },
+                {
+                  "extinction_nm2": 6883.685421883349,
+                  "absorption_nm2": 6335.718574779929,
+                  "scattering_nm2": 547.9668471034192
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 268944,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 64,
+                "shape": [
+                  8,
+                  8,
+                  1
+                ],
+                "padded_shape": [
+                  15,
+                  15,
+                  1
+                ],
+                "kernel_bytes": 21600,
+                "estimated_peak_array_bytes": 94592,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0004607000155374408
+              },
+              "rss_baseline_bytes": 68059136,
+              "sampled_peak_rss_bytes": 68083712,
+              "sampled_peak_rss_increase_bytes": 24576
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 1.0465156101588278e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 1.5048835061903498e-13,
+              "absorption_nm2": 2.8309351357307476e-13,
+              "scattering_nm2": 5.1942450428159654e-12
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 1.0771698170996315e-14,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20818313115649967,
+            "reference_mean_extinction_nm2": 7683.469825044431,
+            "within_0p1_percent_numerical_target": true
+          }
+        }
+      },
+      "speedup_fft_over_dense_lu": 0.9851265018027147,
+      "speedup_fft_over_dense_gmres": 0.7814341793127311
+    },
+    {
+      "shape": [
+        16,
+        16,
+        1
+      ],
+      "n_particles": 256,
+      "backends": {
+        "dense_lu": {
+          "backend": "dense_lu",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.028870899986941367,
+            "system_assembly_seconds": 7.680000271648169e-05,
+            "four_rhs_solve_seconds": 0.07725979993119836,
+            "observable_seconds": 0.00014620006550103426,
+            "total_seconds": 0.10894300002837554
+          },
+          "runs": [
+            {
+              "backend": "dense_lu",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.03381490003084764,
+              "system_assembly_seconds": 7.680000271648169e-05,
+              "four_rhs_solve_seconds": 0.07637380005326122,
+              "observable_seconds": 0.0001476999605074525,
+              "total_seconds": 0.1104246000177227,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.1454022283742514e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0689873933590529e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.03821650001918897
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.0598908731692152e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0015082000172697008
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0059672197951719e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.03522860002703965
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.1454022283742514e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0013830999960191548
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205297127,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.7709809043226
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.880248911388,
+                  "scattering_nm2": 2667.1585074340037
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.88024891139,
+                  "scattering_nm2": 2667.158507434
+                },
+                {
+                  "extinction_nm2": 27429.172205297134,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.77098090433
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 37879808,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.03376570000546053
+              },
+              "rss_baseline_bytes": 68202496,
+              "sampled_peak_rss_bytes": 98836480,
+              "sampled_peak_rss_increase_bytes": 30633984
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.028036899981088936,
+              "system_assembly_seconds": 6.520003080368042e-05,
+              "four_rhs_solve_seconds": 0.07725979993119836,
+              "observable_seconds": 0.00014370004646480083,
+              "total_seconds": 0.10551650001434609,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.1454022283742514e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0689873933590529e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.037017200025729835
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.0598908731692152e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0014386999537236989
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0059672197951719e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.03738260001409799
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.1454022283742514e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0013848000089637935
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205297127,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.7709809043226
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.880248911388,
+                  "scattering_nm2": 2667.1585074340037
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.88024891139,
+                  "scattering_nm2": 2667.158507434
+                },
+                {
+                  "extinction_nm2": 27429.172205297134,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.77098090433
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 37879808,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.02798599994275719
+              },
+              "rss_baseline_bytes": 70520832,
+              "sampled_peak_rss_bytes": 102215680,
+              "sampled_peak_rss_increase_bytes": 31694848
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.028870899986941367,
+              "system_assembly_seconds": 7.760000880807638e-05,
+              "four_rhs_solve_seconds": 0.07983709999825805,
+              "observable_seconds": 0.00014620006550103426,
+              "total_seconds": 0.10894300002837554,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.1454022283742514e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0689873933590529e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.03623590001370758
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.0598908731692152e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0013233000063337386
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.0059672197951719e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.04041240003425628
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.1454022283742514e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0018273000023327768
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205297127,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.7709809043226
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.880248911388,
+                  "scattering_nm2": 2667.1585074340037
+                },
+                {
+                  "extinction_nm2": 33745.03875634539,
+                  "absorption_nm2": 31077.88024891139,
+                  "scattering_nm2": 2667.158507434
+                },
+                {
+                  "extinction_nm2": 27429.172205297134,
+                  "absorption_nm2": 25037.401224392805,
+                  "scattering_nm2": 2391.77098090433
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 37879808,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.028820799954701215
+              },
+              "rss_baseline_bytes": 70500352,
+              "sampled_peak_rss_bytes": 98897920,
+              "sampled_peak_rss_increase_bytes": 28397568
+            }
+          ]
+        },
+        "dense_gmres": {
+          "backend": "dense_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.02807499998016283,
+            "system_assembly_seconds": 7.819995516911149e-05,
+            "four_rhs_solve_seconds": 0.011378200026229024,
+            "observable_seconds": 0.00013190001482143998,
+            "total_seconds": 0.03973519999999553
+          },
+          "runs": [
+            {
+              "backend": "dense_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.028369200008455664,
+              "system_assembly_seconds": 6.530003156512976e-05,
+              "four_rhs_solve_seconds": 0.012398900056723505,
+              "observable_seconds": 0.00013190001482143998,
+              "total_seconds": 0.04097670002374798,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870830938897e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063314771812e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.003662400005850941
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870824481539e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0039243000210262835
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870830938897e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002311999967787415
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063460524613e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002462300006300211
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285646,
+                  "absorption_nm2": 25037.401224396777,
+                  "scattering_nm2": 2391.7709808888685
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.88024872722,
+                  "scattering_nm2": 2667.158507550739
+                },
+                {
+                  "extinction_nm2": 33745.038756277965,
+                  "absorption_nm2": 31077.88024872723,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 18467088,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.028318599972408265
+              },
+              "rss_baseline_bytes": 70557696,
+              "sampled_peak_rss_bytes": 80769024,
+              "sampled_peak_rss_increase_bytes": 10211328
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.027710900001693517,
+              "system_assembly_seconds": 7.819995516911149e-05,
+              "four_rhs_solve_seconds": 0.010507199971470982,
+              "observable_seconds": 0.00011110003106296062,
+              "total_seconds": 0.03841619996819645,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870830938897e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063314771812e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0033758999779820442
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870824481539e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0022886000224389136
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870830938897e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002280500018969178
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063460524613e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002532399957999587
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285646,
+                  "absorption_nm2": 25037.401224396777,
+                  "scattering_nm2": 2391.7709808888685
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.88024872722,
+                  "scattering_nm2": 2667.158507550739
+                },
+                {
+                  "extinction_nm2": 33745.038756277965,
+                  "absorption_nm2": 31077.88024872723,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 18467088,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.027656699996441603
+              },
+              "rss_baseline_bytes": 70459392,
+              "sampled_peak_rss_bytes": 79749120,
+              "sampled_peak_rss_increase_bytes": 9289728
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.02807499998016283,
+              "system_assembly_seconds": 0.0001292000524699688,
+              "four_rhs_solve_seconds": 0.011378200026229024,
+              "observable_seconds": 0.00014180003199726343,
+              "total_seconds": 0.03973519999999553,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870830938897e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063314771812e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0040834000101312995
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870824481539e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.00242679996881634
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870830938897e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0023925999994389713
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063460524613e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0024376000510528684
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285646,
+                  "absorption_nm2": 25037.401224396777,
+                  "scattering_nm2": 2391.7709808888685
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.88024872722,
+                  "scattering_nm2": 2667.158507550739
+                },
+                {
+                  "extinction_nm2": 33745.038756277965,
+                  "absorption_nm2": 31077.88024872723,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 18467088,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 256,
+                "matrix_bytes": 9437184,
+                "estimated_peak_array_bytes": 17850368,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.027998499979730695
+              },
+              "rss_baseline_bytes": 70320128,
+              "sampled_peak_rss_bytes": 80752640,
+              "sampled_peak_rss_increase_bytes": 10432512
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 8.167159553468247e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 1.9983256103261055e-12,
+              "absorption_nm2": 5.926048934327239e-12,
+              "scattering_nm2": 4.37677264536733e-11
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 1.8288550108908105e-12,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20648787950884853,
+            "reference_mean_extinction_nm2": 30587.105480821258,
+            "within_0p1_percent_numerical_target": true
+          }
+        },
+        "fft_gmres": {
+          "backend": "fft_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.0005778999766334891,
+            "system_assembly_seconds": 4.339998122304678e-05,
+            "four_rhs_solve_seconds": 0.0077485000365413725,
+            "observable_seconds": 0.00010150001617148519,
+            "total_seconds": 0.008480200020130724
+          },
+          "runs": [
+            {
+              "backend": "fft_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.0006679000216536224,
+              "system_assembly_seconds": 4.339998122304678e-05,
+              "four_rhs_solve_seconds": 0.007643199933227152,
+              "observable_seconds": 0.00012030004290863872,
+              "total_seconds": 0.008480200020130724,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870758017288e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.06706344694172e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0020505000138655305
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870706823126e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0017535000224597752
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870758017288e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0018414999940432608
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063538505433e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.001972499943803996
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.17220528564,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.7709808888685
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 1042704,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 256,
+                "shape": [
+                  16,
+                  16,
+                  1
+                ],
+                "padded_shape": [
+                  32,
+                  32,
+                  1
+                ],
+                "kernel_bytes": 98304,
+                "estimated_peak_array_bytes": 425984,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0006614999729208648
+              },
+              "rss_baseline_bytes": 70426624,
+              "sampled_peak_rss_bytes": 70524928,
+              "sampled_peak_rss_increase_bytes": 98304
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.0005661000031977892,
+              "system_assembly_seconds": 4.469999112188816e-05,
+              "four_rhs_solve_seconds": 0.0077485000365413725,
+              "observable_seconds": 0.00010150001617148519,
+              "total_seconds": 0.008466299972496927,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870758017288e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.06706344694172e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002180500014219433
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870706823126e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0017378000193275511
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870758017288e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0018296000198461115
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063538505433e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.001978799991775304
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.17220528564,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.7709808888685
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 1042704,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 256,
+                "shape": [
+                  16,
+                  16,
+                  1
+                ],
+                "padded_shape": [
+                  32,
+                  32,
+                  1
+                ],
+                "kernel_bytes": 98304,
+                "estimated_peak_array_bytes": 425984,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0005596000119112432
+              },
+              "rss_baseline_bytes": 70144000,
+              "sampled_peak_rss_bytes": 70537216,
+              "sampled_peak_rss_increase_bytes": 393216
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 256,
+              "shape": [
+                16,
+                16,
+                1
+              ],
+              "centres_extent_nm": [
+                540.0,
+                540.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                552.0,
+                552.0,
+                12.0
+              ],
+              "operator_seconds": 0.0005778999766334891,
+              "system_assembly_seconds": 4.150002496317029e-05,
+              "four_rhs_solve_seconds": 0.008265600015874952,
+              "observable_seconds": 9.419996058568358e-05,
+              "total_seconds": 0.00898440001765266,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 8.297870758017288e-10,
+              "iterations_total": 34,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 7.06706344694172e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002066899964120239
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870706823126e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0017476000357419252
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 8,
+                  "relative_residual": 8.297870758017288e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.002212699968367815
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 7.067063538505433e-11,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.0022177999489940703
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 27429.172205285635,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.770980888865
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 33745.03875627796,
+                  "absorption_nm2": 31077.880248727222,
+                  "scattering_nm2": 2667.1585075507355
+                },
+                {
+                  "extinction_nm2": 27429.17220528564,
+                  "absorption_nm2": 25037.40122439677,
+                  "scattering_nm2": 2391.7709808888685
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 1042704,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 256,
+                "shape": [
+                  16,
+                  16,
+                  1
+                ],
+                "padded_shape": [
+                  32,
+                  32,
+                  1
+                ],
+                "kernel_bytes": 98304,
+                "estimated_peak_array_bytes": 425984,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0005715000443160534
+              },
+              "rss_baseline_bytes": 70520832,
+              "sampled_peak_rss_bytes": 70553600,
+              "sampled_peak_rss_increase_bytes": 32768
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 8.167159500400274e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 1.9983256103261055e-12,
+              "absorption_nm2": 5.926048934327238e-12,
+              "scattering_nm2": 4.37677264536733e-11
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 1.8288550108908105e-12,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20648787950884853,
+            "reference_mean_extinction_nm2": 30587.105480821258,
+            "within_0p1_percent_numerical_target": true
+          }
+        }
+      },
+      "speedup_fft_over_dense_lu": 12.8467488702815,
+      "speedup_fft_over_dense_gmres": 4.68564419538102
+    },
+    {
+      "shape": [
+        24,
+        24,
+        1
+      ],
+      "n_particles": 576,
+      "backends": {
+        "dense_lu": {
+          "backend": "dense_lu",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.15702439995948225,
+            "system_assembly_seconds": 0.00017519999528303742,
+            "four_rhs_solve_seconds": 0.6536900999490172,
+            "observable_seconds": 0.00021489994833245873,
+            "total_seconds": 0.8246573000214994
+          },
+          "runs": [
+            {
+              "backend": "dense_lu",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.1706510999938473,
+              "system_assembly_seconds": 8.700002217665315e-05,
+              "four_rhs_solve_seconds": 0.6536900999490172,
+              "observable_seconds": 0.00021659996127709746,
+              "total_seconds": 0.8246573000214994,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.488421992923876e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.4874126957852482e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.3119965000078082
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.455399788984558e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.006737600022461265
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.379788875113605e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.32702549995156005
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.488421992923876e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.007886999985203147
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                },
+                {
+                  "extinction_nm2": 75977.14463489335,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300645
+                },
+                {
+                  "extinction_nm2": 75977.14463489337,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300659
+                },
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 191397888,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.1705478999647312
+              },
+              "rss_baseline_bytes": 70791168,
+              "sampled_peak_rss_bytes": 226795520,
+              "sampled_peak_rss_increase_bytes": 156004352
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.15702439995948225,
+              "system_assembly_seconds": 0.00029930000891909003,
+              "four_rhs_solve_seconds": 0.6464053000090644,
+              "observable_seconds": 0.0001821999321691692,
+              "total_seconds": 0.8039247999549843,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.488421992923876e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.4874126957852482e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.3033751000184566
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.455399788984558e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.006342899985611439
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.379788875113605e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.33030689996667206
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.488421992923876e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.006337600003462285
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                },
+                {
+                  "extinction_nm2": 75977.14463489335,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300645
+                },
+                {
+                  "extinction_nm2": 75977.14463489337,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300659
+                },
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 191397888,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.15691850002622232
+              },
+              "rss_baseline_bytes": 73523200,
+              "sampled_peak_rss_bytes": 218746880,
+              "sampled_peak_rss_increase_bytes": 145223680
+            },
+            {
+              "backend": "dense_lu",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.1542634000070393,
+              "system_assembly_seconds": 0.00017519999528303742,
+              "four_rhs_solve_seconds": 0.6889258000883274,
+              "observable_seconds": 0.00021489994833245873,
+              "total_seconds": 0.8435937999747694,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 2.488421992923876e-16,
+              "iterations_total": 0,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.4874126957852482e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.34532750002108514
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.455399788984558e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.0074050999828614295
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 0,
+                  "relative_residual": 2.379788875113605e-16,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.32840429997304454
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 0,
+                  "relative_residual": 2.488421992923876e-16,
+                  "factorization_reused": true,
+                  "solve_seconds": 0.007740700035355985
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                },
+                {
+                  "extinction_nm2": 75977.14463489335,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300645
+                },
+                {
+                  "extinction_nm2": 75977.14463489337,
+                  "absorption_nm2": 69309.60901559271,
+                  "scattering_nm2": 6667.535619300659
+                },
+                {
+                  "extinction_nm2": 61937.210263035784,
+                  "absorption_nm2": 55951.15727939712,
+                  "scattering_nm2": 5986.052983638663
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 191397888,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.1541461000451818
+              },
+              "rss_baseline_bytes": 73584640,
+              "sampled_peak_rss_bytes": 219983872,
+              "sampled_peak_rss_increase_bytes": 146399232
+            }
+          ]
+        },
+        "dense_gmres": {
+          "backend": "dense_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.13905140000861138,
+            "system_assembly_seconds": 0.00011960003757849336,
+            "four_rhs_solve_seconds": 0.087409200030379,
+            "observable_seconds": 0.00019839993910863996,
+            "total_seconds": 0.22518379997927696
+          },
+          "runs": [
+            {
+              "backend": "dense_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.1360700000077486,
+              "system_assembly_seconds": 0.00011309998808428645,
+              "four_rhs_solve_seconds": 0.08877590001793578,
+              "observable_seconds": 0.00021189998369663954,
+              "total_seconds": 0.22518379997927696,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062699405912e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626927853262e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.022382199997082353
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973703620134e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.021807000041007996
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973881670075e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.021688699955120683
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062699405912e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.022850500012282282
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 68059408,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.13597659999504685
+              },
+              "rss_baseline_bytes": 73564160,
+              "sampled_peak_rss_bytes": 127918080,
+              "sampled_peak_rss_increase_bytes": 54353920
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.13956739997956902,
+              "system_assembly_seconds": 0.00012690003495663404,
+              "four_rhs_solve_seconds": 0.08489310002187267,
+              "observable_seconds": 0.000188700039871037,
+              "total_seconds": 0.22479020000901073,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062699405912e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626927853262e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.02379320003092289
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973703620134e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.020400000037625432
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973881670075e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.019587700022384524
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062699405912e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.021066699991934
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 68059408,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.13947499997448176
+              },
+              "rss_baseline_bytes": 73596928,
+              "sampled_peak_rss_bytes": 121815040,
+              "sampled_peak_rss_increase_bytes": 48218112
+            },
+            {
+              "backend": "dense_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.13905140000861138,
+              "system_assembly_seconds": 0.00011960003757849336,
+              "four_rhs_solve_seconds": 0.087409200030379,
+              "observable_seconds": 0.00019839993910863996,
+              "total_seconds": 0.22679190000053495,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062699405912e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626927853262e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.023826399992685765
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973703620134e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.021476500027347356
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973881670075e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.02011300000594929
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062699405912e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.021943299972917885
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 75977.1446349598,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.53561928698
+                },
+                {
+                  "extinction_nm2": 61937.2102630842,
+                  "absorption_nm2": 55951.15727947173,
+                  "scattering_nm2": 5986.05298361247
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 68059408,
+              "operator": {
+                "backend": "dense_all_pairs",
+                "n_dipoles": 576,
+                "matrix_bytes": 47775744,
+                "estimated_peak_array_bytes": 66705408,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/BLAS process overhead",
+                "boundary": "finite_open",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.13895499997306615
+              },
+              "rss_baseline_bytes": 73736192,
+              "sampled_peak_rss_bytes": 121659392,
+              "sampled_peak_rss_increase_bytes": 47923200
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 1.8175250938514963e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 8.745267442204965e-13,
+              "absorption_nm2": 1.333442827701968e-12,
+              "scattering_nm2": 4.375746002023936e-12
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 2.613585369510069e-13,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20360366957085183,
+            "reference_mean_extinction_nm2": 68957.17744896456,
+            "within_0p1_percent_numerical_target": true
+          }
+        },
+        "fft_gmres": {
+          "backend": "fft_gmres",
+          "repeat_count": 3,
+          "median_seconds": {
+            "operator_seconds": 0.0009109999518841505,
+            "system_assembly_seconds": 5.43000060133636e-05,
+            "four_rhs_solve_seconds": 0.020178399921860546,
+            "observable_seconds": 0.00013180001405999064,
+            "total_seconds": 0.022045899997465312
+          },
+          "runs": [
+            {
+              "backend": "fft_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.0008856999920681119,
+              "system_assembly_seconds": 5.43000060133636e-05,
+              "four_rhs_solve_seconds": 0.01669319998472929,
+              "observable_seconds": 0.0001151000615209341,
+              "total_seconds": 0.017754499975126237,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062744345832e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626884928526e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.004632800002582371
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.655497455245961e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.003943899995647371
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973318261577e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.004111899994313717
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062744345832e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.003980099980253726
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263084184,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612462
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.535619286966
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567279,
+                  "scattering_nm2": 6667.535619286995
+                },
+                {
+                  "extinction_nm2": 61937.21026308418,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612455
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2312464,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 576,
+                "shape": [
+                  24,
+                  24,
+                  1
+                ],
+                "padded_shape": [
+                  48,
+                  48,
+                  1
+                ],
+                "kernel_bytes": 221184,
+                "estimated_peak_array_bytes": 958464,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0008786999969743192
+              },
+              "rss_baseline_bytes": 73740288,
+              "sampled_peak_rss_bytes": 74379264,
+              "sampled_peak_rss_increase_bytes": 638976
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.0009109999518841505,
+              "system_assembly_seconds": 5.1600043661892414e-05,
+              "four_rhs_solve_seconds": 0.024965899996459484,
+              "observable_seconds": 0.00017389992717653513,
+              "total_seconds": 0.02611019997857511,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062744345832e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626884928526e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.005219499988015741
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.655497455245961e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.006272100028581917
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973318261577e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.006449699983932078
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062744345832e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.006991299975197762
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263084184,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612462
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.535619286966
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567279,
+                  "scattering_nm2": 6667.535619286995
+                },
+                {
+                  "extinction_nm2": 61937.21026308418,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612455
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2312464,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 576,
+                "shape": [
+                  24,
+                  24,
+                  1
+                ],
+                "padded_shape": [
+                  48,
+                  48,
+                  1
+                ],
+                "kernel_bytes": 221184,
+                "estimated_peak_array_bytes": 958464,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0009035000111907721
+              },
+              "rss_baseline_bytes": 74129408,
+              "sampled_peak_rss_bytes": 74334208,
+              "sampled_peak_rss_increase_bytes": 204800
+            },
+            {
+              "backend": "fft_gmres",
+              "n_particles": 576,
+              "shape": [
+                24,
+                24,
+                1
+              ],
+              "centres_extent_nm": [
+                828.0,
+                828.0,
+                0.0
+              ],
+              "particle_envelope_extent_nm": [
+                840.0,
+                840.0,
+                12.0
+              ],
+              "operator_seconds": 0.0016320000286214054,
+              "system_assembly_seconds": 9.569997200742364e-05,
+              "four_rhs_solve_seconds": 0.020178399921860546,
+              "observable_seconds": 0.00013180001405999064,
+              "total_seconds": 0.022045899997465312,
+              "rtol": 1e-09,
+              "maximum_relative_residual": 1.833062744345832e-10,
+              "iterations_total": 36,
+              "rhs_details": [
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.8330626884928526e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.00618119997670874
+                },
+                {
+                  "magnetization_z": 1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.655497455245961e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.00452340004267171
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": 1,
+                  "iterations": 9,
+                  "relative_residual": 1.6554973318261577e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.004495500004850328
+                },
+                {
+                  "magnetization_z": -1,
+                  "helicity_index": -1,
+                  "iterations": 9,
+                  "relative_residual": 1.833062744345832e-10,
+                  "factorization_reused": false,
+                  "solve_seconds": 0.00494849996175617
+                }
+              ],
+              "cross_sections": [
+                {
+                  "extinction_nm2": 61937.210263084184,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612462
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567282,
+                  "scattering_nm2": 6667.535619286966
+                },
+                {
+                  "extinction_nm2": 75977.14463495978,
+                  "absorption_nm2": 69309.60901567279,
+                  "scattering_nm2": 6667.535619286995
+                },
+                {
+                  "extinction_nm2": 61937.21026308418,
+                  "absorption_nm2": 55951.15727947172,
+                  "scattering_nm2": 5986.052983612455
+                }
+              ],
+              "estimated_peak_owned_array_bytes": 2312464,
+              "operator": {
+                "backend": "fft_linear_convolution",
+                "n_dipoles": 576,
+                "shape": [
+                  24,
+                  24,
+                  1
+                ],
+                "padded_shape": [
+                  48,
+                  48,
+                  1
+                ],
+                "kernel_bytes": 221184,
+                "estimated_peak_array_bytes": 958464,
+                "max_memory_bytes": 1073741824,
+                "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+                "boundary": "finite_open",
+                "geometry_approximation": "none; exact occupied grid sites",
+                "self_term": "zero; radiation reaction belongs in alpha",
+                "setup_seconds": 0.0016220000106841326
+              },
+              "rss_baseline_bytes": 74174464,
+              "sampled_peak_rss_bytes": 74506240,
+              "sampled_peak_rss_increase_bytes": 331776
+            }
+          ],
+          "accuracy_against_dense_lu": {
+            "max_relative_dipole_norm_error": 1.8175251039257243e-10,
+            "max_relative_cross_section_error": {
+              "extinction_nm2": 8.743352140531244e-13,
+              "absorption_nm2": 1.3333127864665769e-12,
+              "scattering_nm2": 4.37817697202506e-12
+            },
+            "magnetic_odd_cd_error_over_mean_extinction": 2.6141129402346375e-13,
+            "reference_magnetic_odd_cd_over_mean_extinction": -0.20360366957085183,
+            "reference_mean_extinction_nm2": 68957.17744896456,
+            "within_0p1_percent_numerical_target": true
+          }
+        }
+      },
+      "speedup_fft_over_dense_lu": 37.406379422764,
+      "speedup_fft_over_dense_gmres": 10.214316494457792
+    }
+  ],
+  "large_fft_cases": [
+    {
+      "backend": "fft_gmres",
+      "n_particles": 4096,
+      "shape": [
+        64,
+        64,
+        1
+      ],
+      "centres_extent_nm": [
+        2268.0,
+        2268.0,
+        0.0
+      ],
+      "particle_envelope_extent_nm": [
+        2280.0,
+        2280.0,
+        12.0
+      ],
+      "operator_seconds": 0.004707499989308417,
+      "system_assembly_seconds": 0.0005101000424474478,
+      "four_rhs_solve_seconds": 0.11698340001748875,
+      "observable_seconds": 0.0003910000086762011,
+      "total_seconds": 0.12260200001765043,
+      "rtol": 1e-09,
+      "maximum_relative_residual": 7.234335965935956e-10,
+      "iterations_total": 36,
+      "rhs_details": [
+        {
+          "magnetization_z": 1,
+          "helicity_index": 1,
+          "iterations": 9,
+          "relative_residual": 7.17629781608888e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.03371700004208833
+        },
+        {
+          "magnetization_z": 1,
+          "helicity_index": -1,
+          "iterations": 9,
+          "relative_residual": 7.234335942868328e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.027105199988000095
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": 1,
+          "iterations": 9,
+          "relative_residual": 7.234335965935956e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.026877299998886883
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": -1,
+          "iterations": 9,
+          "relative_residual": 7.176297802972937e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.029152900038752705
+        }
+      ],
+      "cross_sections": [
+        {
+          "extinction_nm2": 441845.53953554045,
+          "absorption_nm2": 397320.0519047321,
+          "scattering_nm2": 44525.48763080832
+        },
+        {
+          "extinction_nm2": 541336.2993632221,
+          "absorption_nm2": 491758.53990542534,
+          "scattering_nm2": 49577.759457796754
+        },
+        {
+          "extinction_nm2": 541336.2993632221,
+          "absorption_nm2": 491758.53990542534,
+          "scattering_nm2": 49577.759457796754
+        },
+        {
+          "extinction_nm2": 441845.5395355406,
+          "absorption_nm2": 397320.05190473236,
+          "scattering_nm2": 44525.48763080826
+        }
+      ],
+      "estimated_peak_owned_array_bytes": 16279824,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 4096,
+        "shape": [
+          64,
+          64,
+          1
+        ],
+        "padded_shape": [
+          128,
+          128,
+          1
+        ],
+        "kernel_bytes": 1572864,
+        "estimated_peak_array_bytes": 6815744,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.004566099960356951
+      },
+      "rss_baseline_bytes": 74379264,
+      "sampled_peak_rss_bytes": 81485824,
+      "sampled_peak_rss_increase_bytes": 7106560,
+      "repeat_count": 1,
+      "tolerance_refinement": {
+        "reference_rtol": 1e-11,
+        "reference_total_seconds": 0.15869139996357262,
+        "reference_maximum_relative_residual": 7.606056950307224e-12,
+        "max_relative_dipole_norm_error": 7.263289695891571e-10,
+        "max_relative_cross_section_error": {
+          "extinction_nm2": 3.9547620701533546e-13,
+          "absorption_nm2": 1.5288811787418358e-12,
+          "scattering_nm2": 1.7567343761109414e-11
+        },
+        "magnetic_odd_cd_error_over_mean_extinction": 1.4948846489179077e-13,
+        "reference_magnetic_odd_cd_over_mean_extinction": -0.20238526769171664,
+        "reference_mean_extinction_nm2": 491590.91944951925,
+        "within_0p1_percent_numerical_target": true
+      }
+    },
+    {
+      "backend": "fft_gmres",
+      "n_particles": 16384,
+      "shape": [
+        128,
+        128,
+        1
+      ],
+      "centres_extent_nm": [
+        4572.0,
+        4572.0,
+        0.0
+      ],
+      "particle_envelope_extent_nm": [
+        4584.0,
+        4584.0,
+        12.0
+      ],
+      "operator_seconds": 0.026627700019162148,
+      "system_assembly_seconds": 0.0013894999865442514,
+      "four_rhs_solve_seconds": 0.6379855000413954,
+      "observable_seconds": 0.0016281999996863306,
+      "total_seconds": 0.6676459000445902,
+      "rtol": 1e-09,
+      "maximum_relative_residual": 2.566615899627105e-10,
+      "iterations_total": 40,
+      "rhs_details": [
+        {
+          "magnetization_z": 1,
+          "helicity_index": 1,
+          "iterations": 10,
+          "relative_residual": 2.5205916706230443e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.1540656000142917
+        },
+        {
+          "magnetization_z": 1,
+          "helicity_index": -1,
+          "iterations": 10,
+          "relative_residual": 2.566615896063343e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.16080420004436746
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": 1,
+          "iterations": 10,
+          "relative_residual": 2.566615899627105e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.16435410000849515
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": -1,
+          "iterations": 10,
+          "relative_residual": 2.520591687196764e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.1577087999903597
+        }
+      ],
+      "cross_sections": [
+        {
+          "extinction_nm2": 1768886.972271493,
+          "absorption_nm2": 1588704.5067929744,
+          "scattering_nm2": 180182.4654785185
+        },
+        {
+          "extinction_nm2": 2166515.9143582257,
+          "absorption_nm2": 1965914.231564065,
+          "scattering_nm2": 200601.68279416068
+        },
+        {
+          "extinction_nm2": 2166515.914358226,
+          "absorption_nm2": 1965914.231564065,
+          "scattering_nm2": 200601.68279416114
+        },
+        {
+          "extinction_nm2": 1768886.9722714934,
+          "absorption_nm2": 1588704.5067929744,
+          "scattering_nm2": 180182.46547851898
+        }
+      ],
+      "estimated_peak_owned_array_bytes": 65038608,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 16384,
+        "shape": [
+          128,
+          128,
+          1
+        ],
+        "padded_shape": [
+          256,
+          256,
+          1
+        ],
+        "kernel_bytes": 6291456,
+        "estimated_peak_array_bytes": 27262976,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.026060300006065518
+      },
+      "rss_baseline_bytes": 78237696,
+      "sampled_peak_rss_bytes": 110653440,
+      "sampled_peak_rss_increase_bytes": 32415744,
+      "repeat_count": 1,
+      "tolerance_refinement": {
+        "reference_rtol": 1e-11,
+        "reference_total_seconds": 0.8095986000262201,
+        "reference_maximum_relative_residual": 3.919407413480799e-12,
+        "max_relative_dipole_norm_error": 2.613390866678353e-10,
+        "max_relative_cross_section_error": {
+          "extinction_nm2": 2.811356979940659e-13,
+          "absorption_nm2": 4.171237553411362e-13,
+          "scattering_nm2": 1.0538806130298818e-12
+        },
+        "magnetic_odd_cd_error_over_mean_extinction": 1.2802895342142307e-13,
+        "reference_magnetic_odd_cd_over_mean_extinction": -0.20207788302326354,
+        "reference_mean_extinction_nm2": 1967701.4433153425,
+        "within_0p1_percent_numerical_target": true
+      }
+    },
+    {
+      "backend": "fft_gmres",
+      "n_particles": 13824,
+      "shape": [
+        24,
+        24,
+        24
+      ],
+      "centres_extent_nm": [
+        828.0,
+        828.0,
+        828.0
+      ],
+      "particle_envelope_extent_nm": [
+        840.0,
+        840.0,
+        840.0
+      ],
+      "operator_seconds": 0.0461936000501737,
+      "system_assembly_seconds": 0.001450599986128509,
+      "four_rhs_solve_seconds": 1.8393031999585219,
+      "observable_seconds": 0.0010802000761032104,
+      "total_seconds": 1.8880425000097603,
+      "rtol": 1e-09,
+      "maximum_relative_residual": 9.299504180869178e-10,
+      "iterations_total": 70,
+      "rhs_details": [
+        {
+          "magnetization_z": 1,
+          "helicity_index": 1,
+          "iterations": 18,
+          "relative_residual": 3.1309418050159866e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.45225259999278933
+        },
+        {
+          "magnetization_z": 1,
+          "helicity_index": -1,
+          "iterations": 17,
+          "relative_residual": 9.299504166623106e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.4218644999782555
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": 1,
+          "iterations": 17,
+          "relative_residual": 9.299504180869178e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.45795880001969635
+        },
+        {
+          "magnetization_z": -1,
+          "helicity_index": -1,
+          "iterations": 18,
+          "relative_residual": 3.1309417891609237e-10,
+          "factorization_reused": false,
+          "solve_seconds": 0.5060211999807507
+        }
+      ],
+      "cross_sections": [
+        {
+          "extinction_nm2": 1520632.9760708758,
+          "absorption_nm2": 830990.5862047048,
+          "scattering_nm2": 689642.3898661709
+        },
+        {
+          "extinction_nm2": 1579157.7911920687,
+          "absorption_nm2": 912158.2403902947,
+          "scattering_nm2": 666999.550801774
+        },
+        {
+          "extinction_nm2": 1579157.7911920676,
+          "absorption_nm2": 912158.2403902945,
+          "scattering_nm2": 666999.5508017731
+        },
+        {
+          "extinction_nm2": 1520632.9760708758,
+          "absorption_nm2": 830990.586204705,
+          "scattering_nm2": 689642.3898661708
+        }
+      ],
+      "estimated_peak_owned_array_bytes": 76114192,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 13824,
+        "shape": [
+          24,
+          24,
+          24
+        ],
+        "padded_shape": [
+          48,
+          48,
+          48
+        ],
+        "kernel_bytes": 10616832,
+        "estimated_peak_array_bytes": 44236800,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.045161499991081655
+      },
+      "rss_baseline_bytes": 82784256,
+      "sampled_peak_rss_bytes": 127086592,
+      "sampled_peak_rss_increase_bytes": 44302336,
+      "repeat_count": 1,
+      "tolerance_refinement": {
+        "reference_rtol": 1e-11,
+        "reference_total_seconds": 2.3497964999987744,
+        "reference_maximum_relative_residual": 7.747590533994967e-12,
+        "max_relative_dipole_norm_error": 1.2393374702914183e-09,
+        "max_relative_cross_section_error": {
+          "extinction_nm2": 3.3160381246709686e-11,
+          "absorption_nm2": 3.1730051635757125e-11,
+          "scattering_nm2": 3.511643494950564e-11
+        },
+        "magnetic_odd_cd_error_over_mean_extinction": 2.9567656957173305e-11,
+        "reference_magnetic_odd_cd_over_mean_extinction": -0.03776049383368801,
+        "reference_mean_extinction_nm2": 1549895.3836020203,
+        "within_0p1_percent_numerical_target": true
+      }
+    }
+  ],
+  "all_numerical_targets_passed": true
+}

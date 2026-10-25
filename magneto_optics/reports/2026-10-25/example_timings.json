@@ -1,0 +1,50 @@
+[
+  {
+    "example": "single_sphere",
+    "end_to_end_seconds_including_imports_and_io": 1.1193863000371493,
+    "reported_calculation_seconds": 0.1575658000074327,
+    "wavelength_count": 61,
+    "particles": 1,
+    "shape_nm": [
+      12.0,
+      12.0,
+      12.0
+    ]
+  },
+  {
+    "example": "finite_array",
+    "end_to_end_seconds_including_imports_and_io": 1.5560676000313833,
+    "reported_calculation_seconds": 0.5942423000233248,
+    "wavelength_count": 61,
+    "particles": 144,
+    "shape_nm": [
+      408.0,
+      408.0,
+      12.0
+    ]
+  },
+  {
+    "example": "volume_array",
+    "end_to_end_seconds_including_imports_and_io": 1.1735711000510491,
+    "reported_calculation_seconds": 0.17233789997408167,
+    "wavelength_count": 5,
+    "particles": 512,
+    "shape_nm": [
+      264.0,
+      264.0,
+      264.0
+    ]
+  },
+  {
+    "example": "large_array",
+    "end_to_end_seconds_including_imports_and_io": 44.705771400011145,
+    "reported_calculation_seconds": 43.669013200036716,
+    "wavelength_count": 61,
+    "particles": 16384,
+    "shape_nm": [
+      4584.0,
+      4584.0,
+      12.0
+    ]
+  }
+]

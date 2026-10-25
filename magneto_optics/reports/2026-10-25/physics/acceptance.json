@@ -1,0 +1,495 @@
+{
+  "schema_version": "magnetooptics-acceptance-1.0",
+  "package_version": "0.1.0",
+  "passed": true,
+  "criteria": [
+    {
+      "name": "sphere_eigenpolarizability_relative_error",
+      "measured": 1.8827932535572013e-16,
+      "maximum": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "sphere_cross_section_relative_error",
+      "measured": 2.309165506525138e-13,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "closed_dimer_dipole_relative_error",
+      "measured": 2.2008355408857037e-16,
+      "maximum": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "dimer_relative_residual",
+      "measured": 2.600117454207364e-16,
+      "maximum": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "magnetization_reversal_channel_error",
+      "measured": 1.6187794714928001e-16,
+      "maximum": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "nonmagnetic_circular_degeneracy",
+      "measured": 0.0,
+      "maximum": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "magnetic_signal_is_nontrivial",
+      "measured": 0.1460159499309856,
+      "minimum": 0.001,
+      "passed": true
+    },
+    {
+      "name": "independent_angular_scattering_relative_error",
+      "measured": 4.356691339448025e-14,
+      "maximum": 5e-11,
+      "passed": true
+    },
+    {
+      "name": "angular_refinement_relative_change",
+      "measured": 1.7245513750608073e-15,
+      "maximum": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "lossless_absorption_relative_to_extinction",
+      "measured": 2.7961244846459428e-14,
+      "maximum": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "lossy_material_absorbs",
+      "measured_nm2": 15.829122606753266,
+      "minimum": 0,
+      "passed": true
+    },
+    {
+      "name": "Mie_series_order_convergence",
+      "measured": 0.0,
+      "maximum": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "specified_ka_0_02_physical_error",
+      "measured": 0.0002244149629933478,
+      "maximum": 0.001,
+      "passed": true
+    }
+  ],
+  "scope": "Finite electric point dipoles in a homogeneous real host; synthetic material values. Numerical dipole-model acceptance and limited continuum sphere acceptance are distinct.",
+  "time_convention": "exp(-i omega t)",
+  "units": {
+    "length": "nm",
+    "cross_section": "nm^2",
+    "polarizability": "nm^3"
+  },
+  "single_sphere": {
+    "inputs": {
+      "epsilon_diagonal": [
+        3,
+        0.2
+      ],
+      "g": [
+        0.25,
+        0.02
+      ],
+      "radius_nm": 7.0,
+      "wavelength_nm": 650.0,
+      "magnetization": [
+        0,
+        0,
+        1
+      ]
+    },
+    "cases": [
+      {
+        "host_index": 1.0,
+        "helicity_sign": 1,
+        "eigenpolarizability_relative_error": 1.259839612422301e-17,
+        "dipole_relative_error": 1.259839612422301e-17,
+        "extinction_relative_error": 4.454581331171937e-16,
+        "scattering_relative_error": 5.850090565476875e-14,
+        "reference_extinction_nm2": 0.9969269317016355,
+        "reference_scattering_nm2": 0.0011787041140354916
+      },
+      {
+        "host_index": 1.0,
+        "helicity_sign": -1,
+        "eigenpolarizability_relative_error": 1.0837396147977197e-17,
+        "dipole_relative_error": 1.0837396147977197e-17,
+        "extinction_relative_error": 0.0,
+        "scattering_relative_error": 1.1707207051011857e-14,
+        "reference_extinction_nm2": 0.9975246360036916,
+        "reference_scattering_nm2": 0.0015928886612745865
+      },
+      {
+        "host_index": 1.33,
+        "helicity_sign": 1,
+        "eigenpolarizability_relative_error": 1.8827932535572013e-16,
+        "dipole_relative_error": 1.8827932535572013e-16,
+        "extinction_relative_error": 1.6590698806756148e-16,
+        "scattering_relative_error": 2.309165506525138e-13,
+        "reference_extinction_nm2": 1.3383680067448949,
+        "reference_scattering_nm2": 0.0006770495784326656
+      },
+      {
+        "host_index": 1.33,
+        "helicity_sign": -1,
+        "eigenpolarizability_relative_error": 1.23313236671914e-16,
+        "dipole_relative_error": 1.23313236671914e-16,
+        "extinction_relative_error": 1.5815777048335164e-16,
+        "scattering_relative_error": 1.2607341604016322e-13,
+        "reference_extinction_nm2": 1.4039436965154024,
+        "reference_scattering_nm2": 0.0013088847422023113
+      }
+    ]
+  },
+  "closed_dimer": {
+    "inputs": {
+      "separation_nm": 28.0,
+      "k_nm_inv": 0.05,
+      "scalar_alpha_nm3": [
+        20000.0,
+        4000.0
+      ]
+    },
+    "cases": [
+      {
+        "backend": "dense",
+        "component": "x",
+        "parity": 1,
+        "dipole_relative_error": 1.0236205959000172e-16,
+        "relative_residual": 1.4101116743087058e-16
+      },
+      {
+        "backend": "dense",
+        "component": "x",
+        "parity": -1,
+        "dipole_relative_error": 3.0230801105437835e-17,
+        "relative_residual": 1.8181693616962856e-16
+      },
+      {
+        "backend": "dense",
+        "component": "y",
+        "parity": 1,
+        "dipole_relative_error": 1.4815109192346145e-16,
+        "relative_residual": 1.300058727103682e-16
+      },
+      {
+        "backend": "dense",
+        "component": "y",
+        "parity": -1,
+        "dipole_relative_error": 1.600363313078067e-16,
+        "relative_residual": 2.2295823230045248e-17
+      },
+      {
+        "backend": "dense",
+        "component": "z",
+        "parity": 1,
+        "dipole_relative_error": 1.4815109192346145e-16,
+        "relative_residual": 1.300058727103682e-16
+      },
+      {
+        "backend": "dense",
+        "component": "z",
+        "parity": -1,
+        "dipole_relative_error": 1.600363313078067e-16,
+        "relative_residual": 2.2295823230045248e-17
+      },
+      {
+        "backend": "fft",
+        "component": "x",
+        "parity": 1,
+        "dipole_relative_error": 1.4476181294462338e-16,
+        "relative_residual": 2.600117454207364e-16
+      },
+      {
+        "backend": "fft",
+        "component": "x",
+        "parity": -1,
+        "dipole_relative_error": 2.2008355408857037e-16,
+        "relative_residual": 2.2295823230045248e-17
+      },
+      {
+        "backend": "fft",
+        "component": "y",
+        "parity": 1,
+        "dipole_relative_error": 1.9753478923128197e-16,
+        "relative_residual": 1.7836658584036199e-16
+      },
+      {
+        "backend": "fft",
+        "component": "y",
+        "parity": -1,
+        "dipole_relative_error": 1.709188767600972e-16,
+        "relative_residual": 7.050558371543529e-17
+      },
+      {
+        "backend": "fft",
+        "component": "z",
+        "parity": 1,
+        "dipole_relative_error": 1.9753478923128197e-16,
+        "relative_residual": 1.7836658584036199e-16
+      },
+      {
+        "backend": "fft",
+        "component": "z",
+        "parity": -1,
+        "dipole_relative_error": 1.709188767600972e-16,
+        "relative_residual": 7.050558371543529e-17
+      }
+    ]
+  },
+  "magnetic_symmetry": {
+    "inputs": {
+      "positions_nm": [
+        [
+          -30,
+          -30,
+          0
+        ],
+        [
+          -30,
+          30,
+          0
+        ],
+        [
+          30,
+          -30,
+          0
+        ],
+        [
+          30,
+          30,
+          0
+        ]
+      ],
+      "radius_nm": 8.0,
+      "wavelength_nm": 620.0,
+      "epsilon_diagonal": [
+        2.8,
+        0.15
+      ]
+    },
+    "cases": [
+      {
+        "g": [
+          0.0,
+          0.0
+        ],
+        "extinction_nm2_rows_Mplus_Mminus_columns_plus_minus": [
+          [
+            5.154743725887419,
+            5.154743725887419
+          ],
+          [
+            5.154743725887419,
+            5.154743725887419
+          ]
+        ],
+        "reversal_channel_swap_relative_error": 0.0,
+        "circular_difference_divided_by_max_extinction": 0.0
+      },
+      {
+        "g": [
+          0.3,
+          0.03
+        ],
+        "extinction_nm2_rows_Mplus_Mminus_columns_plus_minus": [
+          [
+            4.685568463133203,
+            5.486716599396137
+          ],
+          [
+            5.486716599396137,
+            4.685568463133202
+          ]
+        ],
+        "reversal_channel_swap_relative_error": 1.6187794714928001e-16,
+        "circular_difference_divided_by_max_extinction": -0.1460159499309856
+      }
+    ]
+  },
+  "independent_energy_closure": {
+    "inputs": {
+      "positions_nm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          41,
+          7,
+          12
+        ],
+        [
+          -29,
+          39,
+          3
+        ],
+        [
+          9,
+          -46,
+          17
+        ],
+        [
+          14,
+          13,
+          53
+        ],
+        [
+          -20,
+          -16,
+          -37
+        ]
+      ],
+      "radius_nm": 8.0,
+      "wavelength_nm": 500.0,
+      "host_index": 1.2,
+      "g": [
+        0.3,
+        0
+      ],
+      "magnetization": [
+        0,
+        0,
+        1
+      ],
+      "direction": [
+        0.2672612419124244,
+        0.5345224838248488,
+        0.8017837257372732
+      ],
+      "quadrature_orders": [
+        [
+          21,
+          47
+        ],
+        [
+          31,
+          61
+        ]
+      ]
+    },
+    "cases": [
+      {
+        "epsilon_diagonal": [
+          3,
+          0.0
+        ],
+        "extinction_nm2": 0.160943744657366,
+        "absorption_nm2": 4.500187450870657e-15,
+        "scattering_nm2": 0.1609437446573615,
+        "independent_radiation_nm2": 0.1609437446573623,
+        "angular_refinement_relative_change": 1.7245513750608073e-15,
+        "scattering_vs_angular_relative_error": 3.276647612615534e-15,
+        "energy_closure_divided_by_extinction": 3.276647612615453e-15,
+        "absorption_divided_by_extinction": 2.7961244846459428e-14
+      },
+      {
+        "epsilon_diagonal": [
+          3,
+          0.2
+        ],
+        "extinction_nm2": 15.993489047955851,
+        "absorption_nm2": 15.829122606753266,
+        "scattering_nm2": 0.16436644120258492,
+        "independent_radiation_nm2": 0.1643664412025919,
+        "angular_refinement_relative_change": 1.1820480378347355e-15,
+        "scattering_vs_angular_relative_error": 4.356691339448025e-14,
+        "energy_closure_divided_by_extinction": 4.477408580054337e-16,
+        "absorption_divided_by_extinction": 0.9897229153244962
+      }
+    ]
+  },
+  "Mie_model_error": {
+    "inputs": {
+      "epsilon": [
+        2.25,
+        0.1
+      ],
+      "wavelength_nm": 600.0,
+      "host_index": 1.0
+    },
+    "interpretation": "ka=0.02 is the specified small-sphere physical acceptance case. ka=0.08 is a deliberate model-limit illustration; its error is reported, not hidden by linear-solver accuracy.",
+    "cases": [
+      {
+        "ka": 0.02,
+        "radius_nm": 1.9098593171027443,
+        "dipole_extinction_scattering_nm2": [
+          0.015218004221561377,
+          4.254158697224175e-07
+        ],
+        "mie_extinction_scattering_nm2": [
+          0.015221420135997903,
+          4.254279807242953e-07
+        ],
+        "mie_order_6_to_8_relative_change": 0.0,
+        "extinction_relative_error": 0.0002244149629933478,
+        "scattering_relative_error": 2.8467807540866984e-05,
+        "both_within_0_1_percent": true,
+        "included_in_0_1_percent_acceptance": true
+      },
+      {
+        "ka": 0.08,
+        "radius_nm": 7.639437268410977,
+        "dipole_extinction_scattering_nm2": [
+          0.975656653562174,
+          0.0017424839472008902
+        ],
+        "mie_extinction_scattering_nm2": [
+          0.9791529290118659,
+          0.0017432706477965327
+        ],
+        "mie_order_6_to_8_relative_change": 0.0,
+        "extinction_relative_error": 0.0035707143859746533,
+        "scattering_relative_error": 0.00045127851870670465,
+        "both_within_0_1_percent": false,
+        "included_in_0_1_percent_acceptance": false
+      }
+    ]
+  },
+  "references": [
+    "https://doi.org/10.1364/JOSAA.11.001491",
+    "https://miepython.readthedocs.io/en/3.0.0/07_algorithm.html"
+  ],
+  "source_sha256": {
+    "scripts/validate_magneto.py": "79ed8c4501bb748ecd5e67da5ca793a6bf89be21ff89c598b72eb5bf9037e471",
+    "src/magnetooptics/__init__.py": "f5edd1dbcdeb23f0679b721199eb1cef6734ced1a2c0af7f1cabda8da079c27c",
+    "src/magnetooptics/geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "src/magnetooptics/interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "src/magnetooptics/solver.py": "8e1df621ad625c2327f4d3710931f7cf491859ff6b26e30858544c1756513f08"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "blas_threads": 1,
+    "libraries": [
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.188.0",
+        "num_threads": 1
+      },
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "num_threads": 1
+      }
+    ]
+  },
+  "elapsed_seconds": 0.10440450004534796
+}

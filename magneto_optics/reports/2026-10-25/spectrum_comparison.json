@@ -1,0 +1,43 @@
+{
+  "actual": "reports\\2026-10-25\\finite_array\\spectrum.csv",
+  "reference": "reports\\2026-10-25\\finite_array_dense_reference\\spectrum.csv",
+  "wavelength_count": 61,
+  "intensity_scale": "maximum mean extinction of the reference four channels",
+  "cross_section_error_over_peak_extinction": {
+    "extinction_nm2_Mplus_plus": 4.863003267274013e-13,
+    "absorption_nm2_Mplus_plus": 9.740119728109765e-13,
+    "scattering_nm2_Mplus_plus": 4.877116460835752e-13,
+    "extinction_nm2_Mplus_minus": 3.080708537477069e-13,
+    "absorption_nm2_Mplus_minus": 5.306560779214428e-13,
+    "scattering_nm2_Mplus_minus": 2.225852241737359e-13,
+    "extinction_nm2_Mminus_plus": 3.078692366968249e-13,
+    "absorption_nm2_Mminus_plus": 5.306560779214428e-13,
+    "scattering_nm2_Mminus_plus": 2.227868412246179e-13,
+    "extinction_nm2_Mminus_minus": 4.863003267274013e-13,
+    "absorption_nm2_Mminus_minus": 9.740119728109765e-13,
+    "scattering_nm2_Mminus_minus": 4.877116460835752e-13
+  },
+  "relative_cross_section_error_where_at_least_1percent_peak_extinction": {
+    "extinction_nm2_Mplus_plus": 6.14619020544555e-13,
+    "absorption_nm2_Mplus_plus": 1.5069372152066295e-12,
+    "scattering_nm2_Mplus_plus": 7.530977899387325e-12,
+    "extinction_nm2_Mplus_minus": 4.548605603626347e-13,
+    "absorption_nm2_Mplus_minus": 6.621157724044027e-13,
+    "scattering_nm2_Mplus_minus": 2.797406786197904e-12,
+    "extinction_nm2_Mminus_plus": 4.553564112641927e-13,
+    "absorption_nm2_Mminus_plus": 6.622983243129784e-13,
+    "scattering_nm2_Mminus_plus": 2.7999406691564168e-12,
+    "extinction_nm2_Mminus_minus": 6.143961710084621e-13,
+    "absorption_nm2_Mminus_minus": 1.5069372152066295e-12,
+    "scattering_nm2_Mminus_minus": 7.533235048465533e-12
+  },
+  "cd_absolute_error_over_peak_extinction": {
+    "magnetic_cd_extinction_nm2": 1.783302815051353e-13,
+    "even_cd_extinction_nm2": 3.0242557632301073e-16
+  },
+  "normalized_magnetic_cd_max_absolute_difference": 2.4857893521357255e-13,
+  "maximum_reported_error": 7.533235048465533e-12,
+  "target_fraction": 0.001,
+  "passed": true,
+  "scope": "finite particle-CDA numerical comparison; near-zero CD uses an absolute extinction scale; no model/multipole or between-wavelength guarantee"
+}

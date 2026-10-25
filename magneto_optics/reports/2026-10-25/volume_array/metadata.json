@@ -1,0 +1,965 @@
+{
+  "package_version": "0.1.0",
+  "model": "finite electric coupled-dipole homogeneous spheres",
+  "time_convention": "exp(-i omega t)",
+  "length_unit": "nm",
+  "cross_section_unit": "nm^2",
+  "polarizability_unit": "nm^3",
+  "host_index": 1.0,
+  "geometry": {
+    "particle_count": 512,
+    "representation": "one electric dipole per homogeneous sphere",
+    "boundary": "finite in an infinite homogeneous lossless host",
+    "units": "nm",
+    "bounding_box_min_nm": [
+      -6.0,
+      -6.0,
+      -6.0
+    ],
+    "bounding_box_max_nm": [
+      258.0,
+      258.0,
+      258.0
+    ],
+    "extent_nm": [
+      264.0,
+      264.0,
+      264.0
+    ],
+    "minimum_center_distance_nm": 36.0,
+    "minimum_surface_gap_nm": 24.0,
+    "maximum_radius_nm": 6.0,
+    "grid_shape": [
+      8,
+      8,
+      8
+    ],
+    "maximum_host_size_parameter_ka": 0.08767235312343609,
+    "maximum_internal_size_parameter": 0.1703648020972693
+  },
+  "material_provenance": {
+    "synthetic_mo": "Synthetic circular Drude channels: eps_inf=5, plasma_energy=7eV, damping=.15eV, splitting=.025eV; no real-material claim. z diagonal set equal to mean transverse diagonal."
+  },
+  "helicity_convention": "e_plus=(e1+i e2)/sqrt(2), e_minus=(e1-i e2)/sqrt(2); e1 cross e2 = propagation direction",
+  "magnetic_cd_definition": "[(Cplus(+M)-Cminus(+M))-(Cplus(-M)-Cminus(-M))]/2",
+  "normalized_cd_denominator": "mean of the four extinction cross sections; undefined for zero denominator",
+  "polarization_observable": "forward SCATTERED field of linear incidence; not total transmitted Faraday rotation or planar Kerr reflection",
+  "scope": "homogeneous lossless host; finite nonoverlapping spheres; no substrate, infinite periodic boundary, magnetic-dipole particle modes or magnetization dynamics",
+  "applicability_advisories": [],
+  "accuracy": "linear solver residual is reported; it is not a bound on model/multipole error or relative error of a vanishing CD signal",
+  "threads_blas": 1,
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "elapsed_seconds": 0.17233789997408167,
+  "records": [
+    {
+      "wavelength_nm": 430.0,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 512,
+        "shape": [
+          8,
+          8,
+          8
+        ],
+        "padded_shape": [
+          15,
+          15,
+          15
+        ],
+        "kernel_bytes": 324000,
+        "estimated_peak_array_bytes": 1361536,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.0014723000349476933
+      },
+      "solves": {
+        "Mplus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.6384148204162964e-06,
+          "relative_residual": 1.5229807266003265e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.004591699980664998,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0014723000349476933
+          }
+        },
+        "Mplus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.186547785188779e-06,
+          "relative_residual": 1.2626125126769802e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.0058809000183828175,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0014723000349476933
+          }
+        },
+        "Mminus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.186548645374406e-06,
+          "relative_residual": 1.262613428005591e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.0041683000163175166,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0014723000349476933
+          }
+        },
+        "Mminus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.6384156651293502e-06,
+          "relative_residual": 1.5229815117993397e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.004131200024858117,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0014723000349476933
+          }
+        }
+      }
+    },
+    {
+      "wavelength_nm": 460.0,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 512,
+        "shape": [
+          8,
+          8,
+          8
+        ],
+        "padded_shape": [
+          15,
+          15,
+          15
+        ],
+        "kernel_bytes": 324000,
+        "estimated_peak_array_bytes": 1361536,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.0010158999939449131
+      },
+      "solves": {
+        "Mplus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.619390480403167e-05,
+          "relative_residual": 4.1041739174195503e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 12,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.007046200043987483,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010158999939449131
+          }
+        },
+        "Mplus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 9.917925505174145e-06,
+          "relative_residual": 3.001097903919114e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 12,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.006015699997078627,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010158999939449131
+          }
+        },
+        "Mminus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 9.917925797516659e-06,
+          "relative_residual": 3.0010979923800024e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 12,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.005726900009904057,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010158999939449131
+          }
+        },
+        "Mminus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.6193905750170774e-05,
+          "relative_residual": 4.1041741572085e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 12,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.0062360999872908,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010158999939449131
+          }
+        }
+      }
+    },
+    {
+      "wavelength_nm": 490.0,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 512,
+        "shape": [
+          8,
+          8,
+          8
+        ],
+        "padded_shape": [
+          15,
+          15,
+          15
+        ],
+        "kernel_bytes": 324000,
+        "estimated_peak_array_bytes": 1361536,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.0009923999896273017
+      },
+      "solves": {
+        "Mplus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 6.321908794078041e-06,
+          "relative_residual": 2.3191270776784607e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 11,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.005269399960525334,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009923999896273017
+          }
+        },
+        "Mplus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 7.846563848110857e-06,
+          "relative_residual": 2.5299803314795252e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 11,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.005240999977104366,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009923999896273017
+          }
+        },
+        "Mminus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 7.84656227558273e-06,
+          "relative_residual": 2.529979824446726e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 11,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.005392400023993105,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009923999896273017
+          }
+        },
+        "Mminus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 6.3219118260522966e-06,
+          "relative_residual": 2.3191281899269638e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 11,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.006727400003001094,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009923999896273017
+          }
+        }
+      }
+    },
+    {
+      "wavelength_nm": 550.0,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 512,
+        "shape": [
+          8,
+          8,
+          8
+        ],
+        "padded_shape": [
+          15,
+          15,
+          15
+        ],
+        "kernel_bytes": 324000,
+        "estimated_peak_array_bytes": 1361536,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.0010457999887876213
+      },
+      "solves": {
+        "Mplus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 2.782511394840694e-06,
+          "relative_residual": 2.1962315274094525e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.004058599995914847,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010457999887876213
+          }
+        },
+        "Mplus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 3.118616045664876e-06,
+          "relative_residual": 2.361919494367262e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.00397369998972863,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010457999887876213
+          }
+        },
+        "Mminus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 3.1186157186099833e-06,
+          "relative_residual": 2.3619192466685024e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.005253200011793524,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010457999887876213
+          }
+        },
+        "Mminus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 2.7825108776563044e-06,
+          "relative_residual": 2.1962311191966907e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 8,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.004757799964863807,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0010457999887876213
+          }
+        }
+      }
+    },
+    {
+      "wavelength_nm": 650.0,
+      "operator": {
+        "backend": "fft_linear_convolution",
+        "n_dipoles": 512,
+        "shape": [
+          8,
+          8,
+          8
+        ],
+        "padded_shape": [
+          15,
+          15,
+          15
+        ],
+        "kernel_bytes": 324000,
+        "estimated_peak_array_bytes": 1361536,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+        "boundary": "finite_open",
+        "geometry_approximation": "none; exact occupied grid sites",
+        "self_term": "zero; radiation reaction belongs in alpha",
+        "setup_seconds": 0.0009830999770201743
+      },
+      "solves": {
+        "Mplus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.3032668572980428e-06,
+          "relative_residual": 1.466385876334185e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 7,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.003472600015811622,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009830999770201743
+          }
+        },
+        "Mplus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.3558559506058034e-06,
+          "relative_residual": 1.499683875295385e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 7,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.003979999979492277,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009830999770201743
+          }
+        },
+        "Mminus_plus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.3558566780750062e-06,
+          "relative_residual": 1.4996846799338374e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 7,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.0037065999931655824,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009830999770201743
+          }
+        },
+        "Mminus_minus": {
+          "method": "gmres",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.303268308778578e-06,
+          "relative_residual": 1.4663875094844062e-11,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "left block alpha; identity diagonal",
+          "iterations": 7,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 0,
+          "reciprocal_condition_estimate": null,
+          "solve_seconds": 0.003537899989169091,
+          "operator": {
+            "backend": "fft_linear_convolution",
+            "n_dipoles": 512,
+            "shape": [
+              8,
+              8,
+              8
+            ],
+            "padded_shape": [
+              15,
+              15,
+              15
+            ],
+            "kernel_bytes": 324000,
+            "estimated_peak_array_bytes": 1361536,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "owned arrays and conservative workspace estimate; excludes Python/FFT process overhead",
+            "boundary": "finite_open",
+            "geometry_approximation": "none; exact occupied grid sites",
+            "self_term": "zero; radiation reaction belongs in alpha",
+            "setup_seconds": 0.0009830999770201743
+          }
+        }
+      }
+    }
+  ],
+  "configuration_sha256": "636965898ffc8513bb4b96efade30a7cb8dc387bb3be75341255d3139f5b6aa2",
+  "source_sha256": {
+    "__init__.py": "f5edd1dbcdeb23f0679b721199eb1cef6734ced1a2c0af7f1cabda8da079c27c",
+    "geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "solver.py": "8e1df621ad625c2327f4d3710931f7cf491859ff6b26e30858544c1756513f08"
+  }
+}

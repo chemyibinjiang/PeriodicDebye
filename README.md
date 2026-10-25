@@ -1,4 +1,14 @@
-# PeriodicDebye: learning scattering, one pair of atoms at a time
+# PeriodicDebye: X-ray scattering and magneto-optical arrays
+
+**磁光超结构扩展（2026-10-25）：** 新增有限纳米颗粒阵列的电磁耦合模块，支持磁光介电张量、
+磁化反转、圆二色性及散射偏振，并提供独立物理验收和 FFT 加速。
+从 [磁光模块中文教程](magneto_optics/README.md)、
+[验收与性能报告](magneto_optics/VALIDATION_REPORT.md) 或
+[本轮 goal](magneto_optics/GOAL.md) 开始。
+
+The new electromagnetic module is version **0.1.0**. It models finite arrays
+of small electric-dipole spheres; it does not turn the X-ray Debye equation
+into a Maxwell solver. The original X-ray tutorial follows below.
 
 This project calculates how X-rays scatter from a crystal and from nanoparticles
 inside its pores. It supports finite single crystals, ideal periodic single
