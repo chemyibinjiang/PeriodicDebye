@@ -1,5 +1,9 @@
 # PeriodicDebye: X-ray scattering and magneto-optical arrays
 
+**磁光超晶格（v0.4.0）：** 新增精确分层 Maxwell 求解器，以及 21 层 Bragg 微腔—镜面示例。
+合成弱磁光层通过共振实现单程 45° 与指定镜面间隙下的 90° 返回，包含透射损失与吸收对照。
+见 [材料说明、超晶格方程与运行方法](magneto_optics/SUPERLATTICE.md)。
+
 **Faraday 镜面双程例子（v0.3.0）：** 已构造包含界面和多次反射的合成均匀膜，
 实现线偏振单程 45°、经普通镜面折返后再转 45°，总计 90°。
 见 [数学推导、偏振图与可调角度运行方法](magneto_optics/FARADAY_MIRROR.md)。
@@ -15,8 +19,8 @@ Faraday/Kerr 旋转和全部传播衍射级次。使用均匀宿主中的小球�
 [验收与性能报告](magneto_optics/VALIDATION_REPORT.md) 或
 [本轮 goal](magneto_optics/GOAL.md) 开始。
 
-The electromagnetic module is version **0.3.0**. It models finite arrays and
-periodic sheets of small electric-dipole spheres, plus exact homogeneous slab/mirror benchmarks; it does not turn the X-ray Debye equation
+The electromagnetic module is version **0.4.0**. It models finite arrays and
+periodic sheets of small electric-dipole spheres, plus exact gyrotropic layer stacks and mirror cavities; it does not turn the X-ray Debye equation
 into a Maxwell solver. The original X-ray tutorial follows below.
 
 This project calculates how X-rays scatter from a crystal and from nanoparticles

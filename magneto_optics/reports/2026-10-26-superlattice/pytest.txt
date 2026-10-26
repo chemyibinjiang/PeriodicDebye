@@ -1,0 +1,15 @@
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 49%]
+........................................................................ [ 65%]
+........................................................................ [ 82%]
+........................................................................ [ 98%]
+.......                                                                  [100%]
+============================== warnings summary ===============================
+tests/test_physical_acceptance.py::test_small_sphere_exact_mie_quantifies_dipole_physical_error
+  tests\test_physical_acceptance.py:251: PytestWarning: record_property is incompatible with junit_family 'xunit2' (use 'legacy' or 'xunit1')
+    def test_small_sphere_exact_mie_quantifies_dipole_physical_error(record_property):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: C:\Users\yibinjiang\Documents\GitHub\PeriodicDebye\magneto_optics\reports\2026-10-26-superlattice\pytest.xml -
+439 passed, 1 warning in 2.47s

@@ -1,0 +1,269 @@
+{
+  "schema_version": "synthetic-superlattice-fixture-1.0",
+  "provenance": "Entirely synthetic nondispersive materials, not measured garnet, silica or any named material. g and MO thickness fitted to equal-amplitude circular transmission with pi/2 phase difference at 600 nm. PEC gap then fitted to zero returned Ex.",
+  "wavelength_nm": 600.0,
+  "host_index": 1.0,
+  "gap_nm": 50.00103483471033,
+  "mirror_amplitude": [
+    -1.0,
+    0.0
+  ],
+  "magnetization_z": 1.0,
+  "architecture": "(H L)^5 MO (L H)^5; H,L quarter-wave dielectric layers; central axial gyrotropic defect",
+  "layers": [
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "MO",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0290419440851566,
+        0.0
+      ],
+      "thickness_nm": 130.43429113375674
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    },
+    {
+      "name": "L",
+      "epsilon_diagonal": [
+        2.1025,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 103.44827586206897
+    },
+    {
+      "name": "H",
+      "epsilon_diagonal": [
+        5.289999999999999,
+        0.0
+      ],
+      "g": [
+        0.0,
+        0.0
+      ],
+      "thickness_nm": 65.21739130434783
+    }
+  ],
+  "loss_stress": "Demo adds +0.001i to the MO diagonal permittivity without retuning; synthetic sensitivity test, not an estimate of measured loss.",
+  "scope": "Normal incidence, mu_r=1, identical lossless hosts, axial magnetization, laterally uniform planar layers; no 2D nanodisk array."
+}
