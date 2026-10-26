@@ -1,0 +1,430 @@
+{
+  "design": {
+    "epsilon_diagonal": 2.5,
+    "g": 1.5,
+    "thickness_nm": 150.0,
+    "wavelength_nm": 600.0,
+    "host_index": 1.0,
+    "design_angle_deg": 45.0,
+    "provenance": "Synthetic lossless gyrotropic slab; one matched circular channel and one half-wave Fabry-Perot resonance. Not measured material data."
+  },
+  "gap_nm": 300.0,
+  "mirror_amplitude": -1.0,
+  "stages": [
+    {
+      "stage": "input",
+      "electric_field_xy": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "power": 1.0,
+      "rotation_deg": 0.0,
+      "ellipticity_deg": 0.0,
+      "cross_fraction": 0.0
+    },
+    {
+      "stage": "forward_after_material",
+      "electric_field_xy": [
+        [
+          -0.49999999999999983,
+          0.5000000000000003
+        ],
+        [
+          -0.49999999999999967,
+          0.5000000000000001
+        ]
+      ],
+      "power": 1.0,
+      "rotation_deg": 44.999999999999986,
+      "ellipticity_deg": 1.5902773407317584e-15,
+      "cross_fraction": 0.4999999999999998
+    },
+    {
+      "stage": "immediately_after_isotropic_mirror",
+      "electric_field_xy": [
+        [
+          -0.49999999999999956,
+          0.5000000000000004
+        ],
+        [
+          -0.49999999999999956,
+          0.5000000000000004
+        ]
+      ],
+      "power": 1.0,
+      "rotation_deg": 45.0,
+      "ellipticity_deg": 0.0,
+      "cross_fraction": 0.5
+    },
+    {
+      "stage": "returned_after_material",
+      "electric_field_xy": [
+        [
+          0.0,
+          9.860761315262648e-32
+        ],
+        [
+          1.6996616692943937e-15,
+          1.0
+        ]
+      ],
+      "power": 1.0,
+      "rotation_deg": 90.0,
+      "ellipticity_deg": -9.602748603715802e-45,
+      "cross_fraction": 1.0
+    }
+  ],
+  "slab": {
+    "indices": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ]
+    ],
+    "epsilon_channels": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ]
+    ],
+    "transmission_eigenvalues": [
+      [
+        2.83276944882399e-16,
+        1.0
+      ],
+      [
+        -1.0,
+        7.081923622059974e-16
+      ]
+    ],
+    "reflection_eigenvalues": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.018437062642928e-32,
+        -4.2491541732359847e-16
+      ]
+    ],
+    "propagation_eigenvalues": [
+      [
+        2.83276944882399e-16,
+        1.0
+      ],
+      [
+        -1.0,
+        5.66553889764798e-16
+      ]
+    ],
+    "transmission": [
+      [
+        [
+          -0.49999999999999983,
+          0.5000000000000003
+        ],
+        [
+          0.49999999999999967,
+          -0.5000000000000001
+        ]
+      ],
+      [
+        [
+          -0.49999999999999967,
+          0.5000000000000001
+        ],
+        [
+          -0.49999999999999983,
+          0.5000000000000003
+        ]
+      ]
+    ],
+    "reflection": [
+      [
+        [
+          -3.009218531321464e-32,
+          -2.1245770866179924e-16
+        ],
+        [
+          2.1245770866179924e-16,
+          -3.009218531321464e-32
+        ]
+      ],
+      [
+        [
+          -2.1245770866179924e-16,
+          3.009218531321464e-32
+        ],
+        [
+          -3.009218531321464e-32,
+          -2.1245770866179924e-16
+        ]
+      ]
+    ],
+    "propagation": [
+      [
+        [
+          -0.49999999999999983,
+          0.5000000000000003
+        ],
+        [
+          0.4999999999999997,
+          -0.5000000000000001
+        ]
+      ],
+      [
+        [
+          -0.4999999999999997,
+          0.5000000000000001
+        ],
+        [
+          -0.49999999999999983,
+          0.5000000000000003
+        ]
+      ]
+    ],
+    "k_host_nm_inv": 0.010471975511965976,
+    "thickness_nm": 150.0,
+    "wavelength_nm": 600.0,
+    "host_index": 1.0,
+    "magnetization": 1.0,
+    "phase_rotation_deg": 44.99999999999999,
+    "basis": "fixed laboratory x,y for both directions, e+=(x+i y)/sqrt(2)",
+    "model": "exact homogeneous gyrotropic slab, normal incidence, nonmagnetic mu=1, identical lossless hosts"
+  },
+  "mirror_system": {
+    "returned_jones": [
+      [
+        [
+          0.0,
+          9.860761315262648e-32
+        ],
+        [
+          -1.6996616692943937e-15,
+          -1.0
+        ]
+      ],
+      [
+        [
+          1.6996616692943937e-15,
+          1.0
+        ],
+        [
+          0.0,
+          9.860761315262648e-32
+        ]
+      ]
+    ],
+    "returned_eigenvalues": [
+      [
+        1.0,
+        -1.6996616692943937e-15
+      ],
+      [
+        -1.0,
+        1.6996616692943939e-15
+      ]
+    ],
+    "gap_forward_jones": [
+      [
+        [
+          -0.49999999999999983,
+          0.5000000000000001
+        ],
+        [
+          0.49999999999999983,
+          -0.5000000000000001
+        ]
+      ],
+      [
+        [
+          -0.49999999999999983,
+          0.5000000000000001
+        ],
+        [
+          -0.49999999999999983,
+          0.5000000000000001
+        ]
+      ]
+    ],
+    "gap_return_jones": [
+      [
+        [
+          0.4999999999999993,
+          -0.5000000000000007
+        ],
+        [
+          -0.4999999999999993,
+          0.5000000000000007
+        ]
+      ],
+      [
+        [
+          0.4999999999999993,
+          -0.5000000000000007
+        ],
+        [
+          0.4999999999999993,
+          -0.5000000000000007
+        ]
+      ]
+    ],
+    "front_reflection_jones": [
+      [
+        [
+          -3.009218531321464e-32,
+          -2.1245770866179924e-16
+        ],
+        [
+          2.1245770866179924e-16,
+          -3.009218531321464e-32
+        ]
+      ],
+      [
+        [
+          -2.1245770866179924e-16,
+          3.009218531321464e-32
+        ],
+        [
+          -3.009218531321464e-32,
+          -2.1245770866179924e-16
+        ]
+      ]
+    ],
+    "first_return_jones": [
+      [
+        [
+          0.0,
+          4.249154173235984e-16
+        ],
+        [
+          -2.1245770866179924e-15,
+          -1.0
+        ]
+      ],
+      [
+        [
+          2.1245770866179924e-15,
+          1.0
+        ],
+        [
+          0.0,
+          4.249154173235984e-16
+        ]
+      ]
+    ],
+    "cavity_return_jones": [
+      [
+        [
+          0.0,
+          2.1245770866179936e-16
+        ],
+        [
+          -1.9121193779561932e-15,
+          -1.0
+        ]
+      ],
+      [
+        [
+          1.9121193779561932e-15,
+          1.0
+        ],
+        [
+          0.0,
+          2.1245770866179936e-16
+        ]
+      ]
+    ],
+    "mirror_loss_operator": [
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "material_loss_operator": [
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -3.3519916075225785e-46
+        ]
+      ],
+      [
+        [
+          0.0,
+          3.3519916075225785e-46
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    ],
+    "mirror_load": [
+      -1.0,
+      1.133107779529596e-15
+    ],
+    "gap_nm": 300.0,
+    "mirror_amplitude": [
+      -1.0,
+      0.0
+    ],
+    "energy_note": "Material-loss operator is obtained by flux difference here; tests independently integrate volume Joule heating. Mirror loss excludes a transmission port, i.e. rm models an opaque absorbing termination."
+  },
+  "checks": {
+    "slab_reflection_max_amplitude": 4.2491541732359847e-16,
+    "power_outside_expected_returned_axis": 3.7493994566546324e-33,
+    "max_spectral_lossless_return_power_error": 1.1102230246251565e-15
+  },
+  "scope": "Exact 1D uniform gyrotropic slab, normal incidence, mu=1, isotropic PEC mirror; synthetic material. This does not implement a mirror Green function for the periodic nanoparticle sheet.",
+  "interpretation": "Mirror itself adds no lab-frame ellipse rotation. Extra angle accumulates on the return through material. Axes modulo180; +/-90 are identical. Offdesign CW response includes prompt and multiple cavity reflections.",
+  "source_sha256": {
+    "scripts/demo_faraday_mirror.py": "392e45bda143308a76b7098e102f2672ef254f06a051c0cbb125a6542566e2e6",
+    "src/magnetooptics/__init__.py": "98c24c90edc2649867b8c7b0f1d119a47711dbfa97ea4b51d80eaa7d3830f0ae",
+    "src/magnetooptics/faraday_mirror.py": "00b641e86b4f15730cd29efa634e94e08aa9b641a96299658b5ea9cbf48342c7",
+    "src/magnetooptics/geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "src/magnetooptics/interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "src/magnetooptics/periodic_geometry.py": "958301d1e54a15abf915361162008c10503915d05eb900d37c3d99054dd13619",
+    "src/magnetooptics/periodic_interaction.py": "0f73e139dfbe4232cc46369e30a23f37328366adbbeb08011559e249ec8de4e6",
+    "src/magnetooptics/periodic_observables.py": "9c571a58455eb01d34a5c7639a4a2c140a2bbca22b33ea9f020f370a5611f768",
+    "src/magnetooptics/periodic_runner.py": "486e1fbbd9894fa4d6a8db767ce8810d83fbb8243c4b827622849ab11301726c",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "src/magnetooptics/solver.py": "6bd29f1a6b40536be5c7d0bdaf103c094b367651fc684e76fee256ee214b585c"
+  },
+  "calculation_seconds": 0.02282419998664409
+}

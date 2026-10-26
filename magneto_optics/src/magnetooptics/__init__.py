@@ -1,4 +1,4 @@
-"""Finite arrays and periodic electromagnetic sheets, independent of X-ray Debye."""
+"""Particle arrays, periodic sheets, and Faraday slabs, independent of X-ray Debye."""
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 

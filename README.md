@@ -1,5 +1,9 @@
 # PeriodicDebye: X-ray scattering and magneto-optical arrays
 
+**Faraday 镜面双程例子（v0.3.0）：** 已构造包含界面和多次反射的合成均匀膜，
+实现线偏振单程 45°、经普通镜面折返后再转 45°，总计 90°。
+见 [数学推导、偏振图与可调角度运行方法](magneto_optics/FARADAY_MIRROR.md)。
+
 **周期磁光超表面（2026-10-26，v0.2.0）：** 新增正入射下二维周期颗粒阵列的透射、反射、
 Faraday/Kerr 旋转和全部传播衍射级次。使用均匀宿主中的小球电偶极模型与合成材料，
 从 [周期超表面数学教程](magneto_optics/PERIODIC_TUTORIAL.md) 和
@@ -11,8 +15,8 @@ Faraday/Kerr 旋转和全部传播衍射级次。使用均匀宿主中的小球�
 [验收与性能报告](magneto_optics/VALIDATION_REPORT.md) 或
 [本轮 goal](magneto_optics/GOAL.md) 开始。
 
-The electromagnetic module is version **0.2.0**. It models finite arrays and
-periodic sheets of small electric-dipole spheres; it does not turn the X-ray Debye equation
+The electromagnetic module is version **0.3.0**. It models finite arrays and
+periodic sheets of small electric-dipole spheres, plus exact homogeneous slab/mirror benchmarks; it does not turn the X-ray Debye equation
 into a Maxwell solver. The original X-ray tutorial follows below.
 
 This project calculates how X-rays scatter from a crystal and from nanoparticles
