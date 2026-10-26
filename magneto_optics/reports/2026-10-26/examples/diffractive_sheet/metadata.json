@@ -1,0 +1,1887 @@
+{
+  "package_version": "0.2.0",
+  "model": "infinite 2D rectangular coplanar electric-dipole metasurface",
+  "time_convention": "exp(-i omega t)",
+  "length_unit": "nm",
+  "polarizability_unit": "nm^3",
+  "power_unit": "fraction of incident normal energy flux through one unit cell",
+  "host_index": 1.0,
+  "geometry": {
+    "particle_count_per_cell": 2,
+    "periods_nm": [
+      650.0,
+      570.0
+    ],
+    "area_nm2": 370500.0,
+    "plane_z_nm": 0.0,
+    "minimum_center_distance_nm": 318.90437438203946,
+    "minimum_surface_gap_nm": 296.90437438203946,
+    "maximum_radius_nm": 12.0,
+    "boundary": "infinite two-dimensional rectangular periodic array",
+    "representation": "one electric dipole per homogeneous sphere",
+    "incidence": "normal, from z<0 toward +z",
+    "host": "identical homogeneous lossless medium above and below",
+    "maximum_host_size_parameter_ka": 0.16755160819145562,
+    "maximum_internal_size_parameter": 0.3492034756439544
+  },
+  "scope": "normal incidence +z; identical real lossless host on both sides; one electric dipole per separated sphere; no substrate, oblique incidence, multilayers or higher multipoles",
+  "jones_convention": "columns incident unit x,y; rows outgoing fixed laboratory x,y on BOTH sides; complex numbers saved [real,imag]; amplitudes referred to z=0",
+  "polarization_convention": "ellipse S3=2 Im(conj(Ex) Ey); angles in fixed laboratory xy, including reflected light; angles modulo180, magnetic odd axis angle modulo90; null if undefined",
+  "faraday_kerr_definition": "raw zero-order TOTAL transmitted / reflected ellipse for x incidence, including possible nonmagnetic geometry rotation; use magnetization-odd outputs for reversal-odd response; reflected lab basis is not right handed with -z",
+  "absorption_definition": "independent local material work minus dipole self-radiation, divided by incident cell flux; NOT inferred from 1-T-R",
+  "max_energy_balance_residual": 4.440892098500626e-16,
+  "accuracy": "Ewald tolerance and true linear residual are numerical controls, not physical dipole-model accuracy guarantees; weak/zero signals require absolute error metrics",
+  "material_provenance": {
+    "synthetic_mo": "Synthetic passive circular Drude channels: eps_inf=5, plasma_energy=7 eV, damping=.15 eV, splitting=.025 eV; NOT experimental material data. z diagonal equals mean transverse diagonal."
+  },
+  "applicability_advisories": [],
+  "threads_blas": 1,
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "elapsed_seconds": 0.06670610001310706,
+  "records": [
+    {
+      "wavelength_nm": 450.0,
+      "operator": {
+        "backend": "periodic_ewald_cached",
+        "n_dipoles": 2,
+        "boundary": "infinite_2d_periodic_open_z",
+        "periods_nm": [
+          650.0,
+          570.0
+        ],
+        "bloch_nm_inv": [
+          0.0,
+          0.0
+        ],
+        "area_nm2": 370500.0,
+        "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+        "ewald_eta_nm_inv": 0.003490658503988659,
+        "ewald_cutoff": 8,
+        "real_terms_per_pair": 289,
+        "reciprocal_terms_per_pair": 289,
+        "pair_evaluations": 2,
+        "ordered_pair_count": 4,
+        "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+        "lattice_evaluation": "vectorized",
+        "convergence": {
+          "verified": true,
+          "tolerance": 1e-10,
+          "lower_cutoff": 6,
+          "upper_cutoff": 8,
+          "max_absolute_change_nm_inv3": 0.0,
+          "scale_nm_inv3": 3.474263487322363e-07,
+          "scaled_change": 0.0,
+          "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+        },
+        "rayleigh_grazing_tolerance": 1e-08,
+        "matrix_bytes": 576,
+        "estimated_peak_array_bytes": 596096,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+        "setup_seconds": 0.0015024999738670886,
+        "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+      },
+      "solves": {
+        "Mplus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.6727039253737094e-11,
+          "relative_residual": 1.7938737319755116e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9847017299752993,
+          "solve_seconds": 0.0003515999997034669,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.003490658503988659,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.474263487322363e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0015024999738670886,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mplus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.936417598112412e-11,
+          "relative_residual": 2.0766906866754025e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9847017299752993,
+          "solve_seconds": 6.849999772384763e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.003490658503988659,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.474263487322363e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0015024999738670886,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.6727039253737094e-11,
+          "relative_residual": 1.7938737319755116e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9846131223262512,
+          "solve_seconds": 0.00014519999967887998,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.003490658503988659,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.474263487322363e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0015024999738670886,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 8.251503146140773e-12,
+          "relative_residual": 8.849237763262966e-17,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9846131223262512,
+          "solve_seconds": 5.70000265724957e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.003490658503988659,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.474263487322363e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0015024999738670886,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        }
+      },
+      "jones": {
+        "Mplus": {
+          "transmission": [
+            [
+              [
+                0.998449280583517,
+                -0.0018125785106828957
+              ],
+              [
+                -7.940226716734631e-05,
+                0.00024003780624291953
+              ]
+            ],
+            [
+              [
+                9.064066841300997e-05,
+                -0.0002381585311641609
+              ],
+              [
+                0.9984462763327854,
+                -0.0018139816384917353
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.001550719416482976,
+                -0.0018125785106828957
+              ],
+              [
+                -7.940226716734631e-05,
+                0.00024003780624291953
+              ]
+            ],
+            [
+              [
+                9.064066841300997e-05,
+                -0.0002381585311641609
+              ],
+              [
+                -0.0015537236672146,
+                -0.0018139816384917353
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        },
+        "Mminus": {
+          "transmission": [
+            [
+              [
+                0.998449280583517,
+                -0.0018125785106828957
+              ],
+              [
+                9.064066841301e-05,
+                -0.00023815853116416087
+              ]
+            ],
+            [
+              [
+                -7.940226716734631e-05,
+                0.00024003780624291956
+              ],
+              [
+                0.9984462763327854,
+                -0.0018139816384917355
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.0015507194164829762,
+                -0.0018125785106828957
+              ],
+              [
+                9.064066841301e-05,
+                -0.00023815853116416087
+              ]
+            ],
+            [
+              [
+                -7.940226716734631e-05,
+                0.00024003780624291956
+              ],
+              [
+                -0.0015537236672146003,
+                -0.0018139816384917355
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        }
+      }
+    },
+    {
+      "wavelength_nm": 500.0,
+      "operator": {
+        "backend": "periodic_ewald_cached",
+        "n_dipoles": 2,
+        "boundary": "infinite_2d_periodic_open_z",
+        "periods_nm": [
+          650.0,
+          570.0
+        ],
+        "bloch_nm_inv": [
+          0.0,
+          0.0
+        ],
+        "area_nm2": 370500.0,
+        "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+        "ewald_eta_nm_inv": 0.0031415926535897933,
+        "ewald_cutoff": 8,
+        "real_terms_per_pair": 289,
+        "reciprocal_terms_per_pair": 289,
+        "pair_evaluations": 2,
+        "ordered_pair_count": 4,
+        "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+        "lattice_evaluation": "vectorized",
+        "convergence": {
+          "verified": true,
+          "tolerance": 1e-10,
+          "lower_cutoff": 6,
+          "upper_cutoff": 8,
+          "max_absolute_change_nm_inv3": 0.0,
+          "scale_nm_inv3": 2.8244129917773846e-07,
+          "scaled_change": 0.0,
+          "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+        },
+        "rayleigh_grazing_tolerance": 1e-08,
+        "matrix_bytes": 576,
+        "estimated_peak_array_bytes": 596096,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+        "setup_seconds": 0.0011422999668866396,
+        "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+      },
+      "solves": {
+        "Mplus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 8.163316611451701e-12,
+          "relative_residual": 8.641557099955536e-17,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9859492063044644,
+          "solve_seconds": 0.00014239997835829854,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.0031415926535897933,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.8244129917773846e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0011422999668866396,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mplus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.9596392509279432e-11,
+          "relative_residual": 2.0744429363981816e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9859492063044644,
+          "solve_seconds": 5.5800017435103655e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.0031415926535897933,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.8244129917773846e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0011422999668866396,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.553479783300529e-11,
+          "relative_residual": 1.644488985296231e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9859492063044644,
+          "solve_seconds": 0.00012859998969361186,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.0031415926535897933,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.8244129917773846e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0011422999668866396,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.7105997243383196e-11,
+          "relative_residual": 1.8108136553592562e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9859492063044644,
+          "solve_seconds": 5.64999645575881e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.0031415926535897933,
+            "ewald_cutoff": 8,
+            "real_terms_per_pair": 289,
+            "reciprocal_terms_per_pair": 289,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 6,
+              "upper_cutoff": 8,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.8244129917773846e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 596096,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0011422999668866396,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        }
+      },
+      "jones": {
+        "Mplus": {
+          "transmission": [
+            [
+              [
+                0.999232529623828,
+                0.002048201685683371
+              ],
+              [
+                -8.529341910065881e-05,
+                -9.136313624605047e-05
+              ]
+            ],
+            [
+              [
+                8.271365796796491e-05,
+                9.434879163290455e-05
+              ],
+              [
+                0.9992340351442999,
+                0.00204866039412147
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.0007674703761719929,
+                0.002048201685683371
+              ],
+              [
+                -8.529341910065881e-05,
+                -9.136313624605047e-05
+              ]
+            ],
+            [
+              [
+                8.271365796796491e-05,
+                9.434879163290455e-05
+              ],
+              [
+                -0.0007659648557001161,
+                0.00204866039412147
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        },
+        "Mminus": {
+          "transmission": [
+            [
+              [
+                0.999232529623828,
+                0.002048201685683371
+              ],
+              [
+                8.271365796796492e-05,
+                9.434879163290456e-05
+              ]
+            ],
+            [
+              [
+                -8.52934191006588e-05,
+                -9.136313624605047e-05
+              ],
+              [
+                0.9992340351442999,
+                0.00204866039412147
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.000767470376171993,
+                0.002048201685683371
+              ],
+              [
+                8.271365796796492e-05,
+                9.434879163290456e-05
+              ]
+            ],
+            [
+              [
+                -8.52934191006588e-05,
+                -9.136313624605047e-05
+              ],
+              [
+                -0.0007659648557001163,
+                0.00204866039412147
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        }
+      }
+    },
+    {
+      "wavelength_nm": 550.0,
+      "operator": {
+        "backend": "periodic_ewald_cached",
+        "n_dipoles": 2,
+        "boundary": "infinite_2d_periodic_open_z",
+        "periods_nm": [
+          650.0,
+          570.0
+        ],
+        "bloch_nm_inv": [
+          0.0,
+          0.0
+        ],
+        "area_nm2": 370500.0,
+        "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+        "ewald_eta_nm_inv": 0.002911929325782653,
+        "ewald_cutoff": 7,
+        "real_terms_per_pair": 225,
+        "reciprocal_terms_per_pair": 225,
+        "pair_evaluations": 2,
+        "ordered_pair_count": 4,
+        "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+        "lattice_evaluation": "vectorized",
+        "convergence": {
+          "verified": true,
+          "tolerance": 1e-10,
+          "lower_cutoff": 5,
+          "upper_cutoff": 7,
+          "max_absolute_change_nm_inv3": 0.0,
+          "scale_nm_inv3": 2.3435971183880815e-07,
+          "scaled_change": 0.0,
+          "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+        },
+        "rayleigh_grazing_tolerance": 1e-08,
+        "matrix_bytes": 576,
+        "estimated_peak_array_bytes": 465024,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+        "setup_seconds": 0.0010003999923355877,
+        "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+      },
+      "solves": {
+        "Mplus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 4.168312827925504e-12,
+          "relative_residual": 7.889049093591928e-17,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9896102534743324,
+          "solve_seconds": 0.0001613000058569014,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.3435971183880815e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010003999923355877,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mplus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 7.350460715166387e-12,
+          "relative_residual": 1.3911658706125985e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9896102534743324,
+          "solve_seconds": 8.010002784430981e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.3435971183880815e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010003999923355877,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 3.862111885181956e-12,
+          "relative_residual": 7.309525826138367e-17,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9896102534743324,
+          "solve_seconds": 0.00020849995780736208,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.3435971183880815e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010003999923355877,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.0343198568415346e-11,
+          "relative_residual": 1.957578633358195e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9896102534743324,
+          "solve_seconds": 7.82000133767724e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 2.3435971183880815e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010003999923355877,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        }
+      },
+      "jones": {
+        "Mplus": {
+          "transmission": [
+            [
+              [
+                0.9998550924129354,
+                0.0011024441497599635
+              ],
+              [
+                -2.214238706664663e-05,
+                -7.823009109792593e-06
+              ]
+            ],
+            [
+              [
+                2.196373509373896e-05,
+                8.496525327314955e-06
+              ],
+              [
+                0.999856273758792,
+                0.0011027016881237225
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.00014490758706469688,
+                0.0011024441497599635
+              ],
+              [
+                -2.214238706664663e-05,
+                -7.823009109792593e-06
+              ]
+            ],
+            [
+              [
+                2.196373509373896e-05,
+                8.496525327314955e-06
+              ],
+              [
+                -0.0001437262412079297,
+                0.0011027016881237225
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        },
+        "Mminus": {
+          "transmission": [
+            [
+              [
+                0.9998550924129354,
+                0.0011024441497599637
+              ],
+              [
+                2.1963735093738955e-05,
+                8.496525327314953e-06
+              ]
+            ],
+            [
+              [
+                -2.214238706664664e-05,
+                -7.823009109792594e-06
+              ],
+              [
+                0.999856273758792,
+                0.0011027016881237225
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -0.00014490758706469688,
+                0.0011024441497599637
+              ],
+              [
+                2.1963735093738955e-05,
+                8.496525327314953e-06
+              ]
+            ],
+            [
+              [
+                -2.214238706664664e-05,
+                -7.823009109792594e-06
+              ],
+              [
+                -0.00014372624120792966,
+                0.0011027016881237225
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        }
+      }
+    },
+    {
+      "wavelength_nm": 610.0,
+      "operator": {
+        "backend": "periodic_ewald_cached",
+        "n_dipoles": 2,
+        "boundary": "infinite_2d_periodic_open_z",
+        "periods_nm": [
+          650.0,
+          570.0
+        ],
+        "bloch_nm_inv": [
+          0.0,
+          0.0
+        ],
+        "area_nm2": 370500.0,
+        "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+        "ewald_eta_nm_inv": 0.002911929325782653,
+        "ewald_cutoff": 7,
+        "real_terms_per_pair": 225,
+        "reciprocal_terms_per_pair": 225,
+        "pair_evaluations": 2,
+        "ordered_pair_count": 4,
+        "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+        "lattice_evaluation": "vectorized",
+        "convergence": {
+          "verified": true,
+          "tolerance": 1e-10,
+          "lower_cutoff": 5,
+          "upper_cutoff": 7,
+          "max_absolute_change_nm_inv3": 0.0,
+          "scale_nm_inv3": 1.9153355810658624e-07,
+          "scaled_change": 0.0,
+          "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+        },
+        "rayleigh_grazing_tolerance": 1e-08,
+        "matrix_bytes": 576,
+        "estimated_peak_array_bytes": 465024,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+        "setup_seconds": 0.001334400032646954,
+        "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+      },
+      "solves": {
+        "Mplus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 6.51223174224333e-14,
+          "relative_residual": 1.612784824416385e-18,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9948447376958399,
+          "solve_seconds": 0.00019859999883919954,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.9153355810658624e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.001334400032646954,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mplus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 3.645548204563002e-12,
+          "relative_residual": 9.028371614693562e-17,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9948447376958399,
+          "solve_seconds": 8.060003165155649e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.9153355810658624e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.001334400032646954,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.029986044809716e-11,
+          "relative_residual": 2.5508088903751666e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9948828777551788,
+          "solve_seconds": 0.0001666999887675047,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.9153355810658624e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.001334400032646954,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 7.276016594542556e-12,
+          "relative_residual": 1.801939735921878e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9948828777551788,
+          "solve_seconds": 5.9999991208314896e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.9153355810658624e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.001334400032646954,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        }
+      },
+      "jones": {
+        "Mplus": {
+          "transmission": [
+            [
+              [
+                0.9999468968818797,
+                0.0007652308472990598
+              ],
+              [
+                -8.54094348388552e-06,
+                -1.727988567502264e-06
+              ]
+            ],
+            [
+              [
+                8.505192591753511e-06,
+                1.9835108627940527e-06
+              ],
+              [
+                0.9999463553765159,
+                0.0007643626296914347
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -5.3103118120296316e-05,
+                0.0007652308472990598
+              ],
+              [
+                -8.54094348388552e-06,
+                -1.727988567502264e-06
+              ]
+            ],
+            [
+              [
+                8.505192591753511e-06,
+                1.9835108627940527e-06
+              ],
+              [
+                -5.364462348416185e-05,
+                0.0007643626296914347
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        },
+        "Mminus": {
+          "transmission": [
+            [
+              [
+                0.9999468968818797,
+                0.0007652308472990598
+              ],
+              [
+                8.505192591753515e-06,
+                1.9835108627940535e-06
+              ]
+            ],
+            [
+              [
+                -8.540943483885514e-06,
+                -1.7279885675022627e-06
+              ],
+              [
+                0.9999463553765159,
+                0.0007643626296914345
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -5.3103118120296316e-05,
+                0.0007652308472990598
+              ],
+              [
+                8.505192591753515e-06,
+                1.9835108627940535e-06
+              ]
+            ],
+            [
+              [
+                -8.540943483885514e-06,
+                -1.7279885675022627e-06
+              ],
+              [
+                -5.364462348416185e-05,
+                0.0007643626296914345
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        }
+      }
+    },
+    {
+      "wavelength_nm": 680.0,
+      "operator": {
+        "backend": "periodic_ewald_cached",
+        "n_dipoles": 2,
+        "boundary": "infinite_2d_periodic_open_z",
+        "periods_nm": [
+          650.0,
+          570.0
+        ],
+        "bloch_nm_inv": [
+          0.0,
+          0.0
+        ],
+        "area_nm2": 370500.0,
+        "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+        "ewald_eta_nm_inv": 0.002911929325782653,
+        "ewald_cutoff": 7,
+        "real_terms_per_pair": 225,
+        "reciprocal_terms_per_pair": 225,
+        "pair_evaluations": 2,
+        "ordered_pair_count": 4,
+        "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+        "lattice_evaluation": "vectorized",
+        "convergence": {
+          "verified": true,
+          "tolerance": 1e-10,
+          "lower_cutoff": 5,
+          "upper_cutoff": 7,
+          "max_absolute_change_nm_inv3": 0.0,
+          "scale_nm_inv3": 1.551843347637653e-07,
+          "scaled_change": 0.0,
+          "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+        },
+        "rayleigh_grazing_tolerance": 1e-08,
+        "matrix_bytes": 576,
+        "estimated_peak_array_bytes": 465024,
+        "max_memory_bytes": 1073741824,
+        "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+        "setup_seconds": 0.0010572000173851848,
+        "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+      },
+      "solves": {
+        "Mplus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.0292348876907568e-11,
+          "relative_residual": 2.963000723208863e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9963126175206748,
+          "solve_seconds": 0.00013669999316334724,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.551843347637653e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010572000173851848,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mplus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 3.6398691645491185e-12,
+          "relative_residual": 1.0478594435466815e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9963126175206748,
+          "solve_seconds": 4.7200010158121586e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.551843347637653e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010572000173851848,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_x": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 7.283063908056507e-12,
+          "relative_residual": 2.096676267471379e-16,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": false,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9963087443335544,
+          "solve_seconds": 0.0001134999911300838,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.551843347637653e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010572000173851848,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        },
+        "Mminus_y": {
+          "method": "dense",
+          "rtol": 1e-10,
+          "atol": 0.0,
+          "absolute_residual": 1.2814417116311057e-13,
+          "relative_residual": 3.6890633651487596e-18,
+          "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
+          "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
+          "iterations": 0,
+          "maxiter_restart_cycles": 200,
+          "restart": 40,
+          "factorization_reused": true,
+          "factorization_count": 1,
+          "reciprocal_condition_estimate": 0.9963087443335544,
+          "solve_seconds": 4.429998807609081e-05,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 2,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              650.0,
+              570.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 370500.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.002911929325782653,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 2,
+            "ordered_pair_count": 4,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 1.551843347637653e-07,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 576,
+            "estimated_peak_array_bytes": 465024,
+            "max_memory_bytes": 1073741824,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0010572000173851848,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          }
+        }
+      },
+      "jones": {
+        "Mplus": {
+          "transmission": [
+            [
+              [
+                0.9999738344180591,
+                0.0005911197275797769
+              ],
+              [
+                -4.260482308042855e-06,
+                -5.765326845221191e-07
+              ]
+            ],
+            [
+              [
+                4.248884719227515e-06,
+                7.072857620439535e-07
+              ],
+              [
+                0.9999738153529215,
+                0.0005913345559540893
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -2.6165581940902592e-05,
+                0.0005911197275797769
+              ],
+              [
+                -4.260482308042855e-06,
+                -5.765326845221191e-07
+              ]
+            ],
+            [
+              [
+                4.248884719227515e-06,
+                7.072857620439535e-07
+              ],
+              [
+                -2.6184647078485357e-05,
+                0.0005913345559540893
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        },
+        "Mminus": {
+          "transmission": [
+            [
+              [
+                0.9999738344180591,
+                0.0005911197275797769
+              ],
+              [
+                4.248884719227514e-06,
+                7.072857620439533e-07
+              ]
+            ],
+            [
+              [
+                -4.2604823080428555e-06,
+                -5.765326845221192e-07
+              ],
+              [
+                0.9999738153529215,
+                0.0005913345559540892
+              ]
+            ]
+          ],
+          "reflection": [
+            [
+              [
+                -2.6165581940902592e-05,
+                0.0005911197275797769
+              ],
+              [
+                4.248884719227514e-06,
+                7.072857620439533e-07
+              ]
+            ],
+            [
+              [
+                -4.2604823080428555e-06,
+                -5.765326845221192e-07
+              ],
+              [
+                -2.6184647078485357e-05,
+                0.0005913345559540892
+              ]
+            ]
+          ],
+          "basis": "fixed laboratory x,y for both transmitted +z and reflected -z; columns incident x,y"
+        }
+      }
+    }
+  ],
+  "configuration_sha256": "b79ecbc9d3a2993f74046bd9e3ef1e0e63d57a6d19e924d6a933c3397a845c02",
+  "source_sha256": {
+    "__init__.py": "2537c39812714320fd12b441343bf8b9a4a787015fd59812fc42f38f65a61839",
+    "geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "periodic_geometry.py": "958301d1e54a15abf915361162008c10503915d05eb900d37c3d99054dd13619",
+    "periodic_interaction.py": "0f73e139dfbe4232cc46369e30a23f37328366adbbeb08011559e249ec8de4e6",
+    "periodic_observables.py": "9c571a58455eb01d34a5c7639a4a2c140a2bbca22b33ea9f020f370a5611f768",
+    "periodic_runner.py": "486e1fbbd9894fa4d6a8db767ce8810d83fbb8243c4b827622849ab11301726c",
+    "runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "solver.py": "6bd29f1a6b40536be5c7d0bdaf103c094b367651fc684e76fee256ee214b585c"
+  }
+}

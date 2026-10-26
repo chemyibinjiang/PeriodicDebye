@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "geometry": {
+    "particle_count_per_cell": 1,
+    "periods_nm": [
+      36.0,
+      36.0
+    ],
+    "area_nm2": 1296.0,
+    "plane_z_nm": 0.0,
+    "minimum_center_distance_nm": 36.0,
+    "minimum_surface_gap_nm": 24.0,
+    "maximum_radius_nm": 6.0,
+    "boundary": "infinite two-dimensional rectangular periodic array",
+    "representation": "one electric dipole per homogeneous sphere",
+    "incidence": "normal, from z<0 toward +z",
+    "host": "identical homogeneous lossless medium above and below",
+    "maximum_host_size_parameter_ka": 0.09424777960769379,
+    "maximum_internal_size_parameter": 0.15342426958143918
+  },
+  "seconds": 0.05428039998514578,
+  "max_energy_balance_residual": 4.440892098500626e-16,
+  "output": "reports\\2026-10-26\\examples\\lossless_sheet"
+}

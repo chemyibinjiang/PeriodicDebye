@@ -1,0 +1,3199 @@
+{
+  "schema_version": "periodic-magnetooptics-benchmark-1.0",
+  "passed": true,
+  "paired_reference_cached": [
+    {
+      "basis_spheres": 16,
+      "reference_runs": [
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "reference",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 1.4824277000152506,
+          "solve_four_rhs_seconds": 0.0006960000027902424,
+          "material_preparation_seconds": 0.0012778999516740441,
+          "ports_seconds": 0.0008555999957025051,
+          "total_seconds": 1.4854719000286423,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.684352379752265e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 1.4824214999680407,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.195276290981115e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0003122000489383936
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.424811059022581e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.980000762268901e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2619753200966374e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00023300002794712782
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.0306106351726438e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.900004180148244e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941523
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "reference",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 1.4910591999650933,
+          "solve_four_rhs_seconds": 0.00075559999095276,
+          "material_preparation_seconds": 0.0011603999882936478,
+          "ports_seconds": 0.001045500102918595,
+          "total_seconds": 1.4942267999867909,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.684352379752265e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 1.4910537999821827,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.195276290981115e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00028169999131932855
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.424811059022581e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.089999806135893e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2619753200966374e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00031350000062957406
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.0306106351726438e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.140003774315119e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941523
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "reference",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 1.4766077000531368,
+          "solve_four_rhs_seconds": 0.000666300009470433,
+          "material_preparation_seconds": 0.0011626000050455332,
+          "ports_seconds": 0.000818300002720207,
+          "total_seconds": 1.4794580000452697,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.684352379752265e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 1.47660240001278,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.195276290981115e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00029360002372413874
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.424811059022581e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.259995279833674e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2619753200966374e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00022740004351362586
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.0306106351726438e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.10999995842576e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941523
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        }
+      ],
+      "vectorized_runs": [
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "vectorized",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.056867900013457984,
+          "solve_four_rhs_seconds": 0.0006553000421263278,
+          "material_preparation_seconds": 0.001260699995327741,
+          "ports_seconds": 0.0008017999934963882,
+          "total_seconds": 0.0598935000016354,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.05686249997233972,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.471060103185024e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00027929997304454446
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.557414000622608e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.140000186860561e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2179228080022214e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00024069997016340494
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 1.9998929511689262e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.689996760338545e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "vectorized",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.05697919998783618,
+          "solve_four_rhs_seconds": 0.0006404000450856984,
+          "material_preparation_seconds": 0.0011327999527566135,
+          "ports_seconds": 0.000867099966853857,
+          "total_seconds": 0.05981720000272617,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.056970999983605,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.471060103185024e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00024020002456381917
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.557414000622608e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.660002352669835e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2179228080022214e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00026840000646188855
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 1.9998929511689262e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.589995998889208e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "vectorized",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.05759849998867139,
+          "solve_four_rhs_seconds": 0.00069650006480515,
+          "material_preparation_seconds": 0.0012154999421909451,
+          "ports_seconds": 0.0007918999763205647,
+          "total_seconds": 0.060512299998663366,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 256,
+            "ordered_pair_count": 256,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.057593900011852384,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.471060103185024e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00034710002364590764
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.557414000622608e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.889998283237219e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2179228080022214e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00022170000011101365
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 1.9998929511689262e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.299999611452222e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696384,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        }
+      ],
+      "cached_runs": [
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "cached",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.006200800009537488,
+          "solve_four_rhs_seconds": 0.0005971000646241009,
+          "material_preparation_seconds": 0.001128799980506301,
+          "ports_seconds": 0.0007976999622769654,
+          "total_seconds": 0.008909400028642267,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 25,
+            "ordered_pair_count": 256,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.006195300025865436,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.5131147948002817e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0002391999587416649
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.51627893821873e-16,
+              "factorization_reused": true,
+              "solve_seconds": 6.029999349266291e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.234658069887156e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00022740004351362586
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.071044751061048e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.500001134350896e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696385,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "cached",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.005941700015682727,
+          "solve_four_rhs_seconds": 0.0005732000572606921,
+          "material_preparation_seconds": 0.001111100020352751,
+          "ports_seconds": 0.0007656998932361603,
+          "total_seconds": 0.008575300045777112,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 25,
+            "ordered_pair_count": 256,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.0059368000365793705,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.5131147948002817e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00022980000358074903
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.51627893821873e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.640002200379968e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.234658069887156e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00021889997879043221
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.071044751061048e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.400000372901559e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696385,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        },
+        {
+          "side": 4,
+          "basis_spheres": 16,
+          "backend": "cached",
+          "periods_nm": [
+            144.0,
+            164.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.00580629997421056,
+          "solve_four_rhs_seconds": 0.0005599999567493796,
+          "material_preparation_seconds": 0.0010767000494524837,
+          "ports_seconds": 0.0007478000479750335,
+          "total_seconds": 0.008374899975024164,
+          "max_energy_balance_absolute_error": 4.440892098500626e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 16,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              144.0,
+              164.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 23616.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.011533782736244206,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 25,
+            "ordered_pair_count": 256,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.6843523797522665e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 36864,
+            "estimated_peak_array_bytes": 673792,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.00579450000077486,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 2.5131147948002817e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00022650003666058183
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.51627893821873e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.269999383017421e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.234658069887156e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.00021570001263171434
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.071044751061048e-16,
+              "factorization_reused": true,
+              "solve_seconds": 5.0799979362636805e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.9303039495556182,
+              0.0024800554194103234,
+              0.0672159950249718
+            ],
+            [
+              0.9346902585696385,
+              0.002326817660015693,
+              0.06298292377034587
+            ],
+            [
+              0.9303038734433966,
+              0.002479979307188617,
+              0.06721614724941524
+            ],
+            [
+              0.9346903346818601,
+              0.0023268937722374003,
+              0.06298277154590246
+            ]
+          ]
+        }
+      ],
+      "reference_summary": {
+        "setup_seconds": {
+          "median": 1.4824277000152506,
+          "minimum": 1.4766077000531368,
+          "maximum": 1.4910591999650933
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.0006960000027902424,
+          "minimum": 0.000666300009470433,
+          "maximum": 0.00075559999095276
+        },
+        "material_preparation_seconds": {
+          "median": 0.0011626000050455332,
+          "minimum": 0.0011603999882936478,
+          "maximum": 0.0012778999516740441
+        },
+        "ports_seconds": {
+          "median": 0.0008555999957025051,
+          "minimum": 0.000818300002720207,
+          "maximum": 0.001045500102918595
+        },
+        "total_seconds": {
+          "median": 1.4854719000286423,
+          "minimum": 1.4794580000452697,
+          "maximum": 1.4942267999867909
+        }
+      },
+      "vectorized_summary": {
+        "setup_seconds": {
+          "median": 0.05697919998783618,
+          "minimum": 0.056867900013457984,
+          "maximum": 0.05759849998867139
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.0006553000421263278,
+          "minimum": 0.0006404000450856984,
+          "maximum": 0.00069650006480515
+        },
+        "material_preparation_seconds": {
+          "median": 0.0012154999421909451,
+          "minimum": 0.0011327999527566135,
+          "maximum": 0.001260699995327741
+        },
+        "ports_seconds": {
+          "median": 0.0008017999934963882,
+          "minimum": 0.0007918999763205647,
+          "maximum": 0.000867099966853857
+        },
+        "total_seconds": {
+          "median": 0.0598935000016354,
+          "minimum": 0.05981720000272617,
+          "maximum": 0.060512299998663366
+        }
+      },
+      "cached_summary": {
+        "setup_seconds": {
+          "median": 0.005941700015682727,
+          "minimum": 0.00580629997421056,
+          "maximum": 0.006200800009537488
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.0005732000572606921,
+          "minimum": 0.0005599999567493796,
+          "maximum": 0.0005971000646241009
+        },
+        "material_preparation_seconds": {
+          "median": 0.001111100020352751,
+          "minimum": 0.0010767000494524837,
+          "maximum": 0.001128799980506301
+        },
+        "ports_seconds": {
+          "median": 0.0007656998932361603,
+          "minimum": 0.0007478000479750335,
+          "maximum": 0.0007976999622769654
+        },
+        "total_seconds": {
+          "median": 0.008575300045777112,
+          "minimum": 0.008374899975024164,
+          "maximum": 0.008909400028642267
+        }
+      },
+      "median_setup_speedup_vs_scalar_reference": 249.4955477561102,
+      "median_total_speedup_vs_scalar_reference": 173.22681330085467,
+      "median_setup_speedup_vs_vectorized": 9.589713354333494,
+      "median_total_speedup_vs_vectorized": 6.984420333038939,
+      "comparisons": [
+        {
+          "metrics": {
+            "green_relative_error": 2.9385278698520774e-16,
+            "max_dipole_relative_error": 1.3321959073744024e-16,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 0,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.4711051481432768e-16,
+            "max_dipole_relative_error": 6.463043438852265e-17,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 0,
+          "comparison": "cached_vs_vectorized"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 2.9385278698520774e-16,
+            "max_dipole_relative_error": 1.3321959073744024e-16,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 1,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.4711051481432768e-16,
+            "max_dipole_relative_error": 6.463043438852265e-17,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 1,
+          "comparison": "cached_vs_vectorized"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 2.9385278698520774e-16,
+            "max_dipole_relative_error": 1.3321959073744024e-16,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 2,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.4711051481432768e-16,
+            "max_dipole_relative_error": 6.463043438852265e-17,
+            "max_T_R_A_absolute_error": 1.1102230246251565e-16,
+            "max_Jones_relative_error": 1.0027796190430468e-16,
+            "max_polarization_angle_absolute_error_deg": 2.7755575615628914e-17
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 2,
+          "comparison": "cached_vs_vectorized"
+        }
+      ]
+    },
+    {
+      "basis_spheres": 36,
+      "reference_runs": [
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "reference",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 7.769124699989334,
+          "solve_four_rhs_seconds": 0.0013749999925494194,
+          "material_preparation_seconds": 0.0023327000089921057,
+          "ports_seconds": 0.0008706000517122447,
+          "total_seconds": 7.773903199995402,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 7.769117399991956,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.992340321562068e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0006702999817207456
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2168766211634846e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.550001075491309e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3140836294508843e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005247999797575176
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.720501713572593e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.500004721805453e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "reference",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 8.055776300025173,
+          "solve_four_rhs_seconds": 0.0012872000806964934,
+          "material_preparation_seconds": 0.0022681999835185707,
+          "ports_seconds": 0.0008485999424010515,
+          "total_seconds": 8.06037700001616,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 8.055769999977201,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.992340321562068e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005996000254526734
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2168766211634846e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.319999324157834e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3140836294508843e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005091000348329544
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.720501713572593e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.51999905332923e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "reference",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 7.549011600029189,
+          "solve_four_rhs_seconds": 0.0013181999674998224,
+          "material_preparation_seconds": 0.0021761999814771116,
+          "ports_seconds": 0.0008374000317417085,
+          "total_seconds": 7.553536600025836,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_reference",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "scalar_reference",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 7.549005599983502,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.992340321562068e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005950999911874533
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2168766211634846e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.239998714998364e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3140836294508843e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005492999916896224
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.720501713572593e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.24999699741602e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        }
+      ],
+      "vectorized_runs": [
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "vectorized",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.31798560003517196,
+          "solve_four_rhs_seconds": 0.0012978999875485897,
+          "material_preparation_seconds": 0.002333699958398938,
+          "ports_seconds": 0.000881000014487654,
+          "total_seconds": 0.32269550004275516,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.3179775000317022,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.962719752214684e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005917000235058367
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.250749129989307e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.809997234493494e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2814281524692197e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005243999767117202
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.7205690976466454e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.469998672604561e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "vectorized",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.2978463000035845,
+          "solve_four_rhs_seconds": 0.0013378000585362315,
+          "material_preparation_seconds": 0.0023093000054359436,
+          "ports_seconds": 0.0008711999398656189,
+          "total_seconds": 0.3025690999929793,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.2978402999578975,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.962719752214684e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0006078999722376466
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.250749129989307e-16,
+              "factorization_reused": true,
+              "solve_seconds": 0.00010010000551119447
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2814281524692197e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005311999702826142
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.7205690976466454e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.830001413822174e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "vectorized",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.29352800000924617,
+          "solve_four_rhs_seconds": 0.001332300016656518,
+          "material_preparation_seconds": 0.0022421000176109374,
+          "ports_seconds": 0.0009141999762505293,
+          "total_seconds": 0.2982155000208877,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_vectorized",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 1296,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "none",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.2935227999696508,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.962719752214684e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0006001999718137085
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.250749129989307e-16,
+              "factorization_reused": true,
+              "solve_seconds": 8.229998638853431e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.2814281524692197e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005540000274777412
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.7205690976466454e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.670000195503235e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        }
+      ],
+      "cached_runs": [
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "cached",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.014263900055084378,
+          "solve_four_rhs_seconds": 0.001253900001756847,
+          "material_preparation_seconds": 0.002298399980645627,
+          "ports_seconds": 0.0010499999625608325,
+          "total_seconds": 0.01906520000193268,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 61,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.014258300012443215,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.9895020060596266e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.000521700014360249
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2537021587002765e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.479998748749495e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3254688621862145e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005649999948218465
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.8991009447048737e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.440004264935851e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "cached",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.01749469997594133,
+          "solve_four_rhs_seconds": 0.0016329000354744494,
+          "material_preparation_seconds": 0.0031883999472483993,
+          "ports_seconds": 0.0011031999019905925,
+          "total_seconds": 0.0237040999927558,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 61,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.017489199992269278,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.9895020060596266e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0007309999782592058
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2537021587002765e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.899996126070619e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3254688621862145e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.000693499983754009
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.8991009447048737e-16,
+              "factorization_reused": true,
+              "solve_seconds": 0.00010790000669658184
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        },
+        {
+          "side": 6,
+          "basis_spheres": 36,
+          "backend": "cached",
+          "periods_nm": [
+            216.0,
+            246.0
+          ],
+          "wavelength_nm": 620.0,
+          "tolerance": 1e-10,
+          "eta_factor": 1.0,
+          "setup_seconds": 0.014657999970950186,
+          "solve_four_rhs_seconds": 0.0012146999943070114,
+          "material_preparation_seconds": 0.0022575000184588134,
+          "ports_seconds": 0.0007841999176889658,
+          "total_seconds": 0.019107599975541234,
+          "max_energy_balance_absolute_error": 1.1102230246251565e-16,
+          "operator": {
+            "backend": "periodic_ewald_cached",
+            "n_dipoles": 36,
+            "boundary": "infinite_2d_periodic_open_z",
+            "periods_nm": [
+              216.0,
+              246.0
+            ],
+            "bloch_nm_inv": [
+              0.0,
+              0.0
+            ],
+            "area_nm2": 53136.0,
+            "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+            "ewald_eta_nm_inv": 0.00768918849082947,
+            "ewald_cutoff": 7,
+            "real_terms_per_pair": 225,
+            "reciprocal_terms_per_pair": 225,
+            "pair_evaluations": 61,
+            "ordered_pair_count": 1296,
+            "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+            "lattice_evaluation": "vectorized",
+            "convergence": {
+              "verified": true,
+              "tolerance": 1e-10,
+              "lower_cutoff": 5,
+              "upper_cutoff": 7,
+              "max_absolute_change_nm_inv3": 0.0,
+              "scale_nm_inv3": 3.5944699658109615e-06,
+              "scaled_change": 0.0,
+              "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+            },
+            "rayleigh_grazing_tolerance": 1e-08,
+            "matrix_bytes": 186624,
+            "estimated_peak_array_bytes": 1516032,
+            "max_memory_bytes": 536870912,
+            "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+            "setup_seconds": 0.014652599988039583,
+            "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+          },
+          "solves": [
+            {
+              "magnetization_sign": 1,
+              "polarization": "x",
+              "relative_residual": 1.9895020060596266e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.0005425999988801777
+            },
+            {
+              "magnetization_sign": 1,
+              "polarization": "y",
+              "relative_residual": 2.2537021587002765e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.209996692836285e-05
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "x",
+              "relative_residual": 2.3254688621862145e-16,
+              "factorization_reused": false,
+              "solve_seconds": 0.000506000011228025
+            },
+            {
+              "magnetization_sign": -1,
+              "polarization": "y",
+              "relative_residual": 2.8991009447048737e-16,
+              "factorization_reused": true,
+              "solve_seconds": 7.700000423938036e-05
+            }
+          ],
+          "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+            [
+              0.93581967769511,
+              0.0023333339479022293,
+              0.06184698835698774
+            ],
+            [
+              0.9399347357912476,
+              0.0021850215151961445,
+              0.05788024269355624
+            ],
+            [
+              0.935819355466365,
+              0.002333011719157231,
+              0.06184763281447772
+            ],
+            [
+              0.9399350580199927,
+              0.00218534374394114,
+              0.057879598236066254
+            ]
+          ]
+        }
+      ],
+      "reference_summary": {
+        "setup_seconds": {
+          "median": 7.769124699989334,
+          "minimum": 7.549011600029189,
+          "maximum": 8.055776300025173
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.0013181999674998224,
+          "minimum": 0.0012872000806964934,
+          "maximum": 0.0013749999925494194
+        },
+        "material_preparation_seconds": {
+          "median": 0.0022681999835185707,
+          "minimum": 0.0021761999814771116,
+          "maximum": 0.0023327000089921057
+        },
+        "ports_seconds": {
+          "median": 0.0008485999424010515,
+          "minimum": 0.0008374000317417085,
+          "maximum": 0.0008706000517122447
+        },
+        "total_seconds": {
+          "median": 7.773903199995402,
+          "minimum": 7.553536600025836,
+          "maximum": 8.06037700001616
+        }
+      },
+      "vectorized_summary": {
+        "setup_seconds": {
+          "median": 0.2978463000035845,
+          "minimum": 0.29352800000924617,
+          "maximum": 0.31798560003517196
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.001332300016656518,
+          "minimum": 0.0012978999875485897,
+          "maximum": 0.0013378000585362315
+        },
+        "material_preparation_seconds": {
+          "median": 0.0023093000054359436,
+          "minimum": 0.0022421000176109374,
+          "maximum": 0.002333699958398938
+        },
+        "ports_seconds": {
+          "median": 0.000881000014487654,
+          "minimum": 0.0008711999398656189,
+          "maximum": 0.0009141999762505293
+        },
+        "total_seconds": {
+          "median": 0.3025690999929793,
+          "minimum": 0.2982155000208877,
+          "maximum": 0.32269550004275516
+        }
+      },
+      "cached_summary": {
+        "setup_seconds": {
+          "median": 0.014657999970950186,
+          "minimum": 0.014263900055084378,
+          "maximum": 0.01749469997594133
+        },
+        "solve_four_rhs_seconds": {
+          "median": 0.001253900001756847,
+          "minimum": 0.0012146999943070114,
+          "maximum": 0.0016329000354744494
+        },
+        "material_preparation_seconds": {
+          "median": 0.002298399980645627,
+          "minimum": 0.0022575000184588134,
+          "maximum": 0.0031883999472483993
+        },
+        "ports_seconds": {
+          "median": 0.0010499999625608325,
+          "minimum": 0.0007841999176889658,
+          "maximum": 0.0011031999019905925
+        },
+        "total_seconds": {
+          "median": 0.019107599975541234,
+          "minimum": 0.01906520000193268,
+          "maximum": 0.0237040999927558
+        }
+      },
+      "median_setup_speedup_vs_scalar_reference": 530.0262461035951,
+      "median_total_speedup_vs_scalar_reference": 406.8487518027602,
+      "median_setup_speedup_vs_vectorized": 20.319709414235792,
+      "median_total_speedup_vs_vectorized": 15.83501331304215,
+      "comparisons": [
+        {
+          "metrics": {
+            "green_relative_error": 1.120827591714693e-16,
+            "max_dipole_relative_error": 4.580636492309716e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 3.225893843581298e-18,
+            "max_polarization_angle_absolute_error_deg": 0.0
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 0,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.0787503716346027e-16,
+            "max_dipole_relative_error": 4.689512529822516e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 1.0327899528610409e-16,
+            "max_polarization_angle_absolute_error_deg": 2.220446049250313e-16
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 0,
+          "comparison": "cached_vs_vectorized"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.120827591714693e-16,
+            "max_dipole_relative_error": 4.580636492309716e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 3.225893843581298e-18,
+            "max_polarization_angle_absolute_error_deg": 0.0
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 1,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.0787503716346027e-16,
+            "max_dipole_relative_error": 4.689512529822516e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 1.0327899528610409e-16,
+            "max_polarization_angle_absolute_error_deg": 2.220446049250313e-16
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 1,
+          "comparison": "cached_vs_vectorized"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.120827591714693e-16,
+            "max_dipole_relative_error": 4.580636492309716e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 3.225893843581298e-18,
+            "max_polarization_angle_absolute_error_deg": 0.0
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 2,
+          "comparison": "cached_vs_reference"
+        },
+        {
+          "metrics": {
+            "green_relative_error": 1.0787503716346027e-16,
+            "max_dipole_relative_error": 4.689512529822516e-17,
+            "max_T_R_A_absolute_error": 0.0,
+            "max_Jones_relative_error": 1.0327899528610409e-16,
+            "max_polarization_angle_absolute_error_deg": 2.220446049250313e-16
+          },
+          "limits": {
+            "green_relative_error": 2e-09,
+            "max_dipole_relative_error": 2e-09,
+            "max_T_R_A_absolute_error": 2e-10,
+            "max_Jones_relative_error": 2e-09,
+            "max_polarization_angle_absolute_error_deg": 1e-07
+          },
+          "passed": true,
+          "repeat": 2,
+          "comparison": "cached_vs_vectorized"
+        }
+      ]
+    }
+  ],
+  "larger_cached": [
+    {
+      "basis_spheres": 64,
+      "measured": {
+        "side": 8,
+        "basis_spheres": 64,
+        "backend": "cached",
+        "periods_nm": [
+          288.0,
+          328.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-10,
+        "eta_factor": 1.0,
+        "setup_seconds": 0.030685000005178154,
+        "solve_four_rhs_seconds": 0.003147000039462,
+        "material_preparation_seconds": 0.0038157000089995563,
+        "ports_seconds": 0.001314199937041849,
+        "total_seconds": 0.03923180000856519,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 64,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            288.0,
+            328.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 94464.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.005766891368122103,
+          "ewald_cutoff": 7,
+          "real_terms_per_pair": 225,
+          "reciprocal_terms_per_pair": 225,
+          "pair_evaluations": 113,
+          "ordered_pair_count": 4096,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-10,
+            "lower_cutoff": 5,
+            "upper_cutoff": 7,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.5970737888505346e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 589824,
+          "estimated_peak_array_bytes": 3770368,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.030677000002469867,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.154623106938468e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.0015199999907054007
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 2.5027388217386943e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00012989999959245324
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.3816263034364085e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.0013435999862849712
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 2.0762578675330443e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00013150001177564263
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9347678271027553,
+            0.002359413037641613,
+            0.06287275985960318
+          ],
+          [
+            0.9389383468607528,
+            0.002209740858781036,
+            0.058851912280465934
+          ],
+          [
+            0.9347673381963069,
+            0.002358924131193184,
+            0.06287373767250004
+          ],
+          [
+            0.9389388357672013,
+            0.0022102297652294655,
+            0.058850934467569053
+          ]
+        ]
+      },
+      "verification": {
+        "side": 8,
+        "basis_spheres": 64,
+        "backend": "cached",
+        "periods_nm": [
+          288.0,
+          328.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-12,
+        "eta_factor": 1.25,
+        "setup_seconds": 0.031597600027453154,
+        "solve_four_rhs_seconds": 0.0029174999217502773,
+        "material_preparation_seconds": 0.003708600008394569,
+        "ports_seconds": 0.000854400044772774,
+        "total_seconds": 0.039272000023629516,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 64,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            288.0,
+            328.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 94464.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.007208614210152628,
+          "ewald_cutoff": 8,
+          "real_terms_per_pair": 289,
+          "reciprocal_terms_per_pair": 289,
+          "pair_evaluations": 113,
+          "ordered_pair_count": 4096,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-12,
+            "lower_cutoff": 6,
+            "upper_cutoff": 8,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.5970737888505363e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 589824,
+          "estimated_peak_array_bytes": 3901440,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.031591599981766194,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.1046240702658488e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.0013741999864578247
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 2.518463256811418e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00012500002048909664
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.229048536621453e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.0012777000083588064
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 2.0906424701581654e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00012159999459981918
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9347678271027553,
+            0.002359413037641613,
+            0.06287275985960318
+          ],
+          [
+            0.9389383468607528,
+            0.002209740858781035,
+            0.05885191228046592
+          ],
+          [
+            0.9347673381963069,
+            0.002358924131193184,
+            0.06287373767250004
+          ],
+          [
+            0.9389388357672013,
+            0.0022102297652294655,
+            0.058850934467569074
+          ]
+        ]
+      },
+      "comparison": {
+        "metrics": {
+          "green_relative_error": 3.8670900979339734e-16,
+          "max_dipole_relative_error": 1.0353624708270428e-16,
+          "max_T_R_A_absolute_error": 2.0816681711721685e-17,
+          "max_Jones_relative_error": 1.0270327876461346e-16,
+          "max_polarization_angle_absolute_error_deg": 2.220446049250313e-16
+        },
+        "limits": {
+          "green_relative_error": 2e-09,
+          "max_dipole_relative_error": 2e-09,
+          "max_T_R_A_absolute_error": 2e-10,
+          "max_Jones_relative_error": 2e-09,
+          "max_polarization_angle_absolute_error_deg": 1e-07
+        },
+        "passed": true
+      },
+      "reference_scope": "same cached Ewald implementation with tighter requested cutoff convergence and a different splitting parameter; not an independent scalar reference"
+    },
+    {
+      "basis_spheres": 144,
+      "measured": {
+        "side": 12,
+        "basis_spheres": 144,
+        "backend": "cached",
+        "periods_nm": [
+          432.0,
+          492.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-10,
+        "eta_factor": 1.0,
+        "setup_seconds": 0.07012119999853894,
+        "solve_four_rhs_seconds": 0.01765029999660328,
+        "material_preparation_seconds": 0.008577300002798438,
+        "ports_seconds": 0.0011436999775469303,
+        "total_seconds": 0.0977137999725528,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 144,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            432.0,
+            492.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 212544.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.003844594245414735,
+          "ewald_cutoff": 7,
+          "real_terms_per_pair": 225,
+          "reciprocal_terms_per_pair": 225,
+          "pair_evaluations": 265,
+          "ordered_pair_count": 20736,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-10,
+            "lower_cutoff": 5,
+            "upper_cutoff": 7,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.6299953969893673e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 2985984,
+          "estimated_peak_array_bytes": 17123328,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.06979559996398166,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.3086972562404197e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.008218700008001179
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 2.0610578704107219e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.0004208000027574599
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.35647031394711e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.008596999978180975
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 2.111314485896997e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00038400001358240843
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9346336953770661,
+            0.0023613620460111095,
+            0.06300494257692288
+          ],
+          [
+            0.9387920760660287,
+            0.002214872884234639,
+            0.05899305104973695
+          ],
+          [
+            0.934633325791529,
+            0.0023609924604740666,
+            0.06300568174799698
+          ],
+          [
+            0.9387924456515657,
+            0.0022152424697716843,
+            0.05899231187866286
+          ]
+        ]
+      },
+      "verification": {
+        "side": 12,
+        "basis_spheres": 144,
+        "backend": "cached",
+        "periods_nm": [
+          432.0,
+          492.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-12,
+        "eta_factor": 1.25,
+        "setup_seconds": 0.08005440002307296,
+        "solve_four_rhs_seconds": 0.016930699988733977,
+        "material_preparation_seconds": 0.008206899976357818,
+        "ports_seconds": 0.0010819999151863158,
+        "total_seconds": 0.10648249997757375,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 144,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            432.0,
+            492.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 212544.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.004805742806768419,
+          "ewald_cutoff": 8,
+          "real_terms_per_pair": 289,
+          "reciprocal_terms_per_pair": 289,
+          "pair_evaluations": 265,
+          "ordered_pair_count": 20736,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-12,
+            "lower_cutoff": 6,
+            "upper_cutoff": 8,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.6299953969893673e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 2985984,
+          "estimated_peak_array_bytes": 17254400,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.07974700001068413,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.269240297103498e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.007998200017027557
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 1.9619683430362506e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.0004309999640099704
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.2280069846935806e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.008132500050123781
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 1.958262446479841e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.00034440000308677554
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9346336953770661,
+            0.0023613620460111095,
+            0.06300494257692288
+          ],
+          [
+            0.9387920760660287,
+            0.002214872884234639,
+            0.058993051049736955
+          ],
+          [
+            0.934633325791529,
+            0.002360992460474067,
+            0.06300568174799696
+          ],
+          [
+            0.9387924456515657,
+            0.0022152424697716843,
+            0.05899231187866286
+          ]
+        ]
+      },
+      "comparison": {
+        "metrics": {
+          "green_relative_error": 4.255260514621877e-16,
+          "max_dipole_relative_error": 1.7115761952010992e-16,
+          "max_T_R_A_absolute_error": 1.3877787807814457e-17,
+          "max_Jones_relative_error": 1.0342165367844621e-16,
+          "max_polarization_angle_absolute_error_deg": 4.440892098500626e-16
+        },
+        "limits": {
+          "green_relative_error": 2e-09,
+          "max_dipole_relative_error": 2e-09,
+          "max_T_R_A_absolute_error": 2e-10,
+          "max_Jones_relative_error": 2e-09,
+          "max_polarization_angle_absolute_error_deg": 1e-07
+        },
+        "passed": true
+      },
+      "reference_scope": "same cached Ewald implementation with tighter requested cutoff convergence and a different splitting parameter; not an independent scalar reference"
+    },
+    {
+      "basis_spheres": 256,
+      "measured": {
+        "side": 16,
+        "basis_spheres": 256,
+        "backend": "cached",
+        "periods_nm": [
+          576.0,
+          656.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-10,
+        "eta_factor": 1.0,
+        "setup_seconds": 0.14381619996856898,
+        "solve_four_rhs_seconds": 0.0699270999757573,
+        "material_preparation_seconds": 0.014800600067246705,
+        "ports_seconds": 0.0016522000078111887,
+        "total_seconds": 0.23047899996163324,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 256,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            576.0,
+            656.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 377856.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.0028834456840610514,
+          "ewald_cutoff": 7,
+          "real_terms_per_pair": 225,
+          "reciprocal_terms_per_pair": 225,
+          "pair_evaluations": 481,
+          "ordered_pair_count": 65536,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-10,
+            "lower_cutoff": 5,
+            "upper_cutoff": 7,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.5985665195084937e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 9437184,
+          "estimated_peak_array_bytes": 53020672,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.1432257000124082,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.5998970469107444e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.03344620001735166
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 2.2527069908329613e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.0015703000244684517
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.4903300193150954e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.033590000006370246
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 2.2787795791621577e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.0012815999798476696
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9348174677472282,
+            0.002357933541088535,
+            0.06282459871168324
+          ],
+          [
+            0.9389818817605461,
+            0.0022088304480451268,
+            0.05880928779140904
+          ],
+          [
+            0.9348170148577365,
+            0.0023574806515968293,
+            0.06282550449066664
+          ],
+          [
+            0.9389823342173108,
+            0.0022092829048097496,
+            0.058808382877879775
+          ]
+        ]
+      },
+      "verification": {
+        "side": 16,
+        "basis_spheres": 256,
+        "backend": "cached",
+        "periods_nm": [
+          576.0,
+          656.0
+        ],
+        "wavelength_nm": 620.0,
+        "tolerance": 1e-12,
+        "eta_factor": 1.25,
+        "setup_seconds": 0.16318269999464974,
+        "solve_four_rhs_seconds": 0.06925999996019527,
+        "material_preparation_seconds": 0.015147600031923503,
+        "ports_seconds": 0.0014275999856181443,
+        "total_seconds": 0.2492816000012681,
+        "max_energy_balance_absolute_error": 2.220446049250313e-16,
+        "operator": {
+          "backend": "periodic_ewald_cached",
+          "n_dipoles": 256,
+          "boundary": "infinite_2d_periodic_open_z",
+          "periods_nm": [
+            576.0,
+            656.0
+          ],
+          "bloch_nm_inv": [
+            0.0,
+            0.0
+          ],
+          "area_nm2": 377856.0,
+          "self_term": "exclude only same-particle zero image; all lattice images retained; radiation remains in alpha",
+          "ewald_eta_nm_inv": 0.003604307105076314,
+          "ewald_cutoff": 8,
+          "real_terms_per_pair": 289,
+          "reciprocal_terms_per_pair": 289,
+          "pair_evaluations": 481,
+          "ordered_pair_count": 65536,
+          "displacement_cache": "exact_float_equality_and_inversion_at_zero_bloch",
+          "lattice_evaluation": "vectorized",
+          "convergence": {
+            "verified": true,
+            "tolerance": 1e-12,
+            "lower_cutoff": 6,
+            "upper_cutoff": 8,
+            "max_absolute_change_nm_inv3": 0.0,
+            "scale_nm_inv3": 3.598566519508498e-06,
+            "scaled_change": 0.0,
+            "scope": "measured real+reciprocal cutoff refinement; not a rigorous error bound"
+          },
+          "rayleigh_grazing_tolerance": 1e-08,
+          "matrix_bytes": 9437184,
+          "estimated_peak_array_bytes": 53151744,
+          "max_memory_bytes": 536870912,
+          "memory_scope": "conservative ndarray/workspace estimate; excludes interpreter/native-library overhead",
+          "setup_seconds": 0.16251509997528046,
+          "reference": "https://doi.org/10.1103/PhysRevB.88.245109"
+        },
+        "solves": [
+          {
+            "magnetization_sign": 1,
+            "polarization": "x",
+            "relative_residual": 2.655195400227452e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.034053899988066405
+          },
+          {
+            "magnetization_sign": 1,
+            "polarization": "y",
+            "relative_residual": 2.168672027132958e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.0013293999945744872
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "x",
+            "relative_residual": 2.556655282947356e-16,
+            "factorization_reused": false,
+            "solve_seconds": 0.03255959996022284
+          },
+          {
+            "magnetization_sign": -1,
+            "polarization": "y",
+            "relative_residual": 2.2705428585116877e-16,
+            "factorization_reused": true,
+            "solve_seconds": 0.001275199989322573
+          }
+        ],
+        "powers_rows_Mplus_x_Mplus_y_Mminus_x_Mminus_y_columns_T_R_A": [
+          [
+            0.9348174677472282,
+            0.002357933541088536,
+            0.06282459871168324
+          ],
+          [
+            0.9389818817605461,
+            0.0022088304480451246,
+            0.058809287791409016
+          ],
+          [
+            0.9348170148577365,
+            0.0023574806515968293,
+            0.06282550449066664
+          ],
+          [
+            0.9389823342173108,
+            0.0022092829048097496,
+            0.058808382877879754
+          ]
+        ]
+      },
+      "comparison": {
+        "metrics": {
+          "green_relative_error": 1.061269723508572e-15,
+          "max_dipole_relative_error": 3.2378880754047907e-16,
+          "max_T_R_A_absolute_error": 2.0816681711721685e-17,
+          "max_Jones_relative_error": 3.258126501700266e-16,
+          "max_polarization_angle_absolute_error_deg": 1.3322676295501878e-15
+        },
+        "limits": {
+          "green_relative_error": 2e-09,
+          "max_dipole_relative_error": 2e-09,
+          "max_T_R_A_absolute_error": 2e-10,
+          "max_Jones_relative_error": 2e-09,
+          "max_polarization_angle_absolute_error_deg": 1e-07
+        },
+        "passed": true
+      },
+      "reference_scope": "same cached Ewald implementation with tighter requested cutoff convergence and a different splitting parameter; not an independent scalar reference"
+    }
+  ],
+  "max_energy_balance_absolute_error": 4.440892098500626e-16,
+  "energy_acceptance_absolute_tolerance": 2e-10,
+  "benchmark_inputs": {
+    "reference_sides": [
+      4,
+      6
+    ],
+    "cached_sides": [
+      8,
+      12,
+      16
+    ],
+    "repeats": 3,
+    "spacing_nm": [
+      36,
+      41
+    ],
+    "offset_nm": [
+      7,
+      11
+    ],
+    "sphere_radius_nm": 6,
+    "epsilon_diagonal_formula": "-2.5+0.15*sin(0.7*ix+0.9*iy)+0.5j",
+    "g": [
+      0.06,
+      0.01
+    ],
+    "wavelength_nm": 620
+  },
+  "method": "Three matched-accuracy paths: scalar pair-by-pair Ewald reference; vectorized lattice evaluation without pair caching; vectorized evaluation with exact repeated-displacement caching. Speedups against the vectorized baseline isolate the cache benefit. Same physical dipole model, four linear solves per wavelength for x/y and +/-M. Dense LU reused for the second polarization at each M.",
+  "timing_scope": "Setup includes matrix construction and cutoff convergence verification. Four-RHS solve includes two LU factorizations and four residual checks. Materials and diffraction ports timed separately. Total excludes geometry preparation, imports, JSON I/O, and warm-up; raw repetitions retained. One BLAS thread.",
+  "limits": "Structured grids yield many repeated displacements. Unstructured positions can lose most cache benefit. Dense matrix remains O(N^2) storage and LU remains O(N^3); large-case scalar times are not extrapolated. Array/workspace memory estimates are not measured process peak RSS. Small relative errors do not bound continuum multipole error or a vanishing magneto-optical signal.",
+  "source_sha256": {
+    "scripts/benchmark_periodic.py": "976b1b2dc4495c3c7a0786515bd50b8b5c553f76e839f71cb9baa4ee4741a9d0",
+    "src/magnetooptics/__init__.py": "2537c39812714320fd12b441343bf8b9a4a787015fd59812fc42f38f65a61839",
+    "src/magnetooptics/geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "src/magnetooptics/interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "src/magnetooptics/periodic_geometry.py": "958301d1e54a15abf915361162008c10503915d05eb900d37c3d99054dd13619",
+    "src/magnetooptics/periodic_interaction.py": "0f73e139dfbe4232cc46369e30a23f37328366adbbeb08011559e249ec8de4e6",
+    "src/magnetooptics/periodic_observables.py": "9c571a58455eb01d34a5c7639a4a2c140a2bbca22b33ea9f020f370a5611f768",
+    "src/magnetooptics/periodic_runner.py": "486e1fbbd9894fa4d6a8db767ce8810d83fbb8243c4b827622849ab11301726c",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "src/magnetooptics/solver.py": "6bd29f1a6b40536be5c7d0bdaf103c094b367651fc684e76fee256ee214b585c"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "blas_threads": 1,
+    "libraries": [
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.188.0",
+        "num_threads": 1
+      },
+      {
+        "internal_api": "openblas",
+        "prefix": "libscipy_openblas",
+        "version": "0.3.30",
+        "num_threads": 1
+      }
+    ]
+  },
+  "elapsed_seconds": 29.858461300027557
+}

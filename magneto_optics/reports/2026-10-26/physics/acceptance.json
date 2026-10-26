@@ -1,0 +1,495 @@
+{
+  "schema_version": "periodic-magnetooptics-acceptance-1.0",
+  "passed": true,
+  "criteria": [
+    {
+      "name": "square_static_zeta_reference",
+      "measured": 4.133690186354564e-09,
+      "maximum": 2e-07,
+      "passed": true
+    },
+    {
+      "name": "independent_Abel_refinement",
+      "measured": 1.8432561775676093e-09,
+      "maximum": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "dynamic_Ewald_vs_independent_Abel",
+      "measured": 1.6288629852137787e-10,
+      "maximum": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "radiative_self_all_open_channels",
+      "measured": 5.55452596895075e-16,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "closed_circular_sheet_fields",
+      "measured": 3.583584249254107e-16,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "Faraday_Kerr_eigenchannel_angles_deg",
+      "measured": 1.4210854715202004e-14,
+      "maximum": 1e-09,
+      "passed": true
+    },
+    {
+      "name": "Onsager_reversal_Jones",
+      "measured": 5.307746248715678e-17,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "g_zero_circular_degeneracy",
+      "measured": 0.0,
+      "maximum": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "all_order_energy_conservation",
+      "measured": 0.0,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "independent_material_absorption",
+      "measured": 1.734723475976807e-18,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "diffracted_orders_carry_nonzero_power",
+      "measured": 0.00037446247434166896,
+      "minimum": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "primitive_supercell_field_invariance",
+      "measured": 4.666831064109347e-16,
+      "maximum": 2e-09,
+      "passed": true
+    },
+    {
+      "name": "primitive_supercell_power_invariance",
+      "measured": 1.734723475976807e-18,
+      "maximum": 2e-10,
+      "passed": true
+    },
+    {
+      "name": "folded_orders_cancel",
+      "measured": 3.152792376117864e-36,
+      "maximum": 1e-16,
+      "passed": true
+    }
+  ],
+  "scope": "Infinite rectangular coplanar electric-dipole sheet in a homogeneous lossless host; normal-incidence ports. Nonzero Bloch wavevector is tested only for the Green radiative identity. Accuracy is within the specified dipole model, not universal continuum Maxwell accuracy.",
+  "lattice_references": {
+    "period_nm": 100.0,
+    "static_ka": 0.0001,
+    "dynamic_ka": 1.3,
+    "square_inverse_cube_sum": 9.033621683100948,
+    "static_reference_dimensionless": [
+      [
+        0.3594363862219108,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.3594363862219108,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.7188727724438216
+      ]
+    ],
+    "static_real_relative_error": 4.133690186354564e-09,
+    "dynamic_ewald_dimensionless": {
+      "real": [
+        [
+          -0.01742641716713055,
+          -5.58013444929782e-20,
+          0.0
+        ],
+        [
+          -5.58013444929782e-20,
+          -0.017426417167130604,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.9612300681654069
+        ]
+      ],
+      "imaginary": [
+        [
+          0.5334455300090356,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5334455300090356,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.11655446999096472
+        ]
+      ]
+    },
+    "dynamic_abel_dimensionless": {
+      "real": [
+        [
+          -0.01742641716712992,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.01742641716712992,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.9612300681654098
+        ]
+      ],
+      "imaginary": [
+        [
+          0.5334455299426283,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5334455299426283,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.1165544701675187
+        ]
+      ]
+    },
+    "abel_refinement_relative_change": 1.8432561775676093e-09,
+    "dynamic_abel_relative_error": 1.6288629852137787e-10,
+    "reference_note": "Static sum is 4*zeta(3/2)*DirichletBeta(3/2). Dynamic reference sums outgoing real-space fields with Gaussian damping and independently extrapolates damping to zero."
+  },
+  "radiative_self_identity": [
+    {
+      "periods_nm": [
+        180,
+        220
+      ],
+      "wavelength_nm": 650,
+      "bloch_nm_inv": [
+        0.0,
+        0.0
+      ],
+      "open_orders": 1,
+      "relative_error": 0.0
+    },
+    {
+      "periods_nm": [
+        900,
+        760
+      ],
+      "wavelength_nm": 500,
+      "bloch_nm_inv": [
+        0.0,
+        0.0
+      ],
+      "open_orders": 9,
+      "relative_error": 4.983638385143937e-16
+    },
+    {
+      "periods_nm": [
+        900,
+        760
+      ],
+      "wavelength_nm": 500,
+      "bloch_nm_inv": [
+        0.0016336281798666925,
+        0.0011309733552923255
+      ],
+      "open_orders": 9,
+      "relative_error": 5.55452596895075e-16
+    }
+  ],
+  "circular_sheet": {
+    "inputs": {
+      "periods_nm": [
+        200,
+        200
+      ],
+      "radius_nm": 8,
+      "wavelength_nm": 620.0,
+      "epsilon_diagonal": [
+        -1.8,
+        0.18
+      ],
+      "g": [
+        0.08,
+        0.01
+      ]
+    },
+    "cases": [
+      {
+        "magnetization_sign": 1,
+        "helicity": 1,
+        "dipole_relative_error": 2.989026579685892e-16,
+        "transmitted_field_relative_error": 0.0,
+        "reflected_field_relative_error": 2.7861559516271093e-16,
+        "transmission": 0.9809305364826498,
+        "reflection": 0.00012598911605084292,
+        "absorption": 0.018943474401299544
+      },
+      {
+        "magnetization_sign": 1,
+        "helicity": -1,
+        "dipole_relative_error": 3.583584249254107e-16,
+        "transmitted_field_relative_error": 4.3545518649972e-19,
+        "reflected_field_relative_error": 3.372325814229306e-16,
+        "transmission": 0.9918673483779038,
+        "reflection": 4.299865024992672e-05,
+        "absorption": 0.00808965297184627
+      },
+      {
+        "magnetization_sign": 1,
+        "port": "transmitted",
+        "rotation_deg": 0.0208599387981584,
+        "ellipticity_deg": -0.15881920230732433,
+        "rotation_error_deg": 0.0,
+        "ellipticity_error_deg": 4.773959005888173e-15
+      },
+      {
+        "magnetization_sign": 1,
+        "port": "reflected",
+        "rotation_deg": 10.10142979153038,
+        "ellipticity_deg": 14.706565189094707,
+        "rotation_error_deg": 1.4210854715202004e-14,
+        "ellipticity_error_deg": 5.329070518200751e-15
+      },
+      {
+        "magnetization_sign": -1,
+        "helicity": 1,
+        "dipole_relative_error": 3.583584249254107e-16,
+        "transmitted_field_relative_error": 4.3545518649972e-19,
+        "reflected_field_relative_error": 3.372325814229306e-16,
+        "transmission": 0.9918673483779038,
+        "reflection": 4.299865024992672e-05,
+        "absorption": 0.00808965297184627
+      },
+      {
+        "magnetization_sign": -1,
+        "helicity": -1,
+        "dipole_relative_error": 2.989026579685892e-16,
+        "transmitted_field_relative_error": 0.0,
+        "reflected_field_relative_error": 2.7861559516271093e-16,
+        "transmission": 0.9809305364826498,
+        "reflection": 0.00012598911605084292,
+        "absorption": 0.018943474401299544
+      },
+      {
+        "magnetization_sign": -1,
+        "port": "transmitted",
+        "rotation_deg": -0.0208599387981584,
+        "ellipticity_deg": 0.15881920230732433,
+        "rotation_error_deg": 0.0,
+        "ellipticity_error_deg": 4.773959005888173e-15
+      },
+      {
+        "magnetization_sign": -1,
+        "port": "reflected",
+        "rotation_deg": -10.10142979153038,
+        "ellipticity_deg": -14.706565189094707,
+        "rotation_error_deg": 0.0,
+        "ellipticity_error_deg": 5.329070518200751e-15
+      }
+    ],
+    "Onsager_Jones_transpose_relative_error": 5.307746248715678e-17,
+    "g_zero_circular_power_difference": 0.0,
+    "note": "Closed scalar sheet equations use the independently validated Ewald lattice S as input: p=alpha/(1-alpha*S); r=i*k*p/(2A), t=1+r. Angle references come independently from the two circular eigenphases and magnitudes."
+  },
+  "all_order_energy": {
+    "inputs": {
+      "periods_nm": [
+        900,
+        760
+      ],
+      "wavelength_nm": 500.0,
+      "radius_nm": 14.0,
+      "positions_nm": [
+        [
+          80,
+          93,
+          0
+        ],
+        [
+          400,
+          350,
+          0
+        ]
+      ],
+      "epsilon_diagonal_real": -1.8,
+      "g": 0.05
+    },
+    "cases": [
+      {
+        "material_loss": 0,
+        "open_orders_per_hemisphere": 9,
+        "transmission": 0.9994441871302759,
+        "reflection": 0.0005558128697240608,
+        "absorption": -4.0101921032542754e-19,
+        "independent_material_absorption": 1.3367307010847584e-19,
+        "absorption_absolute_error": 5.346922804339034e-19,
+        "energy_balance_absolute_error": 0.0,
+        "nonzero_order_power": 0.0009108291279766623,
+        "order_indices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "material_loss": 0.2,
+        "open_orders_per_hemisphere": 9,
+        "transmission": 0.9903843121334485,
+        "reflection": 0.00022660129159267695,
+        "absorption": 0.00938908657495892,
+        "independent_material_absorption": 0.009389086574958919,
+        "absorption_absolute_error": 1.734723475976807e-18,
+        "energy_balance_absolute_error": 0.0,
+        "nonzero_order_power": 0.00037446247434166896,
+        "order_indices": [
+          [
+            -1,
+            -1
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "supercell_invariance": {
+    "primitive_periods_nm": [
+      200.0,
+      240.0
+    ],
+    "supercell_periods_nm": [
+      400.0,
+      720.0
+    ],
+    "basis_sites": 6,
+    "wavelength_nm": 620.0,
+    "open_orders_primitive": 1,
+    "open_orders_supercell": 3,
+    "dipole_relative_error": 2.3378150533093183e-16,
+    "zero_transmitted_relative_error": 3.597075821244623e-18,
+    "zero_reflected_relative_error": 4.666831064109347e-16,
+    "total_power_absolute_error": 1.734723475976807e-18,
+    "spurious_folded_order_power": 3.152792376117864e-36
+  },
+  "references": [
+    "https://arxiv.org/abs/1703.00326",
+    "https://doi.org/10.1103/PhysRevB.88.245109"
+  ],
+  "source_sha256": {
+    "scripts/validate_periodic.py": "b2d8fba82861fe71b435cbd238fbf85cf01d4990aad23f0f6fef8e148011a247",
+    "src/magnetooptics/__init__.py": "2537c39812714320fd12b441343bf8b9a4a787015fd59812fc42f38f65a61839",
+    "src/magnetooptics/geometry.py": "632db3ab2eaccb5c7e353801609837ac1aee15fc2d22eae0152c5559d941a3b5",
+    "src/magnetooptics/interaction.py": "d9382e14f05b92874fd26ab5f19fd952d7f168be22573b4ff3ae5b0f1795d023",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/observables.py": "048a22e6dc06c8f0f8a7d270f7929519db88b9db400223ea27373f423ab9e91a",
+    "src/magnetooptics/periodic_geometry.py": "958301d1e54a15abf915361162008c10503915d05eb900d37c3d99054dd13619",
+    "src/magnetooptics/periodic_interaction.py": "0f73e139dfbe4232cc46369e30a23f37328366adbbeb08011559e249ec8de4e6",
+    "src/magnetooptics/periodic_observables.py": "9c571a58455eb01d34a5c7639a4a2c140a2bbca22b33ea9f020f370a5611f768",
+    "src/magnetooptics/periodic_runner.py": "486e1fbbd9894fa4d6a8db767ce8810d83fbb8243c4b827622849ab11301726c",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060",
+    "src/magnetooptics/solver.py": "6bd29f1a6b40536be5c7d0bdaf103c094b367651fc684e76fee256ee214b585c"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "blas_threads": 1
+  },
+  "elapsed_seconds": 0.14996379998046905
+}

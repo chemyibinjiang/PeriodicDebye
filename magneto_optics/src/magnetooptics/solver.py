@@ -158,7 +158,7 @@ class CoupledDipoleSystem:
                                "method": self.method, "rtol": rtol, "atol": atol,
                                "absolute_residual": absolute, "relative_residual": relative,
                                "residual_definition": "norm(p-alpha(E_inc+Gp))/norm(alpha E_inc)",
-                               "preconditioner": "left block alpha; identity diagonal",
+                               "preconditioner": "equivalent left-polarizability form I-alpha G; self-image blocks retained when periodic",
                                "iterations": iterations, "maxiter_restart_cycles": maxiter,
                                "restart": restart, "factorization_reused": previous_factorizations > 0,
                                "factorization_count": self.factorization_count,

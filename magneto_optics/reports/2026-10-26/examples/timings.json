@@ -1,0 +1,46 @@
+{
+  "python_executable": "C:\\Users\\yibinjiang\\Documents\\GitHub\\PeriodicDebye\\mof_scattering_handoff_20261013\\.venv\\Scripts\\python.exe",
+  "timing_scope": "Single sequential CLI run per example. End-to-end includes Python/imports, validation and file writing. Calculation excludes startup and output writing. Four x/y and +/-M linear systems per wavelength; circular channels use linearity.",
+  "runs": [
+    {
+      "example": "square_sheet",
+      "end_to_end_seconds": 1.198217700002715,
+      "calculation_seconds": 0.2704342000070028,
+      "wavelength_count": 61,
+      "linear_system_count": 244,
+      "basis_spheres": 1,
+      "max_energy_balance_residual": 4.440892098500626e-16,
+      "input_sha256": "d9a6d485941b550671bf4e15ed9ede6e2a5ca1e3d1d00fd55aabb525a4c42924"
+    },
+    {
+      "example": "two_site_sheet",
+      "end_to_end_seconds": 1.3846590999746695,
+      "calculation_seconds": 0.32223280001198873,
+      "wavelength_count": 61,
+      "linear_system_count": 244,
+      "basis_spheres": 2,
+      "max_energy_balance_residual": 4.440892098500626e-16,
+      "input_sha256": "f70d7c5eff3e06504ff6909ebe7f02c9f48a748248bbb36672be3c7fd3444b26"
+    },
+    {
+      "example": "diffractive_sheet",
+      "end_to_end_seconds": 1.1043661999865435,
+      "calculation_seconds": 0.06670610001310706,
+      "wavelength_count": 5,
+      "linear_system_count": 20,
+      "basis_spheres": 2,
+      "max_energy_balance_residual": 4.440892098500626e-16,
+      "input_sha256": "b79ecbc9d3a2993f74046bd9e3ef1e0e63d57a6d19e924d6a933c3397a845c02"
+    },
+    {
+      "example": "lossless_sheet",
+      "end_to_end_seconds": 1.10067719995277,
+      "calculation_seconds": 0.05428039998514578,
+      "wavelength_count": 4,
+      "linear_system_count": 16,
+      "basis_spheres": 1,
+      "max_energy_balance_residual": 4.440892098500626e-16,
+      "input_sha256": "657d84edd362f0213ab8e613947496b1533676e006ec4cff6c3bc1c8bd4bb135"
+    }
+  ]
+}

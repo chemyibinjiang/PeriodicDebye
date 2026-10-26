@@ -1,0 +1,16 @@
+{
+  "wavelength_count": 61,
+  "actual": "reports\\2026-10-26\\examples\\two_site_sheet",
+  "reference": "reports\\2026-10-26\\examples\\two_site_reference",
+  "max_absolute_dimensionless_output_error": 8.673617379884035e-19,
+  "max_absolute_angle_error_deg": 0.0,
+  "max_absolute_jones_error": 4.336808689942018e-19,
+  "undefined_values_match": true,
+  "metric": "Absolute power/fraction and Jones errors retain meaning at zero signals. Rotation differences are wrapped modulo180deg (magnetic-odd modulo90deg).",
+  "limits": {
+    "dimensionless": 1e-08,
+    "jones": 1e-08,
+    "angle_deg": 1e-06
+  },
+  "passed": true
+}

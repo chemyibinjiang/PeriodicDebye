@@ -1,0 +1,53 @@
+{
+  "original_xray_manifest_files_unchanged": 1029,
+  "current_evidence_hash_checks": [
+    {
+      "report": "reports/2026-10-26/physics/acceptance.json",
+      "matched_source_files": 12
+    },
+    {
+      "report": "reports/2026-10-26/performance/benchmark.json",
+      "matched_source_files": 12
+    },
+    {
+      "report": "reports/2026-10-26/examples/diffractive_sheet/metadata.json",
+      "matched_source_files": 11,
+      "saved_configuration_hash_matches": true
+    },
+    {
+      "report": "reports/2026-10-26/examples/lossless_sheet/metadata.json",
+      "matched_source_files": 11,
+      "saved_configuration_hash_matches": true
+    },
+    {
+      "report": "reports/2026-10-26/examples/square_sheet/metadata.json",
+      "matched_source_files": 11,
+      "saved_configuration_hash_matches": true
+    },
+    {
+      "report": "reports/2026-10-26/examples/two_site_reference/metadata.json",
+      "matched_source_files": 11,
+      "saved_configuration_hash_matches": true
+    },
+    {
+      "report": "reports/2026-10-26/examples/two_site_sheet/metadata.json",
+      "matched_source_files": 11,
+      "saved_configuration_hash_matches": true
+    }
+  ],
+  "reproducible_synthetic_examples": [
+    "square_sheet",
+    "two_site_sheet",
+    "diffractive_sheet",
+    "lossless_sheet"
+  ],
+  "magneto_tests": {
+    "passed": 297,
+    "previous_finite_tests": 195,
+    "new_periodic_tests": 102,
+    "log": "pytest.txt"
+  },
+  "date": "2026-10-26",
+  "base_commit": "448dfc636fbda67af4d6ec7e4393bbcee1a01612",
+  "passed": true
+}

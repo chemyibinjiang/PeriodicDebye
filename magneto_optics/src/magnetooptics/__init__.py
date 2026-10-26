@@ -1,4 +1,4 @@
-"""Finite electromagnetic particle arrays; independent of the X-ray Debye engine."""
+"""Finite arrays and periodic electromagnetic sheets, independent of X-ray Debye."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 

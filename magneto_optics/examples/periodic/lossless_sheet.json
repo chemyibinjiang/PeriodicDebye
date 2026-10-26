@@ -1,0 +1,59 @@
+{
+  "schema_version": "magnetooptics-periodic-1.0",
+  "description": "SYNTHETIC infinite rectangular array of small gyrotropic spheres. One electric dipole per sphere; homogeneous host; normal incidence.",
+  "geometry": {
+    "periods_nm": [
+      36.0,
+      36.0
+    ],
+    "positions_nm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "radius_nm": 6.0,
+    "material": "synthetic_mo"
+  },
+  "materials": {
+    "synthetic_mo": {
+      "model": "gyrotropic_constant",
+      "epsilon_diagonal": [
+        2.5,
+        0.0
+      ],
+      "g": [
+        0.15,
+        0.0
+      ],
+      "magnetization": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "provenance": "Synthetic lossless Hermitian gyrotropic tensor for conservation checks."
+    }
+  },
+  "wavelength_nm": [
+    400.0,
+    500.0,
+    600.0,
+    700.0
+  ],
+  "host_index": 1.0,
+  "incidence": {
+    "direction": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "solver": {
+    "backend": "cached",
+    "rtol": 1e-10,
+    "ewald_tolerance": 1e-10,
+    "max_memory_mib": 1024
+  },
+  "threads": 1
+}
