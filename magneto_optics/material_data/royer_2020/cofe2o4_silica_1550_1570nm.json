@@ -1,0 +1,71 @@
+{
+  "model": "gyrotropic_table",
+  "label": "Royer 2020 CoFe2O4/silica composite: reported local constant approximation",
+  "wavelength_nm": [
+    1550.0,
+    1570.0
+  ],
+  "epsilon_diagonal": [
+    [
+      2.856064,
+      0.02028
+    ],
+    [
+      2.856064,
+      0.02028
+    ]
+  ],
+  "g": [
+    [
+      -0.00375,
+      -0.0018
+    ],
+    [
+      -0.00375,
+      -0.0018
+    ]
+  ],
+  "magnetization": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "provenance": {
+    "title": "Enhancement of Both Faraday and Kerr Effects with an All-Dielectric Grating Based on a Magneto-Optical Nanocomposite Material",
+    "authors": "Francois Royer et al.",
+    "year": 2020,
+    "doi": "10.1021/acsomega.9b03728",
+    "publication_url": "https://doi.org/10.1021/acsomega.9b03728",
+    "public_full_text_api": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7033961/fullTextXML",
+    "source_section": "Methods; grating description; Table 1",
+    "accessed_date": "2026-10-26",
+    "original_article_license": "ACS AuthorChoice, non-commercial copying/redistribution terms; see publication. Only numerical facts and original provenance notes are reproduced here.",
+    "material": "CoFe2O4 nanoparticles in TEOS-derived silica sol-gel",
+    "nanoparticle_volume_fraction": 0.15,
+    "measured_complex_index_near_1550_nm": [
+      1.69,
+      0.006
+    ],
+    "reported_off_diagonal_epsilon_MO": [
+      0.0018,
+      -0.00375
+    ],
+    "reported_model_expression": "epsilon_MO = 0.0015 * (1.2 - 2.5i)",
+    "measurement_note": "Refractive index measured by ellipsometry in an area without Si3N4 grating. Off-diagonal value is reported as corresponding to the nanoparticle volume fraction; not a complete separately measured tensor spectrum for every coated slit.",
+    "magnetic_state": "Room-temperature saturated magneto-optical spectra; applied-field sweep in the experiment 0 to 0.8 T. A calibrated M(H) curve is not included.",
+    "post_coating_process": {
+      "method": "dip-coating with nanoparticle-doped silica sol-gel",
+      "anneal_temperature_C": 100,
+      "anneal_duration_minutes": 60
+    },
+    "conversion": "epsilon_d=(n+i*kappa)^2; interpreting reported epsilon_MO as epsilon_xy, repo g=-i*epsilon_MO.",
+    "spectral_policy": "Two identical endpoints encode an explicit local constant approximation over 1550-1570 nm. They are not two separate measured data points and are not a measured dispersion curve. No extrapolation.",
+    "sign_policy": "m_z=+1 denotes the adopted source tensor sign. Absolute applied-field and viewing conventions need experimental calibration. Magnetic reversal changes the sign of g.",
+    "scope": "Effective composite model reported for the experimental sample. Not pure CoFe2O4, not a generic photoresin, not demonstrated two-photon-printable ink.",
+    "loss_eigenvalues_at_mz1": [
+      0.01848,
+      0.02028,
+      0.02208
+    ]
+  }
+}

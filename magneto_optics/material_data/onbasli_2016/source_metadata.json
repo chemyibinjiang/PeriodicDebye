@@ -1,0 +1,26 @@
+{
+  "title": "Optical and magneto-optical behavior of Cerium Yttrium Iron Garnet thin films at wavelengths of 200–1770 nm",
+  "doi": "10.1038/srep23640",
+  "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fsrep23640/MediaObjects/41598_2016_BFsrep23640_MOESM2_ESM.xls",
+  "publication_url": "https://www.nature.com/articles/srep23640",
+  "sha256": "ff770dd764391e77ce61d650abb2c783d600f2227e1173d1d1c191e5278fd9ce",
+  "bytes": 1071616,
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "downloaded_utc": "2026-10-26T09:38:18.068445+00:00",
+  "sheet_names": [
+    "Transmission GGG substrate",
+    "Transmission CeYIG films",
+    "Epsilon1 CeYIG films",
+    "Faraday loops 1550 nm",
+    "Faraday loops 780nm",
+    "Faraday spectra",
+    "Polar Kerr spectra",
+    "Epsilon2",
+    "IR k",
+    "Abs. coef.",
+    "FOM"
+  ],
+  "source_description": "Unmodified authors supplementary dataset. Raw fitted complex tensor values may violate passivity at low absorption. Do not silently clip. See article Methods and Eq. (1).",
+  "tensor_convention": "Publication Eq. (1): epsilon_xy = -i epsilon2; epsilon_yx = +i epsilon2. Repo epsilon_xy = +i g for m_z=+1, hence g=-epsilon2 if using same harmonic convention. Source diagonal imaginary parts are positive for loss; paper prose does not state harmonic convention explicitly."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "Published experimental geometry reference, not an optimized or fabrication-released design",
+  "source_doi": "10.1021/acsomega.9b03728",
+  "selected_user_route": "2D lithography of Si3N4 plus cobalt-ferrite composite coating",
+  "nominal_optical_band_nm": [
+    1550,
+    1570
+  ],
+  "grating": {
+    "period_nm": 966,
+    "Si3N4_line_width_nm": 608,
+    "gap_width_nm": 358,
+    "initial_Si3N4_thickness_nm": 593,
+    "measured_etch_depth_nm": 623,
+    "approximate_BK7_overetch_nm": 30,
+    "pattern_extent_mm": [
+      5,
+      5
+    ],
+    "fabrication": "electron-beam lithography and reactive-ion etching"
+  },
+  "substrate": {
+    "name": "BK7",
+    "optical_model": null,
+    "thickness_nm": null,
+    "note": "Use actual substrate supplier optical data and thickness in the full-wave model."
+  },
+  "Si3N4": {
+    "measured_index_near_1550_nm": 1.95,
+    "loss": "Undetectable in the cited ellipsometry; no quantitative upper bound supplied."
+  },
+  "composite_material": "../../material_data/royer_2020/cofe2o4_silica_1550_1570nm.json",
+  "coating": {
+    "method": "dip-coating with nanoparticle-doped silica sol-gel",
+    "anneal_temperature_C": 100,
+    "anneal_duration_minutes": 60
+  },
+  "unresolved_inputs": [
+    "Actual lithography minimum gap and etch capability",
+    "Composite infiltration profile, any residual cap layer and surface roughness",
+    "Batch-specific index, absorption, magneto-optical response and M(H)",
+    "Substrate optical data and thickness",
+    "Real mirror optical data, separation and placement",
+    "Confirmed laser wavelength and required rotation, ellipticity and throughput tolerances"
+  ],
+  "solver_requirement": "Tensor RCWA/FEM or converged volume Maxwell solver including film/substrate and mirror; current one-dipole-per-sphere model cannot reproduce this grating.",
+  "performance_note": "The paper demonstrates resonant enhancement, not a 45-degree single pass or 90-degree mirror return."
+}

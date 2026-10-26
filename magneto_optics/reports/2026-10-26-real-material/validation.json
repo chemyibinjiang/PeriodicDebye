@@ -1,0 +1,56 @@
+{
+  "source_sha256": "ff770dd764391e77ce61d650abb2c783d600f2227e1173d1d1c191e5278fd9ce",
+  "export_reproduced": true,
+  "knot_count": 301,
+  "wavelength_nm": [
+    1300,
+    1600
+  ],
+  "all_runner_knots_passive": true,
+  "minimum_exported_loss_eigenvalue": 0.000572700193465177,
+  "source_union_audit": {
+    "knots": 324,
+    "minimum_loss": 0.000572700193465177
+  },
+  "at_1550_nm": {
+    "epsilon_diagonal": [
+      5.134728182974142,
+      0.0014500928318342177
+    ],
+    "g": [
+      -0.007302259631641059,
+      -0.0005961767502381412
+    ]
+  },
+  "rejected_111_reason": "Ce:YIG(111) fitted tensor violates passivity near 1341.210688 nm: minimum Hermitian loss eigenvalue=-0.00120191594. Raw data were not clipped or refitted; no table exported.",
+  "maximum_absolute_wavelength_interpolation_difference_at_half_nm": {
+    "epsilon_diagonal": 4.83848091727544e-06,
+    "g": 4.588174344114629e-06
+  },
+  "scope": "Measured-fit material ingestion and physical-consistency checks only. No fabricated metasurface or 45-degree real-device performance is asserted.",
+  "source_hashes": {
+    "scripts/import_onbasli_material.py": "7688692c9d981f18b240d3e27dee9a856ed5fd78bdb6e972265d7883fff3ff5e",
+    "src/magnetooptics/materials.py": "ec05a5e0cbbe7d9b42bdd9bf66bef8a190401b3b29fa2bb33501d744992490c6",
+    "src/magnetooptics/runner.py": "4826ee33a592d49dfa04fee0af8245fa45b8b7f20a0200b28676bc0ed6467060"
+  },
+  "selected_prototype": "Si3N4 grating with CoFe2O4/silica composite coating",
+  "royer_2020_composite": {
+    "input_sha256": "d1404294ceb41b824d4e1748e911411f85d7eb26afeb2d1634b5ab0471975602",
+    "metadata_sha256": "13071c1e2e0884640872397b0f29a0524b4a2c61c3d600dabb9bbf1712160525",
+    "epsilon_from_measured_index_verified": true,
+    "epsilon_xy_from_reported_coefficient_verified": true,
+    "adopted_g": [
+      -0.00375,
+      -0.0018
+    ],
+    "loss_eigenvalues": [
+      0.01848,
+      0.02028,
+      0.02208
+    ],
+    "magnetic_reversal_verified": true,
+    "out_of_range_rejected": true,
+    "spectral_model": "Explicit local constant approximation, 1550-1570 nm only; not measured dispersion.",
+    "absolute_field_sign": "Needs experimental calibration; reported off-diagonal quantity interpreted as epsilon_xy."
+  }
+}

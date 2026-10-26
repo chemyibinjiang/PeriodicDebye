@@ -1,5 +1,9 @@
 # PeriodicDebye: X-ray scattering and magneto-optical arrays
 
+**真实磁光材料（v0.4.1）：** 首个制造方向选为 Si₃N₄ 光栅＋钴铁氧体/二氧化硅复合涂层，已加入文献材料参数与实物几何。
+同时保留 Ce:YIG/GGG 的作者原始实验拟合数据、张量约定转换及严格被动性检查。
+后续器件优化应固定材料性质、调整可制造几何；见 [真实材料与光刻路线](magneto_optics/REAL_MATERIALS.md)。
+
 **磁光超晶格（v0.4.0）：** 新增精确分层 Maxwell 求解器，以及 21 层 Bragg 微腔—镜面示例。
 合成弱磁光层通过共振实现单程 45° 与指定镜面间隙下的 90° 返回，包含透射损失与吸收对照。
 见 [材料说明、超晶格方程与运行方法](magneto_optics/SUPERLATTICE.md)。
@@ -19,7 +23,7 @@ Faraday/Kerr 旋转和全部传播衍射级次。使用均匀宿主中的小球�
 [验收与性能报告](magneto_optics/VALIDATION_REPORT.md) 或
 [本轮 goal](magneto_optics/GOAL.md) 开始。
 
-The electromagnetic module is version **0.4.0**. It models finite arrays and
+The electromagnetic module is version **0.4.1**. It models finite arrays and
 periodic sheets of small electric-dipole spheres, plus exact gyrotropic layer stacks and mirror cavities; it does not turn the X-ray Debye equation
 into a Maxwell solver. The original X-ray tutorial follows below.
 
