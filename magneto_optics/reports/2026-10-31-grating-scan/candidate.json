@@ -1,0 +1,11 @@
+{
+  "period_nm": 925.0420768002252,
+  "fill_fraction": 0.7475748750287126,
+  "height_nm": 573.7393944066401,
+  "cap_nm": 82.05068975768243,
+  "overetch_nm": 30.0,
+  "incident_axis": 1,
+  "wavelength_nm": 1560.0,
+  "material_file": "material_data\\royer_2020\\cofe2o4_silica_1550_1570nm.json",
+  "status": "simulation candidate, not a fabrication release"
+}

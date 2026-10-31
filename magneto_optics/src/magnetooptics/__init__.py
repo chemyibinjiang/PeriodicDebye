@@ -1,4 +1,4 @@
-"""Particle arrays, periodic sheets and gyrotropic layers, independent of X-ray Debye."""
+"""Magneto-optical arrays, layers and tensor gratings, independent of X-ray Debye."""
 
-__version__ = "0.4.1"
+__version__ = "0.5.0"
 

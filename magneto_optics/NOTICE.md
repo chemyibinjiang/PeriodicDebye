@@ -6,6 +6,12 @@ NumPy and SciPy numerical routines; no third-party solver source was copied.
 The electromagnetic conventions and literature are cited in README.md and
 PERIODIC_TUTORIAL.md and FARADAY_MIRROR.md. The periodic Ewald derivation follows the cited literature;
 the implementation, tests, and synthetic examples are original repository code.
+The tensor grating solver and mirror feedback are also original implementation.
+Its interface factorization follows L. Li, JOSA A 13, 1870 (1996),
+https://doi.org/10.1364/JOSAA.13.001870; no external RCWA source is bundled.
+The N-BK7 Sellmeier coefficients in grating_design.py are numerical glass
+properties from SCHOTT's official datasheet, attributed in that module and
+GRATING_SCAN.md. N-BK7 is a documented proxy, not a measured substrate batch.
 
 The original X-ray implementation, external-kernel notices, archived datasets,
 and manifests remain in ../mof_scattering_handoff_20261013/.

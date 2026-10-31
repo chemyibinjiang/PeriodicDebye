@@ -1,0 +1,572 @@
+{
+  "study": "Exploratory 1D grating search with fixed literature material",
+  "quick": false,
+  "center_wavelength_nm": 1560.0,
+  "selected": {
+    "period_nm": 925.0420768002252,
+    "fill_fraction": 0.7475748750287126,
+    "height_nm": 573.7393944066401,
+    "cap_nm": 82.05068975768243,
+    "wavelength_nm": 1560.0,
+    "order": 31,
+    "incident_axis": 1,
+    "polarization": "TE_y",
+    "rotation_deg": -1.116070251249539,
+    "ellipticity_deg": 0.32604111023203347,
+    "zero_order_transmission": 0.26333690825140216,
+    "cross_power": 0.00010842742819841318,
+    "total_transmission": 0.2633369082514021,
+    "total_reflection": 0.45324753533386936,
+    "absorption_flux_difference": 0.28341555641472854,
+    "fom_deg": 0.5727266583089771,
+    "qualified": true
+  },
+  "geometry": {
+    "period_nm": 925.0420768002252,
+    "fill_fraction": 0.7475748750287126,
+    "height_nm": 573.7393944066401,
+    "cap_nm": 82.05068975768243,
+    "line_width_nm": 691.5382149602291,
+    "gap_nm": 233.50386183999612,
+    "overetch_nm": 30.0
+  },
+  "scope": "normal plane wave, infinitely periodic in x, invariant y; not a 2D post lattice",
+  "assumptions": [
+    "fully filled rectangular gaps",
+    "uniform residual composite cap",
+    "lossless Si3N4 index 1.95; measured loss detection limit unspecified",
+    "SCHOTT N-BK7 dispersion as proxy for unspecified BK7, glass loss neglected",
+    "semi-infinite glass for single-pass search",
+    "saturated fixed axial magnetization; material is local constant approximation"
+  ],
+  "search": {
+    "period_bounds_nm": [
+      850.0,
+      1100.0
+    ],
+    "coarse_period_step_nm": 4.0,
+    "fill_fractions": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "heights_nm": [
+      400.0,
+      500.0,
+      593.0,
+      700.0,
+      800.0
+    ],
+    "caps_nm": [
+      0.0,
+      50.0,
+      100.0
+    ],
+    "minimum_gap_nm": 200.0,
+    "coarse_geometry_count": 4230,
+    "coarse_order": 5,
+    "refinement_orders": [
+      9,
+      11
+    ],
+    "objective": "maximize |ellipse-axis rotation|*sqrt(T0)",
+    "screen": {
+      "min_zero_order_power": 0.25,
+      "max_abs_ellipticity_deg": 5.0
+    },
+    "refinement": [
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 64
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 126
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 60
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 71
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 55
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 72
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 78
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 61
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 169
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 256
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 262
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 227
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 330
+      },
+      {
+        "method": "SLSQP resonance tracking",
+        "success": true,
+        "message": "Optimization terminated successfully",
+        "evaluations": 340
+      }
+    ],
+    "global_optimum_proven": false
+  },
+  "harmonic_convergence": {
+    "orders": [
+      3,
+      5,
+      7,
+      9,
+      13,
+      17,
+      21,
+      25,
+      31
+    ],
+    "last_pair_absolute_changes": {
+      "rotation_deg": 1.3601246152461499e-05,
+      "ellipticity_deg": 7.708320131027957e-05,
+      "zero_order_transmission": 6.031006527351668e-06
+    },
+    "spectral_extrema_checks": [
+      {
+        "wavelength_nm": 1550.0,
+        "orders": [
+          31,
+          41
+        ],
+        "absolute_changes": {
+          "rotation_deg": 3.3381886055394716e-07,
+          "ellipticity_deg": 4.5498452241887755e-08,
+          "zero_order_transmission": 8.630935687259367e-07
+        }
+      },
+      {
+        "wavelength_nm": 1560.0,
+        "orders": [
+          31,
+          41
+        ],
+        "absolute_changes": {
+          "rotation_deg": 2.0358473847181813e-05,
+          "ellipticity_deg": 0.00015903236350051086,
+          "zero_order_transmission": 3.2767606815697903e-06
+        }
+      },
+      {
+        "wavelength_nm": 1560.1,
+        "orders": [
+          31,
+          41
+        ],
+        "absolute_changes": {
+          "rotation_deg": 5.463332901456397e-05,
+          "ellipticity_deg": 0.00016190951472883075,
+          "zero_order_transmission": 3.1998093276697226e-06
+        }
+      },
+      {
+        "wavelength_nm": 1561.15,
+        "orders": [
+          31,
+          41
+        ],
+        "absolute_changes": {
+          "rotation_deg": 0.00011170960753759118,
+          "ellipticity_deg": 0.00010369811848320865,
+          "zero_order_transmission": 1.5095314110091795e-06
+        }
+      },
+      {
+        "wavelength_nm": 1570.0,
+        "orders": [
+          31,
+          41
+        ],
+        "absolute_changes": {
+          "rotation_deg": 6.643529957273131e-07,
+          "ellipticity_deg": 1.0139017429626473e-06,
+          "zero_order_transmission": 7.697509479820397e-07
+        }
+      }
+    ],
+    "note": "empirical refinement check, not a rigorous error bound"
+  },
+  "magnetic_checks": {
+    "plus": {
+      "period_nm": 925.0420768002252,
+      "fill_fraction": 0.7475748750287126,
+      "height_nm": 573.7393944066401,
+      "cap_nm": 82.05068975768243,
+      "wavelength_nm": 1560.0,
+      "order": 31,
+      "incident_axis": 1,
+      "polarization": "TE_y",
+      "rotation_deg": -1.116070251249539,
+      "ellipticity_deg": 0.32604111023203347,
+      "zero_order_transmission": 0.26333690825140216,
+      "cross_power": 0.00010842742819841318,
+      "total_transmission": 0.2633369082514021,
+      "total_reflection": 0.45324753533386936,
+      "absorption_flux_difference": 0.28341555641472854,
+      "fom_deg": 0.5727266583089771,
+      "qualified": true
+    },
+    "minus": {
+      "polarization": "TE_y",
+      "rotation_deg": 1.116070251249539,
+      "ellipticity_deg": -0.32604111023203347,
+      "zero_order_transmission": 0.26333690825140216,
+      "cross_power": 0.00010842742819841318,
+      "total_transmission": 0.2633369082514021,
+      "total_reflection": 0.45324753533386936,
+      "absorption_flux_difference": 0.28341555641472854,
+      "fom_deg": 0.5727266583089771,
+      "qualified": true
+    },
+    "zero": {
+      "polarization": "TE_y",
+      "rotation_deg": 0.0,
+      "ellipticity_deg": -0.0,
+      "zero_order_transmission": 0.26337058239415806,
+      "cross_power": 0.0,
+      "total_transmission": 0.263370582394158,
+      "total_reflection": 0.4532436381467549,
+      "absorption_flux_difference": 0.2833857794590871,
+      "fom_deg": 0.0,
+      "qualified": true
+    },
+    "odd_rotation_deg": -1.116070251249539,
+    "angle_branch": "principal ellipse-axis changes in [-90,90); large rotations need continuous M unwrapping",
+    "sign_sum_deg": 0.0,
+    "zero_cross_amplitude": 0.0,
+    "passed": true
+  },
+  "baselines": {
+    "same_height_uniform_MO": {
+      "polarization": "TM_x",
+      "rotation_deg": -0.1655810022109705,
+      "ellipticity_deg": -0.09320734468703293,
+      "zero_order_transmission": 0.8746257815493111,
+      "cross_power": 9.619172726029977e-06,
+      "total_transmission": 0.8746257815493111,
+      "total_reflection": 0.09568912555950197,
+      "absorption_flux_difference": 0.029685092891186884,
+      "fom_deg": 0.15485372060018976,
+      "qualified": true
+    },
+    "equal_MO_volume_uniform": {
+      "polarization": "TM_x",
+      "rotation_deg": -0.052518741906709465,
+      "ellipticity_deg": -0.03908152745283241,
+      "zero_order_transmission": 0.8933983139866892,
+      "cross_power": 1.1662979635046752e-06,
+      "total_transmission": 0.8933983139866891,
+      "total_reflection": 0.0963919910806,
+      "absorption_flux_difference": 0.010209694932710886,
+      "fom_deg": 0.04964058355282358,
+      "qualified": true
+    },
+    "published_geometry_ideal_profile": [
+      {
+        "period_nm": 966.0,
+        "fill_fraction": 0.629399585921325,
+        "height_nm": 593.0,
+        "cap_nm": 0.0,
+        "wavelength_nm": 1560.0,
+        "order": 31,
+        "incident_axis": 0,
+        "polarization": "TM_x",
+        "rotation_deg": -0.08249616764314283,
+        "ellipticity_deg": -0.023862915295105175,
+        "zero_order_transmission": 0.8707460229485248,
+        "cross_power": 1.956190578109933e-06,
+        "total_transmission": 0.8707460229485247,
+        "total_reflection": 0.10741915252211405,
+        "absorption_flux_difference": 0.021834824529361294,
+        "fom_deg": 0.07698028659933558,
+        "qualified": true
+      },
+      {
+        "period_nm": 966.0,
+        "fill_fraction": 0.629399585921325,
+        "height_nm": 593.0,
+        "cap_nm": 0.0,
+        "wavelength_nm": 1560.0,
+        "order": 31,
+        "incident_axis": 1,
+        "polarization": "TE_y",
+        "rotation_deg": -0.08243591927372051,
+        "ellipticity_deg": -0.044563860281756046,
+        "zero_order_transmission": 0.7441499062654565,
+        "cross_power": 1.990623243845429e-06,
+        "total_transmission": 0.7441499062654566,
+        "total_reflection": 0.23267721236341055,
+        "absorption_flux_difference": 0.023172881371132825,
+        "fom_deg": 0.071112623494612,
+        "qualified": true
+      }
+    ]
+  },
+  "enhancement_vs_same_height": 6.740327914113775,
+  "enhancement_vs_equal_MO_volume": 21.250894646944253,
+  "fom_enhancement_vs_same_height": 3.6985011150469913,
+  "geometry_rounded_to_nm_grid": [
+    {
+      "grid_nm": 1.0,
+      "line_width_nm": 692.0,
+      "gap_nm": 233.0,
+      "period_nm": 925.0,
+      "height_nm": 574.0,
+      "cap_nm": 82.0,
+      "fill_fraction": 0.7481081081081081,
+      "wavelength_nm": 1560.0,
+      "order": 31,
+      "incident_axis": 1,
+      "polarization": "TE_y",
+      "rotation_deg": -1.0907699279970586,
+      "ellipticity_deg": 0.21916112870657747,
+      "zero_order_transmission": 0.27174728815754934,
+      "cross_power": 0.00010244987554375626,
+      "total_transmission": 0.2717472881575493,
+      "total_reflection": 0.450984931703756,
+      "absorption_flux_difference": 0.2772677801386947,
+      "fom_deg": 0.5686116658067479,
+      "qualified": true
+    },
+    {
+      "grid_nm": 5.0,
+      "line_width_nm": 690.0,
+      "gap_nm": 235.0,
+      "period_nm": 925.0,
+      "height_nm": 575.0,
+      "cap_nm": 80.0,
+      "fill_fraction": 0.745945945945946,
+      "wavelength_nm": 1560.0,
+      "order": 31,
+      "incident_axis": 1,
+      "polarization": "TE_y",
+      "rotation_deg": -1.0455535817331736,
+      "ellipticity_deg": 0.7722111422476926,
+      "zero_order_transmission": 0.23329774497136532,
+      "cross_power": 0.00012002699602029695,
+      "total_transmission": 0.23329774497136527,
+      "total_reflection": 0.4588441518762144,
+      "absorption_flux_difference": 0.30785810315242035,
+      "fom_deg": 0.5050118450396994,
+      "qualified": false
+    },
+    {
+      "grid_nm": 10.0,
+      "line_width_nm": 690.0,
+      "gap_nm": 240.0,
+      "period_nm": 930.0,
+      "height_nm": 570.0,
+      "cap_nm": 80.0,
+      "fill_fraction": 0.7419354838709677,
+      "wavelength_nm": 1560.0,
+      "order": 31,
+      "incident_axis": 1,
+      "polarization": "TE_y",
+      "rotation_deg": -0.17317065020966993,
+      "ellipticity_deg": -0.10987568918916274,
+      "zero_order_transmission": 0.5558662982444843,
+      "cross_power": 7.121945193878891e-06,
+      "total_transmission": 0.5558662982444843,
+      "total_reflection": 0.33856211711274825,
+      "absorption_flux_difference": 0.10557158464276745,
+      "fom_deg": 0.12910987467322263,
+      "qualified": true
+    }
+  ],
+  "incoherent_spectral_averages": [
+    {
+      "fwhm_nm": 0.5,
+      "center_nm": 1560.0,
+      "integration_band_nm": [
+        1550.0,
+        1570.0
+      ],
+      "note": "Gaussian truncated and normalized within material band; trapezoidal Stokes integration",
+      "wavelength_step_nm": 0.049999999999954525,
+      "grid_refinement_absolute_changes": {
+        "power": 4.963252031586762e-13,
+        "rotation_deg": 7.027267656667391e-11,
+        "ellipticity_deg": 2.8136493135377805e-11,
+        "degree_of_polarization": 1.5543122344752192e-15
+      },
+      "power": 0.2636716440842249,
+      "rotation_deg": -1.0790335193625253,
+      "ellipticity_deg": 0.3296575101186576,
+      "degree_of_polarization": 0.9999701070650154,
+      "stokes": [
+        0.2636716440842249,
+        -0.2634593128712426,
+        0.009927989222421937,
+        0.003033969407715194
+      ]
+    },
+    {
+      "fwhm_nm": 2.0,
+      "center_nm": 1560.0,
+      "integration_band_nm": [
+        1550.0,
+        1570.0
+      ],
+      "note": "Gaussian truncated and normalized within material band; trapezoidal Stokes integration",
+      "wavelength_step_nm": 0.049999999999954525,
+      "grid_refinement_absolute_changes": {
+        "power": 2.250977182427505e-13,
+        "rotation_deg": 5.681499715137761e-11,
+        "ellipticity_deg": 1.0659212401620266e-10,
+        "degree_of_polarization": 1.9539925233402755e-14
+      },
+      "power": 0.2694175427722814,
+      "rotation_deg": -0.7895048066086616,
+      "ellipticity_deg": 0.3068054682070746,
+      "degree_of_polarization": 0.9997952246984377,
+      "stokes": [
+        0.2694175427722814,
+        -0.26924464853113445,
+        0.0074219699084651074,
+        0.00288468958217621
+      ]
+    },
+    {
+      "fwhm_nm": 7.0,
+      "center_nm": 1560.0,
+      "integration_band_nm": [
+        1550.0,
+        1570.0
+      ],
+      "note": "Gaussian truncated and normalized within material band; trapezoidal Stokes integration",
+      "wavelength_step_nm": 0.049999999999954525,
+      "grid_refinement_absolute_changes": {
+        "power": 2.593012149998408e-07,
+        "rotation_deg": 3.275441144978686e-07,
+        "ellipticity_deg": 2.1447058586032686e-07,
+        "degree_of_polarization": 2.275101218529585e-10
+      },
+      "power": 0.3494104569355026,
+      "rotation_deg": -0.24750865981734194,
+      "ellipticity_deg": 0.1218219886841165,
+      "degree_of_polarization": 0.9997854787303525,
+      "stokes": [
+        0.3494104569355026,
+        -0.34931930476119394,
+        0.0030180828326556715,
+        0.001485506176864045
+      ]
+    }
+  ],
+  "transmission_jones": [
+    [
+      [
+        0.027271225741774516,
+        -0.49175727096892186
+      ],
+      [
+        -0.0006106129896113908,
+        -0.008478604696117161
+      ]
+    ],
+    [
+      [
+        0.0005610521473184736,
+        -0.005258857432294222
+      ],
+      [
+        0.08829747531594645,
+        -0.40942353146004945
+      ]
+    ]
+  ],
+  "reflection_jones": [
+    [
+      [
+        0.07929628024380117,
+        -0.24695365977555903
+      ],
+      [
+        -0.003735117235669702,
+        0.007830850670754497
+      ]
+    ],
+    [
+      [
+        0.0037351172370308516,
+        -0.007830850671264867
+      ],
+      [
+        -0.6699933899789816,
+        0.06543026360446563
+      ]
+    ]
+  ],
+  "performance": {
+    "calls": 6863,
+    "solver_seconds": 78.7769031986245,
+    "total_seconds_before_plot": 81.56081830000039,
+    "blas_threads": 1,
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "input_sha256": "d1404294ceb41b824d4e1748e911411f85d7eb26afeb2d1634b5ab0471975602",
+  "source_sha256": {
+    "scripts\\scan_grating.py": "4f369dee732947b5f49c7e785a510ab2ec6dbd7281c1cad12b560c697fd17f45",
+    "src\\magnetooptics\\grating.py": "c8ea513f003aa3b5019e66bc61eb7fc390ed7f0519f7e971f950ed3829b4dd7c",
+    "src\\magnetooptics\\grating_design.py": "22b9b6c6e56bf390d30fbb82d99a8084a513757c2bfc92d3712d1558d515bf0e"
+  },
+  "remaining": [
+    "angular divergence not modeled",
+    "actual infiltration and cap profile unmeasured",
+    "not a full reproduction of experiment; principal TE resonance is outside material band",
+    "real mirror, substrate thickness/loss and laser require sample-specific inputs"
+  ]
+}

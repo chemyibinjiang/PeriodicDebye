@@ -1,5 +1,11 @@
 # PeriodicDebye: X-ray scattering and magneto-optical arrays
 
+**真实材料光栅扫描（v0.5.0）：** 新增包含基底、衍射和磁光张量的全波一维 RCWA，
+固定 Si₃N₄/钴铁氧体复合材料参数，扫描周期、占空比、高度和覆盖层。
+已找到单程约 1.12°、透射率约 26% 的模拟候选，并检查数值收敛、磁化反转、带宽、尺寸误差及镜面反馈。
+这是约 6.7 倍同高度均匀复合膜的旋转增强，尚未实现真实材料的 45° 器件。
+见 [扫描结果、方程和运行方法](magneto_optics/GRATING_SCAN.md)。
+
 **真实磁光材料（v0.4.1）：** 首个制造方向选为 Si₃N₄ 光栅＋钴铁氧体/二氧化硅复合涂层，已加入文献材料参数与实物几何。
 同时保留 Ce:YIG/GGG 的作者原始实验拟合数据、张量约定转换及严格被动性检查。
 后续器件优化应固定材料性质、调整可制造几何；见 [真实材料与光刻路线](magneto_optics/REAL_MATERIALS.md)。
@@ -23,8 +29,9 @@ Faraday/Kerr 旋转和全部传播衍射级次。使用均匀宿主中的小球�
 [验收与性能报告](magneto_optics/VALIDATION_REPORT.md) 或
 [本轮 goal](magneto_optics/GOAL.md) 开始。
 
-The electromagnetic module is version **0.4.1**. It models finite arrays and
-periodic sheets of small electric-dipole spheres, plus exact gyrotropic layer stacks and mirror cavities; it does not turn the X-ray Debye equation
+The electromagnetic module is version **0.5.0**. It models finite arrays and
+periodic sheets of small electric-dipole spheres, exact gyrotropic layer stacks,
+and full-wave one-dimensional tensor gratings with substrate and mirror feedback; it does not turn the X-ray Debye equation
 into a Maxwell solver. The original X-ray tutorial follows below.
 
 This project calculates how X-rays scatter from a crystal and from nanoparticles

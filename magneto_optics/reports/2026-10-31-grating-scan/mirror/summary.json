@@ -1,0 +1,587 @@
+{
+  "study": "Diagnostic full-order grating / finite substrate / air gap / PEC return",
+  "geometry": {
+    "period_nm": 925.0420768002252,
+    "fill_fraction": 0.7475748750287126,
+    "height_nm": 573.7393944066401,
+    "cap_nm": 82.05068975768243,
+    "overetch_nm": 30.0
+  },
+  "incident_axis": 1,
+  "wavelength_nm": 1560.0,
+  "substrate_thickness_nm": 500000.0,
+  "substrate_index": 1.5005265664593868,
+  "mirror": "ideal PEC, tangential-electric rm=-1 for every order",
+  "gap_scan": {
+    "range_nm": [
+      0.0,
+      780.0
+    ],
+    "samples": 157,
+    "harmonic_order": 21,
+    "full_maxwell_solves": 1,
+    "feedback_solves": 157,
+    "seconds": 0.14746070001274347,
+    "selection": "maximize |full-return ellipse-axis rotation|*sqrt(R0) subject to R0>=0.25 and |ellipticity|<=5deg",
+    "gap_discretization_nm": 5.0,
+    "global_optimum_proven": false
+  },
+  "selected_order21": {
+    "gap_nm": 115.0,
+    "full_rotation_deg": -1.683213686340082,
+    "full_ellipticity_deg": -0.3139156761649823,
+    "full_zero_order_power": 0.26012057302727687,
+    "full_cross_power": 0.0002322258109997091,
+    "full_fom_deg": 0.858472929167122,
+    "full_qualified": true,
+    "first_rotation_deg": 0.06702502813320166,
+    "first_ellipticity_deg": 0.6981518377006662,
+    "first_zero_order_power": 0.059659227575713736,
+    "first_cross_power": 8.939105693316827e-06,
+    "first_fom_deg": 0.016371022975887092,
+    "first_qualified": false,
+    "total_returned_power": 0.2601205730272768,
+    "material_absorbed_power": 0.7398794269727231,
+    "mirror_absorbed_power": 0.0,
+    "feedback_relative_residual": 1.4929780942585942e-16
+  },
+  "selected_verified": {
+    "gap_nm": 115.0,
+    "full_rotation_deg": -1.6831774581629304,
+    "full_ellipticity_deg": -0.31406119591064807,
+    "full_zero_order_power": 0.2601172815168087,
+    "full_cross_power": 0.00023222044330069544,
+    "full_fom_deg": 0.8584490206987697,
+    "full_qualified": true,
+    "first_rotation_deg": 0.06691071439936991,
+    "first_ellipticity_deg": 0.6980509530120461,
+    "first_zero_order_power": 0.05966471221246645,
+    "first_cross_power": 8.937089526743355e-06,
+    "first_fom_deg": 0.016343852789617815,
+    "first_qualified": false,
+    "total_returned_power": 0.26011728151680874,
+    "material_absorbed_power": 0.7398827184831913,
+    "mirror_absorbed_power": 0.0,
+    "feedback_relative_residual": 9.351107373779607e-17
+  },
+  "harmonic_convergence": {
+    "orders": [
+      21,
+      31
+    ],
+    "absolute_changes": {
+      "full_rotation_deg": 3.6228177151542695e-05,
+      "full_ellipticity_deg": 0.00014551974566578973,
+      "full_zero_order_power": 3.2915104681841e-06,
+      "total_returned_power": 3.291510468073078e-06,
+      "first_rotation_deg": 0.00011431373383175014,
+      "first_ellipticity_deg": 0.00010088468862012867,
+      "first_zero_order_power": 5.484636752713101e-06
+    },
+    "passed": true,
+    "note": "empirical refinement at the selected sampled gap, not a rigorous error bound"
+  },
+  "bare_transmission": {
+    "finite_substrate_order21": {
+      "polarization": "TE_y",
+      "rotation_deg": -0.8836659394655157,
+      "ellipticity_deg": 0.4654906999782098,
+      "zero_order_transmission": 0.24435029036479747,
+      "cross_power": 7.423814113162916e-05,
+      "total_transmission": 0.24435029036479747,
+      "total_reflection": 0.524855921218525,
+      "absorption_flux_difference": 0.23079378841667753,
+      "fom_deg": 0.4368119845490619,
+      "qualified": false
+    },
+    "finite_substrate_verified": {
+      "polarization": "TE_y",
+      "rotation_deg": -0.8836497898751219,
+      "ellipticity_deg": 0.4654273562163863,
+      "zero_order_transmission": 0.24436152357486757,
+      "cross_power": 7.423504297850489e-05,
+      "total_transmission": 0.24436152357486754,
+      "total_reflection": 0.5248555697387391,
+      "absorption_flux_difference": 0.23078290668639334,
+      "fom_deg": 0.43681404172219074,
+      "qualified": false
+    },
+    "semi_infinite_substrate_verified": {
+      "polarization": "TE_y",
+      "rotation_deg": -1.116070251249539,
+      "ellipticity_deg": 0.32604111023203347,
+      "zero_order_transmission": 0.26333690825140216,
+      "cross_power": 0.00010842742819841318,
+      "total_transmission": 0.2633369082514021,
+      "total_reflection": 0.45324753533386936,
+      "absorption_flux_difference": 0.28341555641472854,
+      "fom_deg": 0.5727266583089771,
+      "qualified": true
+    }
+  },
+  "double_pass_comparison": {
+    "twice_finite_substrate_single_pass_rotation_deg": -1.7672995797502438,
+    "first_return_minus_twice_single_pass_deg": 1.8342102941496137,
+    "full_return_minus_twice_single_pass_deg": 0.08412212158731336,
+    "note": "Ellipse axes compared modulo 180 degrees. An anisotropic grating and coherent cavity need not double the bare transmission angle."
+  },
+  "magnetic_checks": {
+    "plus": {
+      "gap_nm": 115.0,
+      "full_rotation_deg": -1.6831774581629304,
+      "full_ellipticity_deg": -0.31406119591064807,
+      "full_zero_order_power": 0.2601172815168087,
+      "full_cross_power": 0.00023222044330069544,
+      "full_fom_deg": 0.8584490206987697,
+      "full_qualified": true,
+      "first_rotation_deg": 0.06691071439936991,
+      "first_ellipticity_deg": 0.6980509530120461,
+      "first_zero_order_power": 0.05966471221246645,
+      "first_cross_power": 8.937089526743355e-06,
+      "first_fom_deg": 0.016343852789617815,
+      "first_qualified": false,
+      "total_returned_power": 0.26011728151680874,
+      "material_absorbed_power": 0.7398827184831913,
+      "mirror_absorbed_power": 0.0,
+      "feedback_relative_residual": 9.351107373779607e-17
+    },
+    "minus": {
+      "gap_nm": 115.0,
+      "full_rotation_deg": 1.6831774581629304,
+      "full_ellipticity_deg": 0.31406119591064807,
+      "full_zero_order_power": 0.2601172815168087,
+      "full_cross_power": 0.00023222044330069544,
+      "full_fom_deg": 0.8584490206987697,
+      "full_qualified": true,
+      "first_rotation_deg": -0.06691071439936991,
+      "first_ellipticity_deg": -0.6980509530120461,
+      "first_zero_order_power": 0.05966471221246645,
+      "first_cross_power": 8.937089526743355e-06,
+      "first_fom_deg": 0.016343852789617815,
+      "first_qualified": false,
+      "total_returned_power": 0.26011728151680874,
+      "material_absorbed_power": 0.7398827184831913,
+      "mirror_absorbed_power": 0.0,
+      "feedback_relative_residual": 9.351107373779607e-17
+    },
+    "zero": {
+      "gap_nm": 115.0,
+      "full_rotation_deg": 0.0,
+      "full_ellipticity_deg": 0.0,
+      "full_zero_order_power": 0.25985729621235476,
+      "full_cross_power": 0.0,
+      "full_fom_deg": 0.0,
+      "full_qualified": true,
+      "first_rotation_deg": 0.0,
+      "first_ellipticity_deg": 0.0,
+      "first_zero_order_power": 0.0597233380315376,
+      "first_cross_power": 0.0,
+      "first_fom_deg": 0.0,
+      "first_qualified": false,
+      "total_returned_power": 0.25985729621235465,
+      "material_absorbed_power": 0.7401427037876452,
+      "mirror_absorbed_power": 0.0,
+      "feedback_relative_residual": 8.745144132845815e-17
+    },
+    "plus_minus_rotation_sum_deg": 0.0,
+    "transpose_error": 3.884744371011285e-12,
+    "zero_cross_amplitude": 0.0,
+    "passed": true
+  },
+  "returned_jones": [
+    [
+      [
+        0.23229832039459078,
+        0.023007417692781473
+      ],
+      [
+        -0.010415200194359276,
+        0.01112403021445528
+      ]
+    ],
+    [
+      [
+        0.010415200196888668,
+        -0.011124030213383927
+      ],
+      [
+        -0.2742066621603327,
+        0.4297624547356332
+      ]
+    ]
+  ],
+  "first_return_jones": [
+    [
+      [
+        0.2876921179813906,
+        0.05377799768761023
+      ],
+      [
+        0.0018876924290920666,
+        -0.002318125712702365
+      ]
+    ],
+    [
+      [
+        -0.0018876924297106443,
+        0.0023181257130376453
+      ],
+      [
+        0.1738169362194272,
+        0.17159093159672303
+      ]
+    ]
+  ],
+  "returned_power_by_order": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.054724071370367604,
+      0.26011728151680874
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "harmonic_orders": [
+    -31,
+    -30,
+    -29,
+    -28,
+    -27,
+    -26,
+    -25,
+    -24,
+    -23,
+    -22,
+    -21,
+    -20,
+    -19,
+    -18,
+    -17,
+    -16,
+    -15,
+    -14,
+    -13,
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "assumptions": [
+    "500 um substrate is an illustrative choice, not user-specified or measured",
+    "SCHOTT N-BK7 dispersion proxy; glass absorption neglected",
+    "normal monochromatic plane wave, infinitely periodic x and invariant y",
+    "fully filled rectangular gaps and uniform residual composite cap",
+    "saturated fixed axial magnetization and fixed literature composite tensor",
+    "ideal PEC is not a purchased mirror coating model",
+    "first return excludes prompt reflection and all later round trips",
+    "all retained diffraction and evanescent orders participate in mirror feedback"
+  ],
+  "limitations": [
+    "no wavelength or angular averaging; coherent thick-substrate fringes need resolved sampling",
+    "actual substrate thickness/loss, mirror optical data, coating profile and source coherence remain unspecified",
+    "no claim of 45-degree transmission, 90-degree return, or fabrication readiness"
+  ],
+  "performance": {
+    "solver_calls": 5,
+    "solver_seconds": 0.45586290006758645,
+    "gap_scan_seconds": 0.14746070001274347,
+    "total_seconds_before_plot": 0.6390402000397444,
+    "blas_threads": 1,
+    "python": "3.11.9",
+    "numpy": "2.4.6"
+  },
+  "candidate_sha256": "bdd9679d17c14aa75eee1a7101bd6e1378ac19e1a34438d11a8b02a6e7f9eb8a",
+  "material_sha256": "d1404294ceb41b824d4e1748e911411f85d7eb26afeb2d1634b5ab0471975602",
+  "source_sha256": {
+    "scripts\\scan_grating_mirror.py": "233b78a5869ebfb5d8d4785856cd59e3861f1b4f27a79114c25d71026df19305",
+    "scripts\\scan_grating.py": "4f369dee732947b5f49c7e785a510ab2ec6dbd7281c1cad12b560c697fd17f45",
+    "src\\magnetooptics\\grating.py": "c8ea513f003aa3b5019e66bc61eb7fc390ed7f0519f7e971f950ed3829b4dd7c",
+    "src\\magnetooptics\\grating_design.py": "22b9b6c6e56bf390d30fbb82d99a8084a513757c2bfc92d3712d1558d515bf0e",
+    "src\\magnetooptics\\grating_mirror.py": "e518f2537238b51c36c1f7d9feac3e012d7499fec5d11d33646f6e59a7e4f879"
+  }
+}

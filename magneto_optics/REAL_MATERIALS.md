@@ -159,11 +159,16 @@ This proposed adaptation is not a reproduction of either experiment above.
 
 ## Next simulation acceptance
 
-We now have a real material input, not a completed fabrication-ready 45-degree
-device. The existing single-dipole sphere array does not resolve the patterned
-Si3N4/composite grating and substrate. A periodic full-wave solver such as tensor
-RCWA, FEM or volume DDA must be validated for the selected geometry.
-The planar stack solver remains a useful uniform-film reference.
+Version 0.5.0 adds a validated one-dimensional tensor RCWA solver for rectangular
+Si3N4/composite gratings, with a substrate and full retained-order mirror feedback.
+The [first geometry scan](GRATING_SCAN.md) includes independently checked Maxwell
+boundaries and volume heating, harmonic refinement, magnetic reversal, spectral
+averaging and dimensional sensitivity. It yields a roughly 1.12-degree candidate
+at 1560 nm, not a completed fabrication-ready 45-degree device. The older
+single-dipole sphere model is not used to approximate these patterned films.
+The planar stack solver remains the uniform-film reference; a two-dimensional
+post lattice, angular averaging and measured coating/mirror profiles are still
+outside this new one-dimensional study.
 
 Acceptance must include forward and returned Jones matrices, transmitted and
 returned power, ellipticity, magnetic reversal, material heating, convergence,

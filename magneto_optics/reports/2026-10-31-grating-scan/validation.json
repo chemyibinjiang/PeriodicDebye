@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-31",
+  "module_version": "0.5.0",
+  "tests": {
+    "tests": 555,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_hashes_match": true,
+  "candidate_and_material_hashes_match": true,
+  "source_sha256": {
+    "scripts\\scan_grating.py": "4f369dee732947b5f49c7e785a510ab2ec6dbd7281c1cad12b560c697fd17f45",
+    "src\\magnetooptics\\grating.py": "c8ea513f003aa3b5019e66bc61eb7fc390ed7f0519f7e971f950ed3829b4dd7c",
+    "src\\magnetooptics\\grating_design.py": "22b9b6c6e56bf390d30fbb82d99a8084a513757c2bfc92d3712d1558d515bf0e",
+    "scripts\\scan_grating_mirror.py": "233b78a5869ebfb5d8d4785856cd59e3861f1b4f27a79114c25d71026df19305",
+    "src\\magnetooptics\\grating_mirror.py": "e518f2537238b51c36c1f7d9feac3e012d7499fec5d11d33646f6e59a7e4f879"
+  },
+  "test_source_sha256": {
+    "tests\\test_grating_design.py": "121547718335db3132164f693c87841b11271c45d1e73e3d5d77e875dcdcb5d7",
+    "tests\\test_grating_mirror.py": "c259e7c022734ef6fc5558b73441ed723cd82dc3e8f32a02760d22fe33fc9d58",
+    "tests\\test_grating_physics.py": "a282abfd61f72063c955d1424e2b19d46757b4cde0faffe544441e8b27b98b45"
+  },
+  "coarse_geometries": 4230,
+  "full_scan_solver_calls": 6863,
+  "selected_fully_qualified": true,
+  "magnetic_reversal_passed": true,
+  "mirror_convergence_passed": true,
+  "plots_visually_checked": [
+    "overview.png",
+    "mirror/overview.png"
+  ],
+  "scope": "numerical verification of declared 1D rectangular full-infiltration model; not fabricated device validation"
+}
